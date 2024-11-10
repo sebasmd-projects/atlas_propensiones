@@ -15,7 +15,7 @@ class UserLogoutView(View):
         logout(request)
         return HttpResponseRedirect(
             reverse(
-                'account:login'
+                'two_factor:login'
             )
         )
 

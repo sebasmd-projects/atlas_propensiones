@@ -73,11 +73,11 @@
 {% endblock main %}
     
 {% block content %}
-    <div id="barcodeOutput" class="mt-4 text-center" style="display:none;">
-        <img id="barcodeImage" src="{{ barcode_image }}" alt="{% trans 'Bar Code' %}"/>
+    <div id="barcodeOutput" class="mt-2 mb-5 text-center container" style="display:none;">
         <div class="d-grid gap-2">
             <a id="downloadLink" download class="btn btn-success mt-3">{% trans 'Download' %}</a>
         </div>
+        <img id="barcodeImage" src="{{ barcode_image }}" alt="{% trans 'Bar Code' %}"/>
     </div>
 {% endblock content %}
 
