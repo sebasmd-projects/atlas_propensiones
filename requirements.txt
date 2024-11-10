@@ -19,6 +19,7 @@ django-environ==0.11.2
 django-filter==24.2
 django-import-export==4.0.8
 django-parler==2.3
+django-recaptcha==4.0.0
 django-rosetta==0.10.0
 django-two-factor-auth==1.17.0
 Django==4.2.13
