@@ -12,7 +12,7 @@
       {% block custom_js %}{% endblock custom_js %}
       {% block custom_css %}{% endblock custom_css %}
     </head>
-  <body>
+  <body {% block body_properties %}{% endblock body_properties %}>
     {% block header %}{% endblock header %}
     {% block main %}{% endblock main %}
     {% block content %}{% endblock content %}
