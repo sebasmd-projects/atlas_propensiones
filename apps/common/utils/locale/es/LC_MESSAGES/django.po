@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 15:50-0500\n"
-"PO-Revision-Date: 2024-08-29 15:51-0500\n"
-"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
+"POT-Creation-Date: 2024-11-10 11:24-0500\n"
+"PO-Revision-Date: 2024-11-10 11:23-0500\n"
+"Last-Translator: Juan Sebastian <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -31,71 +31,117 @@ msgstr "No tienes permiso para ver esta página"
 msgid "Security Key"
 msgstr "LLave de seguridad"
 
-#: .\apps\common\utils\middleware.py:57
-msgid "Your IP has been blocked due to too many incorrect attempts."
-msgstr "Su IP ha sido bloqueada debido a demasiados intentos incorrectos."
+#: .\apps\common\utils\middleware.py:61
+msgid "This IP is temporarily blocked due to suspicious activity."
+msgstr "Esta IP está bloqueada temporalmente debido a actividad sospechosa."
 
-#: .\apps\common\utils\models.py:118
-#, python-brace-format
-msgid "Cannot convert value {value} to {self.data_type}: {e}"
-msgstr "No se puede convertir el valor {value} a {self.data_type}: {e}"
-
-#: .\apps\common\utils\models.py:181
-msgid "Spanish"
-msgstr "Español"
-
-#: .\apps\common\utils\models.py:182
-msgid "English"
-msgstr "Ingles"
-
-#: .\apps\common\utils\models.py:186
-msgid "language"
-msgstr "idioma"
-
-#: .\apps\common\utils\models.py:195
-msgid "created"
-msgstr "creado"
-
-#: .\apps\common\utils\models.py:201
-msgid "updated"
-msgstr "actualizado"
-
-#: .\apps\common\utils\models.py:207
-msgid "is active"
-msgstr "esta activo"
-
-#: .\apps\common\utils\models.py:212
-msgid "priority"
-msgstr "prioridad"
-
-#: .\apps\common\utils\views.py:67
-msgid "Error 400"
-msgstr "Error 400"
-
-#: .\apps\common\utils\views.py:68
-msgid "Bad Request"
-msgstr "Solicitud incorrecta"
-
-#: .\apps\common\utils\views.py:83
+#: .\apps\common\utils\middleware.py:62 .\apps\common\utils\views.py:61
 msgid "Error 403"
 msgstr "Error 403"
 
-#: .\apps\common\utils\views.py:84
+#: .\apps\common\utils\middleware.py:63
+msgid "Access denied due to suspicious activity."
+msgstr "Acceso denegado debido a actividad sospechosa."
+
+#: .\apps\common\utils\models.py:21
+msgid "Spanish"
+msgstr "Español"
+
+#: .\apps\common\utils\models.py:22
+msgid "English"
+msgstr "Ingles"
+
+#: .\apps\common\utils\models.py:26
+msgid "language"
+msgstr "idioma"
+
+#: .\apps\common\utils\models.py:35
+msgid "created"
+msgstr "creado"
+
+#: .\apps\common\utils\models.py:41
+msgid "updated"
+msgstr "actualizado"
+
+#: .\apps\common\utils\models.py:47
+msgid "is active"
+msgstr "esta activo"
+
+#: .\apps\common\utils\models.py:52
+msgid "priority"
+msgstr "prioridad"
+
+#: .\apps\common\utils\models.py:65
+msgid "Attempts to obtain forbidden urls"
+msgstr "Intentos de obtener URL prohibidas"
+
+#: .\apps\common\utils\models.py:67
+msgid "Multiple failed security key entry attempts"
+msgstr "Múltiples intentos fallidos de ingreso de clave de seguridad"
+
+#: .\apps\common\utils\models.py:70
+msgid "is blocked"
+msgstr "esta bloqueado"
+
+#: .\apps\common\utils\models.py:71
+msgid "current user IP"
+msgstr "IP del usuario"
+
+#: .\apps\common\utils\models.py:73
+msgid "reason"
+msgstr "razón"
+
+#: .\apps\common\utils\models.py:75
+msgid "blocked until"
+msgstr "bloqueado hasta"
+
+#: .\apps\common\utils\models.py:77
+msgid "session information"
+msgstr "información de la sesión"
+
+#: .\apps\common\utils\models.py:91
+msgid "requests"
+msgstr "solicitudes"
+
+#: .\apps\common\utils\models.py:119
+msgid "Request"
+msgstr "Solicitud"
+
+#: .\apps\common\utils\models.py:120
+msgid "Requests"
+msgstr "Solicitudes"
+
+#: .\apps\common\utils\views.py:45
+msgid "Error 400"
+msgstr "Error 400"
+
+#: .\apps\common\utils\views.py:46
+msgid "Bad Request"
+msgstr "Solicitud incorrecta"
+
+#: .\apps\common\utils\views.py:62
 msgid "Prohibited Request"
 msgstr "Solicitud prohibida"
 
-#: .\apps\common\utils\views.py:99
+#: .\apps\common\utils\views.py:77
 msgid "Error 404"
 msgstr "Error 404"
 
-#: .\apps\common\utils\views.py:100
+#: .\apps\common\utils\views.py:78
 msgid "Page not found"
 msgstr "Página no encontrada"
 
-#: .\apps\common\utils\views.py:114
+#: .\apps\common\utils\views.py:92
 msgid "Error 500"
 msgstr "Error 500"
 
-#: .\apps\common\utils\views.py:115
+#: .\apps\common\utils\views.py:93
 msgid "Server error"
 msgstr "Error del servidor"
+
+#~ msgid "Your IP has been blocked due to too many incorrect attempts."
+#~ msgstr "Su IP ha sido bloqueada debido a demasiados intentos incorrectos."
+
+#, python-brace-format
+#~ msgid "Cannot convert value {value} to {self.data_type}: {e}"
+#~ msgstr "No se puede convertir el valor {value} a {self.data_type}: {e}"

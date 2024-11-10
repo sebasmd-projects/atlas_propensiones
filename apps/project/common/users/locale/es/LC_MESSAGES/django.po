@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-30 15:10-0500\n"
-"PO-Revision-Date: 2024-08-23 17:06-0500\n"
-"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
+"POT-Creation-Date: 2024-11-10 11:24-0500\n"
+"PO-Revision-Date: 2024-11-10 11:22-0500\n"
+"Last-Translator: Juan Sebastian <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,56 +19,181 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\project\common\users\admin.py:32
-msgid "password"
-msgstr "contraseña"
-
-#: .\apps\project\common\users\admin.py:34
-msgid ""
-"Raw passwords are not stored, so there is no way to see this user’s "
-"password, but you can change the password using <a href=\"{}\">this form</a>."
-msgstr ""
-"Las contraseñas sin formato no se almacenan, por lo que no hay forma de ver "
-"la contraseña de este usuario, pero puede cambiarla usando <a href="
-"\"{}\">este formulario</a>."
-
-#: .\apps\project\common\users\admin.py:92
+#: .\apps\project\common\users\admin.py:60
 msgid "User Information"
 msgstr "Información del usuario"
 
-#: .\apps\project\common\users\admin.py:100
-#: .\apps\project\common\users\admin.py:167
+#: .\apps\project\common\users\admin.py:68
 msgid "Personal Information"
 msgstr "Información personal"
 
-#: .\apps\project\common\users\admin.py:110
+#: .\apps\project\common\users\admin.py:77
 msgid "Permissions"
 msgstr "Permisos"
 
-#: .\apps\project\common\users\admin.py:121
-#: .\apps\project\common\users\admin.py:178
+#: .\apps\project\common\users\admin.py:88
 msgid "Dates"
 msgstr "Fechas"
 
-#: .\apps\project\common\users\admin.py:130
+#: .\apps\project\common\users\admin.py:97
 msgid "Priority"
 msgstr "Prioridad"
 
-#: .\apps\project\common\users\admin.py:216
+#: .\apps\project\common\users\admin.py:111
 msgid "Groups"
 msgstr "Grupos"
 
-#: .\apps\project\common\users\admin.py:218
+#: .\apps\project\common\users\admin.py:113
 msgid "Names"
 msgstr "Nombres"
 
-#: .\apps\project\common\users\models.py:39
+#: .\apps\project\common\users\models.py:25
+msgid "The date of birth cannot be a future date."
+msgstr "La fecha de nacimiento no puede ser una fecha futura."
+
+#: .\apps\project\common\users\models.py:30
+msgid "User must be at least 18 years of age."
+msgstr "El usuario debe tener al menos 18 años de edad."
+
+#: .\apps\project\common\users\models.py:51
+msgid "first name"
+msgstr "Primer nombre"
+
+#: .\apps\project\common\users\models.py:56
+msgid "second name"
+msgstr "Segundo nombre"
+
+#: .\apps\project\common\users\models.py:62
+msgid "first surname"
+msgstr "Primer apellido"
+
+#: .\apps\project\common\users\models.py:67
+msgid "second surname"
+msgstr "Segundo apellido"
+
+#: .\apps\project\common\users\models.py:73
+msgid "email address"
+msgstr "correo"
+
+#: .\apps\project\common\users\models.py:96
 msgid "User"
 msgstr "Usuario"
 
-#: .\apps\project\common\users\models.py:40
+#: .\apps\project\common\users\models.py:97
 msgid "Users"
 msgstr "Usuarios"
+
+#: .\apps\project\common\users\models.py:103
+msgid "Country Name"
+msgstr "Nombre del país"
+
+#: .\apps\project\common\users\models.py:109
+msgid "Country Code"
+msgstr "Código del país"
+
+#: .\apps\project\common\users\models.py:123
+msgid "Country"
+msgstr "País"
+
+#: .\apps\project\common\users\models.py:124
+msgid "Countries"
+msgstr "Países"
+
+#: .\apps\project\common\users\models.py:129
+msgid "State Name"
+msgstr "Nombre del estado"
+
+#: .\apps\project\common\users\models.py:149
+msgid "State"
+msgstr "Estado"
+
+#: .\apps\project\common\users\models.py:150
+msgid "States"
+msgstr "Estados"
+
+#: .\apps\project\common\users\models.py:155
+msgid "City Name"
+msgstr "Nombre de la ciudad"
+
+#: .\apps\project\common\users\models.py:175
+msgid "City"
+msgstr "Ciudad"
+
+#: .\apps\project\common\users\models.py:176
+msgid "Cities"
+msgstr "Ciudades"
+
+#: .\apps\project\common\users\models.py:199
+msgid "Address Line 1"
+msgstr "Dirección 1"
+
+#: .\apps\project\common\users\models.py:204
+msgid "Address Line 2 (Optional)"
+msgstr "Dirección 2 (Opcional)"
+
+#: .\apps\project\common\users\models.py:211
+msgid "Postal Code"
+msgstr "Cód Postal"
+
+#: .\apps\project\common\users\models.py:216
+msgid "Passport Image"
+msgstr "Imagen del pasaporte"
+
+#: .\apps\project\common\users\models.py:221
+msgid "Beneficiary Firm"
+msgstr ""
+
+#: .\apps\project\common\users\models.py:232
+msgid "Address"
+msgstr "Dirección"
+
+#: .\apps\project\common\users\models.py:233
+msgid "Addresses"
+msgstr "Direcciones"
+
+#: .\apps\project\common\users\models.py:238
+msgid "Male"
+msgstr "Masculino"
+
+#: .\apps\project\common\users\models.py:239
+msgid "Female"
+msgstr "Femenino"
+
+#: .\apps\project\common\users\models.py:257
+msgid "Birth Date"
+msgstr "Fecha de nacimiento"
+
+#: .\apps\project\common\users\models.py:263
+msgid "Gender"
+msgstr "Género"
+
+#: .\apps\project\common\users\models.py:270
+msgid "Citizenship"
+msgstr "Ciudadanía"
+
+#: .\apps\project\common\users\models.py:275
+msgid "Passport Identification"
+msgstr "Identificación del pasaporte"
+
+#: .\apps\project\common\users\models.py:280
+msgid "Date of Issue"
+msgstr "Fecha de emisión"
+
+#: .\apps\project\common\users\models.py:285
+msgid "Issuing Authority"
+msgstr "La autoridad emisora"
+
+#: .\apps\project\common\users\models.py:290
+msgid "Date of Expiry"
+msgstr "Fecha de vencimiento"
+
+#: .\apps\project\common\users\models.py:301
+msgid "Phone Number Code"
+msgstr "Código de teléfono"
+
+#: .\apps\project\common\users\models.py:306
+msgid "Phone Number"
+msgstr "Número de teléfono"
 
 #: .\apps\project\common\users\validators.py:10
 msgid ""
@@ -92,3 +217,15 @@ msgid ""
 msgstr ""
 "Por favor ingrese un nombre de usuario válido. Este valor solo puede "
 "contener letras, números y estos caracteres . + - _ min longitud: 4"
+
+#~ msgid "password"
+#~ msgstr "contraseña"
+
+#~ msgid ""
+#~ "Raw passwords are not stored, so there is no way to see this user’s "
+#~ "password, but you can change the password using <a href=\"{}\">this form</"
+#~ "a>."
+#~ msgstr ""
+#~ "Las contraseñas sin formato no se almacenan, por lo que no hay forma de "
+#~ "ver la contraseña de este usuario, pero puede cambiarla usando <a href="
+#~ "\"{}\">este formulario</a>."

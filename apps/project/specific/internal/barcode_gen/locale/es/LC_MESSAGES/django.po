@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-10 11:15-0500\n"
+"PO-Revision-Date: 2024-11-10 11:17-0500\n"
+"Last-Translator: Juan Sebastian <sebasmoralesd@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\apps\project\specific\internal\barcode_gen\forms.py:9
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:36
+msgid "Include NIT"
+msgstr "Incluir NIT"
+
+#: .\apps\project\specific\internal\barcode_gen\forms.py:14
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:42
+msgid "Include Date (DDMMYYYY)"
+msgstr "Incluir Fecha (DDMMYYYY)"
+
+#: .\apps\project\specific\internal\barcode_gen\forms.py:19
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:48
+msgid "Include Random Code (4 digits)"
+msgstr "Código Aleatorio (4 Dígitos)"
+
+#: .\apps\project\specific\internal\barcode_gen\forms.py:34
+#: .\apps\project\specific\internal\barcode_gen\models.py:9
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:17
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:18
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:22
+msgid "Reference"
+msgstr "Referencia"
+
+#: .\apps\project\specific\internal\barcode_gen\forms.py:41
+#: .\apps\project\specific\internal\barcode_gen\models.py:14
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:23
+msgid "Description"
+msgstr "Descripción"
+
+#: .\apps\project\specific\internal\barcode_gen\forms.py:47
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:27
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:28
+msgid "Custom Text"
+msgstr "Texto Personalizado"
+
+#: .\apps\project\specific\internal\barcode_gen\models.py:20
+msgid "Custom Text Input"
+msgstr "Texto Personalizado"
+
+#: .\apps\project\specific\internal\barcode_gen\models.py:27
+msgid "Code Information"
+msgstr "Información del barcode"
+
+#: .\apps\project\specific\internal\barcode_gen\models.py:41
+msgid "Barcode Registration"
+msgstr "Registro de barcode"
+
+#: .\apps\project\specific\internal\barcode_gen\models.py:42
+msgid "Barcode Registrations"
+msgstr "Registros de barcodes"
+
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:8
+msgid "Barcode Generator"
+msgstr "Generador de barcodes"
+
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:56
+msgid "Next"
+msgstr "Siguiente"
+
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:62
+msgid "Bar Code"
+msgstr "Código de Barras"
+
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:64
+msgid "Download"
+msgstr "Descargar"

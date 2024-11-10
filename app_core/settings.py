@@ -48,9 +48,14 @@ THIRD_PARTY_APPS = [
     'auditlog',
     'axes',
     'corsheaders',
-    'django_recaptcha',
     'django_filters',
+    'django_otp',
+    'django_otp.plugins.otp_email',
+    'django_otp.plugins.otp_static',
+    'django_otp.plugins.otp_totp',
+    'django_recaptcha',
     'drf_yasg',
+    'encrypted_model_fields',
     'honeypot',
     'import_export',
     'parler',
@@ -58,10 +63,6 @@ THIRD_PARTY_APPS = [
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
     'rosetta',
-    'django_otp',
-    'django_otp.plugins.otp_static',
-    'django_otp.plugins.otp_totp',
-    'django_otp.plugins.otp_email',
     'two_factor',
     'two_factor.plugins.email',
 ]
@@ -72,8 +73,9 @@ CUSTOM_APPS = [
 
     'apps.project.common.account',
     'apps.project.common.notifications',
-    'apps.project.common.reports',
     'apps.project.common.users',
+    
+    'apps.project.specific.internal.barcode_gen'
 ]
 
 ALL_CUSTOM_APPS = CUSTOM_APPS
@@ -258,3 +260,5 @@ CORS_ALLOWED_ORIGINS = list(os.getenv('CORS_ALLOWED_ORIGINS').split(','))
 
 YASG_DEFAULT_EMAIL = os.getenv('YASG_DEFAULT_EMAIL')
 YASG_TERMS_OF_SERVICE = os.getenv('YASG_TERMS_OF_SERVICE')
+
+FIELD_ENCRYPTION_KEY = os.getenv('FIELD_ENCRYPTION_KEY')

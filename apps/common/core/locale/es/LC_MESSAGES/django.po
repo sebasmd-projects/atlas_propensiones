@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-29 00:29-0500\n"
-"PO-Revision-Date: 2024-10-29 00:29-0500\n"
-"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
+"POT-Creation-Date: 2024-11-10 11:24-0500\n"
+"PO-Revision-Date: 2024-11-10 11:25-0500\n"
+"Last-Translator: Juan Sebastian <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,83 +19,69 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\common\core\models.py:10
-msgid "Attempts to obtain forbidden urls"
-msgstr "Intentos de obtener URL prohibidas"
-
-#: .\apps\common\core\models.py:12
-msgid "Multiple failed security key entry attempts"
-msgstr "Múltiples intentos fallidos de ingreso de clave de seguridad"
-
-#: .\apps\common\core\models.py:16
-msgid "is blocked"
-msgstr "esta bloqueado"
-
-#: .\apps\common\core\models.py:21
-msgid "current user ip"
-msgstr "ip de usuario actual"
-
-#: .\apps\common\core\models.py:26
-msgid "reason"
-msgstr "razón"
-
-#: .\apps\common\core\templates\base.html:10
-#: .\apps\common\core\templates\base.html:11
-msgid "Account | CBH | Fundación Leirion"
-msgstr "Cuenta | CBH | Fundación Leirión"
-
-#: .\apps\common\core\templates\base.html:15
-#: .\apps\common\core\templates\base.html:16
-msgid "Control of historical bonds"
-msgstr "Control de bonos históricos"
+#: .\apps\common\core\templates\pages\index.html:7
+msgid "Home"
+msgstr "Inicio"
 
 #: .\apps\common\core\templates\partials\footer.html:6
 msgid "Created by"
 msgstr "Creado por"
 
-#: .\apps\common\core\templates\partials\nav.html:5
-#: .\apps\common\core\templates\partials\nav.html:9
-msgid "CHB"
-msgstr "CHB"
+#: .\apps\common\core\templates\partials\footer.html:6
+msgid "Your unconditional ally"
+msgstr "Su aliado incondicional"
 
-#: .\apps\common\core\templates\partials\nav.html:15
-msgid "Certificates"
-msgstr "Certificados"
+#~ msgid "Attempts to obtain forbidden urls"
+#~ msgstr "Intentos de obtener URL prohibidas"
 
-#: .\apps\common\core\templates\partials\nav.html:18
-msgid "Verify"
-msgstr "Verificar"
+#~ msgid "Multiple failed security key entry attempts"
+#~ msgstr "Múltiples intentos fallidos de ingreso de clave de seguridad"
 
-#: .\apps\common\core\templates\partials\nav.html:22
-msgid "List"
-msgstr "Lista"
+#~ msgid "is blocked"
+#~ msgstr "esta bloqueado"
 
-#: .\apps\common\core\templates\partials\nav.html:25
-msgid "Form"
-msgstr "Formulario"
+#~ msgid "current user ip"
+#~ msgstr "ip de usuario actual"
 
-#: .\apps\common\core\templates\partials\nav.html:60
-msgid "Language"
-msgstr "Idioma"
+#~ msgid "reason"
+#~ msgstr "razón"
 
-#: .\apps\common\core\templates\partials\nav.html:74
-msgid "Logout"
-msgstr "Cerrar Sesión"
+#~ msgid "Account | CBH | Fundación Leirion"
+#~ msgstr "Cuenta | CBH | Fundación Leirión"
 
-#: .\apps\common\core\templates\partials\nav.html:77
-msgid "Admin"
-msgstr "Admin"
+#~ msgid "Control of historical bonds"
+#~ msgstr "Control de bonos históricos"
 
-#: .\apps\common\core\templates\partials\nav.html:81
-msgid "Login"
-msgstr "Iniciar Sesión"
+#~ msgid "CHB"
+#~ msgstr "CHB"
+
+#~ msgid "Certificates"
+#~ msgstr "Certificados"
+
+#~ msgid "Verify"
+#~ msgstr "Verificar"
+
+#~ msgid "List"
+#~ msgstr "Lista"
+
+#~ msgid "Form"
+#~ msgstr "Formulario"
+
+#~ msgid "Language"
+#~ msgstr "Idioma"
+
+#~ msgid "Logout"
+#~ msgstr "Cerrar Sesión"
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid "Login"
+#~ msgstr "Iniciar Sesión"
 
 #, fuzzy
 #~ msgid "Logo"
 #~ msgstr "Cerrar Sesión"
-
-#~ msgid "Home"
-#~ msgstr "Inicio"
 
 #~ msgid "All rights reserved"
 #~ msgstr "Reservados todos los derechos"
