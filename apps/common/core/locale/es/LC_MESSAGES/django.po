@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-10 20:55-0500\n"
+"POT-Creation-Date: 2024-11-10 22:59-0500\n"
 "PO-Revision-Date: 2024-11-10 21:10-0500\n"
 "Last-Translator: Juan Sebastian <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,8 @@ msgid ""
 "All-in-one suite for business management of historical assets safely and "
 "easily"
 msgstr ""
-"Suite todo en uno para la gestión empresarial de activos históricos de forma"
-" segura y sencilla"
+"Suite todo en uno para la gestión empresarial de activos históricos de forma "
+"segura y sencilla"
 
 #: .\apps\common\core\templates\pages\index\index.html:29
 msgid "Contact"
@@ -48,7 +48,6 @@ msgid "Contact Info"
 msgstr "Información de contacto"
 
 #: .\apps\common\core\templates\pages\index\index.html:42
-#| msgid "Locations"
 msgid "Our Location"
 msgstr "Ubicaciones"
 
@@ -84,35 +83,44 @@ msgstr "Suite Todo en Uno"
 msgid "Comprehensive and Secure Historical Asset Management Solution"
 msgstr "Solución Integral y Segura de Gestión de Activos Históricos"
 
-#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:20
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:17
+msgid ""
+"\n"
+"                <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</"
+"strong>rusted <strong>L</strong>egacy <strong>A</strong>sset <strong>S</"
+"strong>olution</small>\n"
+"              "
+msgstr ""
+
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:22
 msgid "Get Started"
 msgstr "Ver más"
 
-#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:43
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:45
 msgid "With a +12 team always willing to help"
 msgstr "Con un equipo +12 siempre dispuesto a ayudar"
 
-#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:56
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:58
 msgid "International"
 msgstr "Internacional"
 
-#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:57
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:59
 msgid "International Team"
 msgstr "Equipo Internacional"
 
-#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:67
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:69
 msgid "Multidisciplinary"
 msgstr "Multidisciplinario"
 
-#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:68
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:70
 msgid "Adapted to every need"
 msgstr "Adaptado a todas las necesidades."
 
-#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:78
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:80
 msgid "Results"
 msgstr "Resultados"
 
-#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:79
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:81
 msgid "Confirmed Sales"
 msgstr "Ventas Confirmadas"
 
@@ -179,13 +187,14 @@ msgid "Of experience in managing international assets"
 msgstr "De experiencia en la gestión de activos internacionales."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:8
+#: .\apps\common\core\templates\partials\header.html:14
 msgid "Features"
 msgstr "Características"
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:9
 msgid ""
-"Explore the core functionalities of ATLAS for efficient asset management and"
-" comprehensive business solutions."
+"Explore the core functionalities of ATLAS for efficient asset management and "
+"comprehensive business solutions."
 msgstr ""
 "Explore las funcionalidades principales de ATLAS para una gestión eficiente "
 "de activos y soluciones comerciales integrales."
@@ -214,8 +223,8 @@ msgid ""
 "compliance, traceability, and seamless integration with market demands."
 msgstr ""
 "ATLAS proporciona una plataforma sólida para gestionar activos históricos, "
-"garantizando el cumplimiento, la trazabilidad y una integración perfecta con"
-" las demandas del mercado."
+"garantizando el cumplimiento, la trazabilidad y una integración perfecta con "
+"las demandas del mercado."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:51
 msgid "Centralized asset tracking and monitoring"
@@ -239,8 +248,8 @@ msgstr "Generación automatizada de documentos"
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:68
 msgid ""
-"Efficiently generate, manage, and store important documents related to asset"
-" transactions, client agreements, and compliance certifications."
+"Efficiently generate, manage, and store important documents related to asset "
+"transactions, client agreements, and compliance certifications."
 msgstr ""
 "Genere, administre y almacene de manera eficiente documentos importantes "
 "relacionados con transacciones de activos, acuerdos con clientes y "
@@ -285,8 +294,8 @@ msgid ""
 "ATLAS prioritizes security with state-of-the-art encryption and validation "
 "protocols to safeguard sensitive information and ensure compliance."
 msgstr ""
-"ATLAS prioriza la seguridad con protocolos de validación y cifrado de última"
-" generación para salvaguardar la información confidencial y garantizar el "
+"ATLAS prioriza la seguridad con protocolos de validación y cifrado de última "
+"generación para salvaguardar la información confidencial y garantizar el "
 "cumplimiento."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:97
@@ -333,8 +342,7 @@ msgid ""
 "regular audits to safeguard sensitive information."
 msgstr ""
 "Funciones de seguridad avanzadas que incluyen cifrado de datos, control de "
-"acceso y auditorías periódicas para salvaguardar la información "
-"confidencial."
+"acceso y auditorías periódicas para salvaguardar la información confidencial."
 
 #: .\apps\common\core\templates\pages\index\sections\section-5-features-mobile.html:16
 msgid "Cross-Platform Accessibility"
@@ -383,8 +391,8 @@ msgstr "Diseño totalmente responsivo"
 
 #: .\apps\common\core\templates\pages\index\sections\section-5-features-mobile.html:70
 msgid ""
-"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen"
-" size, providing a consistent experience."
+"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen "
+"size, providing a consistent experience."
 msgstr ""
 "ATLAS garantiza un diseño responsivo que se ajusta dinámicamente para "
 "adaptarse a cualquier tamaño de pantalla, brindando una experiencia "
@@ -414,11 +422,20 @@ msgstr ""
 "ATLAS ofrece una opción de modo oscuro para reducir la fatiga visual y "
 "mejorar la visibilidad en entornos con poca luz."
 
+#: .\apps\common\core\templates\partials\footer.html:14
+msgid "Phone:"
+msgstr ""
+
+#: .\apps\common\core\templates\partials\footer.html:15
+msgid "Email:"
+msgstr ""
+
 #: .\apps\common\core\templates\partials\footer.html:20
 msgid "Useful Links"
 msgstr "Enlaces útiles"
 
 #: .\apps\common\core\templates\partials\footer.html:22
+#: .\apps\common\core\templates\partials\header.html:12
 msgid "Home"
 msgstr "Inicio"
 
@@ -434,26 +451,44 @@ msgstr "Términos de servicio"
 msgid "Privacy policy"
 msgstr "Política de privacidad"
 
-#: .\apps\common\core\templates\partials\footer.html:32
-msgid "Our Services"
-msgstr "Nuestros Servicios"
-
-#: .\apps\common\core\templates\partials\footer.html:43
+#: .\apps\common\core\templates\partials\footer.html:48
 msgid "Social Networks"
 msgstr "Redes Sociales"
 
-#: .\apps\common\core\templates\partials\footer.html:55
-#| msgid "Your unconditional ally"
+#: .\apps\common\core\templates\partials\footer.html:60
 msgid "Your unconditional ally. All Rights Reserved."
 msgstr "Tu aliado incondicional. Todos los derechos reservados."
 
-#: .\apps\common\core\templates\partials\footer.html:57
+#: .\apps\common\core\templates\partials\footer.html:62
 msgid "Created by"
 msgstr "Creado por"
 
-#: .\apps\common\core\templates\partials\header.html:40
+#: .\apps\common\core\templates\partials\header.html:13
+#, fuzzy
+#| msgid "About us"
+msgid "About"
+msgstr "Sobre nosotros"
+
+#: .\apps\common\core\templates\partials\header.html:17
+msgid "Custom APPS"
+msgstr ""
+
+#: .\apps\common\core\templates\partials\header.html:19
+#, fuzzy
+#| msgid "Document Generation"
+msgid "Code Generation"
+msgstr "Generación de documentos"
+
+#: .\apps\common\core\templates\partials\header.html:21
+msgid "Bar Code"
+msgstr ""
+
+#: .\apps\common\core\templates\partials\header.html:47
 msgid "LOGIN"
 msgstr "Iniciar Sesión"
+
+#~ msgid "Our Services"
+#~ msgstr "Nuestros Servicios"
 
 #~ msgid "Attempts to obtain forbidden urls"
 #~ msgstr "Intentos de obtener URL prohibidas"

@@ -18,8 +18,7 @@
                             id="floatingDocumentType"
                             class="form-select{% if form.document_type.errors %} is-invalid{% endif %}">
                         {% for choice in form.document_type.field.choices %}
-                            <option value="{{ choice.0 }}"
-                                    {% if choice.0 == form.document_type.value %}selected{% endif %}>
+                            <option value="{{ choice.0 }}"{% if choice.0 == form.document_type.value %}selected{% endif %}>
                                 {{ choice.1 }}
                             </option>
                         {% endfor %}
