@@ -1,4 +1,5 @@
 import base64
+import hashlib
 from datetime import timedelta
 from io import BytesIO
 
@@ -65,17 +66,25 @@ class CertificateInputView(FormView):
 
         document_type = form.cleaned_data['document_type']
         document_number = form.cleaned_data['document_number']
+        document_number_hash = hashlib.sha256(
+            document_number.encode()).hexdigest()
 
         try:
+            print(
+                f"tipo de documento {document_type} y número {
+                    document_number_hash}"
+            )
             certificate = CertificateModel.objects.get(
                 document_type=document_type,
-                document_number=document_number
+                document_number_hash=document_number_hash
             )
+            print(f"Certificado encontrado: {certificate}")
             self.request.session['failed_attempts'] = 0
             self.request.session['lockout_time'] = None
             return redirect('certificates:detail', pk=certificate.id)
 
         except CertificateModel.DoesNotExist:
+            print("Certificado no encontrado")
             failed_attempts += 1
             self.request.session['failed_attempts'] = failed_attempts
             if failed_attempts >= max_attempts:
@@ -107,20 +116,29 @@ class CertificateDetailView(DetailView):
         qr.add_data(url)
         qr.make(fit=True)
 
-        # Generar la imagen del QR
         img_qr = qr.make_image(fill="black", back_color="white").convert("RGB")
 
-        # Guardar la imagen en base64
+        # Insertar favicon en el centro
+        icon_url = "https://atlas.propensionesabogados.com/static/assets/imgs/favicon/atlas-favicon.png"
+        response = requests.get(icon_url)
+        icon = Image.open(BytesIO(response.content))
+        
+        icon = icon.resize((img_qr.size[0] // 4, img_qr.size[1] // 4), Image.LANCZOS)
+        pos = ((img_qr.size[0] - icon.size[0]) // 2, (img_qr.size[1] - icon.size[1]) // 2)
+        img_qr.paste(icon, pos, icon)
+
         buffer = BytesIO()
         img_qr.save(buffer, format="PNG")
         qr_base64 = base64.b64encode(buffer.getvalue()).decode()
-        
         return f"data:image/png;base64,{qr_base64}"
 
     def generate_barcode(self, uuid_str):
         buffer = BytesIO()
         barcode_class = barcode.get_barcode_class('code128')
-        barcode_image = barcode_class(f"https://atlas.propensionesabogados.com/certificate/{uuid_str}", writer=ImageWriter())
+        barcode_image = barcode_class(
+            f"atlas.propensionesabogados.com/certificate/{uuid_str}",
+            writer=ImageWriter()
+        )
         barcode_image.write(buffer)
         barcode_base64 = base64.b64encode(buffer.getvalue()).decode()
         return f"data:image/png;base64,{barcode_base64}"

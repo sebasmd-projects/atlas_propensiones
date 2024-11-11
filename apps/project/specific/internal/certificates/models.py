@@ -1,5 +1,6 @@
 
 
+import hashlib
 import uuid
 
 from django.db import models
@@ -47,6 +48,12 @@ class CertificateModel(TimeStampedModel):
         max_length=20,
     )
 
+    document_number_hash = models.CharField(
+        max_length=64,
+        editable=False,
+        default='',
+    )
+
     step = models.IntegerField(
         _('Step'),
         default=1,
@@ -67,6 +74,8 @@ class CertificateModel(TimeStampedModel):
 
     def save(self, *args, **kwargs):
         self.name = self.name.upper()
+        self.document_number_hash = hashlib.sha256(
+            self.document_number.encode()).hexdigest()
         super().save(*args, **kwargs)
 
     def __str__(self):
