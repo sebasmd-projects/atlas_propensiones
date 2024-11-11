@@ -96,7 +96,7 @@ class CertificateDetailView(DetailView):
     template_name = 'certificate_detail.html'
     context_object_name = 'certificate'
 
-    def generate_qr(self, url):
+    def generate_qr_with_favicon(self, url):
         # Crear el código QR
         qr = qrcode.QRCode(
             version=1,
