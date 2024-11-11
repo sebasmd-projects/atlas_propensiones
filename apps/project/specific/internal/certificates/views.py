@@ -115,7 +115,7 @@ class CertificateDetailView(DetailView):
 
         try:
             icon_url = "https://atlas.propensionesabogados.com/static/assets/imgs/favicon/atlas-favicon512x512.png"
-            response = requests.get(icon_url)
+            response = requests.get(icon_url, verify=False)
             response.raise_for_status()
             icon = Image.open(BytesIO(response.content))
             icon = icon.resize((img_qr.size[0] // 4, img_qr.size[1] // 4), Image.LANCZOS)
