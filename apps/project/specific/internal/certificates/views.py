@@ -18,10 +18,10 @@ from django.utils.translation import gettext_lazy as _
 from django.views.generic import (DetailView, FormView, ListView, TemplateView,
                                   View)
 from PIL import Image
-
+from django.templatetags.static import static
 from .forms import IDNumberForm
 from .models import CertificateModel
-
+from django.http import HttpRequest
 
 class CertificateFormFacadeTemplateView(TemplateView):
     template_name = 'certificate_form_facade.html'
@@ -112,18 +112,29 @@ class CertificateDetailView(DetailView):
 
         img_qr = qr.make_image(fill="black", back_color="white").convert("RGB")
 
-        # Insertar favicon en el centro
-        icon_url = "https://atlas.propensionesabogados.com/static/assets/imgs/favicon/atlas-favicon512x512.png"
+        # Obtener la URL estática del favicon y convertirla en una URL completa
+        favicon_path = static('assets/imgs/favicon/atlas-favicon512x512.png')
+        
+        # Asumiendo que esta función recibe la solicitud para construir la URL completa
+        icon_url = self.request.build_absolute_uri(favicon_path)
+        
+        # Realizar la solicitud para obtener el favicon
         response = requests.get(icon_url)
+        
+        # Abrir la imagen del favicon
         icon = Image.open(BytesIO(response.content))
         
+        # Ajustar el tamaño del icono y colocar en el centro del QR
         icon = icon.resize((img_qr.size[0] // 4, img_qr.size[1] // 4), Image.LANCZOS)
         pos = ((img_qr.size[0] - icon.size[0]) // 2, (img_qr.size[1] - icon.size[1]) // 2)
         img_qr.paste(icon, pos, icon)
 
+        # Guardar la imagen generada en formato PNG
         buffer = BytesIO()
         img_qr.save(buffer, format="PNG")
         qr_base64 = base64.b64encode(buffer.getvalue()).decode()
+        
+        # Retornar la imagen QR como una cadena base64
         return f"data:image/png;base64,{qr_base64}"
 
     def generate_barcode(self, uuid_str):
