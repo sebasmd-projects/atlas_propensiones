@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-11 02:52-0500\n"
+"POT-Creation-Date: 2024-11-11 11:00-0500\n"
 "PO-Revision-Date: 2024-11-11 02:53-0500\n"
 "Last-Translator: Sebastian  <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,8 @@ msgid ""
 "All-in-one suite for business management of historical assets safely and "
 "easily"
 msgstr ""
-"Suite todo en uno para la gestión empresarial de activos históricos de forma"
-" segura y sencilla"
+"Suite todo en uno para la gestión empresarial de activos históricos de forma "
+"segura y sencilla"
 
 #: .\apps\common\core\templates\pages\index\index.html:29
 #: .\apps\common\core\templates\partials\header.html:21
@@ -57,6 +57,7 @@ msgid "Email Address"
 msgstr "Dirección de Correo"
 
 #: .\apps\common\core\templates\pages\index\index.html:71
+#: .\apps\common\core\templates\pages\index\sections\section-6-call-to-action.html:12
 msgid "Get In Touch"
 msgstr "Ponte en Contacto"
 
@@ -81,17 +82,22 @@ msgid "All-in-one Suite"
 msgstr "Suite Todo en Uno"
 
 #: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:15
+#: .\apps\common\core\templates\pages\index\sections\section-6-call-to-action.html:11
 msgid "Comprehensive and Secure Historical Asset Management Solution"
 msgstr "Solución Integral y Segura de Gestión de Activos Históricos"
 
 #: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:17
 msgid ""
 "\n"
-"                <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</strong>rusted <strong>L</strong>egacy <strong>A</strong>sset <strong>S</strong>olution</small>\n"
+"                <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</"
+"strong>rusted <strong>L</strong>egacy <strong>A</strong>sset <strong>S</"
+"strong>olution</small>\n"
 "              "
 msgstr ""
 "\n"
-"<small><strong>A</strong>plicación <strong>T</strong>ransformadora para la <strong>L</strong>egitimación y <strong>A</strong>dministración de <strong>S</strong>tocks históricos</small>"
+"<small><strong>A</strong>plicación <strong>T</strong>ransformadora para la "
+"<strong>L</strong>egitimación y <strong>A</strong>dministración de "
+"<strong>S</strong>tocks históricos</small>"
 
 #: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:22
 msgid "Get Started"
@@ -194,8 +200,8 @@ msgstr "Características"
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:9
 msgid ""
-"Explore the core functionalities of ATLAS for efficient asset management and"
-" comprehensive business solutions."
+"Explore the core functionalities of ATLAS for efficient asset management and "
+"comprehensive business solutions."
 msgstr ""
 "Explore las funcionalidades principales de ATLAS para una gestión eficiente "
 "de activos y soluciones comerciales integrales."
@@ -224,8 +230,8 @@ msgid ""
 "compliance, traceability, and seamless integration with market demands."
 msgstr ""
 "ATLAS proporciona una plataforma sólida para gestionar activos históricos, "
-"garantizando el cumplimiento, la trazabilidad y una integración perfecta con"
-" las demandas del mercado."
+"garantizando el cumplimiento, la trazabilidad y una integración perfecta con "
+"las demandas del mercado."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:51
 msgid "Centralized asset tracking and monitoring"
@@ -249,8 +255,8 @@ msgstr "Generación automatizada de documentos"
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:68
 msgid ""
-"Efficiently generate, manage, and store important documents related to asset"
-" transactions, client agreements, and compliance certifications."
+"Efficiently generate, manage, and store important documents related to asset "
+"transactions, client agreements, and compliance certifications."
 msgstr ""
 "Genere, administre y almacene de manera eficiente documentos importantes "
 "relacionados con transacciones de activos, acuerdos con clientes y "
@@ -295,8 +301,8 @@ msgid ""
 "ATLAS prioritizes security with state-of-the-art encryption and validation "
 "protocols to safeguard sensitive information and ensure compliance."
 msgstr ""
-"ATLAS prioriza la seguridad con protocolos de validación y cifrado de última"
-" generación para salvaguardar la información confidencial y garantizar el "
+"ATLAS prioriza la seguridad con protocolos de validación y cifrado de última "
+"generación para salvaguardar la información confidencial y garantizar el "
 "cumplimiento."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:97
@@ -343,8 +349,7 @@ msgid ""
 "regular audits to safeguard sensitive information."
 msgstr ""
 "Funciones de seguridad avanzadas que incluyen cifrado de datos, control de "
-"acceso y auditorías periódicas para salvaguardar la información "
-"confidencial."
+"acceso y auditorías periódicas para salvaguardar la información confidencial."
 
 #: .\apps\common\core\templates\pages\index\sections\section-5-features-mobile.html:16
 msgid "Cross-Platform Accessibility"
@@ -393,8 +398,8 @@ msgstr "Diseño totalmente responsivo"
 
 #: .\apps\common\core\templates\pages\index\sections\section-5-features-mobile.html:70
 msgid ""
-"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen"
-" size, providing a consistent experience."
+"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen "
+"size, providing a consistent experience."
 msgstr ""
 "ATLAS garantiza un diseño responsivo que se ajusta dinámicamente para "
 "adaptarse a cualquier tamaño de pantalla, brindando una experiencia "
@@ -423,6 +428,12 @@ msgid ""
 msgstr ""
 "ATLAS ofrece una opción de modo oscuro para reducir la fatiga visual y "
 "mejorar la visibilidad en entornos con poca luz."
+
+#: .\apps\common\core\templates\pages\index\sections\section-6-call-to-action.html:10
+#, fuzzy
+#| msgid "HISTORICAL"
+msgid "HISTORICAL ASSETS"
+msgstr "HISTORICOS"
 
 #: .\apps\common\core\templates\partials\footer.html:14
 msgid "Phone:"
