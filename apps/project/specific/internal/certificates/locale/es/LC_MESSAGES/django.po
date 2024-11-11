@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-10 22:59-0500\n"
-"PO-Revision-Date: 2024-11-10 23:01-0500\n"
+"POT-Creation-Date: 2024-11-11 02:52-0500\n"
+"PO-Revision-Date: 2024-11-11 02:53-0500\n"
 "Last-Translator: Sebastian  <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: .\apps\project\specific\internal\certificates\admin.py:28
 #: .\apps\project\specific\internal\certificates\apps.py:8
-#: .\apps\project\specific\internal\certificates\models.py:77
+#: .\apps\project\specific\internal\certificates\models.py:86
 msgid "Certificate"
 msgstr "Certificado"
 
@@ -34,8 +34,7 @@ msgid "Priority"
 msgstr "Prioridad"
 
 #: .\apps\project\specific\internal\certificates\apps.py:9
-#: .\apps\project\specific\internal\certificates\models.py:78
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:23
+#: .\apps\project\specific\internal\certificates\models.py:87
 msgid "Certificates"
 msgstr "Certificados"
 
@@ -44,71 +43,67 @@ msgid "Document Type"
 msgstr "Tipo de documento"
 
 #: .\apps\project\specific\internal\certificates\forms.py:18
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:79
 msgid "Document Number"
 msgstr "Número de documento"
 
-#: .\apps\project\specific\internal\certificates\models.py:14
+#: .\apps\project\specific\internal\certificates\models.py:15
 msgid "Citizen ID (CC)"
 msgstr "Cédula de ciudadanía (CC)"
 
-#: .\apps\project\specific\internal\certificates\models.py:15
+#: .\apps\project\specific\internal\certificates\models.py:16
 msgid "Foreigner ID (CE)"
 msgstr "Cédula de extranjería (CE)"
 
-#: .\apps\project\specific\internal\certificates\models.py:16
+#: .\apps\project\specific\internal\certificates\models.py:17
 msgid "Special Residence Permit (PPT)"
 msgstr "Permiso especial de permanencia (PPT)"
 
-#: .\apps\project\specific\internal\certificates\models.py:17
+#: .\apps\project\specific\internal\certificates\models.py:18
 msgid "Identity Card (TI)"
 msgstr "Tarjeta de identidad (TI)"
 
-#: .\apps\project\specific\internal\certificates\models.py:18
+#: .\apps\project\specific\internal\certificates\models.py:19
 msgid "Passport (PA)"
 msgstr "Pasaporte (PA)"
 
-#: .\apps\project\specific\internal\certificates\models.py:19
+#: .\apps\project\specific\internal\certificates\models.py:20
 msgid "Civil Registry (RC)"
 msgstr "Registro civil (RC)"
 
-#: .\apps\project\specific\internal\certificates\models.py:20
+#: .\apps\project\specific\internal\certificates\models.py:21
 msgid "Tax Identification Number (NIT)"
 msgstr "Número de identificación tributaria (NIT)"
 
-#: .\apps\project\specific\internal\certificates\models.py:21
+#: .\apps\project\specific\internal\certificates\models.py:22
 msgid "Single Tax Registry (RUT)"
 msgstr "Registro único tributario (RUT)"
 
-#: .\apps\project\specific\internal\certificates\models.py:22
+#: .\apps\project\specific\internal\certificates\models.py:23
 msgid "Diplomatic ID Card (CD)"
 msgstr "Carné diplomático (CD)"
 
-#: .\apps\project\specific\internal\certificates\models.py:34
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:69
+#: .\apps\project\specific\internal\certificates\models.py:35
 msgid "Name"
 msgstr "Nombres"
 
-#: .\apps\project\specific\internal\certificates\models.py:39
+#: .\apps\project\specific\internal\certificates\models.py:40
 msgid "Document type"
 msgstr "Tipo de documento"
 
-#: .\apps\project\specific\internal\certificates\models.py:46
+#: .\apps\project\specific\internal\certificates\models.py:47
 msgid "Document number"
 msgstr "Número de documento"
 
-#: .\apps\project\specific\internal\certificates\models.py:51
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:90
+#: .\apps\project\specific\internal\certificates\models.py:58
 msgid "Step"
 msgstr "Etapa"
 
-#: .\apps\project\specific\internal\certificates\models.py:53
+#: .\apps\project\specific\internal\certificates\models.py:60
 msgid "Step of the certificate"
 msgstr "Etapa del certificado"
 
-#: .\apps\project\specific\internal\certificates\models.py:57
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:34
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:41
+#: .\apps\project\specific\internal\certificates\models.py:64
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:31
 msgid "Approved"
 msgstr "Aprobado "
 
@@ -120,18 +115,10 @@ msgstr "Mostrar"
 msgid "(Max: 2000)"
 msgstr "(Máximo: 2000)"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_base.html:10
-#: .\apps\project\specific\internal\certificates\templates\certificate_base.html:11
-msgid "Certificates | ATLAS | PROPENSIONESABOGADOS"
-msgstr "Certificados| ATLAS | PROPENSIONESABOGADOS"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_base.html:15
-#: .\apps\project\specific\internal\certificates\templates\certificate_base.html:16
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:17
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:18
-#| msgid "Certificates"
-msgid "ATLAS certificates"
-msgstr "ATLAS Certificados"
+#: .\apps\project\specific\internal\certificates\templates\certificate_base.html:6
+#| msgid "Certificate Details"
+msgid "Certification of Suitability"
+msgstr "Certificado de Idoneidad"
 
 #: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:5
 msgid "Certificate Details"
@@ -141,25 +128,24 @@ msgstr "Detalles del certificado"
 msgid "Suitability Verification"
 msgstr "Verificación de Idoneidad"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:31
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:28
 msgid "ID Number:"
 msgstr "Documento de identidad"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:32
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:29
 msgid "Certificate ID:"
 msgstr "ID del Certificado"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:36
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:42
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:33
 msgid "Not Approved"
 msgstr "No Aprobado "
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:42
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:56
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:39
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:53
 msgid "with document number"
 msgstr "con número de documento"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:43
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:40
 msgid ""
 "\n"
 "                                    qualifies as a beneficiary, who has undergone a security study and accreditation of judicial records in accordance with the regulations in force in the Republic of Colombia; \n"
@@ -169,17 +155,15 @@ msgstr ""
 "\n"
 "califica como beneficiario, a quien se le ha realizado un estudio de seguridad y acreditación de antecedentes judiciales de acuerdo con la normativa vigente en la República de Colombia; y en consecuencia, <strong>NO</strong> presenta antecedentes judiciales o disciplinarios por parte de las entidades certificadoras autorizadas por la legislación colombiana, que afecten su idoneidad para la fecha"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:48
-#| msgid "September 20, 2024"
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:45
 msgid "November 10, 2024"
 msgstr "10 de noviembre de 2024"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:50
-#| msgid "September 20, 2024"
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:47
 msgid "December 10, 2024"
 msgstr "10 de diciembre de 2024"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:57
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:54
 msgid ""
 "\n"
 "                                we inform you that, after the evaluation conducted, your security study <span class=\"text-danger\">HAS NOT BEEN APPROVED</span> due to not meeting the suitability requirements according to the current security regulations.\n"
@@ -188,7 +172,7 @@ msgstr ""
 "\n"
 "Le informamos que, tras la evaluación realizada, su estudio de seguridad <span class=\"text-danger\">NO HA SIDO APROBADO</span>, debido a que no cumple con los requisitos de idoneidad exigidos, según las normativas vigentes en materia de seguridad. "
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:64
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:61
 msgid ""
 "We remind you that, in accordance with the provisions of the Habeas Data "
 "Law, all your personal data has been treated with due confidentiality and is"
@@ -203,125 +187,109 @@ msgstr ""
 "utilizados exclusivamente para los fines autorizados y en el marco de la "
 "normativa vigente en protección de datos."
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:68
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:65
 msgid "Stage:"
 msgstr "Etapa"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:69
+#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:66
 msgid "Status:"
 msgstr "Estado"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:88
-msgid "Created by"
-msgstr "Creado por "
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_detail.html:88
-msgid "using ATLAS"
-msgstr "utilizando ATLAS"
 
 #: .\apps\project\specific\internal\certificates\templates\certificate_input.html:5
 #: .\apps\project\specific\internal\certificates\templates\certificate_input.html:9
 msgid "Verify your Certificate"
 msgstr "Verificar certificado"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_input.html:52
+#: .\apps\project\specific\internal\certificates\templates\certificate_input.html:51
 msgid "Please try again in"
 msgstr "Por favor intenta nuevamente en"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_input.html:52
+#: .\apps\project\specific\internal\certificates\templates\certificate_input.html:51
 msgid "minutes."
 msgstr "minutos."
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_input.html:58
+#: .\apps\project\specific\internal\certificates\templates\certificate_input.html:57
 msgid "Verify"
 msgstr "Verificar"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_input.html:69
+#: .\apps\project\specific\internal\certificates\templates\certificate_input.html:72
 msgid "FINAL MEMORIAL TOTAL CLOSURE OF OPERATION"
 msgstr "MEMORIAL FINAL CIERRE TOTAL DE OPERACION"
 
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:5
-msgid "Certificate List"
-msgstr "Lista de certificados"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:12
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:13
-#| msgid "Certificates"
-msgid "Certificates | ATLAS"
-msgstr "Certificados | ATLAS"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:28
-msgid "Search by Name or ID Number"
-msgstr "Buscar por Nombre o Número de Documento"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:33
-msgid "All Steps"
-msgstr "Todas las Etapas"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:34
-msgid "Step 1"
-msgstr "Etapa 1"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:35
-msgid "Step 2"
-msgstr "Etapa 2"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:40
-msgid "All Status"
-msgstr "Todos los Estados"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:46
-msgid "Search"
-msgstr "Buscar"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:49
-msgid "Clear Filters"
-msgstr "Borrar filtros"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:88
-msgid "Certificate ID"
-msgstr "ID del Certificado"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:100
-msgid "Approved Status"
-msgstr "Estado aprobado"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:129
-msgid "View"
-msgstr "Ver"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:132
-msgid "Edit"
-msgstr "Editar"
-
-#: .\apps\project\specific\internal\certificates\templates\certificate_list.html:137
-msgid "No certificates found."
-msgstr "No se encontraron certificados."
-
-#: .\apps\project\specific\internal\certificates\templates\partials\detail_certificate_header.html:8
-msgid "CHB"
-msgstr "CAH"
-
-#: .\apps\project\specific\internal\certificates\templates\partials\detail_certificate_header.html:15
-msgid "Language"
-msgstr "Idioma"
-
-#: .\apps\project\specific\internal\certificates\templates\partials\detail_certificate_header.html:29
-msgid "Logout"
-msgstr "Cerrar Sesión"
-
-#: .\apps\project\specific\internal\certificates\templates\partials\detail_certificate_header.html:32
-msgid "Admin"
-msgstr "Administrador"
-
-#: .\apps\project\specific\internal\certificates\views.py:59
-#: .\apps\project\specific\internal\certificates\views.py:86
+#: .\apps\project\specific\internal\certificates\views.py:99
+#: .\apps\project\specific\internal\certificates\views.py:128
 msgid "Too many failed attempts."
 msgstr "Demasiados intentos fallidos."
 
-#: .\apps\project\specific\internal\certificates\views.py:90
+#: .\apps\project\specific\internal\certificates\views.py:132
 msgid "ID Number not found."
 msgstr "No se encontró el documento."
+
+#~ msgid "Certificates | ATLAS | PROPENSIONESABOGADOS"
+#~ msgstr "Certificados| ATLAS | PROPENSIONESABOGADOS"
+
+#~ msgid "ATLAS certificates"
+#~ msgstr "ATLAS Certificados"
+
+#~ msgid "Created by"
+#~ msgstr "Creado por "
+
+#~ msgid "using ATLAS"
+#~ msgstr "utilizando ATLAS"
+
+#~ msgid "Certificate List"
+#~ msgstr "Lista de certificados"
+
+#~ msgid "Certificates | ATLAS"
+#~ msgstr "Certificados | ATLAS"
+
+#~ msgid "Search by Name or ID Number"
+#~ msgstr "Buscar por Nombre o Número de Documento"
+
+#~ msgid "All Steps"
+#~ msgstr "Todas las Etapas"
+
+#~ msgid "Step 1"
+#~ msgstr "Etapa 1"
+
+#~ msgid "Step 2"
+#~ msgstr "Etapa 2"
+
+#~ msgid "All Status"
+#~ msgstr "Todos los Estados"
+
+#~ msgid "Search"
+#~ msgstr "Buscar"
+
+#~ msgid "Clear Filters"
+#~ msgstr "Borrar filtros"
+
+#~ msgid "Certificate ID"
+#~ msgstr "ID del Certificado"
+
+#~ msgid "Approved Status"
+#~ msgstr "Estado aprobado"
+
+#~ msgid "View"
+#~ msgstr "Ver"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "No certificates found."
+#~ msgstr "No se encontraron certificados."
+
+#~ msgid "CHB"
+#~ msgstr "CAH"
+
+#~ msgid "Language"
+#~ msgstr "Idioma"
+
+#~ msgid "Logout"
+#~ msgstr "Cerrar Sesión"
+
+#~ msgid "Admin"
+#~ msgstr "Administrador"
 
 #~ msgid "Certificates | Fundación Leirion"
 #~ msgstr "Certificados | Fundación Leirion"

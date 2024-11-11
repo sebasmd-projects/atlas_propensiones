@@ -1,5 +1,6 @@
 import base64
 import hashlib
+import logging
 from datetime import timedelta
 from io import BytesIO
 
@@ -8,25 +9,61 @@ import qrcode
 import requests
 from barcode.writer import ImageWriter
 from django.contrib import messages
-from django.contrib.auth.mixins import PermissionRequiredMixin
-from django.db.models import Q
 from django.http import JsonResponse
 from django.shortcuts import redirect
 from django.utils import timezone
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext_lazy as _
-from django.views.generic import (DetailView, FormView, ListView, TemplateView,
-                                  View)
+from django.views.generic import DetailView, FormView, View
 from PIL import Image
-from django.templatetags.static import static
+
 from .forms import IDNumberForm
 from .models import CertificateModel
-import logging
 
 logging = logging.getLogger(__name__)
 
-class CertificateFormFacadeTemplateView(TemplateView):
-    template_name = 'certificate_form_facade.html'
+
+def generate_qr_with_favicon(text_data:str, image_url:str="https://atlas.propensionesabogados.com/static/assets/imgs/favicon/atlas-favicon512x512.png"):
+    qr = qrcode.QRCode(
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_H,
+        box_size=10,
+        border=4,
+    )
+    qr.add_data(text_data)
+    qr.make(fit=True)
+    img_qr = qr.make_image(fill="black", back_color="white").convert("RGB")
+
+    try:
+        icon_url = image_url
+        response = requests.get(icon_url)
+        response.raise_for_status()
+        icon = Image.open(BytesIO(response.content))
+        icon = icon.resize(
+            (img_qr.size[0] // 4, img_qr.size[1] // 4), Image.LANCZOS)
+        pos = ((img_qr.size[0] - icon.size[0]) // 2,
+               (img_qr.size[1] - icon.size[1]) // 2)
+        img_qr.paste(icon, pos, icon)
+    except Exception as e:
+        logging.error(f"Error: {e}")
+
+    buffer = BytesIO()
+    img_qr.save(buffer, format="PNG")
+    qr_base64 = base64.b64encode(buffer.getvalue()).decode()
+
+    return f"data:image/png;base64,{qr_base64}"
+
+
+def generate_barcode(custom_text:str):
+    buffer = BytesIO()
+    barcode_class = barcode.get_barcode_class('code128')
+    barcode_image = barcode_class(
+        custom_text,
+        writer=ImageWriter()
+    )
+    barcode_image.write(buffer)
+    barcode_base64 = base64.b64encode(buffer.getvalue()).decode()
+    return f"data:image/png;base64,{barcode_base64}"
 
 
 class LockoutTimeView(View):
@@ -101,105 +138,23 @@ class CertificateDetailView(DetailView):
     template_name = 'certificate_detail.html'
     context_object_name = 'certificate'
 
-    def generate_qr_with_favicon(self, url):
-        qr = qrcode.QRCode(
-            version=1,
-            error_correction=qrcode.constants.ERROR_CORRECT_H,
-            box_size=10,
-            border=4,
-        )
-        qr.add_data(url)
-        qr.make(fit=True)
-
-        img_qr = qr.make_image(fill="black", back_color="white").convert("RGB")
-
-        try:
-            icon_url = "https://atlas.propensionesabogados.com/static/assets/imgs/favicon/atlas-favicon512x512.png"
-            response = requests.get(icon_url, verify=False)
-            response.raise_for_status()
-            icon = Image.open(BytesIO(response.content))
-            icon = icon.resize((img_qr.size[0] // 4, img_qr.size[1] // 4), Image.LANCZOS)
-            pos = ((img_qr.size[0] - icon.size[0]) // 2, (img_qr.size[1] - icon.size[1]) // 2)
-            img_qr.paste(icon, pos, icon)
-        except Exception as e:
-            logging.error(f"Error: {e}")
-
-        # Guardar la imagen generada en formato PNG
-        buffer = BytesIO()
-        img_qr.save(buffer, format="PNG")
-        qr_base64 = base64.b64encode(buffer.getvalue()).decode()
-
-        # Retornar la imagen QR como una cadena base64
-        return f"data:image/png;base64,{qr_base64}"
-
-    def generate_barcode(self, uuid_str):
-        buffer = BytesIO()
-        barcode_class = barcode.get_barcode_class('code128')
-        barcode_image = barcode_class(
-            f"atlas.propensionesabogados.com/certificate/{uuid_str}",
-            writer=ImageWriter()
-        )
-        barcode_image.write(buffer)
-        barcode_base64 = base64.b64encode(buffer.getvalue()).decode()
-        return f"data:image/png;base64,{barcode_base64}"
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
+        custom_text = "atlas.propensionesabogados.com/certificate/{}".format(
+            str(self.object.pk)
+        )
+
         certificate_url = "https://atlas.propensionesabogados.com/certificate/{}".format(
             self.object.pk
         )
 
-        # Generar códigos bajo demanda
         context['qr_code'] = mark_safe(
-            self.generate_qr_with_favicon(certificate_url)
+            generate_qr_with_favicon(certificate_url)
         )
+
         context['barcode'] = mark_safe(
-            self.generate_barcode(str(self.object.pk))
+            generate_barcode(custom_text)
         )
-        return context
 
-
-class CertificateListView(PermissionRequiredMixin, ListView):
-    model = CertificateModel
-    template_name = 'certificate_list.html'
-    context_object_name = 'certificates'
-    permission_required = ('certificates.view_certificate',)
-
-    def has_permission(self):
-        return self.request.user.is_superuser or super().has_permission()
-
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        search_query = self.request.GET.get('q', '')
-        order_by = self.request.GET.get('order_by', 'default_order')
-        order_dir = self.request.GET.get('order_dir', 'asc')
-        step_filter = self.request.GET.get('step', None)
-        approved_filter = self.request.GET.get('approved', None)
-
-        if search_query:
-            queryset = queryset.filter(
-                Q(name__icontains=search_query) |
-                Q(document_number__icontains=search_query)
-            )
-
-        if step_filter:
-            queryset = queryset.filter(step=step_filter)
-
-        if approved_filter is not None:
-            if approved_filter == 'true':
-                queryset = queryset.filter(approved=True)
-            elif approved_filter == 'false':
-                queryset = queryset.filter(approved=False)
-
-        if order_dir == 'desc':
-            order_by = f'-{order_by}'
-        queryset = queryset.order_by(order_by)
-
-        return queryset
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['total_displayed'] = self.get_queryset().count()
-        context['order_by'] = self.request.GET.get('order_by', 'default_order')
-        context['order_dir'] = self.request.GET.get('order_dir', 'asc')
         return context
