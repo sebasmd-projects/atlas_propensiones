@@ -70,21 +70,15 @@ class CertificateInputView(FormView):
             document_number.encode()).hexdigest()
 
         try:
-            print(
-                f"tipo de documento {document_type} y número {
-                    document_number_hash}"
-            )
             certificate = CertificateModel.objects.get(
                 document_type=document_type,
                 document_number_hash=document_number_hash
             )
-            print(f"Certificado encontrado: {certificate}")
             self.request.session['failed_attempts'] = 0
             self.request.session['lockout_time'] = None
             return redirect('certificates:detail', pk=certificate.id)
 
         except CertificateModel.DoesNotExist:
-            print("Certificado no encontrado")
             failed_attempts += 1
             self.request.session['failed_attempts'] = failed_attempts
             if failed_attempts >= max_attempts:
