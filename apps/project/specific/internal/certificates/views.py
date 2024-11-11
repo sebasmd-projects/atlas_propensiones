@@ -96,7 +96,7 @@ class CertificateDetailView(DetailView):
     template_name = 'certificate_detail.html'
     context_object_name = 'certificate'
 
-    def generate_qr_with_favicon(self, url):
+    def generate_qr(self, url):
         # Crear el código QR
         qr = qrcode.QRCode(
             version=1,
@@ -107,20 +107,14 @@ class CertificateDetailView(DetailView):
         qr.add_data(url)
         qr.make(fit=True)
 
+        # Generar la imagen del QR
         img_qr = qr.make_image(fill="black", back_color="white").convert("RGB")
 
-        # Insertar favicon en el centro
-        icon_url = "https://atlas.propensionesabogados.com/static/assets/imgs/favicon/favicon-96x96.png"
-        response = requests.get(icon_url)
-        icon = Image.open(BytesIO(response.content))
-        
-        icon = icon.resize((img_qr.size[0] // 4, img_qr.size[1] // 4), Image.LANCZOS)
-        pos = ((img_qr.size[0] - icon.size[0]) // 2, (img_qr.size[1] - icon.size[1]) // 2)
-        img_qr.paste(icon, pos, icon)
-
+        # Guardar la imagen en base64
         buffer = BytesIO()
         img_qr.save(buffer, format="PNG")
         qr_base64 = base64.b64encode(buffer.getvalue()).decode()
+        
         return f"data:image/png;base64,{qr_base64}"
 
     def generate_barcode(self, uuid_str):
