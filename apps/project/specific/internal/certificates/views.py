@@ -113,7 +113,7 @@ class CertificateDetailView(DetailView):
         img_qr = qr.make_image(fill="black", back_color="white").convert("RGB")
 
         # Insertar favicon en el centro
-        icon_url = "https://propensionesabogados.com/public_media/horizontal-logo.png"
+        icon_url = "https://cbh.fundacionleirion.com/static/imgs/favicon/android-chrome-512x512.png"
         response = requests.get(icon_url)
         icon = Image.open(BytesIO(response.content))
         
