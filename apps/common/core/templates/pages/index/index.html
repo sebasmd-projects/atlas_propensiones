@@ -1,0 +1,118 @@
+{% extends 'pages/base_index.html' %}
+
+{% load i18n static %}
+
+{% block body_properties %}class="index-page"{% endblock body_properties %}
+
+{% block header %}
+    {% include 'partials/header.html' %}
+{% endblock header %}
+
+{% block main %}
+<main class="main">
+    {% include 'pages/index/sections/section-1-hero.html' %}
+    {% include 'pages/index/sections/section-2-about.html' %}
+    {% include 'pages/index/sections/section-3-features.html' %}
+    {% include 'pages/index/sections/section-4-features-cards.html' %}
+    {% include 'pages/index/sections/section-5-features-mobile.html' %}
+    {% include 'pages/index/sections/section-6-call-to-action.html' %}
+    {% comment %}
+    {% include 'pages/index/sections/section-7-testimonials.html' %}
+    {% include 'pages/index/sections/section-8-services.html' %}
+    {% include 'pages/index/sections/section-9-faq.html' %}
+    {% endcomment %}
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>{% trans 'Contact' %}</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>{% trans 'Contact Info' %}</h3>
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>{% trans 'Our Location' %}</h4>
+                  <p>Calle 21 No. 16-37 Oficina 705 Edificio BancoPopular</p>
+                  <p>Colombia, Armenia, Quindio</p>
+                </div>
+              </div>
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>+(57) 318 328 01 76</p>
+                  <p>+(57) 320 407 76 11</p>
+                </div>
+              </div>
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>{% trans 'Email Address' %}</h4>
+                  <p>info@propensionesabogados.com</p>
+                  <p>support@propensionesabogados.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>{% trans 'Get In Touch' %}</h3>
+              <p>{% trans 'You Always Have Control' %}</p>
+              <form method="post" data-aos="fade-up" data-aos-delay="200">
+                {% csrf_token %}
+
+                <div class="row gy-2">
+
+                  <div class="col-md-6">
+                    <input type="text" name="first_name" class="form-control" placeholder="First Name" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" name="last_name" class="form-control" placeholder="Last Name" required="">
+                  </div>
+                  
+                  <div class="col-md-12 ">
+                    <input type="email" name="email" class="form-control"  placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" name="subject" class="form-control"  placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn">{% trans 'Send Message' %}</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Contact Section -->
+  </main>
+{% endblock main %}
+
+{% block scroll_top %}
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock scroll_top %}
+
+{% block footer %}
+    {% include 'partials/footer.html' %}
+{% endblock footer %}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-10 15:15-0500\n"
+"POT-Creation-Date: 2024-11-10 20:55-0500\n"
 "PO-Revision-Date: 2024-11-10 15:16-0500\n"
 "Last-Translator: Juan Sebastian <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,6 @@ msgid "Barcode Generator"
 msgstr "Generador de barcodes"
 
 #: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:24
-#| msgid "Barcode Generator"
 msgid "Bar Code Generator"
 msgstr "Generador de Códigos de Barras"
 
@@ -83,13 +82,13 @@ msgstr "Generador de Códigos de Barras"
 msgid "Next"
 msgstr "Siguiente"
 
-#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:77
-msgid "Bar Code"
-msgstr "Código de Barras"
-
-#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:79
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:78
 msgid "Download"
 msgstr "Descargar"
+
+#: .\apps\project\specific\internal\barcode_gen\templates\barcode_form.html:80
+msgid "Bar Code"
+msgstr "Código de Barras"
 
 #: .\apps\project\specific\internal\barcode_gen\templates\includes\barcode\nav.html:15
 msgid "Language"

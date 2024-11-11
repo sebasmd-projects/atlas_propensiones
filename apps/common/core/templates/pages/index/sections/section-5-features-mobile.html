@@ -1,0 +1,107 @@
+{% load i18n static %}
+
+<!-- Features 2 Section -->
+<section id="features-2" class="features-2 section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-4">
+
+          <!-- Cross-Platform Accessibility -->
+          <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="d-flex align-items-center justify-content-end gap-4">
+              <div class="feature-content">
+                <h3>{% trans 'Cross-Platform Accessibility' %}</h3>
+                <p>{% trans 'ATLAS adapts seamlessly across desktops, tablets, and smartphones, ensuring a consistent user experience.' %}</p>
+              </div>
+              <div class="feature-icon flex-shrink-0">
+                <i class="bi bi-phone-landscape"></i>
+              </div>
+            </div>
+          </div><!-- End .feature-item -->
+
+          <!-- Optimized Performance -->
+          <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
+            <div class="d-flex align-items-center justify-content-end gap-4">
+              <div class="feature-content">
+                <h3>{% trans 'Optimized Performance' %}</h3>
+                <p>{% trans 'Fast loading times and efficient resource usage provide a smooth experience even on low-spec devices.' %}</p>
+              </div>
+              <div class="feature-icon flex-shrink-0">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+            </div>
+          </div><!-- End .feature-item -->
+
+          <!-- Touch-Friendly Design -->
+          <div class="feature-item text-end" data-aos="fade-right" data-aos-delay="400">
+            <div class="d-flex align-items-center justify-content-end gap-4">
+              <div class="feature-content">
+                <h3>{% trans 'Touch-Friendly Design' %}</h3>
+                <p>{% trans 'Interactive elements and navigation are designed for easy use on touch screens, enhancing mobile usability.' %}</p>
+              </div>
+              <div class="feature-icon flex-shrink-0">
+                <i class="bi bi-hand-index-thumb"></i>
+              </div>
+            </div>
+          </div><!-- End .feature-item -->
+
+        </div>
+
+        <!-- Phone Mockup -->
+        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="phone-mockup text-center">
+            <img src="{% static 'assets/imgs/features/mobile/phone-app-screen.webp' %}" alt="{% trans 'Phone Mockup' %}" class="img-fluid">
+          </div>
+        </div><!-- End Phone Mockup -->
+
+        <div class="col-lg-4">
+
+          <!-- Responsive Design -->
+          <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
+            <div class="d-flex align-items-center gap-4">
+              <div class="feature-icon flex-shrink-0">
+                <i class="bi bi-bootstrap-fill"></i>
+              </div>
+              <div class="feature-content">
+                <h3>{% trans 'Fully Responsive Design' %}</h3>
+                <p>{% trans 'ATLAS ensures a responsive layout that adjusts dynamically to fit any screen size, providing a consistent experience.' %}</p>
+              </div>
+            </div>
+          </div><!-- End .feature-item -->
+
+          <!-- Browser Compatibility -->
+          <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
+            <div class="d-flex align-items-center gap-4">
+              <div class="feature-icon flex-shrink-0">
+                <i class="bi bi-browser-edge"></i>
+              </div>
+              <div class="feature-content">
+                <h3>{% trans 'Browser Compatibility' %}</h3>
+                <p>{% trans 'Compatible with major web browsers including Chrome, Firefox, Edge, and Safari for a seamless experience.' %}</p>
+              </div>
+            </div>
+          </div><!-- End .feature-item -->
+
+          <!-- Dark Mode Support -->
+          <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
+            <div class="d-flex align-items-center gap-4">
+              <div class="feature-icon flex-shrink-0">
+                <i class="bi bi-moon-stars-fill"></i>
+              </div>
+              <div class="feature-content">
+                <h3>{% trans 'Dark Mode Support' %}</h3>
+                <p>{% trans 'ATLAS offers a dark mode option to reduce eye strain and improve visibility in low-light environments.' %}</p>
+              </div>
+            </div>
+          </div><!-- End .feature-item -->
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- /Features 2 Section -->

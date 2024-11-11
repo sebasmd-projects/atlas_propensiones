@@ -55,10 +55,6 @@ common_attack_paths = [
         HttpRequestAttakView.as_view()
     ),
     re_path(
-        r'^.*[Ss][Ii][Tt][Ee].*',
-        HttpRequestAttakView.as_view()
-    ),
-    re_path(
         r'^.*[Oo][Ll][Dd].*',
         HttpRequestAttakView.as_view()
     ),
