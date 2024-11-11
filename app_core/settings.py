@@ -75,7 +75,8 @@ CUSTOM_APPS = [
     'apps.project.common.notifications',
     'apps.project.common.users',
     
-    'apps.project.specific.internal.barcode_gen'
+    'apps.project.specific.internal.barcode_gen',
+    'apps.project.specific.internal.certificates'
 ]
 
 ALL_CUSTOM_APPS = CUSTOM_APPS

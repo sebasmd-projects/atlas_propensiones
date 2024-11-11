@@ -1,0 +1,21 @@
+{% extends 'pages/base_index.html' %}
+
+{% load static i18n %}
+
+{% block meta %}
+    <meta charset="UTF-8">
+    <meta http-equiv="PRAGMA" content="NO-CACHE" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="{% trans 'Certificates | ATLAS | PROPENSIONESABOGADOS' %}" name="title" />
+    <meta content="{% trans 'Certificates | ATLAS | PROPENSIONESABOGADOS' %}" property="og:title" />
+    <meta content="{% static 'imgs/favicon/favicon-16x16.png' %}" property="og:image"/>
+    <meta content="https://atlas.propensionesabogados.com/" property="og:url" />
+    <meta content="ATLAS" property="og:site_name" />
+    <meta content="{% trans 'ATLAS certificates' %}" property="og:description"/>
+    <meta content="{% trans 'ATLAS certificates' %}" name="description" />
+{% endblock meta %}
+
+{% block header %}
+    {% include 'partials/detail_certificate_header.html' %}
+{% endblock header %}
