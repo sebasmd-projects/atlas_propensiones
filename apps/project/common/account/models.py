@@ -3,9 +3,9 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 from apps.project.common.users.models import UserModel
+from apps.common.utils.models import TimeStampedModel
 
-
-class UserLoginAttemptModel(models.Model):
+class UserLoginAttemptModel(TimeStampedModel):
     user = models.OneToOneField(UserModel, on_delete=models.CASCADE)
     attempts = models.IntegerField(default=0)
     last_attempt = models.DateTimeField(auto_now=True)

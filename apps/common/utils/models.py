@@ -1,13 +1,8 @@
-import logging
-
 from auditlog.models import AuditlogHistoryField
 from auditlog.registry import auditlog
 from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
-
-logger = logging.getLogger(__name__)
-
 
 class TimeStampedModel(models.Model):
     """Abstract model providing timestamp fields (created and updated) and additional metadata.
@@ -80,7 +75,7 @@ class IPBlockedModel(TimeStampedModel):
         return f"{self.current_ip} - Blocked until {self.blocked_until}"
 
     class Meta:
-        db_table = 'apps_common_utils_iptoblock'
+        db_table = 'apps_common_utils_ipblocked'
         verbose_name = 'Blocked IP'
         verbose_name_plural = 'Blocked IPs'
 

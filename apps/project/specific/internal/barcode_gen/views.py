@@ -1,16 +1,22 @@
 import base64
+import logging
 import random
 import string
 from datetime import datetime
 from io import BytesIO
 
 import barcode
+import qrcode
+import requests
 from barcode.writer import ImageWriter
 from django.http import JsonResponse
-from django.views.generic import FormView, ListView
+from django.views.generic import FormView
+from PIL import Image
 
 from .forms import BarcodeForm
 from .models import BarcodeRegistrationModel
+
+logging = logging.getLogger(__name__)
 
 
 def generate_random_code(length=4):
@@ -24,6 +30,37 @@ def generate_barcode(text):
     barcode_image.write(buffer)
     buffer.seek(0)
     return buffer
+
+
+def generate_qr_with_favicon(text_data: str, image_url: str = "https://atlas.propensionesabogados.com/static/assets/imgs/favicon/atlas-favicon512x512.png"):
+    qr = qrcode.QRCode(
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_H,
+        box_size=10,
+        border=4,
+    )
+    qr.add_data(text_data)
+    qr.make(fit=True)
+    img_qr = qr.make_image(fill="black", back_color="white").convert("RGB")
+
+    try:
+        icon_url = image_url
+        response = requests.get(icon_url)
+        response.raise_for_status()
+        icon = Image.open(BytesIO(response.content))
+        icon = icon.resize(
+            (img_qr.size[0] // 4, img_qr.size[1] // 4), Image.LANCZOS)
+        pos = ((img_qr.size[0] - icon.size[0]) // 2,
+               (img_qr.size[1] - icon.size[1]) // 2)
+        img_qr.paste(icon, pos, icon)
+    except Exception as e:
+        logging.error(f"Error: {e}")
+
+    buffer = BytesIO()
+    img_qr.save(buffer, format="PNG")
+    qr_base64 = base64.b64encode(buffer.getvalue()).decode()
+
+    return f"data:image/png;base64,{qr_base64}"
 
 
 class BarcodeGeneratorView(FormView):

@@ -76,7 +76,7 @@ CUSTOM_APPS = [
     'apps.project.common.users',
     
     'apps.project.specific.internal.barcode_gen',
-    'apps.project.specific.internal.certificates'
+    'apps.project.specific.documents.certificates'
 ]
 
 ALL_CUSTOM_APPS = CUSTOM_APPS
@@ -254,6 +254,8 @@ EMAIL_PORT = int(os.getenv('DJANGO_EMAIL_PORT'))
 # reCaptchav3
 RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC_KEY')
 RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE_KEY')
+
+HONEYPOT_FIELD_NAME = os.getenv('HONEYPOT_FIELD_NAME')
 
 IP_BLOCKED_TIME_IN_MINUTES = int(os.getenv('IP_BLOCKED_TIME_IN_MINUTES'))
 

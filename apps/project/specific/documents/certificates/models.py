@@ -8,6 +8,7 @@ from django.utils.translation import gettext_lazy as _
 from encrypted_model_fields.fields import EncryptedCharField
 
 from apps.common.utils.models import TimeStampedModel
+from apps.project.common.users.models import UserModel
 
 
 class CertificateModel(TimeStampedModel):
@@ -31,9 +32,24 @@ class CertificateModel(TimeStampedModel):
         editable=False
     )
 
+    user = models.ForeignKey(
+        UserModel,
+        on_delete=models.SET_NULL,
+        verbose_name=_('User'),
+        related_name='certificates',
+        blank=True,
+        null=True
+    )
+
     name = models.CharField(
-        _('Name'),
+        _('Names'),
         max_length=100
+    )
+
+    last_name = models.CharField(
+        _('Last name'),
+        max_length=100,
+        default=''
     )
 
     document_type = models.CharField(
@@ -54,15 +70,24 @@ class CertificateModel(TimeStampedModel):
         default='',
     )
 
-    step = models.IntegerField(
-        _('Step'),
-        default=1,
-        help_text=_('Step of the certificate')
-    )
-
     approved = models.BooleanField(
         _('Approved'),
         default=True,
+    )
+    
+    approved_by = models.ForeignKey(
+        UserModel,
+        on_delete=models.SET_NULL,
+        verbose_name=_('Approved by'),
+        related_name='approved_certificates',
+        blank=True,
+        null=True
+    )
+    
+    approval_date = models.DateField(
+        _('Approval date'),
+        blank=True,
+        null=True
     )
 
     def masked_document_number(self):
@@ -82,7 +107,7 @@ class CertificateModel(TimeStampedModel):
         return f'{self.name} {self.masked_document_number()}'
 
     class Meta:
-        db_table = "apps_project_specific_certificates_certificate"
+        db_table = "apps_project_specific_documents_certificates_certificate"
         verbose_name = _("Certificate")
         verbose_name_plural = _("Certificates")
         ordering = ["default_order", "-created"]

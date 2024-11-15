@@ -5,7 +5,7 @@
 {% block title %}{% trans 'Certificate Details' %}{% endblock title %}
 
 {% block main %}
-<div class="container mt-5 min-vh-100" style="padding-top: 100px;">
+<div class="container mt-5 min-vh-100">
     <div class="mx-auto">
         <div class="text-center mb-4">
             <h1>{% trans 'Suitability Verification' %}</h1>
@@ -40,12 +40,8 @@
                                 {% blocktrans %}
                                     qualifies as a beneficiary, who has undergone a security study and accreditation of judicial records in accordance with the regulations in force in the Republic of Colombia; 
                                     and consequently, it does <strong>NOT</strong> present judicial or disciplinary records by the certifying entities authorized by Colombian legislation, 
-                                    which affect its suitability for the date {% endblocktrans %} 
-                                    {% if certificate.step == 1 %}
-                                        {% trans 'November 10, 2024' %}.
-                                    {% elif certificate.step == 2 %}
-                                        {% trans 'December 10, 2024' %}.
-                                    {% endif %}
+                                    which affect its suitability for the date {% endblocktrans %} {{ certificate.approval_date|date:"d/m/Y" }}.
+                                    
                         </p>
                     {% else %}
                         <p class="text-justify">
@@ -62,7 +58,6 @@
                         </small>
                     </p>
                     <p>
-                        {% trans 'Stage:' %} {{ certificate.step }}
                         {% trans 'Status:' %}
                         {% if certificate.approved %}
                             <i class="bi bi-check-circle text-success"></i>

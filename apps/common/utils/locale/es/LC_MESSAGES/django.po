@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-10 11:24-0500\n"
+"POT-Creation-Date: 2024-11-15 18:13-0500\n"
 "PO-Revision-Date: 2024-11-10 11:23-0500\n"
 "Last-Translator: Juan Sebastian <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,71 +43,71 @@ msgstr "Error 403"
 msgid "Access denied due to suspicious activity."
 msgstr "Acceso denegado debido a actividad sospechosa."
 
-#: .\apps\common\utils\models.py:21
+#: .\apps\common\utils\models.py:16
 msgid "Spanish"
 msgstr "Español"
 
-#: .\apps\common\utils\models.py:22
+#: .\apps\common\utils\models.py:17
 msgid "English"
 msgstr "Ingles"
 
-#: .\apps\common\utils\models.py:26
+#: .\apps\common\utils\models.py:21
 msgid "language"
 msgstr "idioma"
 
-#: .\apps\common\utils\models.py:35
+#: .\apps\common\utils\models.py:30
 msgid "created"
 msgstr "creado"
 
-#: .\apps\common\utils\models.py:41
+#: .\apps\common\utils\models.py:36
 msgid "updated"
 msgstr "actualizado"
 
-#: .\apps\common\utils\models.py:47
+#: .\apps\common\utils\models.py:42
 msgid "is active"
 msgstr "esta activo"
 
-#: .\apps\common\utils\models.py:52
+#: .\apps\common\utils\models.py:47
 msgid "priority"
 msgstr "prioridad"
 
-#: .\apps\common\utils\models.py:65
+#: .\apps\common\utils\models.py:60
 msgid "Attempts to obtain forbidden urls"
 msgstr "Intentos de obtener URL prohibidas"
 
-#: .\apps\common\utils\models.py:67
+#: .\apps\common\utils\models.py:62
 msgid "Multiple failed security key entry attempts"
 msgstr "Múltiples intentos fallidos de ingreso de clave de seguridad"
 
-#: .\apps\common\utils\models.py:70
+#: .\apps\common\utils\models.py:65
 msgid "is blocked"
 msgstr "esta bloqueado"
 
-#: .\apps\common\utils\models.py:71
+#: .\apps\common\utils\models.py:66
 msgid "current user IP"
 msgstr "IP del usuario"
 
-#: .\apps\common\utils\models.py:73
+#: .\apps\common\utils\models.py:68
 msgid "reason"
 msgstr "razón"
 
-#: .\apps\common\utils\models.py:75
+#: .\apps\common\utils\models.py:70
 msgid "blocked until"
 msgstr "bloqueado hasta"
 
-#: .\apps\common\utils\models.py:77
+#: .\apps\common\utils\models.py:72
 msgid "session information"
 msgstr "información de la sesión"
 
-#: .\apps\common\utils\models.py:91
+#: .\apps\common\utils\models.py:86
 msgid "requests"
 msgstr "solicitudes"
 
-#: .\apps\common\utils\models.py:119
+#: .\apps\common\utils\models.py:114
 msgid "Request"
 msgstr "Solicitud"
 
-#: .\apps\common\utils\models.py:120
+#: .\apps\common\utils\models.py:115
 msgid "Requests"
 msgstr "Solicitudes"
 

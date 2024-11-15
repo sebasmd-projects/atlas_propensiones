@@ -12,8 +12,8 @@ class CertificateAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
         'name',
         'document_type',
         'document_number',
-        'step',
         'approved',
+        'approval_date',
         'detail_link',
         'created',
         'updated'
@@ -23,15 +23,15 @@ class CertificateAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
         'name',
         'document_number'
     )
-    list_filter = ("is_active", "approved", "step", "document_type")
+    list_filter = ("is_active", "approved", "document_type")
     fieldsets = (
         (_('Certificate'), {'fields': (
             'name',
             'document_type',
             'document_number',
             'is_active',
-            'step',
             'approved',
+            'approval_date'
         )}),
         (_('Dates'), {'fields': (
             'created',

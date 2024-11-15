@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-11 11:00-0500\n"
-"PO-Revision-Date: 2024-11-11 02:53-0500\n"
+"POT-Creation-Date: 2024-11-15 18:16-0500\n"
+"PO-Revision-Date: 2024-11-15 18:21-0500\n"
 "Last-Translator: Sebastian  <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -18,6 +18,116 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\apps\common\core\forms.py:13
+msgid "First name"
+msgstr "Nombres"
+
+#: .\apps\common\core\forms.py:14
+msgid "Last name"
+msgstr "Apellidos"
+
+#: .\apps\common\core\forms.py:15
+msgid "Your Email"
+msgstr "Correo"
+
+#: .\apps\common\core\forms.py:16
+msgid "Subject"
+msgstr "Asunto"
+
+#: .\apps\common\core\forms.py:17
+msgid "Message"
+msgstr "Mensaje"
+
+#: .\apps\common\core\models.py:16
+msgid "name"
+msgstr "nombres"
+
+#: .\apps\common\core\models.py:21
+msgid "last name"
+msgstr "apellidos"
+
+#: .\apps\common\core\models.py:26
+msgid "email"
+msgstr "correo"
+
+#: .\apps\common\core\models.py:31
+msgid "subject"
+msgstr "asunto"
+
+#: .\apps\common\core\models.py:36
+msgid "message"
+msgstr "mensaje"
+
+#: .\apps\common\core\models.py:41
+#: .\apps\common\core\templates\pages\index\index.html:29
+#: .\apps\common\core\templates\partials\header.html:21
+msgid "Contact"
+msgstr "Contáctanos"
+
+#: .\apps\common\core\models.py:42
+#| msgid "Contact"
+msgid "Contacts"
+msgstr "Contáctanos"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:8
+#| msgid "Contact Info"
+msgid "Contact Confirmation"
+msgstr "Confirmación de contacto"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:80
+msgid "Message Received!"
+msgstr "¡Mensaje recibido!"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:85
+#, python-format
+msgid "Hi %(name)s,"
+msgstr "Hola %(name)s,"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:87
+msgid "Thank you for contacting us through "
+msgstr "Gracias por contactar con nosotros a través de"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:90
+msgid ""
+"We have received your message and will get back to you as soon as possible."
+msgstr ""
+"Hemos recibido su mensaje y nos comunicaremos con usted lo antes posible."
+
+#: .\apps\common\core\templates\email\contact_email_template.html:93
+msgid ""
+"If you have any questions or need additional information, you can write us "
+"directly:"
+msgstr ""
+"Si tienes alguna duda o necesitas información adicional, puedes escribirnos "
+"directamente:"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:97
+msgid "You can also email us"
+msgstr "También puedes enviarnos un correo electrónico"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:101
+msgid "Thank you for trusting us!"
+msgstr "Gracias por confiar en nosotros!"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:104
+msgid "Best regards,"
+msgstr "Atentamente,"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:105
+#| msgid "About us"
+msgid "About Us"
+msgstr "Conócenos"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:111
+msgid "This email was sent from"
+msgstr "Este correo electrónico fue enviado desde"
+
+#: .\apps\common\core\templates\email\contact_email_template.html:114
+msgid ""
+"If you did not expect this message or it was sent by mistake, please ignore "
+"it."
+msgstr "Si no esperaba este mensaje o fue enviado por error, ignórelo."
 
 #: .\apps\common\core\templates\pages\base_index.html:6
 msgid "HOME | ABOUT | FEATURES | SERVICES"
@@ -36,13 +146,8 @@ msgid ""
 "All-in-one suite for business management of historical assets safely and "
 "easily"
 msgstr ""
-"Suite todo en uno para la gestión empresarial de activos históricos de forma "
-"segura y sencilla"
-
-#: .\apps\common\core\templates\pages\index\index.html:29
-#: .\apps\common\core\templates\partials\header.html:21
-msgid "Contact"
-msgstr "Contáctanos"
+"Suite todo en uno para la gestión empresarial de activos históricos de forma"
+" segura y sencilla"
 
 #: .\apps\common\core\templates\pages\index\index.html:36
 msgid "Contact Info"
@@ -51,6 +156,10 @@ msgstr "Información de contacto"
 #: .\apps\common\core\templates\pages\index\index.html:42
 msgid "Our Location"
 msgstr "Ubicaciones"
+
+#: .\apps\common\core\templates\pages\index\index.html:52
+msgid "Phone Number"
+msgstr "Número de teléfono"
 
 #: .\apps\common\core\templates\pages\index\index.html:62
 msgid "Email Address"
@@ -65,17 +174,25 @@ msgstr "Ponte en Contacto"
 msgid "You Always Have Control"
 msgstr "Siempre Tienes el Control"
 
-#: .\apps\common\core\templates\pages\index\index.html:99
+#: .\apps\common\core\templates\pages\index\index.html:75
+msgid "Your message has been sent successfully."
+msgstr "Su mensaje ha sido enviado exitosamente."
+
+#: .\apps\common\core\templates\pages\index\index.html:76
+msgid "We will contact you soon!"
+msgstr "¡Nos pondremos en contacto contigo pronto!"
+
+#: .\apps\common\core\templates\pages\index\index.html:157
 msgid "Send Message"
 msgstr "Enviar Mensaje"
 
 #: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:10
-msgid "HISTORICAL"
-msgstr "HISTORICOS"
-
-#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:11
 msgid "ASSETS"
 msgstr "ACTIVOS"
+
+#: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:11
+msgid "HISTORICAL"
+msgstr "HISTORICOS"
 
 #: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:12
 msgid "All-in-one Suite"
@@ -89,15 +206,11 @@ msgstr "Solución Integral y Segura de Gestión de Activos Históricos"
 #: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:17
 msgid ""
 "\n"
-"                <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</"
-"strong>rusted <strong>L</strong>egacy <strong>A</strong>sset <strong>S</"
-"strong>olution</small>\n"
+"                <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</strong>rusted <strong>L</strong>egacy <strong>A</strong>sset <strong>S</strong>olution</small>\n"
 "              "
 msgstr ""
 "\n"
-"<small><strong>A</strong>plicación <strong>T</strong>ransformadora para la "
-"<strong>L</strong>egitimación y <strong>A</strong>dministración de "
-"<strong>S</strong>tocks históricos</small>"
+"<small><strong>A</strong>plicación <strong>T</strong>ransformadora para la <strong>L</strong>egitimación y <strong>A</strong>dministración de <strong>S</strong>tocks históricos</small>"
 
 #: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:22
 msgid "Get Started"
@@ -194,14 +307,14 @@ msgid "Of experience in managing international assets"
 msgstr "De experiencia en la gestión de activos internacionales."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:8
-#: .\apps\common\core\templates\partials\header.html:14
+#: .\apps\common\core\templates\partials\header.html:17
 msgid "Features"
 msgstr "Características"
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:9
 msgid ""
-"Explore the core functionalities of ATLAS for efficient asset management and "
-"comprehensive business solutions."
+"Explore the core functionalities of ATLAS for efficient asset management and"
+" comprehensive business solutions."
 msgstr ""
 "Explore las funcionalidades principales de ATLAS para una gestión eficiente "
 "de activos y soluciones comerciales integrales."
@@ -230,8 +343,8 @@ msgid ""
 "compliance, traceability, and seamless integration with market demands."
 msgstr ""
 "ATLAS proporciona una plataforma sólida para gestionar activos históricos, "
-"garantizando el cumplimiento, la trazabilidad y una integración perfecta con "
-"las demandas del mercado."
+"garantizando el cumplimiento, la trazabilidad y una integración perfecta con"
+" las demandas del mercado."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:51
 msgid "Centralized asset tracking and monitoring"
@@ -255,8 +368,8 @@ msgstr "Generación automatizada de documentos"
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:68
 msgid ""
-"Efficiently generate, manage, and store important documents related to asset "
-"transactions, client agreements, and compliance certifications."
+"Efficiently generate, manage, and store important documents related to asset"
+" transactions, client agreements, and compliance certifications."
 msgstr ""
 "Genere, administre y almacene de manera eficiente documentos importantes "
 "relacionados con transacciones de activos, acuerdos con clientes y "
@@ -301,8 +414,8 @@ msgid ""
 "ATLAS prioritizes security with state-of-the-art encryption and validation "
 "protocols to safeguard sensitive information and ensure compliance."
 msgstr ""
-"ATLAS prioriza la seguridad con protocolos de validación y cifrado de última "
-"generación para salvaguardar la información confidencial y garantizar el "
+"ATLAS prioriza la seguridad con protocolos de validación y cifrado de última"
+" generación para salvaguardar la información confidencial y garantizar el "
 "cumplimiento."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:97
@@ -349,7 +462,8 @@ msgid ""
 "regular audits to safeguard sensitive information."
 msgstr ""
 "Funciones de seguridad avanzadas que incluyen cifrado de datos, control de "
-"acceso y auditorías periódicas para salvaguardar la información confidencial."
+"acceso y auditorías periódicas para salvaguardar la información "
+"confidencial."
 
 #: .\apps\common\core\templates\pages\index\sections\section-5-features-mobile.html:16
 msgid "Cross-Platform Accessibility"
@@ -398,8 +512,8 @@ msgstr "Diseño totalmente responsivo"
 
 #: .\apps\common\core\templates\pages\index\sections\section-5-features-mobile.html:70
 msgid ""
-"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen "
-"size, providing a consistent experience."
+"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen"
+" size, providing a consistent experience."
 msgstr ""
 "ATLAS garantiza un diseño responsivo que se ajusta dinámicamente para "
 "adaptarse a cualquier tamaño de pantalla, brindando una experiencia "
@@ -430,10 +544,13 @@ msgstr ""
 "mejorar la visibilidad en entornos con poca luz."
 
 #: .\apps\common\core\templates\pages\index\sections\section-6-call-to-action.html:10
-#, fuzzy
 #| msgid "HISTORICAL"
 msgid "HISTORICAL ASSETS"
-msgstr "HISTORICOS"
+msgstr "Activos Historicos"
+
+#: .\apps\common\core\templates\pages\index\sections\section-7-testimonials.html:8
+msgid "Testimonials"
+msgstr "Testimonios"
 
 #: .\apps\common\core\templates\partials\footer.html:14
 msgid "Phone:"
@@ -448,7 +565,7 @@ msgid "Useful Links"
 msgstr "Enlaces útiles"
 
 #: .\apps\common\core\templates\partials\footer.html:22
-#: .\apps\common\core\templates\partials\header.html:12
+#: .\apps\common\core\templates\partials\header.html:10
 msgid "Home"
 msgstr "Inicio"
 
@@ -476,7 +593,8 @@ msgstr "Tu aliado incondicional. Todos los derechos reservados."
 msgid "Created by"
 msgstr "Creado por"
 
-#: .\apps\common\core\templates\partials\header.html:13
+#: .\apps\common\core\templates\partials\header.html:14
+#: .\apps\common\core\templates\partials\header.html:16
 msgid "About"
 msgstr "Nosotros"
 
@@ -484,29 +602,41 @@ msgstr "Nosotros"
 msgid "Custom APPS"
 msgstr "Aplicaciones Propias"
 
-#: .\apps\common\core\templates\partials\header.html:27
+#: .\apps\common\core\templates\partials\header.html:28
 msgid "Code Generation"
-msgstr "Generación de códigos"
+msgstr "Generar Códigos"
 
-#: .\apps\common\core\templates\partials\header.html:29
+#: .\apps\common\core\templates\partials\header.html:31
 msgid "Bar Code"
 msgstr "Código de Barras"
 
-#: .\apps\common\core\templates\partials\header.html:45
+#: .\apps\common\core\templates\partials\header.html:52
 msgid "Documents"
 msgstr "Documentos"
 
-#: .\apps\common\core\templates\partials\header.html:47
+#: .\apps\common\core\templates\partials\header.html:55
 msgid "Suitability Verification"
 msgstr "Verificación de Idoneidad"
 
-#: .\apps\common\core\templates\partials\header.html:54
-msgid "Language"
-msgstr "Idioma"
-
-#: .\apps\common\core\templates\partials\header.html:76
+#: .\apps\common\core\templates\partials\header.html:73
 msgid "LOGIN"
 msgstr "Iniciar Sesión"
+
+#: .\apps\common\core\views.py:25
+msgid "This form has already been sent."
+msgstr "Este formulario ya ha sido enviado."
+
+#: .\apps\common\core\views.py:37
+msgid "Message Received! | ATLAS"
+msgstr "¡Mensaje recibido! | ATLAS"
+
+#: .\apps\common\core\views.py:39
+#, python-format
+msgid "Thank you %(name)s for contacting us."
+msgstr "Gracias %(name)s por contactarnos."
+
+#~ msgid "Language"
+#~ msgstr "Idioma"
 
 #~ msgid "Our Services"
 #~ msgstr "Nuestros Servicios"
