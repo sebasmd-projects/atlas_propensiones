@@ -20,10 +20,16 @@ class IndexTemplateView(FormView):
 
     def form_valid(self, form):
         unique_id = form.cleaned_data.get('unique_id')
+        honeypot_field = form.cleaned_data.get('email_confirm')
+        
         if ContactModel.objects.filter(unique_id=unique_id).exists():
             print('Form has already been sent.')
             form.add_error(None, _("This form has already been sent."))
             return self.form_invalid(form)
+        
+        if honeypot_field:
+            form.save()
+            return render(self.request, self.template_name, {'form': None, 'success_message': True})
 
         contact = form.save()
 
@@ -39,15 +45,14 @@ class IndexTemplateView(FormView):
         plain_message = _('Thank you %(name)s for contacting us.') % {'name': contact.name}
         
         try:
-            # send_mail(
-            #     subject=subject,
-            #     message=plain_message,
-            #     html_message=html_message,
-            #     from_email=settings.DEFAULT_FROM_EMAIL,
-            #     recipient_list=[contact.email],
-            #     fail_silently=False
-            # )
-            pass
+            send_mail(
+                subject=subject,
+                message=plain_message,
+                html_message=html_message,
+                from_email=settings.DEFAULT_FROM_EMAIL,
+                recipient_list=[contact.email],
+                fail_silently=False
+            )
         except Exception as e:
             logger.error(f"An unexpected error occurred sending mail: {e}")
             return render(self.request, self.template_name, {'form': None, 'success_message': True})
