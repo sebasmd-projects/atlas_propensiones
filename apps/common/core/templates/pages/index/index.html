@@ -149,8 +149,11 @@
                       </div>
                       {% endif %}
                     </div>
-
-                    {% render_honeypot_field honeypot_field %}
+                    
+                    {% comment %}
+                      {% render_honeypot_field honeypot_field %}
+                    {% endcomment %}
+                      
                     
                     <div class="col-12 text-center">
                       <button type="submit" class="btn">{% trans 'Send Message' %}</button>
