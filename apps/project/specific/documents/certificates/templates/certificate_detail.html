@@ -38,11 +38,9 @@
                                 <strong>{{ certificate.name }}</strong>
                                 {% trans 'with document number' %} {{ certificate.document_type }} {{ certificate.masked_document_number }}
                                 {% blocktrans %}
-                                qualifies as a beneficiary, someone who has undergone a security screening and accreditation of judicial records in accordance with current regulations, criminal reports on social media, and Interpol databases. Consequently, they do <strong>NOT</strong> have any judicial or disciplinary records from the certifying entities authorized by international public consultation databases, which would affect their suitability.
-
-                                For the record, this is signed on {{ certificate.approval_date|date:"d/m/Y" }} in Quindío, Republic of Colombia.
-                                {% endblocktrans %} {{ certificate.approval_date|date:"d/m/Y" }}.
-                                    
+                                qualifies as a beneficiary, who has undergone a security screening and accreditation of judicial records in accordance with current regulations, criminal reports on social media, and Interpol databases. Consequently, they do <strong>NOT</strong> have any judicial or disciplinary records from the certifying entities authorized by international public consultation databases, which would affect their suitability.
+                                <br/>
+                                For the record, this is signed on {% endblocktrans %} {{ certificate.approval_date|date:"d/m/Y" }} {% trans 'in Quindío, Republic of Colombia.' %}
                         </p>
                     {% else %}
                         <p class="text-justify">

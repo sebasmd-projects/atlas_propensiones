@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-15 18:16-0500\n"
+"POT-Creation-Date: 2024-11-16 22:45-0500\n"
 "PO-Revision-Date: 2024-11-15 18:21-0500\n"
 "Last-Translator: Sebastian  <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,12 +66,10 @@ msgid "Contact"
 msgstr "Contáctanos"
 
 #: .\apps\common\core\models.py:42
-#| msgid "Contact"
 msgid "Contacts"
 msgstr "Contáctanos"
 
 #: .\apps\common\core\templates\email\contact_email_template.html:8
-#| msgid "Contact Info"
 msgid "Contact Confirmation"
 msgstr "Confirmación de contacto"
 
@@ -115,7 +113,6 @@ msgid "Best regards,"
 msgstr "Atentamente,"
 
 #: .\apps\common\core\templates\email\contact_email_template.html:105
-#| msgid "About us"
 msgid "About Us"
 msgstr "Conócenos"
 
@@ -146,8 +143,8 @@ msgid ""
 "All-in-one suite for business management of historical assets safely and "
 "easily"
 msgstr ""
-"Suite todo en uno para la gestión empresarial de activos históricos de forma"
-" segura y sencilla"
+"Suite todo en uno para la gestión empresarial de activos históricos de forma "
+"segura y sencilla"
 
 #: .\apps\common\core\templates\pages\index\index.html:36
 msgid "Contact Info"
@@ -206,11 +203,15 @@ msgstr "Solución Integral y Segura de Gestión de Activos Históricos"
 #: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:17
 msgid ""
 "\n"
-"                <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</strong>rusted <strong>L</strong>egacy <strong>A</strong>sset <strong>S</strong>olution</small>\n"
+"                <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</"
+"strong>rusted <strong>L</strong>egacy <strong>A</strong>sset <strong>S</"
+"strong>olution</small>\n"
 "              "
 msgstr ""
 "\n"
-"<small><strong>A</strong>plicación <strong>T</strong>ransformadora para la <strong>L</strong>egitimación y <strong>A</strong>dministración de <strong>S</strong>tocks históricos</small>"
+"<small><strong>A</strong>plicación <strong>T</strong>ransformadora para la "
+"<strong>L</strong>egitimación y <strong>A</strong>dministración de "
+"<strong>S</strong>tocks históricos</small>"
 
 #: .\apps\common\core\templates\pages\index\sections\section-1-hero.html:22
 msgid "Get Started"
@@ -313,8 +314,8 @@ msgstr "Características"
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:9
 msgid ""
-"Explore the core functionalities of ATLAS for efficient asset management and"
-" comprehensive business solutions."
+"Explore the core functionalities of ATLAS for efficient asset management and "
+"comprehensive business solutions."
 msgstr ""
 "Explore las funcionalidades principales de ATLAS para una gestión eficiente "
 "de activos y soluciones comerciales integrales."
@@ -343,8 +344,8 @@ msgid ""
 "compliance, traceability, and seamless integration with market demands."
 msgstr ""
 "ATLAS proporciona una plataforma sólida para gestionar activos históricos, "
-"garantizando el cumplimiento, la trazabilidad y una integración perfecta con"
-" las demandas del mercado."
+"garantizando el cumplimiento, la trazabilidad y una integración perfecta con "
+"las demandas del mercado."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:51
 msgid "Centralized asset tracking and monitoring"
@@ -368,8 +369,8 @@ msgstr "Generación automatizada de documentos"
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:68
 msgid ""
-"Efficiently generate, manage, and store important documents related to asset"
-" transactions, client agreements, and compliance certifications."
+"Efficiently generate, manage, and store important documents related to asset "
+"transactions, client agreements, and compliance certifications."
 msgstr ""
 "Genere, administre y almacene de manera eficiente documentos importantes "
 "relacionados con transacciones de activos, acuerdos con clientes y "
@@ -414,8 +415,8 @@ msgid ""
 "ATLAS prioritizes security with state-of-the-art encryption and validation "
 "protocols to safeguard sensitive information and ensure compliance."
 msgstr ""
-"ATLAS prioriza la seguridad con protocolos de validación y cifrado de última"
-" generación para salvaguardar la información confidencial y garantizar el "
+"ATLAS prioriza la seguridad con protocolos de validación y cifrado de última "
+"generación para salvaguardar la información confidencial y garantizar el "
 "cumplimiento."
 
 #: .\apps\common\core\templates\pages\index\sections\section-3-features.html:97
@@ -462,8 +463,7 @@ msgid ""
 "regular audits to safeguard sensitive information."
 msgstr ""
 "Funciones de seguridad avanzadas que incluyen cifrado de datos, control de "
-"acceso y auditorías periódicas para salvaguardar la información "
-"confidencial."
+"acceso y auditorías periódicas para salvaguardar la información confidencial."
 
 #: .\apps\common\core\templates\pages\index\sections\section-5-features-mobile.html:16
 msgid "Cross-Platform Accessibility"
@@ -512,8 +512,8 @@ msgstr "Diseño totalmente responsivo"
 
 #: .\apps\common\core\templates\pages\index\sections\section-5-features-mobile.html:70
 msgid ""
-"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen"
-" size, providing a consistent experience."
+"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen "
+"size, providing a consistent experience."
 msgstr ""
 "ATLAS garantiza un diseño responsivo que se ajusta dinámicamente para "
 "adaptarse a cualquier tamaño de pantalla, brindando una experiencia "
@@ -544,7 +544,6 @@ msgstr ""
 "mejorar la visibilidad en entornos con poca luz."
 
 #: .\apps\common\core\templates\pages\index\sections\section-6-call-to-action.html:10
-#| msgid "HISTORICAL"
 msgid "HISTORICAL ASSETS"
 msgstr "Activos Historicos"
 
@@ -622,15 +621,15 @@ msgstr "Verificación de Idoneidad"
 msgid "LOGIN"
 msgstr "Iniciar Sesión"
 
-#: .\apps\common\core\views.py:25
+#: .\apps\common\core\views.py:27
 msgid "This form has already been sent."
 msgstr "Este formulario ya ha sido enviado."
 
-#: .\apps\common\core\views.py:37
+#: .\apps\common\core\views.py:43
 msgid "Message Received! | ATLAS"
 msgstr "¡Mensaje recibido! | ATLAS"
 
-#: .\apps\common\core\views.py:39
+#: .\apps\common\core\views.py:45
 #, python-format
 msgid "Thank you %(name)s for contacting us."
 msgstr "Gracias %(name)s por contactarnos."
