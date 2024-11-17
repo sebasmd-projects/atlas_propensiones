@@ -38,9 +38,10 @@
                                 <strong>{{ certificate.name }}</strong>
                                 {% trans 'with document number' %} {{ certificate.document_type }} {{ certificate.masked_document_number }}
                                 {% blocktrans %}
-                                    qualifies as a beneficiary, who has undergone a security study and accreditation of judicial records in accordance with the regulations in force in the Republic of Colombia; 
-                                    and consequently, it does <strong>NOT</strong> present judicial or disciplinary records by the certifying entities authorized by Colombian legislation, 
-                                    which affect its suitability for the date {% endblocktrans %} {{ certificate.approval_date|date:"d/m/Y" }}.
+                                qualifies as a beneficiary, someone who has undergone a security screening and accreditation of judicial records in accordance with current regulations, criminal reports on social media, and Interpol databases. Consequently, they do <strong>NOT</strong> have any judicial or disciplinary records from the certifying entities authorized by international public consultation databases, which would affect their suitability.
+
+                                For the record, this is signed on {{ certificate.approval_date|date:"d/m/Y" }} in Quindío, Republic of Colombia.
+                                {% endblocktrans %} {{ certificate.approval_date|date:"d/m/Y" }}.
                                     
                         </p>
                     {% else %}
