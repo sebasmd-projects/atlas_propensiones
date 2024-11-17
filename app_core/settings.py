@@ -182,7 +182,7 @@ DATABASES = {
         'HOST': os.getenv('DB_HOST'),
         'PORT': int(os.getenv('DB_PORT')),
         'CHARSET': os.getenv('DB_CHARSET'),
-        'ATOMIC_REQUESTS': True
+        'ATOMIC_REQUESTS': True,
     }
 }
 
