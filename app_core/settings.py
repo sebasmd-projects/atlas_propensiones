@@ -65,6 +65,8 @@ THIRD_PARTY_APPS = [
     'rosetta',
     'two_factor',
     'two_factor.plugins.email',
+    'debug_toolbar',
+
 ]
 
 CUSTOM_APPS = [
@@ -76,7 +78,8 @@ CUSTOM_APPS = [
     'apps.project.common.users',
     
     'apps.project.specific.internal.barcode_gen',
-    'apps.project.specific.documents.certificates'
+    'apps.project.specific.documents.certificates',
+    'apps.project.specific.documents.kyc',
 ]
 
 ALL_CUSTOM_APPS = CUSTOM_APPS
@@ -141,6 +144,7 @@ MIDDLEWARE = [
     'apps.common.utils.middleware.RedirectWWWMiddleware',
     'apps.common.utils.middleware.DetectSuspiciousRequestMiddleware',
     'axes.middleware.AxesMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 MIDDLEWARE_NOT_INCLUDE = [os.getenv('MIDDLEWARE_NOT_INCLUDE')]
@@ -265,3 +269,7 @@ YASG_DEFAULT_EMAIL = os.getenv('YASG_DEFAULT_EMAIL')
 YASG_TERMS_OF_SERVICE = os.getenv('YASG_TERMS_OF_SERVICE')
 
 FIELD_ENCRYPTION_KEY = os.getenv('FIELD_ENCRYPTION_KEY')
+
+DEBUG_TOOLBAR_CONFIG = {
+    'SHOW_TOOLBAR_CALLBACK': lambda request: True,  
+}
