@@ -104,9 +104,8 @@ class CertificateInputView(FormView):
                 self.request.session['lockout_time'] = None
 
         document_type = form.cleaned_data['document_type']
-        document_number = form.cleaned_data['document_number']
-        document_number_hash = hashlib.sha256(
-            document_number.encode()).hexdigest()
+        document_number = form.cleaned_data['document_number'].strip().upper()
+        document_number_hash = hashlib.sha256(document_number.encode()).hexdigest()
 
         try:
             certificate = CertificateModel.objects.get(

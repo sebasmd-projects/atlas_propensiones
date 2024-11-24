@@ -9,7 +9,9 @@ from .models import CertificateModel
 
 class CertificateAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
     list_display = (
+        'user',
         'name',
+        'last_name',
         'document_type',
         'document_number',
         'approved',
@@ -21,14 +23,19 @@ class CertificateAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
     search_fields = (
         'id',
         'name',
-        'document_number'
+        'last_name',
+        'document_type',
+        'document_number',
+        'document_number_hash',
     )
     list_filter = ("is_active", "approved", "document_type")
     fieldsets = (
         (_('Certificate'), {'fields': (
             'name',
+            'last_name',
             'document_type',
             'document_number',
+            'document_number_hash',
             'is_active',
             'approved',
             'approval_date'
@@ -43,7 +50,8 @@ class CertificateAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
     )
     readonly_fields = (
         'created',
-        'updated'
+        'updated',
+        'document_number_hash',
     )
     list_per_page = 100
     max_list_per_page = 2000

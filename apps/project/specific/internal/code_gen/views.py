@@ -71,7 +71,6 @@ def generate_qr_with_favicon(text_data: str, image_url: str = QR_IMG_URL):
     return f"data:image/png;base64,{qr_base64}"
 
 
-@csrf_exempt
 def dynamic_qr_view(request, text, image_url=QR_IMG_URL):
     """
     Generates a QR code with a favicon dynamically based on the provided text.
