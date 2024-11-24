@@ -31,6 +31,7 @@ class CertificateAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
     list_filter = ("is_active", "approved", "document_type")
     fieldsets = (
         (_('Certificate'), {'fields': (
+            'user',
             'name',
             'last_name',
             'document_type',
