@@ -3,7 +3,7 @@
 {% load i18n static %}
 
 {% block title %}
-    {% trans 'Barcode Generator' %}
+    {% trans 'Code Generator' %}
 {% endblock title %}
 
 {% block meta %}
@@ -30,13 +30,13 @@
 
 {% block main %}
     <main class="container min-vh-100" style="padding-top: 100px;">
-        <h1 class="my-4 text-center">{% trans 'Bar Code Generator' %}</h1>
+        <h1 class="my-4 text-center">{% trans 'Code Generator' %}</h1>
         <form id="barcodeForm" method="post">
             {% csrf_token %}
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="id_reference" placeholder="{% trans 'Reference' %}" name="id_reference" required>
-                <label for="id_reference">{% trans 'Reference' %}</label>
+                <label for="id_reference">{% trans 'Reference' %}*</label>
             </div>
 
             <div class="form-floating mb-3">
@@ -46,9 +46,8 @@
 
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="id_custom_text_input" placeholder="{% trans 'Custom Text' %}" name="id_custom_text_input" required>
-                <label for="id_custom_text_input">{% trans 'Custom Text' %}</label>
+                <label for="id_custom_text_input">{% trans 'Custom Text' %}*</label>
             </div>
-
 
             <div class="row g-2">
                 <div class="col-md">
@@ -69,6 +68,12 @@
                         <label class="form-check-label" for="id_include_random_code">{% trans 'Include Random Code (4 digits)' %}</label>
                     </div>
                 </div>
+                <div class="col-md">
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="id_generate_qr_code">
+                        <label class="form-check-label" for="id_generate_qr_code">{% trans 'QR Code' %}</label>
+                    </div>
+                </div>
             </div>
 
 
@@ -85,6 +90,23 @@
             </div>
             <img id="barcodeImage" class="img-fluid" src="{{ barcode_image }}" alt="{% trans 'Bar Code' %}"/>
         </div>
+
+        <div id="qrOutput" class="mt-2 mb-2 text-center" style="display:none;">
+            <div class="d-grid gap-2">
+                <a id="downloadQRLink" download class="btn btn-success mt-3">
+                    {% trans 'Download QR' %} <i class="bi bi-cloud-arrow-down"></i>
+                </a>
+            </div>
+            <img id="qrImage" class="img-fluid" src="" alt="{% trans 'QR Code' %}" />
+            <div class="mt-2">
+                <a id="qrTextLink" href="" target="_blank"></a>
+            </div>
+            <div class="mt-2">
+                <p id="qrDynamicUrl"></p>
+            </div>
+        </div>
+        
+        
     </main>
 {% endblock main %}
 
@@ -95,23 +117,23 @@
             const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
         
             $("#generateBarcode").click(function () {
-                // Validación de campos
                 const isValid = validateForm();
+
                 if (!isValid) {
                     alert("Por favor, completa todos los campos requeridos.");
                     return;
                 }
-        
+
                 const reference = $("#id_reference").val();
                 const description = $("#id_description").val();
                 const customTextInput = $("#id_custom_text_input").val();
                 const includeNIT = $("#id_include_nit").is(":checked");
                 const includeDate = $("#id_include_date").is(":checked");
                 const includeRandomCode = $("#id_include_random_code").is(":checked");
-        
-                // Petición AJAX
+                const generateQRCode = $("#id_generate_qr_code").is(":checked");
+            
                 $.ajax({
-                    url: "{% url 'barcode_gen:barcode_generate' %}",
+                    url: "{% url 'code_gen:barcode_generate' %}",
                     type: "POST",
                     headers: {
                         "X-CSRFToken": csrftoken,
@@ -122,15 +144,24 @@
                         custom_text_input: customTextInput,
                         include_nit: includeNIT,
                         include_date: includeDate,
-                        include_random_code: includeRandomCode
+                        include_random_code: includeRandomCode,
+                        generate_qr_code: generateQRCode
                     },
                     success: function (response) {
                         $("#barcodeOutput").show();
-                        const reference = $("#id_reference").val().trim();
                         const imageUrl = response.barcode_image;
                         $("#barcodeImage").attr("src", imageUrl);
                         $("#downloadLink").attr("href", imageUrl);
-                        $("#downloadLink").attr("download", `${reference}.png`);
+            
+                        if (response.qr_image_url) {
+                            $("#qrOutput").show();
+                            const qrImageUrl = response.qr_image_url;
+                            $("#qrImage").attr("src", qrImageUrl);
+                            $("#downloadQRLink").attr("href", qrImageUrl);
+                        
+                            const dynamicUrl = response.qr_image_url;
+                            $("#qrDynamicUrl").text(dynamicUrl).wrap(`<a href="${dynamicUrl}" target="_blank"></a>`);
+                        }
                     },
                     error: function (xhr) {
                         alert(xhr.responseJSON.error);

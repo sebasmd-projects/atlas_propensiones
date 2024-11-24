@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from .models import BarcodeRegistrationModel
+from .models import CodeRegistrationModel
 
 
-@admin.register(BarcodeRegistrationModel)
-class BarcodeRegistrationModelAdmin(admin.ModelAdmin):
+@admin.register(CodeRegistrationModel)
+class CodeRegistrationModelAdmin(admin.ModelAdmin):
     list_display = (
         'reference',
         'custom_text_input',

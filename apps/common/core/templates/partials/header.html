@@ -25,17 +25,7 @@
             <a href="#"><span>{% trans 'Custom APPS' %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li class="dropdown">
-                <a href="#"><span>{% trans 'Code Generation' %}</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li>
-                    <a href="{% url 'barcode_gen:barcode_generate' %}">{% trans 'Bar Code' %}</a>
-                  </li>
-                  {% comment %}
-                  <li>
-                    <a href="#">{% trans 'QR Code' %}</a>
-                  </li>
-                  {% endcomment %}
-                </ul>
+                <a href="{% url 'code_gen:barcode_generate' %}">{% trans 'Code Generation' %}</a>
               </li>
               {% comment %}
               <li>

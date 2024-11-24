@@ -1,4 +1,3 @@
-import base64
 import logging
 import os
 from pathlib import Path
@@ -75,16 +74,13 @@ CUSTOM_APPS = [
     'apps.project.common.notifications',
     'apps.project.common.users',
     
-    'apps.project.specific.internal.barcode_gen',
+    'apps.project.specific.internal.code_gen',
     'apps.project.specific.documents.certificates'
 ]
 
 ALL_CUSTOM_APPS = CUSTOM_APPS
 
-if DEBUG:
-    INSTALLED_APPS = THIRD_PARTY_APPS + ALL_CUSTOM_APPS + DJANGO_APPS
-else:
-    INSTALLED_APPS = THIRD_PARTY_APPS + ALL_CUSTOM_APPS + DJANGO_APPS
+INSTALLED_APPS = THIRD_PARTY_APPS + ALL_CUSTOM_APPS + DJANGO_APPS
 
 # import_export
 IMPORT_EXPORT_FORMATS = [CSV, HTML, JSON, TSV, XLS, XLSX]

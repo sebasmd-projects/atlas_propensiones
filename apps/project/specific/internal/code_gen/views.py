@@ -4,19 +4,25 @@ import random
 import string
 from datetime import datetime
 from io import BytesIO
+from urllib.parse import quote, unquote
 
 import barcode
 import qrcode
 import requests
+import unidecode
 from barcode.writer import ImageWriter
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
+from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import FormView
 from PIL import Image
 
-from .forms import BarcodeForm
-from .models import BarcodeRegistrationModel
+from .forms import CodeForm
+from .models import CodeRegistrationModel
 
 logging = logging.getLogger(__name__)
+
+QR_IMG_URL = "https://atlas.propensionesabogados.com/static/assets/imgs/favicon/atlas-favicon512x512.png"
 
 
 def generate_random_code(length=4):
@@ -24,15 +30,17 @@ def generate_random_code(length=4):
 
 
 def generate_barcode(text):
+    sanitized_text = unidecode.unidecode(text)
+    sanitized_text = ''.join(char for char in sanitized_text if char.isalnum() or char.isspace())
     buffer = BytesIO()
     barcode_class = barcode.get_barcode_class('code128')
-    barcode_image = barcode_class(text, writer=ImageWriter())
+    barcode_image = barcode_class(sanitized_text, writer=ImageWriter())
     barcode_image.write(buffer)
     buffer.seek(0)
     return buffer
 
 
-def generate_qr_with_favicon(text_data: str, image_url: str = "https://atlas.propensionesabogados.com/static/assets/imgs/favicon/atlas-favicon512x512.png"):
+def generate_qr_with_favicon(text_data: str, image_url: str = QR_IMG_URL):
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_H,
@@ -63,9 +71,28 @@ def generate_qr_with_favicon(text_data: str, image_url: str = "https://atlas.pro
     return f"data:image/png;base64,{qr_base64}"
 
 
-class BarcodeGeneratorView(FormView):
-    template_name = "barcode_form.html"
-    form_class = BarcodeForm
+@csrf_exempt
+def dynamic_qr_view(request, text, image_url=QR_IMG_URL):
+    """
+    Generates a QR code with a favicon dynamically based on the provided text.
+    """
+    print(image_url)
+    try:
+        decoded_text = unquote(text)
+        qr_image_data = generate_qr_with_favicon(decoded_text, image_url)
+        buffer = BytesIO()
+        image_data = base64.b64decode(qr_image_data.split(",")[1])
+        buffer.write(image_data)
+        buffer.seek(0)
+        return HttpResponse(buffer, content_type="image/png")
+    except Exception as e:
+        logging.error(f"Error generating dynamic QR: {e}")
+        return HttpResponse("Error generating QR", status=500)
+
+
+class CodeGeneratorView(FormView):
+    template_name = "code_form.html"
+    form_class = CodeForm
 
     def form_valid(self, form):
         # Obtener datos del formulario
@@ -75,9 +102,9 @@ class BarcodeGeneratorView(FormView):
         include_nit = form.cleaned_data['include_nit']
         include_date = form.cleaned_data['include_date']
         include_random_code = form.cleaned_data['include_random_code']
+        generate_qr_code = form.cleaned_data['generate_qr_code']
 
-        # Construir el texto del código de barras
-        barcode_text = custom_text
+        # Construir el texto del código
         components = [custom_text]
 
         if include_nit:
@@ -91,27 +118,41 @@ class BarcodeGeneratorView(FormView):
 
         barcode_text = ' '.join(components).strip()
 
-        # Generar el código de barras
-        buffer = generate_barcode(barcode_text)
-        barcode_base64 = base64.b64encode(buffer.getvalue()).decode()
+        # Generar salida de código de barras
+        barcode_buffer = generate_barcode(barcode_text)
+        barcode_base64 = base64.b64encode(barcode_buffer.getvalue()).decode()
 
-        # Guardar en el modelo
-        existing_record = BarcodeRegistrationModel.objects.filter(
+        # Generar salida de código QR si está habilitado
+        qr_image_url = None
+        if generate_qr_code:
+            qr_image_url = self.request.build_absolute_uri(
+                reverse(
+                    "code_gen:dynamic_qr",
+                    kwargs={
+                        "text": quote(barcode_text),  # Codificar aquí
+                    }
+                )
+            )
+
+        # Guardar en el modelo si no existe
+        existing_record = CodeRegistrationModel.objects.filter(
             reference=reference.upper(),
             description=description,
             code_information=barcode_text
         ).first()
 
         if not existing_record:
-            BarcodeRegistrationModel.objects.create(
+            CodeRegistrationModel.objects.create(
                 reference=reference.upper(),
                 description=description,
                 custom_text_input=custom_text,
                 code_information=barcode_text
             )
 
-        return JsonResponse(
-            {
-                "barcode_image": f"data:image/png;base64,{barcode_base64}"
-            }
-        )
+        response_data = {
+            "barcode_image": f"data:image/png;base64,{barcode_base64}",
+        }
+        if qr_image_url:
+            response_data["qr_image_url"] = qr_image_url
+
+        return JsonResponse(response_data)
