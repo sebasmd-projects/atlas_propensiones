@@ -2,6 +2,7 @@ from django import forms
 from django.utils.translation import gettext_lazy as _
 from .models import CodeRegistrationModel
 
+
 class CodeForm(forms.ModelForm):
     include_nit = forms.BooleanField(
         label=_("Include NIT"),
@@ -19,7 +20,7 @@ class CodeForm(forms.ModelForm):
         label=_("Generate QR Code"),
         required=False
     )
-    qr_image_url= forms.URLField(
+    qr_image_url = forms.URLField(
         label=_("QR Image URL"),
         required=False,
         widget=forms.URLInput(
@@ -28,6 +29,10 @@ class CodeForm(forms.ModelForm):
                 'placeholder': _('QR Image URL')
             }
         )
+    )
+    generate_barcode = forms.BooleanField(
+        label=_("Generate Barcode"),
+        required=False
     )
 
     class Meta:

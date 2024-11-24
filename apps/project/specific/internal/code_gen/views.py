@@ -94,14 +94,14 @@ class CodeGeneratorView(FormView):
     form_class = CodeForm
 
     def form_valid(self, form):
-        # Obtener datos del formulario
-        reference: str = form.cleaned_data['reference']
+        reference = form.cleaned_data['reference']
         description = form.cleaned_data['description']
-        custom_text: str = form.cleaned_data['custom_text_input'].strip()
+        custom_text = form.cleaned_data['custom_text_input'].strip()
         include_nit = form.cleaned_data['include_nit']
         include_date = form.cleaned_data['include_date']
         include_random_code = form.cleaned_data['include_random_code']
         generate_qr_code = form.cleaned_data['generate_qr_code']
+        generate_bar_code = form.cleaned_data['generate_barcode']
 
         # Construir el texto del código
         components = [custom_text]
@@ -116,22 +116,24 @@ class CodeGeneratorView(FormView):
             components.append(generate_random_code())
 
         barcode_text = ' '.join(components).strip()
+        
+        response_data = {}
 
-        # Generar salida de código de barras
-        barcode_buffer = generate_barcode(barcode_text)
-        barcode_base64 = base64.b64encode(barcode_buffer.getvalue()).decode()
+        if generate_bar_code:
+            barcode_buffer = generate_barcode(barcode_text)
+            barcode_base64 = base64.b64encode(barcode_buffer.getvalue()).decode()
+            response_data["barcode_image"] = f"data:image/png;base64,{barcode_base64}"
 
-        # Generar salida de código QR si está habilitado
-        qr_image_url = None
         if generate_qr_code:
             qr_image_url = self.request.build_absolute_uri(
                 reverse(
                     "code_gen:dynamic_qr",
                     kwargs={
-                        "text": quote(barcode_text),  # Codificar aquí
+                        "text": quote(barcode_text),
                     }
                 )
             )
+            response_data["qr_image_url"] = qr_image_url
 
         # Guardar en el modelo si no existe
         existing_record = CodeRegistrationModel.objects.filter(
@@ -147,11 +149,5 @@ class CodeGeneratorView(FormView):
                 custom_text_input=custom_text,
                 code_information=barcode_text
             )
-
-        response_data = {
-            "barcode_image": f"data:image/png;base64,{barcode_base64}",
-        }
-        if qr_image_url:
-            response_data["qr_image_url"] = qr_image_url
 
         return JsonResponse(response_data)

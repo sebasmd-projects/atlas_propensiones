@@ -70,6 +70,12 @@
                 </div>
                 <div class="col-md">
                     <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="id_generate_barcode">
+                        <label class="form-check-label" for="id_generate_barcode">{% trans 'Generate Barcode' %}</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" id="id_generate_qr_code">
                         <label class="form-check-label" for="id_generate_qr_code">{% trans 'QR Code' %}</label>
                     </div>
@@ -131,9 +137,10 @@
                 const includeDate = $("#id_include_date").is(":checked");
                 const includeRandomCode = $("#id_include_random_code").is(":checked");
                 const generateQRCode = $("#id_generate_qr_code").is(":checked");
-            
+                const generateBarcode = $("#id_generate_barcode").is(":checked");
+                
                 $.ajax({
-                    url: "{% url 'code_gen:barcode_generate' %}",
+                    url: "{% url 'code_gen:code_generate' %}",
                     type: "POST",
                     headers: {
                         "X-CSRFToken": csrftoken,
@@ -145,14 +152,17 @@
                         include_nit: includeNIT,
                         include_date: includeDate,
                         include_random_code: includeRandomCode,
-                        generate_qr_code: generateQRCode
+                        generate_qr_code: generateQRCode,
+                        generate_barcode: generateBarcode  // Nuevo dato
                     },
                     success: function (response) {
-                        $("#barcodeOutput").show();
-                        const imageUrl = response.barcode_image;
-                        $("#barcodeImage").attr("src", imageUrl);
-                        $("#downloadLink").attr("href", imageUrl);
-            
+                        if (response.barcode_image) {
+                            $("#barcodeOutput").show();
+                            const imageUrl = response.barcode_image;
+                            $("#barcodeImage").attr("src", imageUrl);
+                            $("#downloadLink").attr("href", imageUrl);
+                        }
+                
                         if (response.qr_image_url) {
                             $("#qrOutput").show();
                             const qrImageUrl = response.qr_image_url;
@@ -167,6 +177,8 @@
                         alert(xhr.responseJSON.error);
                     }
                 });
+            
+            
             });
         
             // Función para validar los campos del formulario

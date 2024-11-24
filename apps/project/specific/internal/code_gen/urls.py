@@ -6,9 +6,9 @@ app_name = "code_gen"
 
 urlpatterns = [
     path(
-        "barcode/generate/",
+        "generate/code/",
         CodeGeneratorView.as_view(),
-        name="barcode_generate"
+        name="code_generate"
     ),
     path(
         "qr/generate/<path:text>/",
