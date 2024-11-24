@@ -40,7 +40,6 @@ class ContactModel(TimeStampedModel):
         db_table = 'apps_common_core_contact'
         verbose_name = _('Contact')
         verbose_name_plural = _('Contacts')
-        ordering = ['-created']
 
     def __str__(self):
         return self.name
