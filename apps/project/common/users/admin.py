@@ -16,6 +16,8 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
         'email',
         'first_name',
         'last_name',
+        'first_surname',
+        'second_surname',
     )
 
     list_display = (
@@ -69,6 +71,8 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
                 'fields': (
                     'first_name',
                     'last_name',
+                    'first_surname',
+                    'second_surname',
                     'email',
                 )
             }
