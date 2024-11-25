@@ -75,7 +75,8 @@ CUSTOM_APPS = [
     'apps.project.common.users',
     
     'apps.project.specific.internal.code_gen',
-    'apps.project.specific.documents.certificates'
+    'apps.project.specific.internal.assets',
+    'apps.project.specific.documents.certificates',
 ]
 
 ALL_CUSTOM_APPS = CUSTOM_APPS

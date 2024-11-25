@@ -48,23 +48,12 @@ class UserModel(TimeStampedModel, AbstractUser):
     )
 
     first_name = models.CharField(
-        _("first name"),
+        _("names"),
         max_length=150,
     )
 
     last_name = models.CharField(
-        _("second name"),
-        max_length=150,
-        blank=True,
-    )
-
-    first_surname = models.CharField(
-        _("first surname"),
-        max_length=150,
-    )
-
-    second_surname = models.CharField(
-        _("second surname"),
+        _("surnames"),
         max_length=150,
         blank=True,
     )
@@ -76,7 +65,7 @@ class UserModel(TimeStampedModel, AbstractUser):
     REQUIRED_FIELDS = [
         'email',
         'first_name',
-        'first_surname'
+        'last_name'
     ]
 
     def __str__(self) -> str:
@@ -85,8 +74,6 @@ class UserModel(TimeStampedModel, AbstractUser):
     def save(self, *args, **kwargs):
         self.first_name = self.first_name.title()
         self.last_name = self.last_name.title()
-        self.first_surname = self.first_surname.title()
-        self.second_surname = self.second_surname.title()
         self.username = self.username.lower()
         self.email = self.email.lower()
         super().save(*args, **kwargs)

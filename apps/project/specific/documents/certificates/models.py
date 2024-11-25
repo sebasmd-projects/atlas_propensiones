@@ -99,6 +99,7 @@ class CertificateModel(TimeStampedModel):
 
     def save(self, *args, **kwargs):
         self.name = self.name.upper()
+        self.last_name = self.last_name.upper()
         self.document_number_hash = hashlib.sha256(
             self.document_number.encode()).hexdigest()
         super().save(*args, **kwargs)
