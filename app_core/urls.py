@@ -13,7 +13,7 @@ from apps.common.utils.views import handler404 as h404
 from apps.common.utils.views import handler500 as h500
 
 admin_url = settings.ADMIN_URL
-custom_apps = settings.CUSTOM_APPS
+custom_apps = settings.ALL_CUSTOM_APPS
 utils_path = settings.UTILS_PATH
 
 apps_urls = [path('', include(f'{app}.urls')) for app in custom_apps]
@@ -86,8 +86,15 @@ swagger_urls = [
     ),
 ]
 
+ckeditor_urls = [
+    path(
+        "ckeditor5/",
+        include('django_ckeditor_5.urls')
+    ),
+]
+
 urlpatterns = admin_urls + two_factor_urls + \
-    apps_urls + third_party_urls + swagger_urls
+    apps_urls + third_party_urls + swagger_urls + ckeditor_urls
 
 if settings.DEBUG:
     urlpatterns += static(

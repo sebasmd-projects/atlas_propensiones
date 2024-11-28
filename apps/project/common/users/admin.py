@@ -143,45 +143,45 @@ class CityModelAdmin(admin.ModelAdmin):
     get_country.short_description = 'Country'
 
 
-@admin.register(AddressModel)
-class AddressModelAdmin(ImportExportActionModelAdmin):
-    search_fields = (
-        'country__country_name',
-        'state__state_name',
-        'city__city_name',
-        'address_line_1',
-        'postal_code'
-    )
-    list_display = (
-        'country',
-        'state',
-        'city',
-        'address_line_1',
-        'address_line_2',
-        'postal_code'
-    )
-    ordering = ('country', 'state', 'city', 'address_line_1')
-    list_filter = ('country', 'state', 'city')
-    readonly_fields = ('passport_image', 'beneficiary_firm')
+# @admin.register(AddressModel)
+# class AddressModelAdmin(ImportExportActionModelAdmin):
+#     search_fields = (
+#         'country__country_name',
+#         'state__state_name',
+#         'city__city_name',
+#         'address_line_1',
+#         'postal_code'
+#     )
+#     list_display = (
+#         'country',
+#         'state',
+#         'city',
+#         'address_line_1',
+#         'address_line_2',
+#         'postal_code'
+#     )
+#     ordering = ('country', 'state', 'city', 'address_line_1')
+#     list_filter = ('country', 'state', 'city')
+#     readonly_fields = ('passport_image', 'beneficiary_firm')
 
-    fieldsets = (
-        (None, {
-            'fields': (
-                'country',
-                'state',
-                'city',
-                'address_line_1',
-                'address_line_2',
-                'postal_code'
-            )
-        }),
-        ('Images', {
-            'fields': (
-                'passport_image',
-                'beneficiary_firm'
-            )
-        }),
-    )
+#     fieldsets = (
+#         (None, {
+#             'fields': (
+#                 'country',
+#                 'state',
+#                 'city',
+#                 'address_line_1',
+#                 'address_line_2',
+#                 'postal_code'
+#             )
+#         }),
+#         ('Images', {
+#             'fields': (
+#                 'passport_image',
+#                 'beneficiary_firm'
+#             )
+#         }),
+#     )
 
 
 @admin.register(UserPersonalInformationModel)

@@ -1,5 +1,5 @@
 import uuid
-from datetime import timedelta
+from datetime import date, timedelta
 
 from auditlog.registry import auditlog
 from django.contrib.auth.models import AbstractUser
@@ -12,29 +12,6 @@ from encrypted_model_fields.fields import (EncryptedCharField,
                                            EncryptedEmailField)
 
 from apps.common.utils.models import TimeStampedModel
-from apps.project.common.users.signals import (firm_directory_path,
-                                               passport_directory_path)
-
-
-def validate_birth_date(value):
-    today = timezone.now().date()
-    min_date = today - timedelta(days=18*365)
-
-    if value > today:
-        raise ValidationError(
-            _('The date of birth cannot be a future date.')
-        )
-
-    if value < min_date:
-        raise ValidationError(
-            _('User must be at least 18 years of age.')
-        )
-        
-def default_birth_date():
-    return timezone.now() - timedelta(days=18 * 365)
-
-def default_date_of_expiry():
-    return timezone.now() + timedelta(days=365)
 
 
 class UserModel(TimeStampedModel, AbstractUser):
@@ -195,18 +172,8 @@ class AddressModel(TimeStampedModel):
     )
 
     postal_code = models.CharField(
-        _('Postal Code'),
+        _('Postal/Zip Code'),
         max_length=10
-    )
-
-    passport_image = models.ImageField(
-        _('Passport Image'),
-        upload_to=passport_directory_path,
-    )
-
-    beneficiary_firm = models.ImageField(
-        _('Beneficiary Firm'),
-        upload_to=firm_directory_path,
     )
 
     def __str__(self) -> str:
@@ -224,6 +191,32 @@ class UserPersonalInformationModel(TimeStampedModel):
     class GenderChoices(models.TextChoices):
         MALE = 'M', _('Male')
         FEMALE = 'F', _('Female')
+
+    def passport_directory_path(instance, filename):
+        return f"passport_images/{instance.id} - {instance.get_full_name()}/{date.today().year}-{date.today().month}-{date.today().day}/{filename}"
+
+    def signature_directory_path(instance, filename):
+        return f"signature_images/{instance.id} - {instance.get_full_name()}/{date.today().year}-{date.today().month}-{date.today().day}/{filename}"
+
+    def validate_birth_date(value):
+        today = timezone.now().date()
+        min_date = today - timedelta(days=18*365)
+
+        if value > today:
+            raise ValidationError(
+                _('The date of birth cannot be a future date.')
+            )
+
+        if value < min_date:
+            raise ValidationError(
+                _('User must be at least 18 years of age.')
+            )
+
+    def default_birth_date():
+        return timezone.now() - timedelta(days=18 * 365)
+
+    def default_date_of_expiry():
+        return timezone.now() + timedelta(days=365)
 
     id = models.UUIDField(
         'ID',
@@ -292,6 +285,16 @@ class UserPersonalInformationModel(TimeStampedModel):
     phone_number = EncryptedCharField(
         _('Phone Number'),
         max_length=25,
+    )
+
+    passport_image = models.ImageField(
+        _('Passport Image'),
+        upload_to=passport_directory_path,
+    )
+
+    signature = models.ImageField(
+        _('Beneficiary signature'),
+        upload_to=signature_directory_path,
     )
 
     def __str__(self) -> str:

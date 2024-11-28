@@ -54,6 +54,7 @@ THIRD_PARTY_APPS = [
     'django_otp.plugins.otp_totp',
     'django_recaptcha',
     'drf_yasg',
+    'django_ckeditor_5',
     'encrypted_model_fields',
     'honeypot',
     'import_export',
@@ -66,20 +67,31 @@ THIRD_PARTY_APPS = [
     'two_factor.plugins.email',
 ]
 
-CUSTOM_APPS = [
+COMMON_APPS = [
     'apps.common.core',
     'apps.common.utils',
+]
 
+PROJECT_COMMON_APPS = [
     'apps.project.common.account',
     'apps.project.common.notifications',
     'apps.project.common.users',
-    
+]
+
+PROJECT_INTERNAL_APPS = [
     'apps.project.specific.internal.code_gen',
-    'apps.project.specific.internal.assets',
+]
+
+PROJECT_ASSETS_MANAGEMENT_APPS = [
+    'apps.project.specific.assets_management.assets',
+]
+
+PROJECT_DOCUMENTS_APPS = [
     'apps.project.specific.documents.certificates',
 ]
 
-ALL_CUSTOM_APPS = CUSTOM_APPS
+ALL_CUSTOM_APPS = COMMON_APPS + PROJECT_COMMON_APPS + PROJECT_INTERNAL_APPS + \
+    PROJECT_ASSETS_MANAGEMENT_APPS + PROJECT_DOCUMENTS_APPS
 
 INSTALLED_APPS = THIRD_PARTY_APPS + ALL_CUSTOM_APPS + DJANGO_APPS
 
@@ -262,3 +274,56 @@ YASG_DEFAULT_EMAIL = os.getenv('YASG_DEFAULT_EMAIL')
 YASG_TERMS_OF_SERVICE = os.getenv('YASG_TERMS_OF_SERVICE')
 
 FIELD_ENCRYPTION_KEY = os.getenv('FIELD_ENCRYPTION_KEY')
+
+customColorPalette = [
+    {
+        'color': 'hsl(4, 90%, 58%)',
+        'label': 'Red'
+    },
+    {
+        'color': 'hsl(340, 82%, 52%)',
+        'label': 'Pink'
+    },
+    {
+        'color': 'hsl(291, 64%, 42%)',
+        'label': 'Purple'
+    },
+    {
+        'color': 'hsl(262, 52%, 47%)',
+        'label': 'Deep Purple'
+    },
+    {
+        'color': 'hsl(231, 48%, 48%)',
+        'label': 'Indigo'
+    },
+    {
+        'color': 'hsl(207, 90%, 54%)',
+        'label': 'Blue'
+    },
+]
+
+CKEDITOR_5_CONFIGS = {
+    'default': {
+        'toolbar': [
+            'heading', '|',
+            'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', 'removeFormat', '|',
+            'bold', 'italic', 'underline', 'strikethrough', 'code', 'link', 'subscript', 'superscript', '|',
+            'bulletedList', 'numberedList', 'todoList', '|',
+            'insertImage', 'mediaEmbed', '|',
+            'outdent', 'indent', '|',
+            'blockQuote', 'insertTable', '|',
+            'sourceEditing',
+        ],
+    },
+    'list': {
+        'properties': {
+            'styles': 'true',
+            'startIndex': 'true',
+            'reversed': 'true',
+        }
+    }
+}
+
+CKEDITOR_5_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
+
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 15000
