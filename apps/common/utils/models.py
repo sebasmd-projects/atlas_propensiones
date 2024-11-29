@@ -75,7 +75,7 @@ class IPBlockedModel(TimeStampedModel):
         return f"{self.current_ip} - Blocked until {self.blocked_until}"
 
     class Meta:
-        db_table = 'apps_common_utils_ipblocked'
+        db_table = 'apps_utils_ipblocked'
         verbose_name = 'Blocked IP'
         verbose_name_plural = 'Blocked IPs'
 
@@ -110,7 +110,7 @@ class RequestLogModel(TimeStampedModel):
         return f'{self.id}'
 
     class Meta:
-        db_table = f'apps_common_utils_requestlog'
+        db_table = f'apps_utils_requestlog'
         verbose_name = _('Request')
         verbose_name_plural = _('Requests')
 

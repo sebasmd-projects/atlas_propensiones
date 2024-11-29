@@ -24,7 +24,7 @@
 
             <div class="col-md-8">
                 <div>
-                    <h2>{{ certificate.name }}</h2>
+                    <h2>{{ certificate.name }} {{ certificate.last_name }}</h2>
                     <p class="mb-1"><strong>{% trans 'ID Number:' %}</strong> {{ certificate.masked_document_number }}</p>
                     <p class="mb-1"><strong>{% trans 'Certificate ID:' %}</strong> {{ certificate.id }}</p>
                     {% if certificate.approved %}

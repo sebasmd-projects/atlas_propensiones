@@ -56,7 +56,7 @@ class UserModel(TimeStampedModel, AbstractUser):
         super().save(*args, **kwargs)
 
     class Meta:
-        db_table = 'apps_project_common_users_user'
+        db_table = 'apps_users_user'
         verbose_name = _('User')
         verbose_name_plural = _('Users')
         unique_together = [['username', 'email']]
@@ -83,7 +83,7 @@ class CountryModel(TimeStampedModel):
         super().save(*args, **kwargs)
 
     class Meta:
-        db_table = 'apps_project_common_users_country'
+        db_table = 'apps_users_country'
         verbose_name = _('Country')
         verbose_name_plural = _('Countries')
 
@@ -97,7 +97,7 @@ class StateModel(TimeStampedModel):
     country = models.ForeignKey(
         CountryModel,
         on_delete=models.CASCADE,
-        related_name='states'
+        related_name='users_state_country'
     )
 
     def __str__(self) -> str:
@@ -108,7 +108,7 @@ class StateModel(TimeStampedModel):
         super().save(*args, **kwargs)
 
     class Meta:
-        db_table = 'apps_project_common_users_state'
+        db_table = 'apps_users_state'
         unique_together = [['state_name', 'country']]
         verbose_name = _('State')
         verbose_name_plural = _('States')
@@ -123,7 +123,7 @@ class CityModel(TimeStampedModel):
     state = models.ForeignKey(
         StateModel,
         on_delete=models.CASCADE,
-        related_name='cities'
+        related_name='users_city_state'
     )
 
     def __str__(self) -> str:
@@ -134,7 +134,7 @@ class CityModel(TimeStampedModel):
         super().save(*args, **kwargs)
 
     class Meta:
-        db_table = 'apps_project_common_users_city'
+        db_table = 'apps_users_city'
         unique_together = [['city_name', 'state']]
         verbose_name = _('City')
         verbose_name_plural = _('Cities')
@@ -144,19 +144,22 @@ class AddressModel(TimeStampedModel):
     country = models.ForeignKey(
         CountryModel,
         on_delete=models.SET_NULL,
-        null=True
+        null=True,
+        related_name='users_address_country'
     )
 
     state = models.ForeignKey(
         StateModel,
         on_delete=models.SET_NULL,
-        null=True
+        null=True,
+        related_name='users_address_state'
     )
 
     city = models.ForeignKey(
         CityModel,
         on_delete=models.SET_NULL,
-        null=True
+        null=True,
+        related_name='users_address_city'
     )
 
     address_line_1 = EncryptedCharField(
@@ -182,7 +185,7 @@ class AddressModel(TimeStampedModel):
         return f"{self.country.country_name} {self.state.state_name} {self.city.city_name} {self.address_line_1}"
 
     class Meta:
-        db_table = 'apps_project_common_users_address'
+        db_table = 'apps_users_address'
         verbose_name = _('Address')
         verbose_name_plural = _('Addresses')
 
@@ -304,7 +307,11 @@ class UserPersonalInformationModel(TimeStampedModel):
         self.issuing_authority = self.issuing_authority.title()
         super().save(*args, **kwargs)
 
-
+    class Meta:
+        db_table = 'apps_users_userpersonalpnformation'
+        verbose_name = _('User Personal Information')
+        verbose_name_plural = _('User Personal Information')
+        
 auditlog.register(
     UserModel,
     serialize_data=True

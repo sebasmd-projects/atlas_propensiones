@@ -14,7 +14,7 @@ class UserLoginAttemptModel(TimeStampedModel):
         return f"{self.user.get_full_name()} - {self.attempts} - {self.last_attempt}"
 
     class Meta:
-        db_table = 'apps_project_common_account_userloginattempt'
+        db_table = 'apps_account_userloginattempt'
         verbose_name = _('User Login Attempt')
         verbose_name_plural = _('User Login Attempts')
 

@@ -37,6 +37,6 @@ class CodeRegistrationModel(TimeStampedModel):
         super().save(*args, **kwargs)
 
     class Meta:
-        db_table = 'apps_project_specific_internal_code_gen_code_registration'
+        db_table = 'apps_code_gen_coderegistration'
         verbose_name = _('Code Registration')
         verbose_name_plural = _('Code Registrations')

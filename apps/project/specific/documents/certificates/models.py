@@ -36,7 +36,7 @@ class CertificateModel(TimeStampedModel):
         UserModel,
         on_delete=models.SET_NULL,
         verbose_name=_('User'),
-        related_name='certificates',
+        related_name='certificates_certificate_user',
         blank=True,
         null=True
     )
@@ -74,16 +74,16 @@ class CertificateModel(TimeStampedModel):
         _('Approved'),
         default=True,
     )
-    
+
     approved_by = models.ForeignKey(
         UserModel,
         on_delete=models.SET_NULL,
         verbose_name=_('Approved by'),
-        related_name='approved_certificates',
+        related_name='certificates_certificate_user_approvedby',
         blank=True,
         null=True
     )
-    
+
     approval_date = models.DateField(
         _('Approval date'),
         blank=True,
@@ -101,14 +101,15 @@ class CertificateModel(TimeStampedModel):
         self.name = self.name.upper()
         self.last_name = self.last_name.upper()
         self.document_number_hash = hashlib.sha256(
-            self.document_number.encode()).hexdigest()
+            self.document_number.encode()
+        ).hexdigest()
         super().save(*args, **kwargs)
 
     def __str__(self):
         return f'{self.name} {self.masked_document_number()}'
 
     class Meta:
-        db_table = "apps_project_specific_documents_certificates_certificate"
+        db_table = "apps_certificates_certificate"
         verbose_name = _("Certificate")
         verbose_name_plural = _("Certificates")
         ordering = ["default_order", "-created"]

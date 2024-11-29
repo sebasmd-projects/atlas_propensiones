@@ -84,6 +84,7 @@ PROJECT_INTERNAL_APPS = [
 
 PROJECT_ASSETS_MANAGEMENT_APPS = [
     'apps.project.specific.assets_management.assets',
+    'apps.project.specific.assets_management.assets_location'
 ]
 
 PROJECT_DOCUMENTS_APPS = [

@@ -37,7 +37,7 @@ class ContactModel(TimeStampedModel):
     )
 
     class Meta:
-        db_table = 'apps_common_core_contact'
+        db_table = 'apps_core_contact'
         verbose_name = _('Contact')
         verbose_name_plural = _('Contacts')
 

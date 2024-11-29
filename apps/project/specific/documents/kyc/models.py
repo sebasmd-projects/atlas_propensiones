@@ -49,6 +49,6 @@ class LegalAdvisorModel(TimeStampedModel):
         super().save(*args, **kwargs)
 
     class Meta:
-        db_table = 'apps_project_specific_documents_kyc_legal_advisor'
+        db_table = 'apps_kyc_legaladvisor'
         verbose_name = _('Legal Advisor')
         verbose_name_plural = _('Legal Advisors')

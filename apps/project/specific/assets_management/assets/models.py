@@ -1,13 +1,18 @@
+import logging
 import os
 from datetime import date
-import logging
+
 from auditlog.registry import auditlog
 from django.db import models
+from django.db.models.signals import post_delete, pre_save
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 
 from apps.common.core.functions import generate_md5_hash
 from apps.common.utils.models import TimeStampedModel
+from apps.project.specific.assets_management.assets.signals import (
+    auto_delete_asset_img_on_change, auto_delete_asset_img_on_delete)
+
 logger = logging.getLogger(__name__)
 
 
@@ -32,7 +37,7 @@ class AssetCategoryModel(TimeStampedModel):
         return self.es_name
 
     class Meta:
-        db_table = "apps_project_specific_assets_assetcategory"
+        db_table = "apps_assets_assetcategory"
         verbose_name = _("Asset Category")
         verbose_name_plural = _("Asset Categories")
         ordering = ["default_order", "es_name", "-created"]
@@ -96,7 +101,7 @@ class AssetModel(TimeStampedModel):
     category = models.ForeignKey(
         AssetCategoryModel,
         on_delete=models.CASCADE,
-        related_name="asset_assetcategory",
+        related_name="assets_asset_assetcategory",
         verbose_name=_("category")
     )
 
@@ -110,7 +115,7 @@ class AssetModel(TimeStampedModel):
         _("quantity type"),
         max_length=255,
         choices=QuantityTypeChoices.choices,
-        default=QuantityTypeChoices.UNITS
+        default=QuantityTypeChoices.BOXES
     )
 
     total_quantity = models.BigIntegerField(
@@ -130,12 +135,15 @@ class AssetModel(TimeStampedModel):
         return f"{self.es_name} - {self.get_quantity_type_display()} - {self.total_quantity}"
 
     class Meta:
-        db_table = "apps_project_specific_assets_asset"
+        db_table = "apps_assets_asset"
         verbose_name = _("Asset")
         verbose_name_plural = _("Assets")
         unique_together = [['name', 'quantity_type']]
         ordering = ["default_order", "es_name", "-created"]
 
+
+post_delete.connect(auto_delete_asset_img_on_delete, sender=AssetModel)
+pre_save.connect(auto_delete_asset_img_on_change, sender=AssetModel)
 
 # Register the model with audit log for tracking changes
 auditlog.register(AssetModel, serialize_data=True)
