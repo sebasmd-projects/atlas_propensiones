@@ -1,9 +1,18 @@
 from django.urls import path
 
-from .views import AssetsTemplateView
+from .views import AssetCategoryCreateView, AssetsCreateView
 
 app_name = 'assets'
 
 urlpatterns = [
-    path('assets/', AssetsTemplateView.as_view(), name='register'),
+    path(
+        'asset/add/',
+        AssetsCreateView.as_view(),
+        name='create_asset'
+    ),
+    path(
+        'asset/category/add/',
+        AssetCategoryCreateView.as_view(),
+        name='create_asset_category'
+    ),
 ]

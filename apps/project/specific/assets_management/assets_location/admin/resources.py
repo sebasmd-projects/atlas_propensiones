@@ -10,14 +10,12 @@ from ..signals import (update_asset_total_quantity_on_location,
 class AssetLocationResource(resources.ModelResource):
 
     def before_import(self, dataset, dry_run, **kwargs):
-        print("before_import")
         post_save.disconnect(
             update_asset_total_quantity_on_location, sender=AssetLocationModel)
         pre_delete.disconnect(
             update_asset_total_quantity_on_location_delete, sender=AssetLocationModel)
 
     def after_import(self, dataset, result, dry_run, **kwargs):
-        print("after_import")
         post_save.connect(
             update_asset_total_quantity_on_location, sender=AssetLocationModel
         )

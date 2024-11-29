@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+{% block main %}
+<div class="container">
+    <form method="post" class="mt-auto">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+    </form>
+</div>
+
+{% endblock main %}

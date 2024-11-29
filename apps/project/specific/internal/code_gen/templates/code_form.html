@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'core/base.html' %}
 
 {% load i18n static %}
 
@@ -25,7 +25,7 @@
 {% endblock custom_css %}
 
 {% block header %}
-    {% include 'partials/header.html' %}
+    {% include 'core/partials/header.html' %}
 {% endblock header %}
 
 {% block main %}
@@ -208,5 +208,5 @@
 {% endblock body_custom_js %}
 
 {% block footer %}
-    {% include 'partials/footer.html' %}
+    {% include 'core/partials/footer.html' %}
 {% endblock footer %}

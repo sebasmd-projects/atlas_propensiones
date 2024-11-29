@@ -3,6 +3,7 @@ import os
 from datetime import date
 
 from auditlog.registry import auditlog
+from django.contrib.auth import get_user_model
 from django.db import models
 from django.db.models.signals import post_delete, pre_save
 from django.utils.text import slugify
@@ -14,12 +15,15 @@ from apps.project.specific.assets_management.assets.signals import (
     auto_delete_asset_img_on_change, auto_delete_asset_img_on_delete)
 
 logger = logging.getLogger(__name__)
+UserModel = get_user_model()
 
 
 class AssetCategoryModel(TimeStampedModel):
     name = models.CharField(
         _("category (EN)"),
         max_length=50,
+        blank=True,
+        null=True
     )
 
     es_name = models.CharField(
@@ -38,8 +42,8 @@ class AssetCategoryModel(TimeStampedModel):
 
     class Meta:
         db_table = "apps_assets_assetcategory"
-        verbose_name = _("Asset Category")
-        verbose_name_plural = _("Asset Categories")
+        verbose_name = _("2. Category")
+        verbose_name_plural = _("2. Categories")
         ordering = ["default_order", "es_name", "-created"]
 
 
@@ -73,6 +77,14 @@ class AssetModel(TimeStampedModel):
             )
             raise e
 
+    created_by = models.ForeignKey(
+        UserModel,
+        on_delete=models.SET_NULL,
+        related_name="assets_assets_user",
+        verbose_name=_("Created By"),
+        null=True
+    )
+
     asset_img = models.ImageField(
         _("img"),
         max_length=255,
@@ -88,14 +100,16 @@ class AssetModel(TimeStampedModel):
         null=True
     )
 
-    name = models.CharField(
-        _("english name"),
-        max_length=255
-    )
-
     es_name = models.CharField(
         _("spanish name"),
         max_length=255,
+    )
+
+    name = models.CharField(
+        _("english name"),
+        max_length=255,
+        blank=True,
+        null=True
     )
 
     category = models.ForeignKey(
@@ -125,7 +139,7 @@ class AssetModel(TimeStampedModel):
 
     def asset_total_quantity(self):
         # total quantity matches the sum of all related asset locations.
-        expected_total = self.assetlocation_asset.aggregate(
+        expected_total = self.assetlocation_assetlocation_asset.aggregate(
             total=models.Sum('amount')
         )['total'] or 0
 
@@ -136,8 +150,8 @@ class AssetModel(TimeStampedModel):
 
     class Meta:
         db_table = "apps_assets_asset"
-        verbose_name = _("Asset")
-        verbose_name_plural = _("Assets")
+        verbose_name = _("1. Asset")
+        verbose_name_plural = _("1. Assets")
         unique_together = [['name', 'quantity_type']]
         ordering = ["default_order", "es_name", "-created"]
 

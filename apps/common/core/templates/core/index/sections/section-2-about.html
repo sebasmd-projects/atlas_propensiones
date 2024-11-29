@@ -1,0 +1,63 @@
+{% load i18n static %}
+
+<!-- About Section -->
+<section id="about" class="about section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 align-items-center justify-content-between">
+          <div class="col-md-9" data-aos="fade-up" data-aos-delay="200">
+              <span class="about-meta">{% trans "MORE ABOUT US" %}</span>
+              <h2 class="about-title">{% trans "Institutionalization of International Asset Operations" %}</h2>
+              <p class="about-description">
+                  {% trans "Our initiative focuses on formalizing and streamlining the process of managing international assets. This ensures better governance, compliance, and operational efficiency across global markets." %}
+              </p>
+              <div class="row feature-list-wrapper">
+                  <div class="col-md-6">
+                      <ul class="feature-list">
+                          <li><i class="bi bi-check-circle-fill"></i> {% trans "Enhanced governance structure" %}</li>
+                          <li><i class="bi bi-check-circle-fill"></i> {% trans "Compliance with international standards" %}</li>
+                          <li><i class="bi bi-check-circle-fill"></i> {% trans "Streamlined asset management process" %}</li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6">
+                      <ul class="feature-list">
+                          <li><i class="bi bi-check-circle-fill"></i> {% trans "Risk mitigation in asset handling" %}</li>
+                          <li><i class="bi bi-check-circle-fill"></i> {% trans "Integration with global markets" %}</li>
+                          <li><i class="bi bi-check-circle-fill"></i> {% trans "Continuous improvement strategies" %}</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="info-wrapper">
+                  <div class="row gy-4">
+                      <div class="col-lg-5">
+                          <div class="profile d-flex align-items-center gap-3">
+                              <img src="{% static 'assets/imgs/hero/Dr. Jorge Vega.jpg' %}" alt="{% trans 'CEO Profile' %}" class="profile-image">
+                              <div>
+                                  <h4 class="profile-name">Jorge Vega</h4>
+                                  <p class="profile-position">{% trans "CEO & Founder" %}</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-7">
+                          <div class="contact-info d-flex align-items-center gap-2">
+                              <i class="bi bi-telephone-fill"></i>
+                              <div>
+                                  <p class="contact-label">{% trans 'Call us anytime' %}</p>
+                                  <p class="contact-number">+(57) 318 328 01 76</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+              <div class="image-wrapper">
+                  <div class="experience-badge floating">
+                      <h3>10+ <span>{% trans 'Years' %}</span></h3>
+                      <p>{% trans 'Of experience in managing international assets' %}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- /About Section -->

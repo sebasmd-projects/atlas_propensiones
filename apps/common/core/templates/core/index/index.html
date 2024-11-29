@@ -1,0 +1,62 @@
+{% extends 'core/base.html' %}
+
+{% load static i18n honeypot %}
+
+{% block title %}
+    ATLAS | {% trans 'HOME | ABOUT | FEATURES | SERVICES' %}
+{% endblock title %}
+
+{% block meta %}
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <meta content="index, follow" name="robots"  />
+    <meta content="index, follow" name="googlebot" />
+
+    <meta name="keywords" content="ATLAS, asset management, historical assets, CRM, ERP, document generation, validation, assets, propensionesabogados, sebastian morales" />
+
+    <meta content="{% trans 'ATLAS | Comprehensive and Secure Historical Asset Management Solution' %}" name="title" />
+    <meta content="{% trans 'ATLAS | Comprehensive and Secure Historical Asset Management Solution' %}" property="og:title" />
+    <meta content="{% trans 'All-in-one suite for business management of historical assets safely and easily' %}" property="og:description"/>
+    <meta content="{% trans 'All-in-one suite for business management of historical assets safely and easily' %}" name="description" />
+    
+    <meta content="{% static 'assets/imgs/favicon/favicon.ico' %}" property="og:image"/>
+    <meta content="https://atlas.propensionesabogados.com/" property="og:url" />
+
+    <meta content="ATLAS PROPENSIONES ABOGADOS" property="site_name" />
+    <meta content="ATLAS PROPENSIONES ABOGADOS" property="og:site_name" />
+    <meta content="website" property="og:type" />
+
+    <meta content="{% trans 'ATLAS | Comprehensive and Secure Historical Asset Management Solution' %}" name="twitter:title" />
+    <meta content="{% trans 'All-in-one suite for business management of historical assets safely and easily' %}" name="twitter:description" />
+    <meta content="{% static 'assets/imgs/favicon/favicon.ico' %}" name="twitter:image" />
+    <meta content="summary_large_image" name="twitter:card" />
+{% endblock meta %}
+
+{% block custom_css %}
+    <link href="{% static 'assets/css/site/main.css' %}" rel="stylesheet">
+{% endblock custom_css %}
+
+{% block body_properties %}class="index-page"{% endblock body_properties %}
+
+{% block header %}
+    {% include 'core/partials/header.html' %}
+{% endblock header %}
+
+{% block main %}
+<main class="main">
+    {% include 'core/index/sections/section-1-hero.html' %}
+    {% include 'core/index/sections/section-2-about.html' %}
+    {% include 'core/index/sections/section-3-features.html' %}
+    {% include 'core/index/sections/section-4-features-cards.html' %}
+    {% include 'core/index/sections/section-5-features-mobile.html' %}
+    {% include 'core/index/sections/section-6-call-to-action.html' %}
+    {% include 'core/index/sections/section-7-contact.html' %}
+</main>
+{% endblock main %}
+
+
+{% block footer %}
+    {% include 'core/partials/footer.html' %}
+{% endblock footer %}

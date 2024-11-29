@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 @method_decorator(check_honeypot, name='post')
 class IndexTemplateView(FormView):
-    template_name = "pages/index/index.html"
+    template_name = "core/index/index.html"
     form_class = ContactForm
     success_url = reverse_lazy('core:index')
 
@@ -23,7 +23,6 @@ class IndexTemplateView(FormView):
         honeypot_field = form.cleaned_data.get('email_confirm')
         
         if ContactModel.objects.filter(unique_id=unique_id).exists():
-            print('Form has already been sent.')
             form.add_error(None, _("This form has already been sent."))
             return self.form_invalid(form)
         
@@ -35,7 +34,7 @@ class IndexTemplateView(FormView):
 
         user_language = self.request.LANGUAGE_CODE
         
-        html_message = render_to_string('email/contact_email_template.html', {
+        html_message = render_to_string('core/email/contact_email_template.html', {
             'names': contact.name,
             'LANGUAGE_CODE': user_language,
         })
@@ -60,6 +59,5 @@ class IndexTemplateView(FormView):
         return render(self.request, self.template_name, {'form': None, 'success_message': True})
     
     def form_invalid(self, form):
-        print(form.errors)
         return super().form_invalid(form)
     

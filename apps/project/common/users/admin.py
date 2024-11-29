@@ -90,14 +90,20 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
                     'last_login',
                     'created',
                     'updated'
-                )
+                ),
+            'classes': (
+                'collapse',
+            )
             }
         ),
         (
             _('Priority'), {
                 'fields': (
                     'default_order',
-                )
+                ),
+            'classes': (
+                'collapse',
+            )
             }
         )
     )

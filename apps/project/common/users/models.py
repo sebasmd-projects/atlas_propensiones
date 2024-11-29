@@ -44,6 +44,16 @@ class UserModel(TimeStampedModel, AbstractUser):
         'first_name',
         'last_name'
     ]
+    
+    is_buyer = models.BooleanField(
+        _('Buyer'),
+        default=False
+    )
+    
+    is_holder = models.BooleanField(
+        _('Holder'),
+        default=False
+    )
 
     def __str__(self) -> str:
         return f"{self.get_full_name()}"

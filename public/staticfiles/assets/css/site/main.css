@@ -791,7 +791,7 @@ section,
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  max-width: 330px;
   animation: float-badge 3s ease-in-out infinite;
   will-change: transform;
 }
@@ -833,7 +833,7 @@ section,
   .hero .customers-badge {
     position: static;
     margin: 1rem auto;
-    max-width: 250px;
+    max-width: 330px;
   }
 }
 

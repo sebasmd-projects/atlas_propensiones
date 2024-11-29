@@ -1,5 +1,38 @@
 (function() {
     "use strict";
+
+    /**
+   * Don't display # in the URL when clicking on hash links
+   */
+  document.querySelectorAll('a[href*="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      const isSamePage =
+        href.startsWith("#") ||
+        new URL(href, window.location.origin).pathname ===
+          window.location.pathname;
+
+      if (isSamePage) {
+        // Evitar el comportamiento por defecto y manejar navegación interna
+        e.preventDefault();
+        const targetID = href.split("#")[1];
+        const targetElement = document.getElementById(targetID);
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+          });
+        }
+
+        // Actualizar la URL eliminando el hash
+        const newURL = window.location.origin + window.location.pathname;
+        window.history.pushState({}, "", newURL);
+      } else {
+        return;
+      }
+    });
+  });
   
     /**
      * Apply .scrolled class to the body as the page is scrolled down
@@ -85,41 +118,6 @@
       });
     }
     window.addEventListener('load', aosInit);
-  
-    /**
-     * Initiate glightbox
-     */
-    const glightbox = GLightbox({
-      selector: '.glightbox'
-    });
-  
-    /**
-     * Init swiper sliders
-     */
-    function initSwiper() {
-      document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-        let config = JSON.parse(
-          swiperElement.querySelector(".swiper-config").innerHTML.trim()
-        );
-  
-        if (swiperElement.classList.contains("swiper-tab")) {
-          initSwiperWithCustomPagination(swiperElement, config);
-        } else {
-          new Swiper(swiperElement, config);
-        }
-      });
-    }
-  
-    window.addEventListener("load", initSwiper);
-  
-    /**
-     * Frequently Asked Questions Toggle
-     */
-    document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-      faqItem.addEventListener('click', () => {
-        faqItem.parentNode.classList.toggle('faq-active');
-      });
-    });
   
     /**
      * Correct scrolling position upon page load for URLs containing hash links.

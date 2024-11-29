@@ -75,7 +75,6 @@ def dynamic_qr_view(request, text, image_url=QR_IMG_URL):
     """
     Generates a QR code with a favicon dynamically based on the provided text.
     """
-    print(image_url)
     try:
         decoded_text = unquote(text)
         qr_image_data = generate_qr_with_favicon(decoded_text, image_url)
