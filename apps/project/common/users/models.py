@@ -101,7 +101,7 @@ class StateModel(TimeStampedModel):
     )
 
     def __str__(self) -> str:
-        return f"{self.state_name} {self.country.country_name}"
+        return f"{self.state_name}"
 
     def save(self, *args, **kwargs):
         self.state_name = self.state_name.title()

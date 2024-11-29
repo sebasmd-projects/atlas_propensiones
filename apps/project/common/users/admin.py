@@ -49,11 +49,11 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
         'username',
     )
 
-    readonly_fields = [
+    readonly_fields = (
         'created',
         'updated',
         'last_login'
-    ]
+    )
 
     fieldsets = (
         (
@@ -115,27 +115,85 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
 
 @admin.register(CountryModel)
 class CountryModelAdmin(admin.ModelAdmin):
-    search_fields = ('country_name', 'country_code')
-    list_display = ('country_name', 'country_code')
-    ordering = ('country_name',)
-    list_filter = ('country_name',)
+    search_fields = (
+        'country_name',
+        'country_code'
+    )
+
+    list_display = (
+        'country_name',
+        'country_code'
+    )
+
+    ordering = (
+        'country_name',
+    )
+
+    list_filter = (
+        'country_name',
+    )
+
+    readonly_fields = (
+        'created',
+        'updated',
+    )
 
 
 @admin.register(StateModel)
 class StateModelAdmin(admin.ModelAdmin):
-    search_fields = ('state_name', 'country__country_name')
-    list_display = ('state_name', 'country')
-    ordering = ('state_name', 'country')
-    list_filter = ('country',)
+    search_fields = (
+        'state_name',
+        'country__country_name'
+    )
+
+    list_display = (
+        'state_name',
+        'country'
+    )
+
+    ordering = (
+        'state_name',
+        'country'
+    )
+
+    list_filter = (
+        'country',
+    )
+
+    readonly_fields = (
+        'created',
+        'updated',
+    )
 
 
 @admin.register(CityModel)
 class CityModelAdmin(admin.ModelAdmin):
-    search_fields = ('city_name', 'state__state_name',
-                     'state__country__country_name')
-    list_display = ('city_name', 'state', 'get_country')
-    ordering = ('city_name', 'state__state_name')
-    list_filter = ('state', 'state__country')
+    search_fields = (
+        'city_name',
+        'state__state_name',
+        'state__country__country_name'
+    )
+
+    list_display = (
+        'city_name',
+        'state',
+        'get_country'
+    )
+
+    ordering = (
+        'city_name',
+        'state__state_name'
+    )
+
+    list_filter = (
+        'state',
+        'state__country'
+    )
+
+    readonly_fields = (
+        'created',
+        'updated',
+    )
 
     def get_country(self, obj):
         return obj.state.country.country_name
@@ -143,56 +201,67 @@ class CityModelAdmin(admin.ModelAdmin):
     get_country.short_description = 'Country'
 
 
-# @admin.register(AddressModel)
-# class AddressModelAdmin(ImportExportActionModelAdmin):
-#     search_fields = (
-#         'country__country_name',
-#         'state__state_name',
-#         'city__city_name',
-#         'address_line_1',
-#         'postal_code'
-#     )
-#     list_display = (
-#         'country',
-#         'state',
-#         'city',
-#         'address_line_1',
-#         'address_line_2',
-#         'postal_code'
-#     )
-#     ordering = ('country', 'state', 'city', 'address_line_1')
-#     list_filter = ('country', 'state', 'city')
-#     readonly_fields = ('passport_image', 'beneficiary_firm')
+@admin.register(AddressModel)
+class AddressModelAdmin(ImportExportActionModelAdmin):
+    search_fields = (
+        'country__country_name',
+        'state__state_name',
+        'city__city_name',
+        'address_line_1',
+        'postal_code'
+    )
 
-#     fieldsets = (
-#         (None, {
-#             'fields': (
-#                 'country',
-#                 'state',
-#                 'city',
-#                 'address_line_1',
-#                 'address_line_2',
-#                 'postal_code'
-#             )
-#         }),
-#         ('Images', {
-#             'fields': (
-#                 'passport_image',
-#                 'beneficiary_firm'
-#             )
-#         }),
-#     )
+    list_display = (
+        'country',
+        'state',
+        'city',
+        'address_line_1',
+        'address_line_2',
+        'postal_code'
+    )
+
+    ordering = (
+        'country',
+        'state',
+        'city',
+        'address_line_1'
+    )
+
+    list_filter = (
+        'country',
+        'is_active'
+    )
+
+    readonly_fields = (
+        'created',
+        'updated',
+    )
+
+    fieldsets = (
+        (None, {
+            'fields': (
+                'country',
+                'state',
+                'city',
+                'address_line_1',
+                'address_line_2',
+                'postal_code'
+            )
+        }),
+    )
 
 
 @admin.register(UserPersonalInformationModel)
 class UserPersonalInformationModelAdmin(admin.ModelAdmin):
     search_fields = (
+        'id',
         'user__first_name',
         'user__last_name',
         'user__email',
         'passport_id',
-        'citizenship_country'
+        'citizenship_country',
     )
+
     list_display = (
         'user',
         'birth_date',
@@ -202,9 +271,21 @@ class UserPersonalInformationModelAdmin(admin.ModelAdmin):
         'date_of_issue',
         'date_of_expiry'
     )
-    ordering = ('user__first_name', 'user__last_name', 'birth_date')
-    list_filter = ('gender', 'citizenship_country')
-    readonly_fields = ('user',)
+
+    ordering = (
+        'user__first_name',
+        'user__last_name',
+        'birth_date'
+    )
+
+    list_filter = (
+        'gender',
+        'citizenship_country'
+    )
+
+    readonly_fields = (
+        'user',
+    )
 
     fieldsets = (
         (None, {
@@ -220,7 +301,9 @@ class UserPersonalInformationModelAdmin(admin.ModelAdmin):
                 'passport_id',
                 'date_of_issue',
                 'issuing_authority',
-                'date_of_expiry'
+                'date_of_expiry',
+                'passport_image',
+                'signature'
             )
         }),
         ('Contact Information', {
@@ -232,4 +315,6 @@ class UserPersonalInformationModelAdmin(admin.ModelAdmin):
         }),
     )
 
-    filter_horizontal = ('addresses',)
+    filter_horizontal = (
+        'addresses',
+    )
