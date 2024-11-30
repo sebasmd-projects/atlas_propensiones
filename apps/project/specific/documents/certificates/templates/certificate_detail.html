@@ -35,7 +35,7 @@
                     <hr>
                     {% if certificate.approved %}
                         <p class="text-justify">
-                                <strong>{{ certificate.name }}</strong>
+                                <strong>{{ certificate.name }} {{ certificate.last_name }}</strong>
                                 {% trans 'with document number' %} {{ certificate.document_type }} {{ certificate.masked_document_number }}
                                 {% blocktrans %}
                                 qualifies as a beneficiary, who has undergone a security screening and accreditation of judicial records in accordance with current regulations, criminal reports on social media, and Interpol databases. Consequently, they do <strong>NOT</strong> have any judicial or disciplinary records from the certifying entities authorized by international public consultation databases, which would affect their suitability.
@@ -44,7 +44,7 @@
                         </p>
                     {% else %}
                         <p class="text-justify">
-                            <strong>{{ certificate.name }}</strong>
+                            <strong>{{ certificate.name }} {{ certificate.last_name }}</strong>
                             {% trans 'with document number' %} {{ certificate.document_type }} {{ certificate.masked_document_number }}
                             {% blocktrans %}
                                 we inform you that, after the evaluation conducted, your security study <span class="text-danger">HAS NOT BEEN APPROVED</span> due to not meeting the suitability requirements according to the current security regulations.
