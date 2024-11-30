@@ -44,7 +44,7 @@
                         </p>
                     {% else %}
                         <p class="text-justify">
-                            <strong>{{ certificate.name }}</strong>
+                            <strong>{{ certificate.name }} {{ certificate.last_name }}</strong>
                             {% trans 'with document number' %} {{ certificate.document_type }} {{ certificate.masked_document_number }}
                             {% blocktrans %}
                                 we inform you that, after the evaluation conducted, your security study <span class="text-danger">HAS NOT BEEN APPROVED</span> due to not meeting the suitability requirements according to the current security regulations.
