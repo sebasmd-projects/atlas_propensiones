@@ -44,20 +44,6 @@ class AssetModelForm(forms.ModelForm):
         )
     )
 
-    asset_img = forms.ImageField(
-        label=_('Image'),
-        required=False,
-        widget=forms.FileInput(
-            attrs={
-                'id': 'asset_img',
-                'type': 'file',
-                'class': 'form-control',
-                'aria-label': _('Image'),
-                'aria-describedby': 'asset_img'
-            }
-        )
-    )
-
     category = forms.ModelChoiceField(
         label=_('Category'),
         required=True,
