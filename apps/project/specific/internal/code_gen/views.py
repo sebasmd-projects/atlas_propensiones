@@ -89,7 +89,7 @@ def dynamic_qr_view(request, text, image_url=QR_IMG_URL):
 
 
 class CodeGeneratorView(FormView):
-    template_name = "code_form.html"
+    template_name = "dashboard/pages/documents/code_gen/code_form.html"
     form_class = CodeForm
 
     def form_valid(self, form):

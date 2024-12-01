@@ -78,21 +78,24 @@ PROJECT_COMMON_APPS = [
     'apps.project.common.users',
 ]
 
+PROJECT_ASSETS_MANAGEMENT_APPS = [
+    'apps.project.specific.assets_management.assets',
+    'apps.project.specific.assets_management.assets_location',
+    'apps.project.specific.assets_management.buyer_offers',
+    'apps.project.specific.assets_management.buyers'
+]
+
 PROJECT_INTERNAL_APPS = [
     'apps.project.specific.internal.code_gen',
 ]
 
-PROJECT_ASSETS_MANAGEMENT_APPS = [
-    'apps.project.specific.assets_management.assets',
-    'apps.project.specific.assets_management.assets_location'
-]
+
 
 PROJECT_DOCUMENTS_APPS = [
     'apps.project.specific.documents.certificates',
 ]
 
-ALL_CUSTOM_APPS = COMMON_APPS + PROJECT_COMMON_APPS + PROJECT_INTERNAL_APPS + \
-    PROJECT_ASSETS_MANAGEMENT_APPS + PROJECT_DOCUMENTS_APPS
+ALL_CUSTOM_APPS = PROJECT_ASSETS_MANAGEMENT_APPS + PROJECT_COMMON_APPS + PROJECT_INTERNAL_APPS  + PROJECT_DOCUMENTS_APPS + COMMON_APPS
 
 INSTALLED_APPS = THIRD_PARTY_APPS + ALL_CUSTOM_APPS + DJANGO_APPS
 

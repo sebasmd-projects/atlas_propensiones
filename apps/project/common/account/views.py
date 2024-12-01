@@ -21,7 +21,7 @@ class UserLogoutView(View):
 
 
 class UserRegisterView(FormView):
-    template_name = "account/register.html"
+    template_name = "dashboard/pages/account/register.html"
     form_class = UserRegisterForm
 
     def dispatch(self, request, *args, **kwargs):
