@@ -31,17 +31,17 @@
 
     {% block side_content %}
       <div id="layoutSidenav_content">
-        {% block main %}
 
-        {% endblock %}
+        {% block main %}{% endblock %}
 
-        {% block content %}
 
-        {% endblock %}
+        {% block content %}{% endblock %}
+
 
         {% block footer %}
           {% include 'dashboard/partials/footer.html' %}
         {% endblock %}
+        
       </div>
     {% endblock %}
   </div>

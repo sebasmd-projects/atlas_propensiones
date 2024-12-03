@@ -24,7 +24,7 @@ class AssetCountryModel(TimeStampedModel):
     )
 
     def __str__(self) -> str:
-        return f"{self.country_name} ({self.country_code})"
+        return f"{self.country_name}"
 
     def save(self, *args, **kwargs):
         self.country_name = self.country_name.title()

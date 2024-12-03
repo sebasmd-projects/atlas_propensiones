@@ -79,7 +79,6 @@ PROJECT_COMMON_APPS = [
 PROJECT_ASSETS_MANAGEMENT_APPS = [
     'apps.project.specific.assets_management.assets',
     'apps.project.specific.assets_management.assets_location',
-    'apps.project.specific.assets_management.buyer_offers',
     'apps.project.specific.assets_management.buyers'
 ]
 

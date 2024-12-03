@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from apps.project.specific.assets_management.buyers.models import OfferModel
+
+admin.site.register(OfferModel)
