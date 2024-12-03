@@ -49,7 +49,6 @@ THIRD_PARTY_APPS = [
     'corsheaders',
     'django_filters',
     'django_otp',
-    'django_otp.plugins.otp_email',
     'django_otp.plugins.otp_static',
     'django_otp.plugins.otp_totp',
     'django_recaptcha',
@@ -64,7 +63,6 @@ THIRD_PARTY_APPS = [
     'rest_framework_simplejwt',
     'rosetta',
     'two_factor',
-    'two_factor.plugins.email',
 ]
 
 COMMON_APPS = [
@@ -89,8 +87,6 @@ PROJECT_INTERNAL_APPS = [
     'apps.project.specific.internal.code_gen',
 ]
 
-
-
 PROJECT_DOCUMENTS_APPS = [
     'apps.project.specific.documents.certificates',
 ]
@@ -103,6 +99,7 @@ INSTALLED_APPS = THIRD_PARTY_APPS + ALL_CUSTOM_APPS + DJANGO_APPS
 IMPORT_EXPORT_FORMATS = [CSV, HTML, JSON, TSV, XLS, XLSX]
 
 LOGIN_URL = 'two_factor:login'
+LOGIN_REDIRECT_URL = 'core:index'
 
 # Django Parler and i18n
 LOCALE_PATHS = [

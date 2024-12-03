@@ -1,0 +1,93 @@
+{% extends 'dashboard/layout/account.html' %}
+
+{% load static i18n %}
+
+{% block content %}
+  <div class="min-vh-100 d-flex align-items-center justify-content-center container">
+    <div class="card">
+      <div class="text-center mt-2">
+        <a href="{% url 'core:index' %}">
+          <img
+            src="{% static 'assets/imgs/favicon/favicon-96x96.png' %}"
+            class="card-img-top img-fluid"
+            alt="..."
+            style="max-width: 128px"
+          />
+        </a>
+      </div>
+
+      <div class="card-body">
+        <form method="POST">
+          {% csrf_token %}
+          <input type="hidden" name="next" value="{{ next }}" />
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  {{ form.username }}
+                  <label for="register_username">{% trans 'Username' %}</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  {{ form.email }}
+                  <label for="register_email">{% trans 'Username' %}</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  {{ form.first_name }}
+                  <label for="register_first_name">{% trans 'First Names' %}</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  {{ form.last_name }}
+                  <label for="register_last_name">{% trans 'Last Names' %}</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  {{ form.password }}
+                  <label for="register_password">{% trans 'Password' %}</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  {{ form.confirm_password }}
+                  <label for="register_confirm_password">{% trans 'Confirm Password' %}</label>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-floating">
+                  {{ form.user_type }}
+                  <label for="register_user_type">{% trans 'User Type' %}</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-grid gap-2 mt-3">
+              <button type="submit" class="btn btn-success">{% trans 'Register' %}</button>
+              <a class="btn btn-outline-success" href="{% url 'two_factor:login' %}">{% trans 'Do you already have an account? Sign in' %}</a>
+            </div>
+        </form>
+
+        <div class="text-center mt-3" style="font-size:11px">
+          <a href="" target="_blank">
+            Condiciones del Servicio
+          </a>
+          <span class="mx-1">&middot;</span>
+          <a href="" target="_blank">
+            Política de Privacidad
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

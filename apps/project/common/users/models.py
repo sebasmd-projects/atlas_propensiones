@@ -15,6 +15,11 @@ from apps.common.utils.models import TimeStampedModel
 
 
 class UserModel(TimeStampedModel, AbstractUser):
+    class UserTypeChoices(models.TextChoices):
+        OTHER = 'O', _('Other')
+        BUYER = 'B', _('Buyer')
+        HOLDER = 'H', _('Holder')
+    
     id = models.UUIDField(
         'ID',
         default=uuid.uuid4,
@@ -45,24 +50,21 @@ class UserModel(TimeStampedModel, AbstractUser):
         'last_name'
     ]
     
-    is_buyer = models.BooleanField(
-        _('Buyer'),
-        default=False
+    user_type = models.CharField(
+        _('User'),
+        max_length=2,
+        choices=UserTypeChoices.choices,
+        default=UserTypeChoices.HOLDER
     )
     
-    is_holder = models.BooleanField(
-        _('Holder'),
-        default=False
-    )
-
     def __str__(self) -> str:
         return f"{self.get_full_name()}"
 
     def save(self, *args, **kwargs):
-        self.first_name = self.first_name.title()
-        self.last_name = self.last_name.title()
-        self.username = self.username.lower()
-        self.email = self.email.lower()
+        self.first_name = self.first_name.title().strip()
+        self.last_name = self.last_name.title().strip()
+        self.username = self.username.lower().strip()
+        self.email = self.email.lower().strip()
         super().save(*args, **kwargs)
 
     class Meta:

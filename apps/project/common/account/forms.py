@@ -4,17 +4,16 @@ from django.contrib.auth.password_validation import validate_password
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
-from apps.project.common.users.validators import (
-    UnicodeLastNameValidator,
-    UnicodeNameValidator,
-    UnicodeUsernameValidator
-)
+from apps.project.common.users.validators import (UnicodeLastNameValidator,
+                                                  UnicodeNameValidator,
+                                                  UnicodeUsernameValidator)
 
 UserModel = get_user_model()
 USER_OR_EMAIL_TXT = _('User or Email')
 PASSWORD_TXT = _('Password')
 USER_TXT = _('User')
 EMAIL_TXT = _('Email')
+
 
 class UserRegisterForm(forms.ModelForm):
     username_validator = UnicodeUsernameValidator()
@@ -114,6 +113,20 @@ class UserRegisterForm(forms.ModelForm):
         )
     )
 
+    user_type = forms.ChoiceField(
+        label=_('User Type'),
+        required=True,
+        choices=UserModel.UserTypeChoices.choices,
+        widget=forms.Select(
+            attrs={
+                "id": "register_user_type",
+                "class": "form-select",
+                'aria-label': _('User Type'),
+                'aria-describedby': 'register_user_type'
+            }
+        )
+    )
+
     def clean_confirm_password(self):
         validate_password(
             self.cleaned_data["password"],
@@ -125,14 +138,14 @@ class UserRegisterForm(forms.ModelForm):
 
         if self.cleaned_data["password"] != self.cleaned_data["confirm_password"]:
             raise ValidationError(_('Passwords do not match'))
-
     class Meta:
         model = UserModel
         fields = (
             "username",
             "email",
             "first_name",
-            "last_name"
+            "last_name",
+            "user_type"
         )
 
 

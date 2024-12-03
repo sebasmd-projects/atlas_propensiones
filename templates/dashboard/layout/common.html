@@ -1,0 +1,30 @@
+{% extends 'dashboard/raw.html' %}
+
+{% load static i18n %}
+
+{% block canonical %}
+  <link href="https://atlas.propensionesabogados.com/" rel="canonical" />
+  <link href="https://atlas.propensionesabogados.com/" hreflang="x-default" rel="alternate" />
+  <link href="https://atlas.propensionesabogados.com/" hreflang="{{ LANGUAGE_CODE }}" rel="alternate" />
+{% endblock %}
+
+{% block favicon %}
+  <link rel="icon" type="image/png" href="{% static 'assets/imgs/favicon/favicon-96x96.png' %}" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="{% static 'assets/imgs/favicon/favicon.svg' %}" />
+  <link rel="shortcut icon" href="{% static 'assets/imgs/favicon/favicon.ico' %}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/imgs/favicon/apple-touch-icon.png' %}" />
+  <link rel="manifest" href="{% static 'assets/imgs/favicon/site.webmanifest' %}" />
+  <meta name="apple-mobile-web-app-title" content="Atlas" />
+{% endblock %}
+
+{% block bootstrap_js %}
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+{% endblock %}
+
+{% block custom_css %}
+  <link href="{% static 'assets/css/dashboard/styles.css' %}" rel="stylesheet" />
+{% endblock %}
+
+{% block custom_js %}
+  <script src="{% static 'assets/js/dashboard/scripts.js' %}"></script>
+{% endblock %}
