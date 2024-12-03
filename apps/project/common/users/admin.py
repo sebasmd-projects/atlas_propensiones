@@ -25,13 +25,15 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
         'is_staff',
         'is_active',
         'is_superuser',
+        "user_type",
         'get_groups',
     )
 
     list_filter = (
         "is_staff",
         "is_superuser",
-        "is_active"
+        "is_active",
+        "user_type"
     )
 
     list_display_links = (
@@ -61,6 +63,7 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
                 'fields': (
                     'username',
                     'password',
+                    'user_type',
                 )
             }
         ),
@@ -80,7 +83,7 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
                     'is_staff',
                     'is_superuser',
                     'groups',
-                    'user_permissions'
+                    'user_permissions',
                 )
             }
         ),

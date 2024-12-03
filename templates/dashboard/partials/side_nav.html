@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <nav class="sidenav shadow-right sidenav-light">
     <div class="sidenav-menu">
         <div class="nav accordion" id="accordionSidenav">
@@ -30,9 +32,9 @@
                     </a>
                     <div class="collapse" id="pagesCollapseAccount" data-bs-parent="#accordionSidenavPagesMenu">
                         <nav class="sidenav-menu-nested nav">
-                            <a class="nav-link" href="account-profile.html">Profile</a>
-                            <a class="nav-link" href="account-security.html">Security</a>
-                            <a class="nav-link" href="account-notifications.html">Notifications</a>
+                            <!-- <a class="nav-link" href="account-profile.html">Profile</a> -->
+                            <a class="nav-link" href="{% url 'two_factor:profile' %}">{% trans 'Security' %}</a>
+                            <!-- <a class="nav-link" href="account-notifications.html">Notifications</a> -->
                         </nav>
                     </div>
                 </nav>
@@ -44,9 +46,9 @@
             </a>
             <div class="collapse" id="collapseApps" data-bs-parent="#accordionSidenav">
                 <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavAppsMenu">
-                    <a class="nav-link" href="#!">KYC</a>
-                    <a class="nav-link" href="#!">CIS</a>
-                    <a class="nav-link" href="#!">IDONEITY</a>
+                    <a class="nav-link" href="https://wa.me/573183280176?text=KYC" target="_blank" rel="noopener noreferrer">KYC</a>
+                    <a class="nav-link" href="https://wa.me/573183280176?text=CIS" target="_blank" rel="noopener noreferrer">CIS</a>
+                    <a class="nav-link" href="https://wa.me/573183280176?text=IDONEIDAD" target="_blank" rel="noopener noreferrer">{% trans 'IDONEITY' %}</a>
                 </nav>
             </div>
         </div>

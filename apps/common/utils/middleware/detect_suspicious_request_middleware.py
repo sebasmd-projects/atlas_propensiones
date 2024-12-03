@@ -1,33 +1,14 @@
 import logging
 
 from django.conf import settings
-from django.http import HttpResponsePermanentRedirect
+from django.shortcuts import render
 from django.utils import timezone
 from django.utils.translation import gettext as _
-from django.shortcuts import render
+
 from apps.common.utils.models import IPBlockedModel
 
 logger = logging.getLogger(__name__)
 
-
-class RedirectWWWMiddleware:
-    def __init__(self, get_response):
-        self.get_response = get_response
-
-    def __call__(self, request):
-        host = request.get_host()
-
-        if host.startswith('www.'):
-            non_www_host = host[4:]
-            url = request.build_absolute_uri(request.get_full_path())
-            non_www_url = url.replace(
-                f'http://www.{host}', f'http://{non_www_host}'
-            )
-
-            return HttpResponsePermanentRedirect(non_www_url)
-
-        response = self.get_response(request)
-        return response
 
 try:
     template_name = settings.ERROR_TEMPLATE
@@ -38,6 +19,7 @@ except SystemExit:
 except Exception as e:
     logger.error(f"An unexpected error occurred: {e}")
     template_name = 'errors_template.html'
+
 
 class DetectSuspiciousRequestMiddleware:
     def __init__(self, get_response):
@@ -65,6 +47,6 @@ class DetectSuspiciousRequestMiddleware:
                     'attempt_count': blocked_entry.session_info.get('attempt_count', 1),
                 }
             )
-            
+
         response = self.get_response(request)
         return response

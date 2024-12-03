@@ -8,7 +8,7 @@
     <link rel="icon" href="{{ error_favicon }}" type="image/x-icon" />
   </head>
 
-  <body>
+  <body id="error-body">
     <style>
       body {
         font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
@@ -35,8 +35,19 @@
     </style>
 
     <div>
-      <h1 className="error-message">{{ status }} |</h1>
-      <h2 className="error-message">{{ error }}</h2>
+      <h1 class="error-message">{{ status }} |</h1>
+      <h2 class="error-message">{{ error }}</h2>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const status = parseInt("{{ status }}", 10);
+        if (status >= 400 && status < 500) {
+          setTimeout(function () {
+            window.location.href = "{% url 'core:index' %}";
+          }, 5000);
+        }
+      });
+    </script>
   </body>
 </html>

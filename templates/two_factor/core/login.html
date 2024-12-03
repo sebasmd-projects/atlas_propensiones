@@ -145,11 +145,9 @@
     const togglePasswordIcon = document.getElementById('togglePasswordIcon');
 
     togglePassword.addEventListener('click', () => {
-      // Toggle the type attribute
       const isPassword = passwordInput.type === 'password';
       passwordInput.type = isPassword ? 'text' : 'password';
 
-      // Toggle the icon class
       togglePasswordIcon.classList.toggle('bi-eye-slash');
       togglePasswordIcon.classList.toggle('bi-eye');
     });

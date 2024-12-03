@@ -149,6 +149,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'apps.common.utils.middleware.RedirectWWWMiddleware',
+    'apps.common.utils.middleware.RedirectAuthenticatedUserMiddleware',
     'apps.common.utils.middleware.DetectSuspiciousRequestMiddleware',
     'axes.middleware.AxesMiddleware',
 ]

@@ -37,7 +37,6 @@ class UserModel(TimeStampedModel, AbstractUser):
     last_name = models.CharField(
         _("surnames"),
         max_length=150,
-        blank=True,
     )
 
     email = EncryptedEmailField(
