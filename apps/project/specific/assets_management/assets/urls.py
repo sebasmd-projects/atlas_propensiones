@@ -1,8 +1,8 @@
 from django.urls import path
 
 from .views import (AssetCategoryCreateView, AssetCategoryDetailView,
-                    AssetCategoryListView, AssetDetailView, AssetsCreateView,
-                    AssetsListView, HolderTemplateview)
+                    AssetCategoryListView, AssetDetailView, AssetUpdateView, AssetsCreateView,
+                    AssetsListView, HolderTemplateview, AssetDeleteView)
 
 app_name = 'assets'
 
@@ -11,6 +11,16 @@ urlpatterns = [
         'asset/holder/',
         HolderTemplateview.as_view(),
         name='holder_index'
+    ),
+    path(
+        'asset/edit/<int:pk>/',
+        AssetUpdateView.as_view(),
+        name='edit_asset'
+    ),
+    path(
+        'asset/delete/<int:pk>/',
+        AssetDeleteView.as_view(),
+        name='delete_asset'
     ),
     path(
         'asset/add/',

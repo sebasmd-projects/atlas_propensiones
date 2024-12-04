@@ -1,0 +1,23 @@
+{% load i18n %}
+
+<!-- Modal para Confirmar Eliminación -->
+<div class="modal" id="confirmDeleteModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Confirmar Eliminación</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Estás seguro de que deseas eliminar este Asset?
+        </div>
+        <div class="modal-footer">
+          <form method="post">
+            {% csrf_token %}
+            <button type="button" class="btn btn-danger" id="confirmDeleteButton">{% trans 'Confirm Delete' %}</button>
+            <button type="button" class="btn btn-secondary" id="cancelDeleteButton" data-dismiss="modal">{% trans 'Cancel' %}</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

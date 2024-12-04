@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-23 12:57-0500\n"
-"PO-Revision-Date: 2024-11-15 18:19-0500\n"
-"Last-Translator: Sebastian  <sebasmoralesd@gmail.com>\n"
+"POT-Creation-Date: 2024-12-03 19:48-0500\n"
+"PO-Revision-Date: 2024-12-03 19:45-0500\n"
+"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,42 +19,52 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:7
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:56
+#: .\apps\project\specific\internal\code_gen\forms.py:8
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:56
 msgid "Include NIT"
 msgstr "Incluir NIT"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:11
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:62
+#: .\apps\project\specific\internal\code_gen\forms.py:12
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:62
 msgid "Include Date (DDMMYYYY)"
 msgstr "Incluir Fecha (DDMMYYYY)"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:15
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:68
+#: .\apps\project\specific\internal\code_gen\forms.py:16
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:68
 msgid "Include Random Code (4 digits)"
 msgstr "Código Aleatorio (4 Dígitos)"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:19
+#: .\apps\project\specific\internal\code_gen\forms.py:20
 msgid "Generate QR Code"
 msgstr "Cód QR"
 
+#: .\apps\project\specific\internal\code_gen\forms.py:24
+#: .\apps\project\specific\internal\code_gen\forms.py:29
+msgid "QR Image URL"
+msgstr "URL de la imagen QR"
+
 #: .\apps\project\specific\internal\code_gen\forms.py:34
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:74
+msgid "Generate Barcode"
+msgstr "Cód de Barras"
+
+#: .\apps\project\specific\internal\code_gen\forms.py:49
 #: .\apps\project\specific\internal\code_gen\models.py:9
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:38
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:39
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:43
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:38
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:39
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:43
 msgid "Reference"
 msgstr "Referencia"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:41
+#: .\apps\project\specific\internal\code_gen\forms.py:56
 #: .\apps\project\specific\internal\code_gen\models.py:14
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:44
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:44
 msgid "Description"
 msgstr "Descripción"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:47
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:48
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:49
+#: .\apps\project\specific\internal\code_gen\forms.py:62
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:48
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:49
 msgid "Custom Text"
 msgstr "Texto Personalizado"
 
@@ -67,49 +77,41 @@ msgid "Code Information"
 msgstr "Información del barcode"
 
 #: .\apps\project\specific\internal\code_gen\models.py:41
-#, fuzzy
-#| msgid "Barcode Registration"
 msgid "Code Registration"
 msgstr "Registro de barcode"
 
 #: .\apps\project\specific\internal\code_gen\models.py:42
-#, fuzzy
-#| msgid "Barcode Registrations"
 msgid "Code Registrations"
-msgstr "Registros de barcodes"
+msgstr "Registros"
 
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:6
-msgid "Barcode Generator"
-msgstr "Generador de barcodes"
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:6
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:33
+msgid "Code Generator"
+msgstr "Generador de Códigos"
 
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:33
-msgid "Bar Code Generator"
-msgstr "Generador de Códigos de Barras"
-
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:74
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:98
-#, fuzzy
-#| msgid "Bar Code"
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:80
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:106
 msgid "QR Code"
-msgstr "Código de Barras"
+msgstr "Código QR"
 
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:82
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:88
 msgid "Next"
 msgstr "Siguiente"
 
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:89
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:95
 msgid "Download"
 msgstr "Descargar"
 
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:91
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:97
 msgid "Bar Code"
 msgstr "Código de Barras"
 
-#: .\apps\project\specific\internal\code_gen\templates\code_form.html:96
-#, fuzzy
-#| msgid "Download"
+#: .\apps\project\specific\internal\code_gen\templates\dashboard\pages\documents\code_gen\code_form.html:103
 msgid "Download QR"
-msgstr "Descargar"
+msgstr "Descargar QR"
+
+#~ msgid "Barcode Generator"
+#~ msgstr "Generador de barcodes"
 
 #~ msgid "Language"
 #~ msgstr "Idioma"

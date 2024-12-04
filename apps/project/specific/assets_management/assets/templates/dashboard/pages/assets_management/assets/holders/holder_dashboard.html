@@ -1,0 +1,187 @@
+{% extends 'dashboard/layout/base.html' %}
+
+{% load i18n static %}
+
+{% block simple_datatables %}
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+{% endblock simple_datatables %}
+
+
+{% block main %}
+<header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+  <div class="container-xl px-4">
+    <div class="page-header-content pt-4">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-auto mt-4">
+          <h1 class="page-header-title">
+            <div class="page-header-icon">
+              <i data-feather="activity"></i>
+            </div>
+            {% trans 'Dashboard' %}
+          </h1>
+          <div class="page-header-subtitle">{% trans 'Overview and content summary' %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main page content -->
+<div class="container-xl px-4 mt-n10">
+  <div class="row">
+
+    <div class="col-4 mb-4">
+      <a class="card lift h-100" href="{% url 'assets:holder_index' %}">
+        <div class="card-body d-flex justify-content-center flex-column">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="me-3">
+              <i class="feather-xl text-green mb-3" data-feather="layout"></i>
+              <h5>{% trans 'Assets and Offers' %}</h5>
+              <div class="text-muted small">{% trans 'Here you can see your assets and new Offers' %}</div>
+            </div>
+            <img src="{% static 'assets/img/illustrations/windows.svg' %}" alt="dashboard" style="width: 8rem" />
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-4 mb-4">
+      <a class="card lift h-100" href="{% url 'assets:create_asset' %}">
+        <div class="card-body d-flex justify-content-center flex-column">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="me-3">
+              <i class="feather-xl text-primary mb-3" data-feather="package"></i>
+              <h5>{% trans 'Add new Asset' %}</h5>
+              <div class="text-muted small">{% trans 'Enter a new historical asset' %}</div>
+            </div>
+            <img src="{% static 'assets/img/illustrations/browser-stats.svg' %}" alt="new historical asset"
+              style="width: 8rem" />
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-4 mb-4">
+      <a class="card lift h-100" href="https://wa.me/573183280176?text=suporte%20plataforma%20atlas" target="_blank"
+        rel="noopener noreferrer">
+        <div class="card-body d-flex justify-content-center flex-column">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="me-3">
+              <i class="feather-xl text-secondary mb-3" data-feather="book"></i>
+              <h5>{% trans 'Support' %}</h5>
+              <div class="text-muted small">
+                {% blocktrans %}Do you need help? get support now{% endblocktrans %}
+              </div>
+            </div>
+            <img src="{% static 'assets/img/illustrations/processing.svg' %}" alt="support" style="width: 8rem" />
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <!-- Tabbed dashboard card -->
+      <div class="card mb-4">
+        <div class="card-header border-bottom">
+          <!-- Dashboard card navigation -->
+          <ul class="nav nav-tabs card-header-tabs" id="dashboardNav" role="tablist">
+            <li class="nav-item me-1">
+              <a class="nav-link active" id="assets-pill" href="#assets" data-bs-toggle="tab" role="tab"
+                aria-controls="assets" aria-selected="true">
+                {% trans 'My Historical Assets' %}
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="offers-pill" href="#offers" data-bs-toggle="tab" role="tab" aria-controls="offers"
+                aria-selected="false">
+                {% trans 'Assets in Demand (Offers)' %}
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="card-body">
+          <div class="tab-content" id="dashboardNavContent">
+
+
+            <!-- Dashboard Tab Pane 1 -->
+            <div class="tab-pane fade show active" id="assets" role="tabpanel" aria-labelledby="assets-pill">
+              <div class="mb-4 mb-lg-0">
+                {% include 'dashboard/pages/assets_management/assets/holders/partials/assets_tab_table.html' %}
+              </div>
+            </div>
+
+
+            <!-- Dashboard Tab Pane 2 -->
+            <div class="tab-pane fade" id="offers" role="tabpanel" aria-labelledby="offers-pill">
+              {% include 'dashboard/pages/assets_management/assets/holders/partials/offers_tab_table.html' %}
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block simple_datatables_js %}
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+  crossorigin="anonymous"></script>
+<script src="{% static 'assets/js/dashboard/datatables/simple-datatable.js' %}"></script>
+{% endblock %}
+
+{% block body_custom_js %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+  $(document).ready(function () {
+
+
+    $('.btn-modal-delete').on('click', function () {
+      const assetId = $(this).data('asset-id');
+
+      $('#confirmDeleteModal').modal('show');
+
+
+      $('#cancelDeleteButton').on('click', function () {
+        $('#confirmDeleteModal').modal('hide');
+      });
+
+
+      $('#confirmDeleteButton').on('click', function () {
+        $.ajax({
+          url: `/asset/delete/${assetId}/`,
+          method: 'POST',
+          data: { csrfmiddlewaretoken: document.getElementsByName('csrfmiddlewaretoken')[0].value },
+          dataType: "json",
+          mode: 'same-origin',
+          success: function () {
+            $('#confirmDeleteModal').modal('hide');
+            console.log('Asset eliminado correctamente.', assetId);
+            location.reload();
+          },
+          error: function () {
+            console.log('Error al eliminar el asset.', assetId);
+            $('#confirmDeleteModal').modal('hide');
+          }
+        });
+
+        $('#confirmDeleteModal').modal('hide');
+      });
+    });
+
+  });
+</script>
+{% endblock body_custom_js %}
+
+{% block modals %}
+{% include 'dashboard/pages/assets_management/assets/holders/partials/delete_asset_modal.html' %}
+{% endblock modals %}

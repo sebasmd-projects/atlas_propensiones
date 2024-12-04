@@ -1,0 +1,52 @@
+{% load i18n currency_format %}
+
+<table id="offers_table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>{% trans 'Asset (ES)' %}</th>
+        <th>{% trans 'Asset (EN)' %}</th>
+        <th>{% trans 'Category' %}</th>
+        <th>{% trans 'Quantity Type' %}</th>
+        <th>{% trans 'Offer Amount per Quantity Type (USD)' %}</th>
+        <th>{% trans 'Needed' %}</th>
+        <th>{% trans 'Country' %}</th>
+        <th>{% trans 'Apply' %}</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>#</th>
+        <th>{% trans 'Asset (ES)' %}</th>
+        <th>{% trans 'Asset (EN)' %}</th>
+        <th>{% trans 'Category' %}</th>
+        <th>{% trans 'Quantity Type' %}</th>
+        <th>{% trans 'Offer Amount per Quantity Type (USD)' %}</th>
+        <th>{% trans 'Needed' %}</th>
+        <th>{% trans 'Country' %}</th>
+        <th>{% trans 'Actions' %}</th>
+      </tr>
+    </tfoot>
+    <tbody>
+      {% for offer in offers %}
+      <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ offer.asset_es }}</td>
+        <td>{{ offer.asset_en }}</td>
+        <td>{{ offer.asset_type }}</td>
+        <td>{{ offer.get_quantity_type_display }}</td>
+        <td>{{ offer.offer_amount|currency }}</td>
+        <td>{{ offer.offer_quantity }}</td>
+        <td>{{ offer.buyer_country.country_name }}</td>
+        <td>
+          <button class="btn btn-datatable btn-icon btn-outline-info"><i class="fa-solid fa-circle-info"></i></button>
+          <a href="https://wa.me/573183280176?text=Quiero%20aplicar%20a%20una%20postura" class="btn btn-datatable btn-icon btn-outline-success"><i class="fa-brands fa-whatsapp"></i></a>
+        </td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="8" class="text-center">{% trans 'No offers available' %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>

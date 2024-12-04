@@ -1,4 +1,3 @@
-from django.conf import settings
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 from import_export.admin import ImportExportActionModelAdmin
@@ -54,6 +53,10 @@ class AssetLocationAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
         'asset__name',
         'asset__es_name',
         'amount',
+        'created_by__username',
+        'created_by__email',
+        'created_by__first_name',
+        'created_by__last_name',
     )
 
     list_display = (
@@ -65,6 +68,7 @@ class AssetLocationAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
     )
 
     list_display_links = list_display[:3]
+
     readonly_fields = (
         'created',
         'updated'
@@ -76,6 +80,11 @@ class AssetLocationAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
     )
 
     fieldsets = (
+        (_('User Field'), {
+            'fields': (
+                'created_by',
+            ),
+        }),
         (_('Required Fields'), {
             'fields': (
                 'asset',
@@ -118,6 +127,7 @@ class AssetLocationAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
 
     get_location_continent.short_description = _("continent")
 
+
 @admin.register(LocationModel)
 class LocationModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
     list_display = (
@@ -149,6 +159,11 @@ class LocationModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
     )
 
     fieldsets = (
+        (_('User Field'), {
+            'fields': (
+                'created_by',
+            ),
+        }),
         (_('Required Fields'), {
             'fields': (
                 'reference',

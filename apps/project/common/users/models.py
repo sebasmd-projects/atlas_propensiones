@@ -16,9 +16,10 @@ from apps.common.utils.models import TimeStampedModel
 
 class UserModel(TimeStampedModel, AbstractUser):
     class UserTypeChoices(models.TextChoices):
-        OTHER = 'O', _('Other')
-        BUYER = 'B', _('Buyer')
         HOLDER = 'H', _('Holder')
+        REPRESENTATIVE = 'R', _('Representative')
+        BUYER = 'B', _('Buyer')
+        INTERMEDIARY = 'I', _('Intermediary')
     
     id = models.UUIDField(
         'ID',
@@ -57,7 +58,7 @@ class UserModel(TimeStampedModel, AbstractUser):
     )
     
     def __str__(self) -> str:
-        return f"{self.get_full_name()}"
+        return f"{self.get_full_name()} - {self.email} - {self.username}"
 
     def save(self, *args, **kwargs):
         self.first_name = self.first_name.title().strip()

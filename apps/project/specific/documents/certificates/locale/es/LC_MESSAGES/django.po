@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-16 23:05-0500\n"
+"POT-Creation-Date: 2024-12-03 19:07-0500\n"
 "PO-Revision-Date: 2024-11-16 23:04-0500\n"
 "Last-Translator: Sebastian  <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,22 +19,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\project\specific\documents\certificates\admin.py:28
+#: .\apps\project\specific\documents\certificates\admin.py:33
 #: .\apps\project\specific\documents\certificates\apps.py:8
-#: .\apps\project\specific\documents\certificates\models.py:111
+#: .\apps\project\specific\documents\certificates\models.py:113
 msgid "Certificate"
 msgstr "Certificado"
 
-#: .\apps\project\specific\documents\certificates\admin.py:36
+#: .\apps\project\specific\documents\certificates\admin.py:44
 msgid "Dates"
 msgstr "Fechas"
 
-#: .\apps\project\specific\documents\certificates\admin.py:40
+#: .\apps\project\specific\documents\certificates\admin.py:48
 msgid "Priority"
 msgstr "Prioridad"
 
 #: .\apps\project\specific\documents\certificates\apps.py:9
-#: .\apps\project\specific\documents\certificates\models.py:112
+#: .\apps\project\specific\documents\certificates\models.py:114
 msgid "Certificates"
 msgstr "Certificados"
 
@@ -231,11 +231,11 @@ msgid "Verify"
 msgstr "Verificar"
 
 #: .\apps\project\specific\documents\certificates\views.py:99
-#: .\apps\project\specific\documents\certificates\views.py:128
+#: .\apps\project\specific\documents\certificates\views.py:127
 msgid "Too many failed attempts."
 msgstr "Demasiados intentos fallidos."
 
-#: .\apps\project\specific\documents\certificates\views.py:132
+#: .\apps\project\specific\documents\certificates\views.py:131
 msgid "ID Number not found."
 msgstr "No se encontró el documento."
 

@@ -85,7 +85,7 @@ class LocationModel(TimeStampedModel):
 
     def __str__(self) -> str:
         """Returns a string representation of the location."""
-        message = f"{self.reference} - {self.get_continent_display()}"
+        message = f"{self.reference} - {self.get_continent_display()} - {self.country.country_name} ({self.created_by.email})"
         return message
 
     class Meta:
@@ -125,7 +125,7 @@ class AssetLocationModel(TimeStampedModel):
     )
 
     def __str__(self) -> str:
-        return f"{self.location.reference} - {self.amount} - {self.asset.es_name}"
+        return f"{self.created_by.email} - {self.location.reference} - {self.amount} - {self.asset.es_name}"
 
     class Meta:
         db_table = "apps_assets_location_assetlocation"

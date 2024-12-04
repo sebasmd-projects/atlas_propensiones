@@ -4,7 +4,7 @@ from apps.project.specific.assets_management.assets_location.models import \
     AssetLocationModel
 
 
-class AssetLocationInline(admin.TabularInline):
+class AssetLocationInline(admin.StackedInline):
     model = AssetLocationModel
     extra = 1
     min_num = 0

@@ -148,11 +148,13 @@ class AssetModel(TimeStampedModel):
     def __str__(self) -> str:
         return f"{self.es_name} - {self.get_quantity_type_display()} - {self.total_quantity}"
 
+    # TODO Save .title().strip() for all names
+    
     class Meta:
         db_table = "apps_assets_asset"
         verbose_name = _("1. Asset")
         verbose_name_plural = _("1. Assets")
-        unique_together = [['name', 'quantity_type']]
+        unique_together = [['name', 'es_name', 'quantity_type', 'created_by']]
         ordering = ["default_order", "es_name", "-created"]
 
 

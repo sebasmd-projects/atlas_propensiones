@@ -123,7 +123,7 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
 
 
 @admin.register(CountryModel)
-class CountryModelAdmin(admin.ModelAdmin):
+class CountryModelAdmin(ImportExportActionModelAdmin):
     search_fields = (
         'country_name',
         'country_code'

@@ -21,6 +21,12 @@ class OfferModel(TimeStampedModel):
         UNITS = "U", _("Units")
         BOXES = "B", _("Boxes")
         CONTAINERS = "C", _("Containers")
+        
+    class OfferTypeChoices(models.TextChoices):
+        SOVEREIGN = "S", _("Sovereign Purchase")
+        PRIVATE = "P", _("Private Purchase (Sovereign)")
+        BUSINESS = "B", _("Business Purchase")
+        GOVERNMENT = "G", _("Government Purchase")
 
     created_by = models.ForeignKey(
         UserModel,
@@ -49,6 +55,13 @@ class OfferModel(TimeStampedModel):
         verbose_name=_("category"),
         null=True
     )
+    
+    offer_type = models.CharField(
+        _("Offer Type"),
+        max_length=255,
+        choices=OfferTypeChoices.choices,
+        default=OfferTypeChoices.PRIVATE
+    )
 
     quantity_type = models.CharField(
         _("quantity type"),
@@ -58,7 +71,7 @@ class OfferModel(TimeStampedModel):
     )
 
     offer_amount = models.DecimalField(
-        _("Offer Amount per quantity type in (BIS)"),
+        _("Offer Amount per quantity type in USD"),
         max_digits=20,
         decimal_places=1,
         default=0
