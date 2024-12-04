@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 19:07-0500\n"
+"POT-Creation-Date: 2024-12-03 20:51-0500\n"
 "PO-Revision-Date: 2024-12-03 19:21-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -221,31 +221,21 @@ msgstr "Activos y ofertas"
 msgid "Here you can see your assets and new Offers"
 msgstr "Aquí podrás ver tus activos y nuevas Ofertas"
 
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:53
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:49
-msgid "Add new Asset"
-msgstr "Agregar nuevo activo"
-
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:54
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:50
-msgid "Enter a new historical asset"
-msgstr "Ingrese un nuevo activo histórico"
-
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:70
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:66
+#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:76
+#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:70
 msgid "Support"
 msgstr "Soporte"
 
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:72
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:68
+#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:78
+#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:72
 msgid "Do you need help? get support now"
 msgstr "¿Necesitas ayuda? obtener soporte ahora"
 
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:93
+#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:99
 msgid "My Historical Assets"
 msgstr "Mis activos históricos"
 
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:100
+#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:106
 msgid "Assets in Demand (Offers)"
 msgstr "Activos en demanda (ofertas)"
 
@@ -285,11 +275,11 @@ msgstr "Confirmar Eliminación"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:83
+#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:87
 msgid "Edit Asset"
 msgstr "Editar Activo"
 
-#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:89
+#: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:93
 msgid "Save Changes"
 msgstr "Guardar Cambios"
 
@@ -320,3 +310,9 @@ msgstr "Aplicar"
 #: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\offers_tab_table.html:48
 msgid "No offers available"
 msgstr "No hay ofertas disponibles"
+
+#~ msgid "Add new Asset"
+#~ msgstr "Agregar nuevo activo"
+
+#~ msgid "Enter a new historical asset"
+#~ msgstr "Ingrese un nuevo activo histórico"

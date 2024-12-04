@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 19:48-0500\n"
-"PO-Revision-Date: 2024-12-03 20:00-0500\n"
+"POT-Creation-Date: 2024-12-03 20:51-0500\n"
+"PO-Revision-Date: 2024-12-03 20:52-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -694,7 +694,6 @@ msgid "Back to Account Security"
 msgstr "Volver a Seguridad de la cuenta"
 
 #: .\apps\common\core\templates\two_factor\core\backup_tokens.html:33
-#| msgid "Code Generation"
 msgid "Generate Tokens"
 msgstr "Generar Tokens"
 
@@ -717,24 +716,33 @@ msgstr ""
 " seguros. Ingrese uno de estos tokens de respaldo para iniciar sesión en su "
 "cuenta si pierde el dispositivo de autenticación."
 
-#: .\apps\common\core\templates\two_factor\core\login.html:99
+#: .\apps\common\core\templates\two_factor\core\login.html:56
+#| msgid "name"
+msgid "Username"
+msgstr "Usuario"
+
+#: .\apps\common\core\templates\two_factor\core\login.html:70
+msgid "Password"
+msgstr "Contraseña"
+
+#: .\apps\common\core\templates\two_factor\core\login.html:101
 msgid "Or, alternatively, use one of your other authentication methods:"
 msgstr ""
 "O, alternativamente, utilice uno de sus otros métodos de autenticación:"
 
-#: .\apps\common\core\templates\two_factor\core\login.html:119
+#: .\apps\common\core\templates\two_factor\core\login.html:121
 msgid "As a last resort, you can use a backup token:"
 msgstr "Como último recurso, puedes utilizar un token de respaldo:"
 
-#: .\apps\common\core\templates\two_factor\core\login.html:122
+#: .\apps\common\core\templates\two_factor\core\login.html:124
 msgid "Use Backup Token"
 msgstr "Usar token de respaldo"
 
-#: .\apps\common\core\templates\two_factor\core\login.html:132
+#: .\apps\common\core\templates\two_factor\core\login.html:134
 msgid "New user?"
 msgstr "¿Nuevo usuario?"
 
-#: .\apps\common\core\templates\two_factor\core\login.html:134
+#: .\apps\common\core\templates\two_factor\core\login.html:136
 msgid "Create an account!"
 msgstr "¡Crea una cuenta!"
 
@@ -843,12 +851,10 @@ msgstr ""
 "un número de teléfono."
 
 #: .\apps\common\core\templates\two_factor\core\setup_complete.html:23
-#| msgid "Phone Number"
 msgid "Add Phone Number"
 msgstr "Agregar Número de teléfono"
 
 #: .\apps\common\core\templates\two_factor\profile\profile.html:11
-#| msgid "Security"
 msgid "Account Security"
 msgstr "Seguridad de la Cuenta"
 

@@ -53,7 +53,8 @@
               <button class="btn btn-outline-secondary" disabled type="button" id="id_auth-username_icon">
                 <i class="bi bi-person" id="id_auth-username_icon"></i>
               </button>
-              <input id="id_auth-username" type="text" class="form-control" placeholder="Username" aria-label="Username"
+              {% trans 'Username' as username %}
+              <input id="id_auth-username" type="text" class="form-control" placeholder="{{ username }}" aria-label="Username"
                 required name="auth-username" />
             </div>
             {% if form.username.errors %}
@@ -66,7 +67,8 @@
 
             <!-- Form Group (password)-->
             <div class="input-group mb-3">
-              <input id="id_auth-password" type="password" class="form-control" placeholder="Password" aria-label="Password"
+              {% trans 'Password' as pass %}
+              <input id="id_auth-password" type="password" class="form-control" placeholder="{{ pass }}" aria-label="Password"
                 name="auth-password" required />
               <button class="btn btn-outline-secondary" type="button" id="togglePassword">
                 <i class="bi bi-eye-slash" id="togglePasswordIcon"></i>
