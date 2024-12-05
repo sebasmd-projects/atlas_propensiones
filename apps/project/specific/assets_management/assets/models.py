@@ -1,5 +1,6 @@
 import logging
 import os
+import uuid
 from datetime import date
 
 from auditlog.registry import auditlog
@@ -19,16 +20,16 @@ UserModel = get_user_model()
 
 
 class AssetCategoryModel(TimeStampedModel):
-    name = models.CharField(
+    es_name = models.CharField(
+        _("category (ES)"),
+        max_length=50,
+    )
+
+    en_name = models.CharField(
         _("category (EN)"),
         max_length=50,
         blank=True,
         null=True
-    )
-
-    es_name = models.CharField(
-        _("category (ES)"),
-        max_length=50,
     )
 
     description = models.TextField(
@@ -40,11 +41,46 @@ class AssetCategoryModel(TimeStampedModel):
     def __str__(self) -> str:
         return self.es_name
 
+    def save(self, *args, **kwargs):
+        self.es_name = self.es_name.title().strip()
+        if self.en_name:
+            self.en_name = self.en_name.title().strip()
+        super(AssetCategoryModel, self).save(*args, **kwargs)
+
     class Meta:
         db_table = "apps_assets_assetcategory"
         verbose_name = _("2. Category")
         verbose_name_plural = _("2. Categories")
-        ordering = ["default_order", "es_name", "-created"]
+        ordering = ["default_order", "-created"]
+
+
+class AssetsNamesModel(TimeStampedModel):
+    es_name = models.CharField(
+        _("asset (es)"),
+        max_length=255,
+    )
+
+    en_name = models.CharField(
+        _("asset (en)"),
+        max_length=255,
+        blank=True,
+        null=True
+    )
+
+    def __str__(self) -> str:
+        return self.es_name
+
+    def save(self, *args, **kwargs):
+        self.es_name = self.es_name.title().strip()
+        if self.en_name:
+            self.en_name = self.en_name.title().strip()
+        super(AssetsNamesModel, self).save(*args, **kwargs)
+
+    class Meta:
+        db_table = "apps_assets_assetsnames"
+        verbose_name = _("3. Asset Name")
+        verbose_name_plural = _("3. Asset Names")
+        ordering = ["default_order", "-created"]
 
 
 class AssetModel(TimeStampedModel):
@@ -60,7 +96,7 @@ class AssetModel(TimeStampedModel):
         Path format: asset/{slugified_name}/img/YYYY/MM/DD/{hashed_filename}.{extension}
         """
         try:
-            es_name = slugify(instance.es_name)[:40]
+            es_name = slugify(instance.asset_name.es_name)[:40]
             base_filename, file_extension = os.path.splitext(filename)
             filename_hash = generate_md5_hash(base_filename)
             path = os.path.join(
@@ -76,6 +112,15 @@ class AssetModel(TimeStampedModel):
                 f"Error generating file path for {filename}: {e}"
             )
             raise e
+
+    id = models.UUIDField(
+        'ID',
+        default=uuid.uuid4,
+        unique=True,
+        primary_key=True,
+        serialize=False,
+        editable=False
+    )
 
     created_by = models.ForeignKey(
         UserModel,
@@ -100,16 +145,11 @@ class AssetModel(TimeStampedModel):
         null=True
     )
 
-    es_name = models.CharField(
-        _("spanish name"),
-        max_length=255,
-    )
-
-    name = models.CharField(
-        _("english name"),
-        max_length=255,
-        blank=True,
-        null=True
+    asset_name = models.ForeignKey(
+        AssetsNamesModel,
+        on_delete=models.CASCADE,
+        related_name="assets_asset_assetsnames",
+        verbose_name=_("asset")
     )
 
     category = models.ForeignKey(
@@ -138,7 +178,6 @@ class AssetModel(TimeStampedModel):
     )
 
     def asset_total_quantity(self):
-        # total quantity matches the sum of all related asset locations.
         expected_total = self.assetlocation_assetlocation_asset.aggregate(
             total=models.Sum('amount')
         )['total'] or 0
@@ -146,20 +185,36 @@ class AssetModel(TimeStampedModel):
         return expected_total
 
     def __str__(self) -> str:
-        return f"{self.es_name} - {self.get_quantity_type_display()} - {self.total_quantity}"
+        return f"{self.asset_name.es_name} - {self.get_quantity_type_display()} - {self.total_quantity}"
 
-    # TODO Save .title().strip() for all names
-    
     class Meta:
         db_table = "apps_assets_asset"
         verbose_name = _("1. Asset")
         verbose_name_plural = _("1. Assets")
-        unique_together = [['name', 'es_name', 'quantity_type', 'created_by']]
-        ordering = ["default_order", "es_name", "-created"]
+        ordering = ["default_order", "-created"]
 
 
-post_delete.connect(auto_delete_asset_img_on_delete, sender=AssetModel)
-pre_save.connect(auto_delete_asset_img_on_change, sender=AssetModel)
+post_delete.connect(
+    auto_delete_asset_img_on_delete,
+    sender=AssetModel
+)
 
-# Register the model with audit log for tracking changes
-auditlog.register(AssetModel, serialize_data=True)
+pre_save.connect(
+    auto_delete_asset_img_on_change,
+    sender=AssetModel
+)
+
+auditlog.register(
+    AssetCategoryModel,
+    serialize_data=True
+)
+
+auditlog.register(
+    AssetsNamesModel,
+    serialize_data=True
+)
+
+auditlog.register(
+    AssetModel,
+    serialize_data=True
+)

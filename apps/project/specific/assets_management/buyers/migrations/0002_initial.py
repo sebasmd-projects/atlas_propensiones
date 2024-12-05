@@ -10,14 +10,14 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('assets', '0001_initial'),
+        ('buyers', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='assetmodel',
+            model_name='offermodel',
             name='created_by',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='assets_assets_user', to=settings.AUTH_USER_MODEL, verbose_name='Created By'),
+            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='offers_offers_user', to=settings.AUTH_USER_MODEL, verbose_name='Created By'),
         ),
     ]

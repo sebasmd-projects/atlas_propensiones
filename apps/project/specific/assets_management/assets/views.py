@@ -104,14 +104,6 @@ class AssetDeleteView(DeleteView):
             return JsonResponse({'success': False, 'error': 'Unauthorized'}, status=403)
 
 
-class AssetsListView(LoginRequiredMixin, HolderRequiredMixin, ListView):
-    template_name = 'dashboard/pages/assets_management/assets/list.html'
-    model = AssetModel
-    context_object_name = 'assets'
-
-    def get_queryset(self):
-        return AssetModel.objects.filter(created_by=self.request.user)
-
 
 # Asset views
 class AssetsCreateView(LoginRequiredMixin, FormView):

@@ -7,9 +7,11 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
-from encrypted_model_fields.fields import (EncryptedCharField,
-                                           EncryptedDateField,
-                                           EncryptedEmailField)
+from encrypted_model_fields.fields import (
+    EncryptedCharField,
+    EncryptedDateField,
+    EncryptedEmailField
+)
 
 from apps.common.utils.models import TimeStampedModel
 
@@ -20,7 +22,7 @@ class UserModel(TimeStampedModel, AbstractUser):
         REPRESENTATIVE = 'R', _('Representative')
         BUYER = 'B', _('Buyer')
         INTERMEDIARY = 'I', _('Intermediary')
-    
+
     id = models.UUIDField(
         'ID',
         default=uuid.uuid4,
@@ -49,14 +51,14 @@ class UserModel(TimeStampedModel, AbstractUser):
         'first_name',
         'last_name'
     ]
-    
+
     user_type = models.CharField(
         _('User'),
         max_length=2,
         choices=UserTypeChoices.choices,
         default=UserTypeChoices.HOLDER
     )
-    
+
     def __str__(self) -> str:
         return f"{self.get_full_name()} - {self.email} - {self.username}"
 
@@ -323,7 +325,8 @@ class UserPersonalInformationModel(TimeStampedModel):
         db_table = 'apps_users_userpersonalpnformation'
         verbose_name = _('User Personal Information')
         verbose_name_plural = _('User Personal Information')
-        
+
+
 auditlog.register(
     UserModel,
     serialize_data=True

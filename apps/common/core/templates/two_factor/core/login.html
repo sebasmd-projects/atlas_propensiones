@@ -84,7 +84,11 @@
             {% endif %}
 
             <!-- Form Group (forgot password link)-->
-            <div class="mb-3"><a class="small" href="https://wa.me/573183280176?text=contraseña%20olvidada!" target="_blank" rel="noopener noreferrer">Forgot your password?</a></div>
+            <div class="mb-3">
+              <a class="small" href="https://wa.me/573183280176?text=contraseña%20olvidada!" target="_blank" rel="noopener noreferrer">
+                {% trans 'Forgot your password?' %}
+              </a>
+            </div>
         {% elif wizard.steps.current == 'token' %}
           {% include "two_factor/_wizard_forms.html" %}
 

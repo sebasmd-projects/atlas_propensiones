@@ -2,7 +2,7 @@ from django.urls import path
 
 from .views import (AssetCategoryCreateView, AssetCategoryDetailView,
                     AssetCategoryListView, AssetDetailView, AssetUpdateView, AssetsCreateView,
-                    AssetsListView, HolderTemplateview, AssetDeleteView)
+                    HolderTemplateview, AssetDeleteView)
 
 app_name = 'assets'
 
@@ -26,11 +26,6 @@ urlpatterns = [
         'asset/add/',
         AssetsCreateView.as_view(),
         name='create_asset'
-    ),
-    path(
-        'asset/list/',
-        AssetsListView.as_view(),
-        name='list_assets'
     ),
     path(
         'asset/detail/',
