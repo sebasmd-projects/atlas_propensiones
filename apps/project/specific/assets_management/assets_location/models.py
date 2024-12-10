@@ -125,7 +125,7 @@ class LocationModel(TimeStampedModel):
 
     class Meta:
         db_table = "apps_assets_location_location"
-        unique_together = ['reference', 'country']
+        unique_together = ['reference', 'country', 'created_by']
         verbose_name = _("2. Location")
         verbose_name_plural = _("2. Locations")
         ordering = ["default_order", "-created"]
