@@ -43,10 +43,14 @@
             {% csrf_token %}
             {{ wizard.management_form }}
             
-            <div class="form-floating">
-              <input type="number" class="form-control" name="generator-token" min="0" max="999999" autofocus="autofocus" inputmode="numeric" autocomplete="one-time-code" required id="id_generator-token">
-              <label for="id_generator-token">TOKEN</label>
-            </div>
+            {% if wizard.steps.current == 'generator' %}
+              <div class="form-floating">
+                <input type="number" class="form-control" name="generator-token" min="0" max="999999" autofocus="autofocus" inputmode="numeric" autocomplete="one-time-code" required id="id_generator-token">
+                <label for="id_generator-token">TOKEN</label>
+              </div>
+            {% endif %}
+              
+            
 
             <input type="submit" value="" hidden />
 
