@@ -6,7 +6,6 @@ from ..models import AssetLocationModel, AssetModel
 from ..signals import (update_asset_total_quantity_on_location,
                        update_asset_total_quantity_on_location_delete)
 
-
 class AssetLocationResource(resources.ModelResource):
 
     def before_import(self, dataset, dry_run, **kwargs):

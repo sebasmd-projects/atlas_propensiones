@@ -13,7 +13,6 @@ import unidecode
 from barcode.writer import ImageWriter
 from django.http import HttpResponse, JsonResponse
 from django.urls import reverse
-from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import FormView
 from PIL import Image
 

@@ -143,7 +143,7 @@ msgstr "Oceanía"
 
 #: .\apps\project\specific\assets_management\assets_location\models.py:51
 msgid "South America"
-msgstr "Sudamerica"
+msgstr "Sudamérica"
 
 #: .\apps\project\specific\assets_management\assets_location\models.py:57
 #: .\apps\project\specific\assets_management\assets_location\models.py:105

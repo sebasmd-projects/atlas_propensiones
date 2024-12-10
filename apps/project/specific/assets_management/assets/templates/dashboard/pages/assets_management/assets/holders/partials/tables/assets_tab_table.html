@@ -1,0 +1,84 @@
+{% load i18n static %}
+
+<table id="assets_table">
+  <thead>
+    {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/partials/thead_tfoot.html' %}
+  </thead>
+  <tfoot>
+    {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/partials/thead_tfoot.html' %}
+  </tfoot>
+  <tbody>
+    {% for field in assets %}
+      <tr>
+        <td>
+          {{ forloop.counter }}
+        </td>
+
+        <td>
+          {% if field.asset.asset_img.url %}
+            <img src="{{ field.asset.asset_img.url }}" alt="{{ field.asset.asset_name.en_name }}" class="img-thumbnail"
+            style="width: auto; height: 50px;">
+          {% else %}
+            <img src="{% static 'assets/imgs/favicon/favicon-96x96.png' %}" alt="{{ field.asset.asset_name.en_name }}"
+            class="img-thumbnail" style="width: 50px; height: 50px;">
+          {% endif %}
+        </td>
+
+        {% if LANGUAGE_CODE == "es" %}
+          <td>{{ field.asset.asset_name.es_name }}</td>
+        {% else %}
+          <td>{{ field.asset.asset_name.en_name }}</td>
+        {% endif %}
+
+        {% if LANGUAGE_CODE == "es" %}
+          <td>{{ field.asset.category.es_name }}</td>
+        {% else %}
+          <td>{{ field.asset.category.en_name }}</td>
+        {% endif %}
+
+        <td>
+          {{ field.location.reference }}
+        </td>
+
+        <td>
+          {{ field.location.country.get_continent_display }}
+        </td>
+
+        <td>
+          {% if LANGUAGE_CODE == "es" %}
+            {{ field.location.country.es_country_name }}
+          {% else %}
+            {{ field.location.country.en_country_name }}
+          {% endif %}
+        </td>
+
+        <td>
+          {{ field.amount}}
+        </td>
+
+        <td>
+          {{ field.get_quantity_type_display }}
+        </td>
+
+        <td>
+          <a href="{% url 'assets_location:update_asset_location' field.id %}" class="btn btn-datatable btn-icon btn-outline-cyan" id="edit_asset_{{ field.id }}">
+            <i class="fa-regular fa-pen-to-square"></i>
+          </a>
+
+          <button class="btn btn-datatable btn-icon btn-outline-danger btn-modal-delete" data-asset-id="{{ field.id }}">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+
+          <a  href="https://wa.me/573183280176?text=Podrían darme soporte con mi activo {{ asset_es_name }} referencia {{ field.location.reference }}"
+              target="_blank"
+              class="btn btn-datatable btn-icon btn-outline-success">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </td>
+
+      </tr>
+    {% empty %}
+    {% endfor %}
+
+  </tbody>
+</table>

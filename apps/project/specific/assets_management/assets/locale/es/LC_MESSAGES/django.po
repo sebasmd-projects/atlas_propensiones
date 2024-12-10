@@ -199,7 +199,7 @@ msgstr "1. Activo"
 
 #: .\apps\project\specific\assets_management\assets\models.py:156
 msgid "1. Assets"
-msgstr "2. Activos"
+msgstr "1. Activos"
 
 #: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:20
 #: .\apps\project\specific\assets_management\assets\templates\dashboard\pages\assets_management\assets\holders\partials\edit_asset.html:16

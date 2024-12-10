@@ -60,7 +60,7 @@ class UserModel(TimeStampedModel, AbstractUser):
     )
 
     def __str__(self) -> str:
-        return f"{self.get_full_name()} - {self.email} - {self.username}"
+        return f"{self.get_full_name()} ({self.username})"
 
     def save(self, *args, **kwargs):
         self.first_name = self.first_name.title().strip()

@@ -13,7 +13,9 @@ from django.utils.translation import gettext_lazy as _
 from apps.common.core.functions import generate_md5_hash
 from apps.common.utils.models import TimeStampedModel
 from apps.project.specific.assets_management.assets.signals import (
-    auto_delete_asset_img_on_change, auto_delete_asset_img_on_delete)
+    auto_delete_asset_img_on_change,
+    auto_delete_asset_img_on_delete
+)
 
 logger = logging.getLogger(__name__)
 UserModel = get_user_model()
@@ -84,12 +86,6 @@ class AssetsNamesModel(TimeStampedModel):
 
 
 class AssetModel(TimeStampedModel):
-    class QuantityTypeChoices(models.TextChoices):
-        OTHER = "O", _("Other")
-        UNITS = "U", _("Units")
-        BOXES = "B", _("Boxes")
-        CONTAINERS = "C", _("Containers")
-
     def assets_directory_path(instance, filename) -> str:
         """
         Generate a file path for an asset image.
@@ -122,14 +118,6 @@ class AssetModel(TimeStampedModel):
         editable=False
     )
 
-    created_by = models.ForeignKey(
-        UserModel,
-        on_delete=models.SET_NULL,
-        related_name="assets_assets_user",
-        verbose_name=_("Created By"),
-        null=True
-    )
-
     asset_img = models.ImageField(
         _("img"),
         max_length=255,
@@ -137,14 +125,7 @@ class AssetModel(TimeStampedModel):
         blank=True,
         null=True
     )
-
-    observations = models.TextField(
-        _("observations"),
-        default="",
-        blank=True,
-        null=True
-    )
-
+    
     asset_name = models.ForeignKey(
         AssetsNamesModel,
         on_delete=models.CASCADE,
@@ -164,28 +145,37 @@ class AssetModel(TimeStampedModel):
         blank=True,
         null=True
     )
-
-    quantity_type = models.CharField(
-        _("quantity type"),
-        max_length=255,
-        choices=QuantityTypeChoices.choices,
-        default=QuantityTypeChoices.BOXES
+    
+    observations = models.TextField(
+        _("observations"),
+        default="",
+        blank=True,
+        null=True
     )
 
-    total_quantity = models.BigIntegerField(
-        _("total lump sum"),
-        default=0
-    )
+    def asset_total_quantity_by_type(self):
+        """
+        Calculate the total quantity grouped by quantity_type with readable labels.
+        """
+        from collections import defaultdict
 
-    def asset_total_quantity(self):
-        expected_total = self.assetlocation_assetlocation_asset.aggregate(
+        related_model = self.assetlocation_assetlocation_asset.model
+        quantity_type_display = dict(related_model.QuantityTypeChoices.choices)
+
+        totals_by_type = self.assetlocation_assetlocation_asset.values('quantity_type').annotate(
             total=models.Sum('amount')
-        )['total'] or 0
+        )
+        
+        totals = defaultdict(int)
 
-        return expected_total
+        for entry in totals_by_type:
+            readable_label = quantity_type_display.get(entry['quantity_type'], entry['quantity_type'])
+            totals[readable_label] = entry['total']
+        
+        return totals
 
     def __str__(self) -> str:
-        return f"{self.asset_name.es_name} - {self.get_quantity_type_display()} - {self.total_quantity}"
+        return f"{self.asset_name.es_name}"
 
     class Meta:
         db_table = "apps_assets_asset"

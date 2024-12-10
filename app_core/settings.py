@@ -63,6 +63,7 @@ THIRD_PARTY_APPS = [
     'rest_framework_simplejwt',
     'rosetta',
     'two_factor',
+    'django_select2',
 ]
 
 COMMON_APPS = [

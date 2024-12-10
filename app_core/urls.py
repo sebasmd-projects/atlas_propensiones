@@ -93,8 +93,15 @@ ckeditor_urls = [
     ),
 ]
 
+django_select2_urls = [
+    path(
+        'select2/',
+        include('django_select2.urls')
+    )
+]
+
 urlpatterns = admin_urls + two_factor_urls + \
-    apps_urls + third_party_urls + swagger_urls + ckeditor_urls
+    apps_urls + third_party_urls + swagger_urls + ckeditor_urls + django_select2_urls
 
 if settings.DEBUG:
     urlpatterns += static(

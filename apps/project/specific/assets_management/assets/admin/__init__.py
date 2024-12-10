@@ -1,20 +1,15 @@
 
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
-from import_export.admin import ImportExportActionModelAdmin, ImportExportModelAdmin
+from import_export.admin import ImportExportActionModelAdmin
 
 from ..models import AssetCategoryModel, AssetModel, AssetsNamesModel
-from .actions import update_total_quantities
-from .filters import HasImageFilter, ZeroTotalQuantityFilter
-from .forms import AssetModelForm
-from .inlines import AssetLocationInline
-from .resources import (AssetCategoryResource, AssetModelResource,
-                        AssetsNamesResource)
+from .filters import (HasImageFilter, QuantityTypeFilter,
+                      ZeroTotalQuantityFilter)
 
 
 @admin.register(AssetsNamesModel)
 class AssetsNamesModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
-    resource_class = AssetsNamesResource
 
     search_fields = (
         'es_name',
@@ -66,8 +61,6 @@ class AssetsNamesModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
 
 @admin.register(AssetCategoryModel)
 class AssetCategoryModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
-    resource_class = AssetCategoryResource
-
     search_fields = (
         'en_name',
         'es_name'
@@ -121,20 +114,13 @@ class AssetCategoryModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
 
 
 @admin.register(AssetModel)
-class AssetModelAdmin(ImportExportModelAdmin, admin.ModelAdmin):
-    resource_class = AssetModelResource
-    
-    inlines = (
-        AssetLocationInline,
+class AssetModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
+
+    autocomplete_fields = (
+        'asset_name',
+        'category',
     )
-
-    form = AssetModelForm
-
-    actions = [update_total_quantities]
-
-    def get_export_resource_class(self):
-        return AssetModelResource
-
+    
     search_fields = (
         'id',
         'asset_name__es_name',
@@ -142,31 +128,22 @@ class AssetModelAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
         'category__es_name',
         'category__en_name',
-
-        'created_by__username',
-        'created_by__first_name',
-        'created_by__last_name',
-        'created_by__email',
-
-        'total_quantity'
     )
 
     list_filter = (
         'is_active',
-        'quantity_type',
+        QuantityTypeFilter,
         ZeroTotalQuantityFilter,
         HasImageFilter,
         'category',
     )
 
     list_display = (
-        'created_by',
         'get_asset_es_name',
         'get_asset_en_name',
         'category',
-        'quantity_type',
-        'total_quantity',
         'is_active',
+        'get_asset_total_quantity_by_type',
     )
 
     list_display_links = list_display[:3]
@@ -175,7 +152,7 @@ class AssetModelAdmin(ImportExportModelAdmin, admin.ModelAdmin):
         'id',
         'created',
         'updated',
-        'total_quantity',
+        'get_asset_total_quantity_by_type',
     )
 
     ordering = (
@@ -188,13 +165,11 @@ class AssetModelAdmin(ImportExportModelAdmin, admin.ModelAdmin):
             'fields':
                 (
                     'id',
-                    'created_by',
                     'asset_img',
                     'asset_name',
                     'category',
-                    'quantity_type',
-                    'total_quantity',
                     'is_active',
+                    'get_asset_total_quantity_by_type',
                 )
         }
         ),
@@ -202,6 +177,9 @@ class AssetModelAdmin(ImportExportModelAdmin, admin.ModelAdmin):
             'fields': (
                 'observations',
                 'description',
+            ),
+            'classes': (
+                'collapse',
             )
         }
         ),
@@ -229,10 +207,14 @@ class AssetModelAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
     def get_asset_es_name(self, obj):
         return obj.asset_name.es_name
-
     get_asset_es_name.short_description = _('Asset Name (ES)')
 
     def get_asset_en_name(self, obj):
         return obj.asset_name.en_name
-
     get_asset_en_name.short_description = _('Asset Name (EN)')
+
+    def get_asset_total_quantity_by_type(self, obj):
+        totals = obj.asset_total_quantity_by_type()
+        return ", ".join(f"{key}: {value}" for key, value in totals.items())
+    get_asset_total_quantity_by_type.short_description = _(
+        'Total Quantity by Type')

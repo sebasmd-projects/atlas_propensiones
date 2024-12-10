@@ -37,3 +37,21 @@ class HasImageFilter(admin.SimpleListFilter):
         if self.value() == 'no':
             return queryset.filter(models.Q(asset_img__isnull=True) | models.Q(asset_img__exact=''))
         return queryset
+
+
+class QuantityTypeFilter(admin.SimpleListFilter):
+    title = _('Quantity Type')
+    parameter_name = 'quantity_type'
+
+    def lookups(self, request, model_admin):
+        # Devuelve las opciones del filtro con las etiquetas legibles
+        from apps.project.specific.assets_management.assets_location.models import AssetLocationModel
+        return AssetLocationModel.QuantityTypeChoices.choices
+
+    def queryset(self, request, queryset):
+        # Filtra el queryset según el tipo seleccionado
+        if self.value():
+            return queryset.filter(
+                assetlocation_assetlocation_asset__quantity_type=self.value()
+            ).distinct()  # Asegurarse de que los registros no se dupliquen
+        return queryset

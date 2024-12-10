@@ -19,18 +19,18 @@
 
 
             <div class="sidenav-menu-heading">{% trans 'Custom' %}</div>
-            <a class="nav-link show" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+            <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                 <div class="nav-link-icon"><i data-feather="grid"></i></div>
                 {% trans 'Pages' %}
                 <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
             </a>
             <div class="collapse" id="collapsePages" data-bs-parent="#accordionSidenav">
                 <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPagesMenu">
-                    <a class="nav-link show" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAccount" aria-expanded="false" aria-controls="pagesCollapseAccount">
+                    <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAccount" aria-expanded="false" aria-controls="pagesCollapseAccount">
                         {% trans 'Account' %}
                         <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                     </a>
-                    <div class="show" id="pagesCollapseAccount" data-bs-parent="#accordionSidenavPagesMenu">
+                    <div class="collapse" id="pagesCollapseAccount" data-bs-parent="#accordionSidenavPagesMenu">
                         <nav class="sidenav-menu-nested nav">
                             <!-- <a class="nav-link" href="account-profile.html">Profile</a> -->
                             <a class="nav-link" href="{% url 'two_factor:profile' %}">{% trans 'Security' %}</a>
@@ -39,12 +39,12 @@
                     </div>
                 </nav>
             </div>
-            <a class="nav-link show" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseApps" aria-expanded="false" aria-controls="collapseApps">
+            <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseApps" aria-expanded="false" aria-controls="collapseApps">
                 <div class="nav-link-icon"><i data-feather="globe"></i></div>
                 {% trans 'Applications' %}
                 <div class="sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
             </a>
-            <div class="show" id="collapseApps" data-bs-parent="#accordionSidenav">
+            <div class="collapse" id="collapseApps" data-bs-parent="#accordionSidenav">
                 <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavAppsMenu">
                     <a class="nav-link" href="https://wa.me/573183280176?text=KYC" target="_blank" rel="noopener noreferrer">KYC</a>
                     <a class="nav-link" href="https://wa.me/573183280176?text=CIS" target="_blank" rel="noopener noreferrer">CIS</a>

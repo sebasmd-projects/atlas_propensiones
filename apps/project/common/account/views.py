@@ -48,4 +48,4 @@ class UserRegisterView(FormView):
         if next_url:
             return next_url
         else:
-            return reverse('core:index')
+            return reverse('two_factor:login')

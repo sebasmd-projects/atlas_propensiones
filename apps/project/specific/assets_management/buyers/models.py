@@ -1,5 +1,6 @@
 import logging
 import os
+import uuid
 from datetime import date
 
 from auditlog.registry import auditlog
@@ -11,8 +12,7 @@ from django_ckeditor_5.fields import CKEditor5Field
 
 from apps.common.core.functions import generate_md5_hash
 from apps.common.utils.models import TimeStampedModel
-from apps.project.specific.assets_management.assets.models import \
-    AssetCategoryModel
+from apps.project.specific.assets_management.assets.models import AssetModel
 from apps.project.specific.assets_management.assets_location.models import \
     AssetCountryModel
 
@@ -22,7 +22,6 @@ UserModel = get_user_model()
 
 class OfferModel(TimeStampedModel):
     class QuantityTypeChoices(models.TextChoices):
-        OTHER = "O", _("Other")
         UNITS = "U", _("Units")
         BOXES = "B", _("Boxes")
         CONTAINERS = "C", _("Containers")
@@ -33,7 +32,7 @@ class OfferModel(TimeStampedModel):
         Path format: offer/{slugified_name}/img/YYYY/MM/DD/{hashed_filename}.{extension}
         """
         try:
-            es_name = slugify(instance.asset_es)[:40]
+            es_name = slugify(instance.asset.asset_name.es_name)[:40]
             base_filename, file_extension = os.path.splitext(filename)
             filename_hash = generate_md5_hash(base_filename)
             path = os.path.join(
@@ -56,32 +55,28 @@ class OfferModel(TimeStampedModel):
         BUSINESS = "B", _("Business Purchase")
         GOVERNMENT = "G", _("Government Purchase")
 
+    id = models.UUIDField(
+        'ID',
+        default=uuid.uuid4,
+        unique=True,
+        primary_key=True,
+        serialize=False,
+        editable=False
+    )
+
     created_by = models.ForeignKey(
         UserModel,
         on_delete=models.SET_NULL,
-        related_name="offers_offers_user",
+        related_name="buyers_offer_user",
         verbose_name=_("Created By"),
         null=True
     )
 
-    asset_es = models.CharField(
-        _("Asset (ES)"),
-        max_length=255,
-    )
-
-    asset_en = models.CharField(
-        _("Asset (EN)"),
-        max_length=255,
-        blank=True,
-        null=True
-    )
-
-    asset_type = models.ForeignKey(
-        AssetCategoryModel,
+    asset = models.ForeignKey(
+        AssetModel,
         on_delete=models.CASCADE,
-        related_name="buyers_offer_assetcategory",
-        verbose_name=_("category"),
-        null=True
+        related_name="buyers_offer_asset",
+        verbose_name=_("Asset")
     )
 
     offer_type = models.CharField(
@@ -118,23 +113,59 @@ class OfferModel(TimeStampedModel):
         null=True
     )
 
-    procedure = CKEditor5Field(
-        _('Procedure'),
+    es_procedure = CKEditor5Field(
+        _('Procedure (ES)'),
         config_name='default'
     )
+    
+    en_procedure = CKEditor5Field(
+        _('Procedure (EN)'),
+        config_name='default',
+    )
 
-    banner = models.ImageField(
-        _("Banner"),
+    es_banner = models.ImageField(
+        _("Banner (ES)"),
+        upload_to=offers_directory_path,
+        null=True,
+        blank=True
+    )
+    
+    en_banner = models.ImageField(
+        _("Banner (EN)"),
         upload_to=offers_directory_path,
         null=True,
         blank=True
     )
 
+    is_approved = models.BooleanField(
+        _("Approved"),
+        default=False
+    )
+
+    approved_by = models.ForeignKey(
+        UserModel,
+        on_delete=models.SET_NULL,
+        related_name="buyers_offer_approved_by_user",
+        verbose_name=_("Approved By"),
+        null=True,
+        blank=True
+    )
+
+    def save(self, *args, **kwargs):
+        if self.approved_by and not self.is_approved:
+            self.is_approved = True
+
+        if not self.approved_by:
+            self.is_approved = False
+            self.is_active = False
+
+        super(OfferModel, self).save(*args, **kwargs)
+
     def total_value(self):
         return self.offer_amount * self.offer_quantity
 
     def __str__(self) -> str:
-        return f"{self.asset_type} - {self.asset_es} - {self.asset_en} - {self.buyer_country} - {self.offer_quantity}"
+        return f"{self.asset.asset_name.es_name} - {self.buyer_country} - {self.offer_quantity}"
 
     class Meta:
         db_table = "apps_buyers_offer"
