@@ -1,15 +1,13 @@
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
-from import_export.admin import ImportExportActionModelAdmin
 
-from apps.project.specific.assets_management.assets_location.admin.resources import \
-    AssetLocationResource
+from apps.common.utils.admin import GeneralAdminModel
 
 from ..models import AssetCountryModel, AssetLocationModel, LocationModel
 
 
 @admin.register(AssetCountryModel)
-class AssetCountryAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
+class AssetCountryAdmin(GeneralAdminModel):
     list_display = (
         'continent',
         'es_country_name',
@@ -62,9 +60,8 @@ class AssetCountryAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
 
 
 @admin.register(AssetLocationModel)
-class AssetLocationAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
-    resource_class = AssetLocationResource
-    
+class AssetLocationAdmin(GeneralAdminModel):
+
     autocomplete_fields = (
         'created_by',
         'asset',
@@ -157,12 +154,12 @@ class AssetLocationAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
 
 
 @admin.register(LocationModel)
-class LocationModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
+class LocationModelAdmin(GeneralAdminModel):
     autocomplete_fields = (
         'created_by',
         'country',
     )
-    
+
     list_display = (
         'created_by',
         'reference',

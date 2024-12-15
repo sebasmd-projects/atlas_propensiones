@@ -5,16 +5,10 @@ import uuid
 from auditlog.registry import auditlog
 from django.contrib.auth import get_user_model
 from django.db import models
-from django.db.models.signals import post_save, pre_delete, pre_save
 from django.utils.translation import gettext_lazy as _
 
 from apps.common.utils.models import TimeStampedModel
 from apps.project.specific.assets_management.assets.models import AssetModel
-
-from .signals import (update_asset_total_quantity_on_location,
-                      update_asset_total_quantity_on_location_change,
-                      update_asset_total_quantity_on_location_delete,
-                      update_asset_total_quantity_on_location_is_active_change)
 
 UserModel = get_user_model()
 
@@ -191,28 +185,9 @@ class AssetLocationModel(TimeStampedModel):
         verbose_name = _("1. Location Registration")
         verbose_name_plural = _("1. Locations Registration")
         ordering = ["default_order", "-created"]
-        unique_together = ['asset', 'location', 'quantity_type', 'amount', 'created_by', 'is_active']
+        unique_together = ['asset', 'location',
+                           'quantity_type', 'amount', 'created_by', 'is_active']
 
-
-post_save.connect(
-    update_asset_total_quantity_on_location,
-    sender=AssetLocationModel
-)
-
-pre_delete.connect(
-    update_asset_total_quantity_on_location_delete,
-    sender=AssetLocationModel
-)
-
-pre_save.connect(
-    update_asset_total_quantity_on_location_change,
-    sender=AssetLocationModel
-)
-
-pre_save.connect(
-    update_asset_total_quantity_on_location_is_active_change,
-    sender=AssetLocationModel
-)
 
 auditlog.register(
     LocationModel,

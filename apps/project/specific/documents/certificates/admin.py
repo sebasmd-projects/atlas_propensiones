@@ -2,12 +2,14 @@ from django.contrib import admin, messages
 from django.urls import reverse
 from django.utils.html import format_html
 from django.utils.translation import gettext_lazy as _
-from import_export.admin import ImportExportActionModelAdmin
+
+from apps.common.utils.admin import GeneralAdminModel
 
 from .models import CertificateModel
 
 
-class CertificateAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
+
+class CertificateAdmin(GeneralAdminModel):
     list_display = (
         'user',
         'name',

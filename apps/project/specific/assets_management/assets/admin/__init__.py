@@ -1,15 +1,14 @@
 
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
-from import_export.admin import ImportExportActionModelAdmin
-
+from apps.common.utils.admin import GeneralAdminModel
 from ..models import AssetCategoryModel, AssetModel, AssetsNamesModel
 from .filters import (HasImageFilter, QuantityTypeFilter,
                       ZeroTotalQuantityFilter)
 
 
 @admin.register(AssetsNamesModel)
-class AssetsNamesModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
+class AssetsNamesModelAdmin(GeneralAdminModel):
 
     search_fields = (
         'es_name',
@@ -72,7 +71,7 @@ class AssetsNamesModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
 
 
 @admin.register(AssetCategoryModel)
-class AssetCategoryModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
+class AssetCategoryModelAdmin(GeneralAdminModel):
     search_fields = (
         'en_name',
         'es_name'
@@ -136,7 +135,7 @@ class AssetCategoryModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
 
 
 @admin.register(AssetModel)
-class AssetModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
+class AssetModelAdmin(GeneralAdminModel):
 
     autocomplete_fields = (
         'asset_name',

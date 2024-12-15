@@ -1,10 +1,12 @@
 from django.contrib import admin
 
+from apps.common.utils.admin import GeneralAdminModel
+
 from .models import CodeRegistrationModel
-from import_export.admin import ImportExportActionModelAdmin
+
 
 @admin.register(CodeRegistrationModel)
-class CodeRegistrationModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
+class CodeRegistrationModelAdmin(GeneralAdminModel):
     list_display = (
         'reference',
         'custom_text_input',

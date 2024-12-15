@@ -1,14 +1,15 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.utils.translation import gettext_lazy as _
-from import_export.admin import ImportExportActionModelAdmin
+
+from apps.common.utils.admin import GeneralAdminModel
 
 from .models import (AddressModel, CityModel, CountryModel, StateModel,
                      UserModel, UserPersonalInformationModel)
 
 
 @admin.register(UserModel)
-class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
+class UserModelAdmin(UserAdmin, GeneralAdminModel):
 
     search_fields = (
         'id',
@@ -94,9 +95,9 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
                     'created',
                     'updated'
                 ),
-            'classes': (
-                'collapse',
-            )
+                'classes': (
+                    'collapse',
+                )
             }
         ),
         (
@@ -104,9 +105,9 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
                 'fields': (
                     'default_order',
                 ),
-            'classes': (
-                'collapse',
-            )
+                'classes': (
+                    'collapse',
+                )
             }
         )
     )
@@ -123,7 +124,7 @@ class UserModelAdmin(UserAdmin, ImportExportActionModelAdmin):
 
 
 @admin.register(CountryModel)
-class CountryModelAdmin(ImportExportActionModelAdmin):
+class CountryModelAdmin(GeneralAdminModel):
     search_fields = (
         'country_name',
         'country_code'
@@ -149,7 +150,7 @@ class CountryModelAdmin(ImportExportActionModelAdmin):
 
 
 @admin.register(StateModel)
-class StateModelAdmin(admin.ModelAdmin):
+class StateModelAdmin(GeneralAdminModel):
     search_fields = (
         'state_name',
         'country__country_name'
@@ -176,7 +177,7 @@ class StateModelAdmin(admin.ModelAdmin):
 
 
 @admin.register(CityModel)
-class CityModelAdmin(admin.ModelAdmin):
+class CityModelAdmin(GeneralAdminModel):
     search_fields = (
         'city_name',
         'state__state_name',
@@ -211,7 +212,7 @@ class CityModelAdmin(admin.ModelAdmin):
 
 
 @admin.register(AddressModel)
-class AddressModelAdmin(ImportExportActionModelAdmin):
+class AddressModelAdmin(GeneralAdminModel):
     search_fields = (
         'country__country_name',
         'state__state_name',
@@ -261,7 +262,7 @@ class AddressModelAdmin(ImportExportActionModelAdmin):
 
 
 @admin.register(UserPersonalInformationModel)
-class UserPersonalInformationModelAdmin(admin.ModelAdmin):
+class UserPersonalInformationModelAdmin(GeneralAdminModel):
     search_fields = (
         'id',
         'user__first_name',
