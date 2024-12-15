@@ -20,7 +20,8 @@ class AssetsNamesModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
         'es_name',
         'en_name',
         'created',
-        'updated'
+        'updated',
+        'is_active',
     )
 
     list_display_links = (
@@ -44,7 +45,8 @@ class AssetsNamesModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
             'fields': (
                 'id',
                 'es_name',
-                'en_name'
+                'en_name',
+                'is_active',
             )
         }),
         (_('Dates'), {
@@ -56,6 +58,16 @@ class AssetsNamesModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
                 'collapse',
             )
         }),
+        (
+            _('Priority'), {
+                'fields': (
+                    'default_order',
+                ),
+                'classes': (
+                    'collapse',
+                )
+            }
+        )
     )
 
 
@@ -98,7 +110,7 @@ class AssetCategoryModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
                 'es_name',
                 'en_name',
                 'description',
-                'is_active'
+                'is_active',
             )
         }),
         (_('Dates'), {
@@ -110,6 +122,16 @@ class AssetCategoryModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
                 'collapse',
             )
         }),
+        (
+            _('Priority'), {
+                'fields': (
+                    'default_order',
+                ),
+                'classes': (
+                    'collapse',
+                )
+            }
+        )
     )
 
 
@@ -142,8 +164,8 @@ class AssetModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
         'get_asset_es_name',
         'get_asset_en_name',
         'category',
-        'is_active',
         'get_asset_total_quantity_by_type',
+        'is_active',
     )
 
     list_display_links = list_display[:3]

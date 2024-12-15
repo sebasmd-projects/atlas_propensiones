@@ -1,0 +1,1178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-11 11:03-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\apps\templates\admin\change_list.html:8
+msgid "Show"
+msgstr ""
+
+#: .\apps\templates\admin\change_list.html:17
+msgid "(Max: 2000)"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:8
+msgid "Contact Confirmation"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:80
+msgid "Message Received!"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:85
+#, python-format
+msgid "Hi %(name)s,"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:87
+msgid "Thank you for contacting us through "
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:90
+msgid ""
+"We have received your message and will get back to you as soon as possible."
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:93
+msgid ""
+"If you have any questions or need additional information, you can write us "
+"directly:"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:97
+msgid "You can also email us"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:101
+msgid "Thank you for trusting us!"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:104
+msgid "Best regards,"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:105
+msgid "About Us"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:111
+msgid "This email was sent from"
+msgstr ""
+
+#: .\apps\templates\core\email\contact_email_template.html:114
+msgid ""
+"If you did not expect this message or it was sent by mistake, please ignore "
+"it."
+msgstr ""
+
+#: .\apps\templates\core\index\index.html:6
+msgid "HOME | ABOUT | FEATURES | SERVICES"
+msgstr ""
+
+#: .\apps\templates\core\index\index.html:19
+#: .\apps\templates\core\index\index.html:20
+#: .\apps\templates\core\index\index.html:31
+msgid "ATLAS | Comprehensive and Secure Historical Asset Management Solution"
+msgstr ""
+
+#: .\apps\templates\core\index\index.html:21
+#: .\apps\templates\core\index\index.html:22
+#: .\apps\templates\core\index\index.html:32
+msgid ""
+"All-in-one suite for business management of historical assets safely and "
+"easily"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:10
+msgid "ASSETS"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:11
+msgid "HISTORICAL"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:12
+msgid "All-in-one Suite"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:15
+#: .\apps\templates\core\index\sections\section-6-call-to-action.html:11
+msgid "Comprehensive and Secure Historical Asset Management Solution"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:17
+msgid ""
+"\n"
+"            <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</"
+"strong>rusted <strong>L</strong>egacy\n"
+"              <strong>A</strong>sset <strong>S</strong>olution</small>\n"
+"            "
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:23
+msgid "Get Started"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:52
+msgid "With a team always willing to help"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:65
+msgid "International"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:66
+msgid "International Team"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:76
+msgid "Multidisciplinary"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:77
+msgid "Adapted to every need"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:87
+msgid "Results"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-1-hero.html:88
+msgid "Confirmed Sales"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:8
+msgid "MORE ABOUT US"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:9
+msgid "Institutionalization of International Asset Operations"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:11
+msgid ""
+"Our initiative focuses on formalizing and streamlining the process of "
+"managing international assets. This ensures better governance, compliance, "
+"and operational efficiency across global markets."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:16
+msgid "Enhanced governance structure"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:17
+msgid "Compliance with international standards"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:18
+msgid "Streamlined asset management process"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:23
+msgid "Risk mitigation in asset handling"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:24
+msgid "Integration with global markets"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:25
+msgid "Continuous improvement strategies"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:33
+msgid "CEO Profile"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:36
+msgid "CEO & Founder"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:44
+msgid "Call us anytime"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:55
+msgid "Years"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-2-about.html:56
+msgid "Of experience in managing international assets"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:8
+#: .\apps\templates\core\partials\header.html:24
+msgid "Features"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:9
+msgid ""
+"Explore the core functionalities of ATLAS for efficient asset management and "
+"comprehensive business solutions."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:20
+#: .\apps\templates\core\index\sections\section-4-features-cards.html:14
+msgid "Asset Management"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:26
+#: .\apps\templates\core\index\sections\section-4-features-cards.html:32
+msgid "Document Generation"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:32
+msgid "Security & Validation"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:46
+msgid "Comprehensive Asset Management"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:48
+msgid ""
+"ATLAS provides a robust platform for managing historical assets, ensuring "
+"compliance, traceability, and seamless integration with market demands."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:51
+msgid "Centralized asset tracking and monitoring"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:52
+msgid "Data analytics and reporting"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:53
+msgid "Asset markets for enhanced visibility"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:57
+msgid "Asset Management Illustration"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:66
+msgid "Automated Document Generation"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:68
+msgid ""
+"Efficiently generate, manage, and store important documents related to asset "
+"transactions, client agreements, and compliance certifications."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:71
+msgid "Templates for various document needs"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:72
+msgid "Automated filling and real-time generation of certificates"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:73
+msgid "Secure storage with easy access for verification and audit trails"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:77
+msgid "Document Generation Illustration"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:86
+msgid "Enhanced Security & Validation"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:88
+msgid "Advanced user authentication and role-based access control"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:89
+msgid "Secure data encryption and validation mechanisms"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:90
+msgid "Comprehensive KYC and AML processes for client onboarding"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:93
+msgid ""
+"ATLAS prioritizes security with state-of-the-art encryption and validation "
+"protocols to safeguard sensitive information and ensure compliance."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-3-features.html:97
+msgid "Security Illustration"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-4-features-cards.html:15
+msgid ""
+"Centralized platform for tracking and managing historical assets "
+"efficiently, ensuring data integrity and real-time updates."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-4-features-cards.html:23
+msgid "Compliance & Validation"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-4-features-cards.html:24
+msgid ""
+"Automated compliance checks and robust validation processes to meet "
+"international standards and regulatory requirements."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-4-features-cards.html:33
+msgid ""
+"Create and manage documents such as certificates and agreements with "
+"templates for seamless business operations."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-4-features-cards.html:41
+msgid "Security & Data Protection"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-4-features-cards.html:42
+msgid ""
+"Advanced security features including data encryption, access control, and "
+"regular audits to safeguard sensitive information."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:16
+msgid "Cross-Platform Accessibility"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:17
+msgid ""
+"ATLAS adapts seamlessly across desktops, tablets, and smartphones, ensuring "
+"a consistent user experience."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:29
+msgid "Optimized Performance"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:30
+msgid ""
+"Fast loading times and efficient resource usage provide a smooth experience "
+"even on low-spec devices."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:42
+msgid "Touch-Friendly Design"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:43
+msgid ""
+"Interactive elements and navigation are designed for easy use on touch "
+"screens, enhancing mobile usability."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:56
+msgid "Phone Mockup"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:69
+msgid "Fully Responsive Design"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:70
+msgid ""
+"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen "
+"size, providing a consistent experience."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:82
+msgid "Browser Compatibility"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:83
+msgid ""
+"Compatible with major web browsers including Chrome, Firefox, Edge, and "
+"Safari for a seamless experience."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:95
+msgid "Dark Mode Support"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-5-features-mobile.html:96
+msgid ""
+"ATLAS offers a dark mode option to reduce eye strain and improve visibility "
+"in low-light environments."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-6-call-to-action.html:10
+msgid "HISTORICAL ASSETS"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-6-call-to-action.html:12
+#: .\apps\templates\core\index\sections\section-7-contact.html:48
+msgid "Get In Touch"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-7-contact.html:6
+#: .\apps\templates\core\partials\header.html:28
+msgid "Contact"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-7-contact.html:13
+msgid "Contact Info"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-7-contact.html:19
+msgid "Our Location"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-7-contact.html:29
+msgid "Phone Number"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-7-contact.html:39
+msgid "Email Address"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-7-contact.html:49
+msgid "You Always Have Control"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-7-contact.html:52
+msgid "Your message has been sent successfully."
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-7-contact.html:53
+msgid "We will contact you soon!"
+msgstr ""
+
+#: .\apps\templates\core\index\sections\section-7-contact.html:136
+msgid "Send Message"
+msgstr ""
+
+#: .\apps\templates\core\partials\footer.html:14
+msgid "Phone:"
+msgstr ""
+
+#: .\apps\templates\core\partials\footer.html:15
+msgid "Email:"
+msgstr ""
+
+#: .\apps\templates\core\partials\footer.html:20
+msgid "Useful Links"
+msgstr ""
+
+#: .\apps\templates\core\partials\footer.html:22
+#: .\apps\templates\core\partials\header.html:10
+msgid "Home"
+msgstr ""
+
+#: .\apps\templates\core\partials\footer.html:23
+msgid "About us"
+msgstr ""
+
+#: .\apps\templates\core\partials\footer.html:24
+msgid "Terms of service"
+msgstr ""
+
+#: .\apps\templates\core\partials\footer.html:25
+msgid "Privacy policy"
+msgstr ""
+
+#: .\apps\templates\core\partials\footer.html:61
+#: .\apps\templates\dashboard\partials\account_footer.html:9
+#: .\apps\templates\dashboard\partials\footer.html:9
+msgid "Your unconditional ally. All Rights Reserved."
+msgstr ""
+
+#: .\apps\templates\core\partials\footer.html:63
+#: .\apps\templates\dashboard\partials\footer.html:9
+msgid "Created by"
+msgstr ""
+
+#: .\apps\templates\core\partials\header.html:16
+msgid "Holder"
+msgstr ""
+
+#: .\apps\templates\core\partials\header.html:21
+#: .\apps\templates\core\partials\header.html:23
+msgid "About"
+msgstr ""
+
+#: .\apps\templates\core\partials\header.html:32
+msgid "Custom APPS"
+msgstr ""
+
+#: .\apps\templates\core\partials\header.html:35
+msgid "Code Generation"
+msgstr ""
+
+#: .\apps\templates\core\partials\header.html:48
+msgid "Documents"
+msgstr ""
+
+#: .\apps\templates\core\partials\header.html:51
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:11
+msgid "Suitability Verification"
+msgstr ""
+
+#: .\apps\templates\core\partials\header.html:71
+msgid "LOGOUT"
+msgstr ""
+
+#: .\apps\templates\core\partials\header.html:74
+msgid "LOGIN"
+msgstr ""
+
+#: .\apps\templates\core\partials\header.html:75
+msgid "REGISTER"
+msgstr ""
+
+#: .\apps\templates\dashboard\account\account\register.html:28
+#: .\apps\templates\two_factor\core\login.html:56
+msgid "Username"
+msgstr ""
+
+#: .\apps\templates\dashboard\account\account\register.html:37
+msgid "Email"
+msgstr ""
+
+#: .\apps\templates\dashboard\account\account\register.html:46
+#: .\apps\templates\two_factor\core\login.html:70
+msgid "Password"
+msgstr ""
+
+#: .\apps\templates\dashboard\account\account\register.html:58
+msgid "Confirm Password"
+msgstr ""
+
+#: .\apps\templates\dashboard\account\account\register.html:70
+msgid "First Names"
+msgstr ""
+
+#: .\apps\templates\dashboard\account\account\register.html:79
+msgid "Last Names"
+msgstr ""
+
+#: .\apps\templates\dashboard\account\account\register.html:88
+msgid "User Type"
+msgstr ""
+
+#: .\apps\templates\dashboard\account\account\register.html:95
+msgid "Register"
+msgstr ""
+
+#: .\apps\templates\dashboard\account\account\register.html:96
+msgid "Do you already have an account? Sign in"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:5
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:59
+#: .\apps\templates\dashboard\pages\assets_management\partials\header_cards.html:25
+msgid "Add New Asset"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:16
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:16
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:46
+msgid "Asset"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:23
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:23
+msgid "Location"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:26
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:26
+msgid "+ Add Location"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:35
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:35
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:8
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:11
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:48
+msgid "Quantity Type"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:42
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:42
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:10
+msgid "Amount"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:50
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:50
+msgid "Add Asset Location"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\asset_location_base.html:25
+msgid ""
+"\n"
+"                            The Asset Location ties a specific asset to a "
+"location, defining where and in what quantity the asset is available.\n"
+"                            "
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:5
+msgid "Edit Asset"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\buyers\partials\header.html:12
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\header.html:12
+msgid "Dashboard"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\buyers\partials\header.html:14
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\header.html:14
+msgid "Overview and content summary"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:26
+msgid "My Historical Assets"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:33
+msgid "Assets in Demand (Offers)"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:55
+msgid ""
+"\n"
+"                      You have no assets registered. Register an asset to "
+"see available positions.\n"
+"                    "
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:64
+msgid "Total current offers:"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\modals\delete_asset_modal.html:8
+msgid "Confirm Deletion"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\modals\delete_asset_modal.html:12
+msgid "Are you sure you want to delete this Asset?"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\modals\delete_asset_modal.html:17
+msgid "Confirm Delete"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\modals\delete_asset_modal.html:19
+#: .\apps\templates\two_factor\_wizard_actions.html:5
+#: .\apps\templates\two_factor\core\setup.html:64
+msgid "Cancel"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:4
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:7
+msgid "Location Reference"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:5
+#: .\apps\templates\dashboard\pages\assets_management\location\add_location.html:42
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:44
+msgid "Description"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:6
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:8
+msgid "Continent"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:7
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:9
+#: .\apps\templates\dashboard\pages\assets_management\location\add_location.html:34
+msgid "Country"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:8
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:13
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:12
+msgid "Actions"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:4
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:4
+msgid "Image"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:5
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:5
+msgid "Asset Name"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:6
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:6
+msgid "Category"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:7
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:47
+msgid "Offer Type"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:9
+msgid "Offer Amount per quantity type in USD"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:10
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:50
+msgid "Offer Quantity"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:11
+msgid "Continent Preference"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:12
+msgid "Country Preference"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\location\add_location.html:16
+msgid "Add New Reference Location"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\location\add_location.html:27
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:38
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:39
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:43
+msgid "Reference"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\location\add_location.html:47
+msgid "Add Location Reference"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\location\add_location.html:55
+msgid ""
+"\n"
+"                        The Reference Location serves as a unique identifier "
+"to manage inventory across various\n"
+"                        locations.\n"
+"                        "
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\location\add_location.html:62
+msgid ""
+"\n"
+"                        It allows differentiation between inventory located "
+"in the same country but in different areas,\n"
+"                        inventory in different countries, or inventory in "
+"the same country as well as across multiple\n"
+"                        countries.\n"
+"                        "
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:20
+msgid "Procedure"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:25
+msgid "Offer Banner"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:34
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:57
+msgid "Apply to this position/offer"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:43
+msgid "Offer Summary"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:49
+msgid "Offer Amount"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\offers\offer_detail.html:51
+msgid "Buyer Country"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\partials\header_cards.html:10
+msgid "Assets and Offers"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\partials\header_cards.html:41
+msgid "Support"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\assets_management\partials\header_cards.html:43
+msgid "Do you need help?"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_base.html:6
+msgid "Certification of Suitability"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:5
+msgid "Certificate Details"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:28
+msgid "ID Number:"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:29
+msgid "Certificate ID:"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:31
+msgid "Approved"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:33
+msgid "Not Approved"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:39
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:48
+msgid "with document number"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:40
+msgid ""
+"\n"
+"                                qualifies as a beneficiary, who has "
+"undergone a security screening and accreditation of judicial records in "
+"accordance with current regulations, criminal reports on social media, and "
+"Interpol databases. Consequently, they do <strong>NOT</strong> have any "
+"judicial or disciplinary records from the certifying entities authorized by "
+"international public consultation databases, which would affect their "
+"suitability.\n"
+"                                <br/>\n"
+"                                For the record, this is signed on "
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:43
+msgid "in Quindío, Republic of Colombia."
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:49
+msgid ""
+"\n"
+"                                we inform you that, after the evaluation "
+"conducted, your security study <span class=\"text-danger\">HAS NOT BEEN "
+"APPROVED</span> due to not meeting the suitability requirements according to "
+"the current security regulations.\n"
+"                            "
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:56
+msgid ""
+"We remind you that, in accordance with the provisions of the Habeas Data "
+"Law, all your personal data has been treated with due confidentiality and is "
+"protected under the strictest security standards, guaranteeing its integrity "
+"and privacy. Your data will be used exclusively for authorized purposes and "
+"within the framework of current data protection regulations."
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_detail.html:60
+msgid "Status:"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_input.html:5
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_input.html:14
+msgid "Verify your Certificate"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_input.html:56
+msgid "Please try again in"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_input.html:56
+msgid "minutes."
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\certificates\certificate_input.html:62
+msgid "Verify"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:6
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:33
+msgid "Code Generator"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:48
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:49
+msgid "Custom Text"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:56
+msgid "Include NIT"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:62
+msgid "Include Date (DDMMYYYY)"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:68
+msgid "Include Random Code (4 digits)"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:74
+msgid "Generate Barcode"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:80
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:106
+msgid "QR Code"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:88
+#: .\apps\templates\two_factor\_wizard_actions.html:13
+#: .\apps\templates\two_factor\core\setup.html:59
+msgid "Next"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:95
+msgid "Download"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:97
+msgid "Bar Code"
+msgstr ""
+
+#: .\apps\templates\dashboard\pages\documents\code_gen\code_form.html:103
+msgid "Download QR"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\account_footer.html:18
+msgid "Terms & Conditions"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\nav\user.html:20
+msgid "ADMIN"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\nav\user.html:26
+#: .\apps\templates\dashboard\partials\side_nav.html:31
+msgid "Account"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\nav\user.html:30
+msgid "Logout"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\side_nav.html:22
+msgid "Custom"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\side_nav.html:25
+msgid "Pages"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\side_nav.html:37
+msgid "Security"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\side_nav.html:45
+msgid "Applications"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\side_nav.html:52
+msgid "IDONEITY"
+msgstr ""
+
+#: .\apps\templates\dashboard\partials\side_nav\footer.html:5
+msgid "Logged in as:"
+msgstr ""
+
+#: .\apps\templates\two_factor\_wizard_actions.html:11
+msgid "Back"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\backup_tokens.html:14
+#: .\apps\templates\two_factor\profile\profile.html:18
+msgid "Backup Tokens"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\backup_tokens.html:17
+msgid ""
+"Backup tokens can be used when your primary and backup phone numbers aren't "
+"available. The backup tokens below can be used for login verification. If "
+"you've used up all your backup tokens, you can generate a new set of backup "
+"tokens. Only the backup tokens shown below will be valid."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\backup_tokens.html:26
+msgid "Copy these tokens and keep them somewhere safe."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\backup_tokens.html:28
+msgid "You don't have any backup codes yet."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\backup_tokens.html:32
+#: .\apps\templates\two_factor\core\setup_complete.html:18
+#: .\apps\templates\two_factor\core\setup_complete.html:22
+msgid "Back to Account Security"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\backup_tokens.html:33
+msgid "Generate Tokens"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\login.html:16
+msgid "Login"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\login.html:19
+msgid "Enter your credentials."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\login.html:27
+msgid ""
+"Use this form for entering backup tokens for logging in. These tokens have "
+"been generated for you to print and keep safe. Please enter one of these "
+"backup tokens to login to your account."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\login.html:89
+msgid "Forgot your password?"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\login.html:105
+msgid "Or, alternatively, use one of your other authentication methods:"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\login.html:125
+msgid "As a last resort, you can use a backup token:"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\login.html:128
+msgid "Use Backup Token"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\login.html:138
+msgid "New user?"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\login.html:140
+msgid "Create an account!"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\otp_required.html:5
+msgid "Permission Denied"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\otp_required.html:7
+msgid ""
+"The page you requested, enforces users to verify using two-factor "
+"authentication for security reasons. You need to enable these security "
+"features in order to access this page."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\otp_required.html:12
+#: .\apps\templates\two_factor\profile\profile.html:29
+msgid ""
+"Two-factor authentication is not enabled for your account. Enable two-factor "
+"authentication for enhanced account security."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\otp_required.html:19
+msgid "Go back"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\otp_required.html:21
+#: .\apps\templates\two_factor\core\setup.html:14
+#: .\apps\templates\two_factor\core\setup_complete.html:11
+#: .\apps\templates\two_factor\profile\profile.html:30
+msgid "Enable Two-Factor Authentication"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup.html:17
+msgid ""
+"You are about to take your account security to the next level. Follow the "
+"steps in this wizard to enable two-factor authentication."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup.html:22
+msgid "Please select which authentication method you would like to use."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup.html:27
+msgid ""
+"To set up a token generator, scan the QR code below using an app like Google "
+"Authenticator, Authenticator from Windows or a similar app."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup.html:29
+msgid ""
+"Alternatively, use the following secret to configure the token manually in "
+"your authenticator or password manager."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup.html:30
+msgid "TOTP Secret:"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup.html:31
+msgid "Then, enter the token generated by the app below to verify setup."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup.html:34
+msgid "Token validated successfully. Two-factor authentication is now enabled."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup.html:36
+msgid "Token validation failed. Please try again."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup.html:75
+#: .\apps\templates\two_factor\core\setup.html:82
+msgid "Back to login"
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup_complete.html:15
+msgid "Congratulations, you've successfully enabled two-factor authentication."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup_complete.html:20
+msgid ""
+"However, it might happen that you don't have access to your primary token "
+"device. To enable account recovery, add a phone number."
+msgstr ""
+
+#: .\apps\templates\two_factor\core\setup_complete.html:23
+msgid "Add Phone Number"
+msgstr ""
+
+#: .\apps\templates\two_factor\profile\profile.html:11
+msgid "Account Security"
+msgstr ""
+
+#: .\apps\templates\two_factor\profile\profile.html:16
+#, python-format
+msgid "Primary method: %(primary)s"
+msgstr ""
+
+#: .\apps\templates\two_factor\profile\profile.html:20
+msgid ""
+"If you don't have any device with you, you can access your account using "
+"backup tokens."
+msgstr ""
+
+#: .\apps\templates\two_factor\profile\profile.html:21
+#, python-format
+msgid "You have only one backup token remaining."
+msgid_plural "You have %(counter)s backup tokens remaining."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\apps\templates\two_factor\profile\profile.html:27
+msgid "Show Codes"
+msgstr ""

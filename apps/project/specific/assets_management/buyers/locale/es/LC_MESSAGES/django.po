@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 19:07-0500\n"
+"POT-Creation-Date: 2024-12-11 11:03-0500\n"
 "PO-Revision-Date: 2024-12-03 19:46-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,78 +19,117 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:20
-msgid "Other"
-msgstr "Otro"
+#: .\apps\project\specific\assets_management\buyers\admin.py:39
+msgid "Required Fields"
+msgstr ""
 
-#: .\apps\project\specific\assets_management\buyers\models.py:21
+#: .\apps\project\specific\assets_management\buyers\admin.py:53
+msgid "Approval"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\buyers\admin.py:60
+msgid "Banner Image"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\buyers\admin.py:69
+msgid "Dates"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\buyers\models.py:25
 msgid "Units"
 msgstr "Unidades"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:22
+#: .\apps\project\specific\assets_management\buyers\models.py:26
 msgid "Boxes"
 msgstr "Cajas"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:23
+#: .\apps\project\specific\assets_management\buyers\models.py:27
 msgid "Containers"
 msgstr "Contenedores"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:26
+#: .\apps\project\specific\assets_management\buyers\models.py:53
 msgid "Sovereign Purchase"
 msgstr "Compra Soberana"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:27
+#: .\apps\project\specific\assets_management\buyers\models.py:54
 msgid "Private Purchase (Sovereign)"
 msgstr "Compra Privada (Soberana)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:28
+#: .\apps\project\specific\assets_management\buyers\models.py:55
 msgid "Business Purchase"
 msgstr "Compra de Negocios"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:29
+#: .\apps\project\specific\assets_management\buyers\models.py:56
 msgid "Government Purchase"
 msgstr "Compras Gubernamentales"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:35
+#: .\apps\project\specific\assets_management\buyers\models.py:71
 msgid "Created By"
 msgstr "Creado Por"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:40
-msgid "Asset (ES)"
+#: .\apps\project\specific\assets_management\buyers\models.py:79
+#, fuzzy
+#| msgid "Asset (ES)"
+msgid "Asset"
 msgstr "Activo (ES)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:45
-msgid "Asset (EN)"
-msgstr "Activo (EN)"
-
-#: .\apps\project\specific\assets_management\buyers\models.py:55
-msgid "category"
-msgstr "categoría"
-
-#: .\apps\project\specific\assets_management\buyers\models.py:60
+#: .\apps\project\specific\assets_management\buyers\models.py:83
 msgid "Offer Type"
 msgstr "Tipo de Oferta"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:67
+#: .\apps\project\specific\assets_management\buyers\models.py:90
 msgid "quantity type"
 msgstr "Tipo de Cantidad"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:74
+#: .\apps\project\specific\assets_management\buyers\models.py:97
 msgid "Offer Amount per quantity type in USD"
 msgstr "Monto de la oferta por tipo de cantidad en USD"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:81
+#: .\apps\project\specific\assets_management\buyers\models.py:104
 msgid "Quantity needed"
 msgstr "Cantidad necesaria"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:89
+#: .\apps\project\specific\assets_management\buyers\models.py:112
 msgid "Country"
 msgstr "País"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:101
+#: .\apps\project\specific\assets_management\buyers\models.py:117
+msgid "Procedure (ES)"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\buyers\models.py:122
+msgid "Procedure (EN)"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\buyers\models.py:127
+msgid "Banner (ES)"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\buyers\models.py:134
+msgid "Banner (EN)"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\buyers\models.py:141
+msgid "Approved"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\buyers\models.py:149
+msgid "Approved By"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\buyers\models.py:172
 msgid "1. Offer"
 msgstr "1. Oferta"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:102
+#: .\apps\project\specific\assets_management\buyers\models.py:173
 msgid "1. Offers"
 msgstr "2. Ofertas"
+
+#~ msgid "Other"
+#~ msgstr "Otro"
+
+#~ msgid "Asset (EN)"
+#~ msgstr "Activo (EN)"
+
+#~ msgid "category"
+#~ msgstr "categoría"

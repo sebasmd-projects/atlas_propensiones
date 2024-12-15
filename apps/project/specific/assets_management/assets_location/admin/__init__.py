@@ -14,6 +14,7 @@ class AssetCountryAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
         'continent',
         'es_country_name',
         'en_country_name',
+        'is_active',
     )
 
     search_fields = (
@@ -35,6 +36,7 @@ class AssetCountryAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
                 'continent',
                 'es_country_name',
                 'en_country_name',
+                'is_active',
             ),
         }),
         (_('Dates'), {
@@ -46,6 +48,16 @@ class AssetCountryAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
                 'collapse',
             ),
         }),
+        (
+            _('Priority'), {
+                'fields': (
+                    'default_order',
+                ),
+                'classes': (
+                    'collapse',
+                )
+            }
+        )
     )
 
 
@@ -80,6 +92,7 @@ class AssetLocationAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
         'get_location_country',
         'amount',
         'get_asset_es_name',
+        'is_active',
     )
 
     list_display_links = list_display[:3]
@@ -105,6 +118,7 @@ class AssetLocationAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
                 'location',
                 'quantity_type',
                 'amount',
+                'is_active',
             ),
         }),
         (_('Dates'), {
@@ -116,6 +130,16 @@ class AssetLocationAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
                 'collapse',
             )
         }),
+        (
+            _('Priority'), {
+                'fields': (
+                    'default_order',
+                ),
+                'classes': (
+                    'collapse',
+                )
+            }
+        )
     )
 
     def get_asset_es_name(self, obj):
@@ -144,6 +168,7 @@ class LocationModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
         'reference',
         'country',
         'created_by',
+        'is_active',
     )
 
     search_fields = (
@@ -180,6 +205,7 @@ class LocationModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
                 'id',
                 'reference',
                 'country',
+                'is_active',
             )
         }),
         (_('Optional Fields'), {
@@ -199,4 +225,14 @@ class LocationModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
                 'collapse',
             )
         }),
+        (
+            _('Priority'), {
+                'fields': (
+                    'default_order',
+                ),
+                'classes': (
+                    'collapse',
+                )
+            }
+        )
     )

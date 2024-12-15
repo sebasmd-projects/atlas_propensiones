@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 19:48-0500\n"
+"POT-Creation-Date: 2024-12-11 11:03-0500\n"
 "PO-Revision-Date: 2024-12-03 19:10-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,6 @@ msgid "User or Email"
 msgstr "Usuario o Correo"
 
 #: .\apps\project\common\account\forms.py:13
-#: .\apps\project\common\account\templates\dashboard\pages\account\register.html:46
 msgid "Password"
 msgstr "Contraseña"
 
@@ -33,14 +32,12 @@ msgid "User"
 msgstr "Usuario"
 
 #: .\apps\project\common\account\forms.py:15
-#: .\apps\project\common\account\templates\dashboard\pages\account\register.html:37
 msgid "Email"
 msgstr "Correo"
 
 #: .\apps\project\common\account\forms.py:70
 #: .\apps\project\common\account\forms.py:76
 #: .\apps\project\common\account\forms.py:78
-#: .\apps\project\common\account\templates\dashboard\pages\account\register.html:58
 msgid "Confirm Password"
 msgstr "Confirmar Contraseña"
 
@@ -58,7 +55,6 @@ msgstr "Apellidos"
 
 #: .\apps\project\common\account\forms.py:117
 #: .\apps\project\common\account\forms.py:124
-#: .\apps\project\common\account\templates\dashboard\pages\account\register.html:88
 msgid "User Type"
 msgstr "Tipo de Usuario"
 
@@ -66,25 +62,20 @@ msgstr "Tipo de Usuario"
 msgid "Passwords do not match"
 msgstr "Las contraseñas no coinciden"
 
-#: .\apps\project\common\account\templates\dashboard\pages\account\register.html:28
-msgid "Username"
-msgstr "Usuario"
+#~ msgid "Username"
+#~ msgstr "Usuario"
 
-#: .\apps\project\common\account\templates\dashboard\pages\account\register.html:70
-msgid "First Names"
-msgstr "Nombres"
+#~ msgid "First Names"
+#~ msgstr "Nombres"
 
-#: .\apps\project\common\account\templates\dashboard\pages\account\register.html:79
-msgid "Last Names"
-msgstr "Apellidos"
+#~ msgid "Last Names"
+#~ msgstr "Apellidos"
 
-#: .\apps\project\common\account\templates\dashboard\pages\account\register.html:95
-msgid "Register"
-msgstr "Registro"
+#~ msgid "Register"
+#~ msgstr "Registro"
 
-#: .\apps\project\common\account\templates\dashboard\pages\account\register.html:96
-msgid "Do you already have an account? Sign in"
-msgstr "¿Ya tienes una cuenta? Inicia Sesión"
+#~ msgid "Do you already have an account? Sign in"
+#~ msgstr "¿Ya tienes una cuenta? Inicia Sesión"
 
 #~ msgid "User Login Attempt"
 #~ msgstr "Intento de Inicio de Sesión de Usuario"

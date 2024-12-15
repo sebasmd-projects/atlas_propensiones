@@ -162,7 +162,7 @@ class AssetModel(TimeStampedModel):
         related_model = self.assetlocation_assetlocation_asset.model
         quantity_type_display = dict(related_model.QuantityTypeChoices.choices)
 
-        totals_by_type = self.assetlocation_assetlocation_asset.values('quantity_type').annotate(
+        totals_by_type = self.assetlocation_assetlocation_asset.filter(is_active=True).values('quantity_type').annotate(
             total=models.Sum('amount')
         )
         
@@ -182,7 +182,7 @@ class AssetModel(TimeStampedModel):
         verbose_name = _("1. Asset")
         verbose_name_plural = _("1. Assets")
         ordering = ["default_order", "-created"]
-
+        unique_together = ['asset_name', 'category']
 
 post_delete.connect(
     auto_delete_asset_img_on_delete,

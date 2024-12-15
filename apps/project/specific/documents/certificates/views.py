@@ -82,7 +82,7 @@ class LockoutTimeView(View):
 
 
 class CertificateInputView(FormView):
-    template_name = 'certificate_input.html'
+    template_name = 'dashboard/pages/documents/certificates/certificate_input.html'
     form_class = IDNumberForm
 
     def form_valid(self, form):
@@ -134,7 +134,7 @@ class CertificateInputView(FormView):
 
 class CertificateDetailView(DetailView):
     model = CertificateModel
-    template_name = 'certificate_detail.html'
+    template_name = 'dashboard/pages/documents/certificates/certificate_detail.html'
     context_object_name = 'certificate'
 
     def get_context_data(self, **kwargs):

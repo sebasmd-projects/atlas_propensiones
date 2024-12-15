@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 20:51-0500\n"
+"POT-Creation-Date: 2024-12-11 11:03-0500\n"
 "PO-Revision-Date: 2024-12-03 20:52-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,827 +60,12 @@ msgid "message"
 msgstr "mensaje"
 
 #: .\apps\common\core\models.py:41
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:6
-#: .\apps\common\core\templates\core\partials\header.html:28
 msgid "Contact"
 msgstr "Contáctanos"
 
 #: .\apps\common\core\models.py:42
 msgid "Contacts"
 msgstr "Contáctanos"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:8
-msgid "Contact Confirmation"
-msgstr "Confirmación de contacto"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:80
-msgid "Message Received!"
-msgstr "¡Mensaje recibido!"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:85
-#, python-format
-msgid "Hi %(name)s,"
-msgstr "Hola %(name)s,"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:87
-msgid "Thank you for contacting us through "
-msgstr "Gracias por contactar con nosotros a través de"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:90
-msgid ""
-"We have received your message and will get back to you as soon as possible."
-msgstr ""
-"Hemos recibido su mensaje y nos comunicaremos con usted lo antes posible."
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:93
-msgid ""
-"If you have any questions or need additional information, you can write us "
-"directly:"
-msgstr ""
-"Si tienes alguna duda o necesitas información adicional, puedes escribirnos "
-"directamente:"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:97
-msgid "You can also email us"
-msgstr "También puedes enviarnos un correo electrónico"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:101
-msgid "Thank you for trusting us!"
-msgstr "Gracias por confiar en nosotros!"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:104
-msgid "Best regards,"
-msgstr "Atentamente,"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:105
-msgid "About Us"
-msgstr "Conócenos"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:111
-msgid "This email was sent from"
-msgstr "Este correo electrónico fue enviado desde"
-
-#: .\apps\common\core\templates\core\email\contact_email_template.html:114
-msgid ""
-"If you did not expect this message or it was sent by mistake, please ignore "
-"it."
-msgstr "Si no esperaba este mensaje o fue enviado por error, ignórelo."
-
-#: .\apps\common\core\templates\core\index\index.html:6
-msgid "HOME | ABOUT | FEATURES | SERVICES"
-msgstr "INICIO | NOSOTROS | CARACTERÍSTICAS | SERVICIOS"
-
-#: .\apps\common\core\templates\core\index\index.html:19
-#: .\apps\common\core\templates\core\index\index.html:20
-#: .\apps\common\core\templates\core\index\index.html:31
-msgid "ATLAS | Comprehensive and Secure Historical Asset Management Solution"
-msgstr "ATLAS | Solución integral y segura de gestión de activos históricos"
-
-#: .\apps\common\core\templates\core\index\index.html:21
-#: .\apps\common\core\templates\core\index\index.html:22
-#: .\apps\common\core\templates\core\index\index.html:32
-msgid ""
-"All-in-one suite for business management of historical assets safely and "
-"easily"
-msgstr ""
-"Suite todo en uno para la gestión empresarial de activos históricos de forma"
-" segura y sencilla"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:10
-msgid "ASSETS"
-msgstr "ACTIVOS"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:11
-msgid "HISTORICAL"
-msgstr "HISTORICOS"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:12
-msgid "All-in-one Suite"
-msgstr "Suite Todo en Uno"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:15
-#: .\apps\common\core\templates\core\index\sections\section-6-call-to-action.html:11
-msgid "Comprehensive and Secure Historical Asset Management Solution"
-msgstr "Solución Integral y Segura de Gestión de Activos Históricos"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:17
-msgid ""
-"\n"
-"            <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</strong>rusted <strong>L</strong>egacy\n"
-"              <strong>A</strong>sset <strong>S</strong>olution</small>\n"
-"            "
-msgstr ""
-"\n"
-"<small><strong>A</strong>plicación <strong>T</strong>ransformadora para la <strong>L</strong>egitimación y <strong>A</strong>dministración de <strong>S</strong>tocks históricos</small>"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:23
-msgid "Get Started"
-msgstr "Ver más"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:52
-msgid "With a team always willing to help"
-msgstr "Con un equipo siempre dispuesto a ayudar"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:65
-msgid "International"
-msgstr "Internacional"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:66
-msgid "International Team"
-msgstr "Equipo Internacional"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:76
-msgid "Multidisciplinary"
-msgstr "Multidisciplinario"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:77
-msgid "Adapted to every need"
-msgstr "Adaptado a todas las necesidades."
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:87
-msgid "Results"
-msgstr "Resultados"
-
-#: .\apps\common\core\templates\core\index\sections\section-1-hero.html:88
-msgid "Confirmed Sales"
-msgstr "Ventas Confirmadas"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:8
-msgid "MORE ABOUT US"
-msgstr "MÁS SOBRE NOSOTROS"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:9
-msgid "Institutionalization of International Asset Operations"
-msgstr "Institucionalización de las operaciones patrimoniales internacionales"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:11
-msgid ""
-"Our initiative focuses on formalizing and streamlining the process of "
-"managing international assets. This ensures better governance, compliance, "
-"and operational efficiency across global markets."
-msgstr ""
-"Nuestra iniciativa se centra en formalizar y agilizar el proceso de gestión "
-"de activos internacionales. Esto garantiza una mejor gobernanza, "
-"cumplimiento y eficiencia operativa en los mercados globales."
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:16
-msgid "Enhanced governance structure"
-msgstr "Estructura de gobernanza mejorada"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:17
-msgid "Compliance with international standards"
-msgstr "Cumplimiento de estándares internacionales"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:18
-msgid "Streamlined asset management process"
-msgstr "Proceso de gestión de activos simplificado"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:23
-msgid "Risk mitigation in asset handling"
-msgstr "Mitigación de riesgos en el manejo de activos"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:24
-msgid "Integration with global markets"
-msgstr "Integración con los mercados globales"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:25
-msgid "Continuous improvement strategies"
-msgstr "Estrategias de mejora continua"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:33
-msgid "CEO Profile"
-msgstr "Perfil del CEO"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:36
-msgid "CEO & Founder"
-msgstr "CEO y Fundador"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:44
-msgid "Call us anytime"
-msgstr "Llámanos en cualquier momento"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:55
-msgid "Years"
-msgstr "Años"
-
-#: .\apps\common\core\templates\core\index\sections\section-2-about.html:56
-msgid "Of experience in managing international assets"
-msgstr "De experiencia en la gestión de activos internacionales."
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:8
-#: .\apps\common\core\templates\core\partials\header.html:24
-msgid "Features"
-msgstr "Características"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:9
-msgid ""
-"Explore the core functionalities of ATLAS for efficient asset management and"
-" comprehensive business solutions."
-msgstr ""
-"Explore las funcionalidades principales de ATLAS para una gestión eficiente "
-"de activos y soluciones comerciales integrales."
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:20
-#: .\apps\common\core\templates\core\index\sections\section-4-features-cards.html:14
-msgid "Asset Management"
-msgstr "Gestión de activos"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:26
-#: .\apps\common\core\templates\core\index\sections\section-4-features-cards.html:32
-msgid "Document Generation"
-msgstr "Generación de documentos"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:32
-msgid "Security & Validation"
-msgstr "Seguridad y validación"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:46
-msgid "Comprehensive Asset Management"
-msgstr "Gestión Integral de Activos"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:48
-msgid ""
-"ATLAS provides a robust platform for managing historical assets, ensuring "
-"compliance, traceability, and seamless integration with market demands."
-msgstr ""
-"ATLAS proporciona una plataforma sólida para gestionar activos históricos, "
-"garantizando el cumplimiento, la trazabilidad y una integración perfecta con"
-" las demandas del mercado."
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:51
-msgid "Centralized asset tracking and monitoring"
-msgstr "Seguimiento y monitoreo centralizado de activos"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:52
-msgid "Data analytics and reporting"
-msgstr "Análisis de datos e informes"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:53
-msgid "Asset markets for enhanced visibility"
-msgstr "Mercados de activos para una mayor visibilidad"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:57
-msgid "Asset Management Illustration"
-msgstr "Ilustración de gestión de activos"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:66
-msgid "Automated Document Generation"
-msgstr "Generación automatizada de documentos"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:68
-msgid ""
-"Efficiently generate, manage, and store important documents related to asset"
-" transactions, client agreements, and compliance certifications."
-msgstr ""
-"Genere, administre y almacene de manera eficiente documentos importantes "
-"relacionados con transacciones de activos, acuerdos con clientes y "
-"certificaciones de cumplimiento."
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:71
-msgid "Templates for various document needs"
-msgstr "Plantillas para diversas necesidades de documentos."
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:72
-msgid "Automated filling and real-time generation of certificates"
-msgstr "Llenado automatizado y generación de certificados en tiempo real"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:73
-msgid "Secure storage with easy access for verification and audit trails"
-msgstr ""
-"Almacenamiento seguro con fácil acceso para verificación y pistas de "
-"auditoría"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:77
-msgid "Document Generation Illustration"
-msgstr "Ilustración de generación de documentos"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:86
-msgid "Enhanced Security & Validation"
-msgstr "Seguridad y validación mejoradas"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:88
-msgid "Advanced user authentication and role-based access control"
-msgstr "Autenticación de usuario avanzada y control de acceso basado en roles"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:89
-msgid "Secure data encryption and validation mechanisms"
-msgstr "Mecanismos seguros de cifrado y validación de datos."
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:90
-msgid "Comprehensive KYC and AML processes for client onboarding"
-msgstr "Procesos integrales de KYC y AML para la incorporación de clientes"
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:93
-msgid ""
-"ATLAS prioritizes security with state-of-the-art encryption and validation "
-"protocols to safeguard sensitive information and ensure compliance."
-msgstr ""
-"ATLAS prioriza la seguridad con protocolos de validación y cifrado de última"
-" generación para salvaguardar la información confidencial y garantizar el "
-"cumplimiento."
-
-#: .\apps\common\core\templates\core\index\sections\section-3-features.html:97
-msgid "Security Illustration"
-msgstr "Ilustración de seguridad"
-
-#: .\apps\common\core\templates\core\index\sections\section-4-features-cards.html:15
-msgid ""
-"Centralized platform for tracking and managing historical assets "
-"efficiently, ensuring data integrity and real-time updates."
-msgstr ""
-"Plataforma centralizada para rastrear y gestionar activos históricos de "
-"manera eficiente, garantizando la integridad de los datos y actualizaciones "
-"en tiempo real."
-
-#: .\apps\common\core\templates\core\index\sections\section-4-features-cards.html:23
-msgid "Compliance & Validation"
-msgstr "Cumplimiento y Validación"
-
-#: .\apps\common\core\templates\core\index\sections\section-4-features-cards.html:24
-msgid ""
-"Automated compliance checks and robust validation processes to meet "
-"international standards and regulatory requirements."
-msgstr ""
-"Verificaciones de cumplimiento automatizadas y procesos de validación "
-"sólidos para cumplir con los estándares internacionales y los requisitos "
-"reglamentarios."
-
-#: .\apps\common\core\templates\core\index\sections\section-4-features-cards.html:33
-msgid ""
-"Create and manage documents such as certificates and agreements with "
-"templates for seamless business operations."
-msgstr ""
-"Cree y administre documentos como certificados y acuerdos con plantillas "
-"para operaciones comerciales fluidas."
-
-#: .\apps\common\core\templates\core\index\sections\section-4-features-cards.html:41
-msgid "Security & Data Protection"
-msgstr "Seguridad y protección de datos"
-
-#: .\apps\common\core\templates\core\index\sections\section-4-features-cards.html:42
-msgid ""
-"Advanced security features including data encryption, access control, and "
-"regular audits to safeguard sensitive information."
-msgstr ""
-"Funciones de seguridad avanzadas que incluyen cifrado de datos, control de "
-"acceso y auditorías periódicas para salvaguardar la información "
-"confidencial."
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:16
-msgid "Cross-Platform Accessibility"
-msgstr "Accesibilidad multiplataforma"
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:17
-msgid ""
-"ATLAS adapts seamlessly across desktops, tablets, and smartphones, ensuring "
-"a consistent user experience."
-msgstr ""
-"ATLAS se adapta perfectamente a computadoras de escritorio, tabletas y "
-"teléfonos inteligentes, lo que garantiza una experiencia de usuario "
-"consistente."
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:29
-msgid "Optimized Performance"
-msgstr "Rendimiento optimizado"
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:30
-msgid ""
-"Fast loading times and efficient resource usage provide a smooth experience "
-"even on low-spec devices."
-msgstr ""
-"Los tiempos de carga rápidos y el uso eficiente de los recursos brindan una "
-"experiencia fluida incluso en dispositivos de baja especificación."
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:42
-msgid "Touch-Friendly Design"
-msgstr "Diseño táctil"
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:43
-msgid ""
-"Interactive elements and navigation are designed for easy use on touch "
-"screens, enhancing mobile usability."
-msgstr ""
-"Los elementos interactivos y la navegación están diseñados para un uso "
-"sencillo en pantallas táctiles, mejorando la usabilidad móvil."
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:56
-msgid "Phone Mockup"
-msgstr "Maqueta de teléfono"
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:69
-msgid "Fully Responsive Design"
-msgstr "Diseño totalmente responsivo"
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:70
-msgid ""
-"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen"
-" size, providing a consistent experience."
-msgstr ""
-"ATLAS garantiza un diseño responsivo que se ajusta dinámicamente para "
-"adaptarse a cualquier tamaño de pantalla, brindando una experiencia "
-"consistente."
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:82
-msgid "Browser Compatibility"
-msgstr "Compatibilidad del navegador"
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:83
-msgid ""
-"Compatible with major web browsers including Chrome, Firefox, Edge, and "
-"Safari for a seamless experience."
-msgstr ""
-"Compatible con los principales navegadores web, incluidos Chrome, Firefox, "
-"Edge y Safari, para una experiencia perfecta."
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:95
-msgid "Dark Mode Support"
-msgstr "Soporte de modo oscuro"
-
-#: .\apps\common\core\templates\core\index\sections\section-5-features-mobile.html:96
-msgid ""
-"ATLAS offers a dark mode option to reduce eye strain and improve visibility "
-"in low-light environments."
-msgstr ""
-"ATLAS ofrece una opción de modo oscuro para reducir la fatiga visual y "
-"mejorar la visibilidad en entornos con poca luz."
-
-#: .\apps\common\core\templates\core\index\sections\section-6-call-to-action.html:10
-msgid "HISTORICAL ASSETS"
-msgstr "Activos Historicos"
-
-#: .\apps\common\core\templates\core\index\sections\section-6-call-to-action.html:12
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:48
-msgid "Get In Touch"
-msgstr "Ponte en Contacto"
-
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:13
-msgid "Contact Info"
-msgstr "Información de contacto"
-
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:19
-msgid "Our Location"
-msgstr "Ubicaciones"
-
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:29
-msgid "Phone Number"
-msgstr "Número de teléfono"
-
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:39
-msgid "Email Address"
-msgstr "Dirección de Correo"
-
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:49
-msgid "You Always Have Control"
-msgstr "Siempre Tienes el Control"
-
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:52
-msgid "Your message has been sent successfully."
-msgstr "Su mensaje ha sido enviado exitosamente."
-
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:53
-msgid "We will contact you soon!"
-msgstr "¡Nos pondremos en contacto contigo pronto!"
-
-#: .\apps\common\core\templates\core\index\sections\section-7-contact.html:136
-msgid "Send Message"
-msgstr "Enviar Mensaje"
-
-#: .\apps\common\core\templates\core\partials\footer.html:14
-msgid "Phone:"
-msgstr "Celular"
-
-#: .\apps\common\core\templates\core\partials\footer.html:15
-msgid "Email:"
-msgstr "Correo:"
-
-#: .\apps\common\core\templates\core\partials\footer.html:20
-msgid "Useful Links"
-msgstr "Enlaces útiles"
-
-#: .\apps\common\core\templates\core\partials\footer.html:22
-#: .\apps\common\core\templates\core\partials\header.html:10
-msgid "Home"
-msgstr "Inicio"
-
-#: .\apps\common\core\templates\core\partials\footer.html:23
-msgid "About us"
-msgstr "Sobre nosotros"
-
-#: .\apps\common\core\templates\core\partials\footer.html:24
-msgid "Terms of service"
-msgstr "Términos de servicio"
-
-#: .\apps\common\core\templates\core\partials\footer.html:25
-msgid "Privacy policy"
-msgstr "Política de privacidad"
-
-#: .\apps\common\core\templates\core\partials\footer.html:61
-#: .\apps\common\core\templates\dashboard\partials\account_footer.html:9
-#: .\apps\common\core\templates\dashboard\partials\footer.html:9
-msgid "Your unconditional ally. All Rights Reserved."
-msgstr "Tu aliado incondicional. Todos los derechos reservados."
-
-#: .\apps\common\core\templates\core\partials\footer.html:63
-#: .\apps\common\core\templates\dashboard\partials\footer.html:9
-msgid "Created by"
-msgstr "Creado por"
-
-#: .\apps\common\core\templates\core\partials\header.html:16
-msgid "Holder"
-msgstr "Tenedor"
-
-#: .\apps\common\core\templates\core\partials\header.html:21
-#: .\apps\common\core\templates\core\partials\header.html:23
-msgid "About"
-msgstr "Nosotros"
-
-#: .\apps\common\core\templates\core\partials\header.html:32
-msgid "Custom APPS"
-msgstr "Aplicaciones Propias"
-
-#: .\apps\common\core\templates\core\partials\header.html:35
-msgid "Code Generation"
-msgstr "Generar Códigos"
-
-#: .\apps\common\core\templates\core\partials\header.html:48
-msgid "Documents"
-msgstr "Documentos"
-
-#: .\apps\common\core\templates\core\partials\header.html:51
-msgid "Suitability Verification"
-msgstr "Verificación de Idoneidad"
-
-#: .\apps\common\core\templates\core\partials\header.html:71
-msgid "LOGOUT"
-msgstr "Cerrar Sesión"
-
-#: .\apps\common\core\templates\core\partials\header.html:74
-msgid "LOGIN"
-msgstr "Iniciar Sesión"
-
-#: .\apps\common\core\templates\core\partials\header.html:75
-msgid "REGISTER"
-msgstr "Registrarse"
-
-#: .\apps\common\core\templates\dashboard\partials\account_footer.html:18
-msgid "Terms & Conditions"
-msgstr "Términos y Condiciones"
-
-#: .\apps\common\core\templates\dashboard\partials\nav\user.html:18
-msgid "Account"
-msgstr "Cuenta"
-
-#: .\apps\common\core\templates\dashboard\partials\nav\user.html:22
-msgid "Logout"
-msgstr "Cerrar Sesión"
-
-#: .\apps\common\core\templates\dashboard\partials\side_nav.html:37
-msgid "Security"
-msgstr "Seguridad"
-
-#: .\apps\common\core\templates\dashboard\partials\side_nav.html:52
-msgid "IDONEITY"
-msgstr "Idoneidad"
-
-#: .\apps\common\core\templates\dashboard\partials\side_nav\footer.html:5
-msgid "Logged in as:"
-msgstr "Has iniciado sesión como:"
-
-#: .\apps\common\core\templates\two_factor\_wizard_actions.html:5
-#: .\apps\common\core\templates\two_factor\core\setup.html:60
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: .\apps\common\core\templates\two_factor\_wizard_actions.html:11
-msgid "Back"
-msgstr "Atras"
-
-#: .\apps\common\core\templates\two_factor\_wizard_actions.html:13
-#: .\apps\common\core\templates\two_factor\core\setup.html:55
-msgid "Next"
-msgstr "Siguiente"
-
-#: .\apps\common\core\templates\two_factor\core\backup_tokens.html:14
-#: .\apps\common\core\templates\two_factor\profile\profile.html:18
-msgid "Backup Tokens"
-msgstr "Tokens de respaldo"
-
-#: .\apps\common\core\templates\two_factor\core\backup_tokens.html:17
-msgid ""
-"Backup tokens can be used when your primary and backup phone numbers aren't "
-"available. The backup tokens below can be used for login verification. If "
-"you've used up all your backup tokens, you can generate a new set of backup "
-"tokens. Only the backup tokens shown below will be valid."
-msgstr ""
-"Los tokens de respaldo se pueden usar cuando sus números de teléfono "
-"principal y de respaldo no están disponibles. Los tokens de respaldo a "
-"continuación se pueden usar para la verificación de inicio de sesión. Si ha "
-"agotado todos sus tokens de respaldo, puede generar un nuevo conjunto de "
-"tokens de respaldo. Solo serán válidos los tokens de respaldo que se "
-"muestran a continuación."
-
-#: .\apps\common\core\templates\two_factor\core\backup_tokens.html:26
-msgid "Copy these tokens and keep them somewhere safe."
-msgstr "Copie estas fichas y guárdelas en un lugar seguro."
-
-#: .\apps\common\core\templates\two_factor\core\backup_tokens.html:28
-msgid "You don't have any backup codes yet."
-msgstr "Aún no tienes ningún token de respaldo."
-
-#: .\apps\common\core\templates\two_factor\core\backup_tokens.html:32
-#: .\apps\common\core\templates\two_factor\core\setup_complete.html:18
-#: .\apps\common\core\templates\two_factor\core\setup_complete.html:22
-msgid "Back to Account Security"
-msgstr "Volver a Seguridad de la cuenta"
-
-#: .\apps\common\core\templates\two_factor\core\backup_tokens.html:33
-msgid "Generate Tokens"
-msgstr "Generar Tokens"
-
-#: .\apps\common\core\templates\two_factor\core\login.html:16
-msgid "Login"
-msgstr "Iniciar Sesión"
-
-#: .\apps\common\core\templates\two_factor\core\login.html:19
-msgid "Enter your credentials."
-msgstr "Ingrese sus credenciales."
-
-#: .\apps\common\core\templates\two_factor\core\login.html:27
-msgid ""
-"Use this form for entering backup tokens for logging in. These tokens have "
-"been generated for you to print and keep safe. Please enter one of these "
-"backup tokens to login to your account."
-msgstr ""
-"Utilice este formulario para guardar los tokens de respaldo para iniciar "
-"sesión. Estos tokens se han generado para que usted los copie y los mantenga"
-" seguros. Ingrese uno de estos tokens de respaldo para iniciar sesión en su "
-"cuenta si pierde el dispositivo de autenticación."
-
-#: .\apps\common\core\templates\two_factor\core\login.html:56
-#| msgid "name"
-msgid "Username"
-msgstr "Usuario"
-
-#: .\apps\common\core\templates\two_factor\core\login.html:70
-msgid "Password"
-msgstr "Contraseña"
-
-#: .\apps\common\core\templates\two_factor\core\login.html:101
-msgid "Or, alternatively, use one of your other authentication methods:"
-msgstr ""
-"O, alternativamente, utilice uno de sus otros métodos de autenticación:"
-
-#: .\apps\common\core\templates\two_factor\core\login.html:121
-msgid "As a last resort, you can use a backup token:"
-msgstr "Como último recurso, puedes utilizar un token de respaldo:"
-
-#: .\apps\common\core\templates\two_factor\core\login.html:124
-msgid "Use Backup Token"
-msgstr "Usar token de respaldo"
-
-#: .\apps\common\core\templates\two_factor\core\login.html:134
-msgid "New user?"
-msgstr "¿Nuevo usuario?"
-
-#: .\apps\common\core\templates\two_factor\core\login.html:136
-msgid "Create an account!"
-msgstr "¡Crea una cuenta!"
-
-#: .\apps\common\core\templates\two_factor\core\otp_required.html:5
-msgid "Permission Denied"
-msgstr "Permiso denegado"
-
-#: .\apps\common\core\templates\two_factor\core\otp_required.html:7
-msgid ""
-"The page you requested, enforces users to verify using two-factor "
-"authentication for security reasons. You need to enable these security "
-"features in order to access this page."
-msgstr ""
-"La página que solicitó obliga a los usuarios a verificar mediante "
-"autenticación de dos factores por razones de seguridad. Debe habilitar estas"
-" funciones de seguridad para poder acceder a esta página."
-
-#: .\apps\common\core\templates\two_factor\core\otp_required.html:12
-#: .\apps\common\core\templates\two_factor\profile\profile.html:29
-msgid ""
-"Two-factor authentication is not enabled for your account. Enable two-factor"
-" authentication for enhanced account security."
-msgstr ""
-"La autenticación de dos factores no está habilitada para su cuenta. Habilite"
-" la autenticación de dos factores para mejorar la seguridad de la cuenta."
-
-#: .\apps\common\core\templates\two_factor\core\otp_required.html:19
-msgid "Go back"
-msgstr "Volver"
-
-#: .\apps\common\core\templates\two_factor\core\otp_required.html:21
-#: .\apps\common\core\templates\two_factor\core\setup.html:14
-#: .\apps\common\core\templates\two_factor\core\setup_complete.html:11
-#: .\apps\common\core\templates\two_factor\profile\profile.html:30
-msgid "Enable Two-Factor Authentication"
-msgstr "Habilite la autenticación de dos factores"
-
-#: .\apps\common\core\templates\two_factor\core\setup.html:17
-msgid ""
-"You are about to take your account security to the next level. Follow the "
-"steps in this wizard to enable two-factor authentication."
-msgstr ""
-"Está a punto de llevar la seguridad de su cuenta al siguiente nivel. Siga "
-"los pasos de este asistente para habilitar la autenticación de dos factores."
-
-#: .\apps\common\core\templates\two_factor\core\setup.html:22
-msgid "Please select which authentication method you would like to use."
-msgstr "Seleccione qué método de autenticación le gustaría utilizar."
-
-#: .\apps\common\core\templates\two_factor\core\setup.html:27
-msgid ""
-"To set up a token generator, scan the QR code below using an app like Google"
-" Authenticator, Authenticator from Windows or a similar app."
-msgstr ""
-"Para configurar un generador de tokens, escanee el código QR a continuación "
-"usando una aplicación como Google Authenticator, Authenticator de Windows o "
-"una aplicación similar."
-
-#: .\apps\common\core\templates\two_factor\core\setup.html:29
-msgid ""
-"Alternatively, use the following secret to configure the token manually in "
-"your authenticator or password manager."
-msgstr ""
-"Alternativamente, use la siguiente llave para configurar el token "
-"manualmente en su autenticador o administrador de contraseñas."
-
-#: .\apps\common\core\templates\two_factor\core\setup.html:30
-msgid "TOTP Secret:"
-msgstr "Secreto TOTP:"
-
-#: .\apps\common\core\templates\two_factor\core\setup.html:31
-msgid "Then, enter the token generated by the app below to verify setup."
-msgstr ""
-"Luego, ingrese el token generado por la aplicación a continuación para "
-"verificar la configuración."
-
-#: .\apps\common\core\templates\two_factor\core\setup.html:34
-msgid ""
-"Token validated successfully. Two-factor authentication is now enabled."
-msgstr ""
-"Token validado exitosamente. La autenticación de dos factores ahora está "
-"habilitada."
-
-#: .\apps\common\core\templates\two_factor\core\setup.html:36
-msgid "Token validation failed. Please try again."
-msgstr "La validación del token falló. Por favor inténtalo de nuevo."
-
-#: .\apps\common\core\templates\two_factor\core\setup.html:71
-#: .\apps\common\core\templates\two_factor\core\setup.html:78
-msgid "Back to login"
-msgstr "Volver a iniciar sesión"
-
-#: .\apps\common\core\templates\two_factor\core\setup_complete.html:15
-msgid ""
-"Congratulations, you've successfully enabled two-factor authentication."
-msgstr ""
-"Felicitaciones, ha habilitado con éxito la autenticación de dos factores."
-
-#: .\apps\common\core\templates\two_factor\core\setup_complete.html:20
-msgid ""
-"However, it might happen that you don't have access to your primary token "
-"device. To enable account recovery, add a phone number."
-msgstr ""
-"Sin embargo, puede suceder que no tengas acceso a tu dispositivo de "
-"autenticación principal. Para habilitar la recuperación de cuenta, agregue "
-"un número de teléfono."
-
-#: .\apps\common\core\templates\two_factor\core\setup_complete.html:23
-msgid "Add Phone Number"
-msgstr "Agregar Número de teléfono"
-
-#: .\apps\common\core\templates\two_factor\profile\profile.html:11
-msgid "Account Security"
-msgstr "Seguridad de la Cuenta"
-
-#: .\apps\common\core\templates\two_factor\profile\profile.html:16
-#, python-format
-msgid "Primary method: %(primary)s"
-msgstr "Método primario: %(primary)s"
-
-#: .\apps\common\core\templates\two_factor\profile\profile.html:20
-msgid ""
-"If you don't have any device with you, you can access your account using "
-"backup tokens."
-msgstr ""
-"Si no tiene ningún dispositivo consigo, puede acceder a su cuenta utilizando"
-" tokens de respaldo."
-
-#: .\apps\common\core\templates\two_factor\profile\profile.html:21
-#, python-format
-msgid "You have only one backup token remaining."
-msgid_plural "You have %(counter)s backup tokens remaining."
-msgstr[0] "Solo te queda un token de respaldo."
-msgstr[1] "Usted tiene %(counter)s tokens de respaldo."
-
-#: .\apps\common\core\templates\two_factor\profile\profile.html:27
-msgid "Show Codes"
-msgstr "Mostrar Tokens"
 
 #: .\apps\common\core\views.py:26
 msgid "This form has already been sent."
@@ -894,6 +79,647 @@ msgstr "¡Mensaje recibido! | ATLAS"
 #, python-format
 msgid "Thank you %(name)s for contacting us."
 msgstr "Gracias %(name)s por contactarnos."
+
+#~ msgid "Contact Confirmation"
+#~ msgstr "Confirmación de contacto"
+
+#~ msgid "Message Received!"
+#~ msgstr "¡Mensaje recibido!"
+
+#, python-format
+#~ msgid "Hi %(name)s,"
+#~ msgstr "Hola %(name)s,"
+
+#~ msgid "Thank you for contacting us through "
+#~ msgstr "Gracias por contactar con nosotros a través de"
+
+#~ msgid ""
+#~ "We have received your message and will get back to you as soon as "
+#~ "possible."
+#~ msgstr ""
+#~ "Hemos recibido su mensaje y nos comunicaremos con usted lo antes posible."
+
+#~ msgid ""
+#~ "If you have any questions or need additional information, you can write "
+#~ "us directly:"
+#~ msgstr ""
+#~ "Si tienes alguna duda o necesitas información adicional, puedes "
+#~ "escribirnos directamente:"
+
+#~ msgid "You can also email us"
+#~ msgstr "También puedes enviarnos un correo electrónico"
+
+#~ msgid "Thank you for trusting us!"
+#~ msgstr "Gracias por confiar en nosotros!"
+
+#~ msgid "Best regards,"
+#~ msgstr "Atentamente,"
+
+#~ msgid "About Us"
+#~ msgstr "Conócenos"
+
+#~ msgid "This email was sent from"
+#~ msgstr "Este correo electrónico fue enviado desde"
+
+#~ msgid ""
+#~ "If you did not expect this message or it was sent by mistake, please "
+#~ "ignore it."
+#~ msgstr "Si no esperaba este mensaje o fue enviado por error, ignórelo."
+
+#~ msgid "HOME | ABOUT | FEATURES | SERVICES"
+#~ msgstr "INICIO | NOSOTROS | CARACTERÍSTICAS | SERVICIOS"
+
+#~ msgid ""
+#~ "ATLAS | Comprehensive and Secure Historical Asset Management Solution"
+#~ msgstr "ATLAS | Solución integral y segura de gestión de activos históricos"
+
+#~ msgid ""
+#~ "All-in-one suite for business management of historical assets safely and "
+#~ "easily"
+#~ msgstr ""
+#~ "Suite todo en uno para la gestión empresarial de activos históricos de "
+#~ "forma segura y sencilla"
+
+#~ msgid "ASSETS"
+#~ msgstr "ACTIVOS"
+
+#~ msgid "HISTORICAL"
+#~ msgstr "HISTORICOS"
+
+#~ msgid "All-in-one Suite"
+#~ msgstr "Suite Todo en Uno"
+
+#~ msgid "Comprehensive and Secure Historical Asset Management Solution"
+#~ msgstr "Solución Integral y Segura de Gestión de Activos Históricos"
+
+#~ msgid ""
+#~ "\n"
+#~ "            <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</"
+#~ "strong>rusted <strong>L</strong>egacy\n"
+#~ "              <strong>A</strong>sset <strong>S</strong>olution</small>\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "<small><strong>A</strong>plicación <strong>T</strong>ransformadora para "
+#~ "la <strong>L</strong>egitimación y <strong>A</strong>dministración de "
+#~ "<strong>S</strong>tocks históricos</small>"
+
+#~ msgid "Get Started"
+#~ msgstr "Ver más"
+
+#~ msgid "With a team always willing to help"
+#~ msgstr "Con un equipo siempre dispuesto a ayudar"
+
+#~ msgid "International"
+#~ msgstr "Internacional"
+
+#~ msgid "International Team"
+#~ msgstr "Equipo Internacional"
+
+#~ msgid "Multidisciplinary"
+#~ msgstr "Multidisciplinario"
+
+#~ msgid "Adapted to every need"
+#~ msgstr "Adaptado a todas las necesidades."
+
+#~ msgid "Results"
+#~ msgstr "Resultados"
+
+#~ msgid "Confirmed Sales"
+#~ msgstr "Ventas Confirmadas"
+
+#~ msgid "MORE ABOUT US"
+#~ msgstr "MÁS SOBRE NOSOTROS"
+
+#~ msgid "Institutionalization of International Asset Operations"
+#~ msgstr ""
+#~ "Institucionalización de las operaciones patrimoniales internacionales"
+
+#~ msgid ""
+#~ "Our initiative focuses on formalizing and streamlining the process of "
+#~ "managing international assets. This ensures better governance, "
+#~ "compliance, and operational efficiency across global markets."
+#~ msgstr ""
+#~ "Nuestra iniciativa se centra en formalizar y agilizar el proceso de "
+#~ "gestión de activos internacionales. Esto garantiza una mejor gobernanza, "
+#~ "cumplimiento y eficiencia operativa en los mercados globales."
+
+#~ msgid "Enhanced governance structure"
+#~ msgstr "Estructura de gobernanza mejorada"
+
+#~ msgid "Compliance with international standards"
+#~ msgstr "Cumplimiento de estándares internacionales"
+
+#~ msgid "Streamlined asset management process"
+#~ msgstr "Proceso de gestión de activos simplificado"
+
+#~ msgid "Risk mitigation in asset handling"
+#~ msgstr "Mitigación de riesgos en el manejo de activos"
+
+#~ msgid "Integration with global markets"
+#~ msgstr "Integración con los mercados globales"
+
+#~ msgid "Continuous improvement strategies"
+#~ msgstr "Estrategias de mejora continua"
+
+#~ msgid "CEO Profile"
+#~ msgstr "Perfil del CEO"
+
+#~ msgid "CEO & Founder"
+#~ msgstr "CEO y Fundador"
+
+#~ msgid "Call us anytime"
+#~ msgstr "Llámanos en cualquier momento"
+
+#~ msgid "Years"
+#~ msgstr "Años"
+
+#~ msgid "Of experience in managing international assets"
+#~ msgstr "De experiencia en la gestión de activos internacionales."
+
+#~ msgid "Features"
+#~ msgstr "Características"
+
+#~ msgid ""
+#~ "Explore the core functionalities of ATLAS for efficient asset management "
+#~ "and comprehensive business solutions."
+#~ msgstr ""
+#~ "Explore las funcionalidades principales de ATLAS para una gestión "
+#~ "eficiente de activos y soluciones comerciales integrales."
+
+#~ msgid "Asset Management"
+#~ msgstr "Gestión de activos"
+
+#~ msgid "Document Generation"
+#~ msgstr "Generación de documentos"
+
+#~ msgid "Security & Validation"
+#~ msgstr "Seguridad y validación"
+
+#~ msgid "Comprehensive Asset Management"
+#~ msgstr "Gestión Integral de Activos"
+
+#~ msgid ""
+#~ "ATLAS provides a robust platform for managing historical assets, ensuring "
+#~ "compliance, traceability, and seamless integration with market demands."
+#~ msgstr ""
+#~ "ATLAS proporciona una plataforma sólida para gestionar activos "
+#~ "históricos, garantizando el cumplimiento, la trazabilidad y una "
+#~ "integración perfecta con las demandas del mercado."
+
+#~ msgid "Centralized asset tracking and monitoring"
+#~ msgstr "Seguimiento y monitoreo centralizado de activos"
+
+#~ msgid "Data analytics and reporting"
+#~ msgstr "Análisis de datos e informes"
+
+#~ msgid "Asset markets for enhanced visibility"
+#~ msgstr "Mercados de activos para una mayor visibilidad"
+
+#~ msgid "Asset Management Illustration"
+#~ msgstr "Ilustración de gestión de activos"
+
+#~ msgid "Automated Document Generation"
+#~ msgstr "Generación automatizada de documentos"
+
+#~ msgid ""
+#~ "Efficiently generate, manage, and store important documents related to "
+#~ "asset transactions, client agreements, and compliance certifications."
+#~ msgstr ""
+#~ "Genere, administre y almacene de manera eficiente documentos importantes "
+#~ "relacionados con transacciones de activos, acuerdos con clientes y "
+#~ "certificaciones de cumplimiento."
+
+#~ msgid "Templates for various document needs"
+#~ msgstr "Plantillas para diversas necesidades de documentos."
+
+#~ msgid "Automated filling and real-time generation of certificates"
+#~ msgstr "Llenado automatizado y generación de certificados en tiempo real"
+
+#~ msgid "Secure storage with easy access for verification and audit trails"
+#~ msgstr ""
+#~ "Almacenamiento seguro con fácil acceso para verificación y pistas de "
+#~ "auditoría"
+
+#~ msgid "Document Generation Illustration"
+#~ msgstr "Ilustración de generación de documentos"
+
+#~ msgid "Enhanced Security & Validation"
+#~ msgstr "Seguridad y validación mejoradas"
+
+#~ msgid "Advanced user authentication and role-based access control"
+#~ msgstr ""
+#~ "Autenticación de usuario avanzada y control de acceso basado en roles"
+
+#~ msgid "Secure data encryption and validation mechanisms"
+#~ msgstr "Mecanismos seguros de cifrado y validación de datos."
+
+#~ msgid "Comprehensive KYC and AML processes for client onboarding"
+#~ msgstr "Procesos integrales de KYC y AML para la incorporación de clientes"
+
+#~ msgid ""
+#~ "ATLAS prioritizes security with state-of-the-art encryption and "
+#~ "validation protocols to safeguard sensitive information and ensure "
+#~ "compliance."
+#~ msgstr ""
+#~ "ATLAS prioriza la seguridad con protocolos de validación y cifrado de "
+#~ "última generación para salvaguardar la información confidencial y "
+#~ "garantizar el cumplimiento."
+
+#~ msgid "Security Illustration"
+#~ msgstr "Ilustración de seguridad"
+
+#~ msgid ""
+#~ "Centralized platform for tracking and managing historical assets "
+#~ "efficiently, ensuring data integrity and real-time updates."
+#~ msgstr ""
+#~ "Plataforma centralizada para rastrear y gestionar activos históricos de "
+#~ "manera eficiente, garantizando la integridad de los datos y "
+#~ "actualizaciones en tiempo real."
+
+#~ msgid "Compliance & Validation"
+#~ msgstr "Cumplimiento y Validación"
+
+#~ msgid ""
+#~ "Automated compliance checks and robust validation processes to meet "
+#~ "international standards and regulatory requirements."
+#~ msgstr ""
+#~ "Verificaciones de cumplimiento automatizadas y procesos de validación "
+#~ "sólidos para cumplir con los estándares internacionales y los requisitos "
+#~ "reglamentarios."
+
+#~ msgid ""
+#~ "Create and manage documents such as certificates and agreements with "
+#~ "templates for seamless business operations."
+#~ msgstr ""
+#~ "Cree y administre documentos como certificados y acuerdos con plantillas "
+#~ "para operaciones comerciales fluidas."
+
+#~ msgid "Security & Data Protection"
+#~ msgstr "Seguridad y protección de datos"
+
+#~ msgid ""
+#~ "Advanced security features including data encryption, access control, and "
+#~ "regular audits to safeguard sensitive information."
+#~ msgstr ""
+#~ "Funciones de seguridad avanzadas que incluyen cifrado de datos, control "
+#~ "de acceso y auditorías periódicas para salvaguardar la información "
+#~ "confidencial."
+
+#~ msgid "Cross-Platform Accessibility"
+#~ msgstr "Accesibilidad multiplataforma"
+
+#~ msgid ""
+#~ "ATLAS adapts seamlessly across desktops, tablets, and smartphones, "
+#~ "ensuring a consistent user experience."
+#~ msgstr ""
+#~ "ATLAS se adapta perfectamente a computadoras de escritorio, tabletas y "
+#~ "teléfonos inteligentes, lo que garantiza una experiencia de usuario "
+#~ "consistente."
+
+#~ msgid "Optimized Performance"
+#~ msgstr "Rendimiento optimizado"
+
+#~ msgid ""
+#~ "Fast loading times and efficient resource usage provide a smooth "
+#~ "experience even on low-spec devices."
+#~ msgstr ""
+#~ "Los tiempos de carga rápidos y el uso eficiente de los recursos brindan "
+#~ "una experiencia fluida incluso en dispositivos de baja especificación."
+
+#~ msgid "Touch-Friendly Design"
+#~ msgstr "Diseño táctil"
+
+#~ msgid ""
+#~ "Interactive elements and navigation are designed for easy use on touch "
+#~ "screens, enhancing mobile usability."
+#~ msgstr ""
+#~ "Los elementos interactivos y la navegación están diseñados para un uso "
+#~ "sencillo en pantallas táctiles, mejorando la usabilidad móvil."
+
+#~ msgid "Phone Mockup"
+#~ msgstr "Maqueta de teléfono"
+
+#~ msgid "Fully Responsive Design"
+#~ msgstr "Diseño totalmente responsivo"
+
+#~ msgid ""
+#~ "ATLAS ensures a responsive layout that adjusts dynamically to fit any "
+#~ "screen size, providing a consistent experience."
+#~ msgstr ""
+#~ "ATLAS garantiza un diseño responsivo que se ajusta dinámicamente para "
+#~ "adaptarse a cualquier tamaño de pantalla, brindando una experiencia "
+#~ "consistente."
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "Compatibilidad del navegador"
+
+#~ msgid ""
+#~ "Compatible with major web browsers including Chrome, Firefox, Edge, and "
+#~ "Safari for a seamless experience."
+#~ msgstr ""
+#~ "Compatible con los principales navegadores web, incluidos Chrome, "
+#~ "Firefox, Edge y Safari, para una experiencia perfecta."
+
+#~ msgid "Dark Mode Support"
+#~ msgstr "Soporte de modo oscuro"
+
+#~ msgid ""
+#~ "ATLAS offers a dark mode option to reduce eye strain and improve "
+#~ "visibility in low-light environments."
+#~ msgstr ""
+#~ "ATLAS ofrece una opción de modo oscuro para reducir la fatiga visual y "
+#~ "mejorar la visibilidad en entornos con poca luz."
+
+#~ msgid "HISTORICAL ASSETS"
+#~ msgstr "Activos Historicos"
+
+#~ msgid "Get In Touch"
+#~ msgstr "Ponte en Contacto"
+
+#~ msgid "Contact Info"
+#~ msgstr "Información de contacto"
+
+#~ msgid "Our Location"
+#~ msgstr "Ubicaciones"
+
+#~ msgid "Phone Number"
+#~ msgstr "Número de teléfono"
+
+#~ msgid "Email Address"
+#~ msgstr "Dirección de Correo"
+
+#~ msgid "You Always Have Control"
+#~ msgstr "Siempre Tienes el Control"
+
+#~ msgid "Your message has been sent successfully."
+#~ msgstr "Su mensaje ha sido enviado exitosamente."
+
+#~ msgid "We will contact you soon!"
+#~ msgstr "¡Nos pondremos en contacto contigo pronto!"
+
+#~ msgid "Send Message"
+#~ msgstr "Enviar Mensaje"
+
+#~ msgid "Phone:"
+#~ msgstr "Celular"
+
+#~ msgid "Email:"
+#~ msgstr "Correo:"
+
+#~ msgid "Useful Links"
+#~ msgstr "Enlaces útiles"
+
+#~ msgid "Home"
+#~ msgstr "Inicio"
+
+#~ msgid "About us"
+#~ msgstr "Sobre nosotros"
+
+#~ msgid "Terms of service"
+#~ msgstr "Términos de servicio"
+
+#~ msgid "Privacy policy"
+#~ msgstr "Política de privacidad"
+
+#~ msgid "Your unconditional ally. All Rights Reserved."
+#~ msgstr "Tu aliado incondicional. Todos los derechos reservados."
+
+#~ msgid "Created by"
+#~ msgstr "Creado por"
+
+#~ msgid "Holder"
+#~ msgstr "Tenedor"
+
+#~ msgid "About"
+#~ msgstr "Nosotros"
+
+#~ msgid "Custom APPS"
+#~ msgstr "Aplicaciones Propias"
+
+#~ msgid "Code Generation"
+#~ msgstr "Generar Códigos"
+
+#~ msgid "Documents"
+#~ msgstr "Documentos"
+
+#~ msgid "Suitability Verification"
+#~ msgstr "Verificación de Idoneidad"
+
+#~ msgid "LOGOUT"
+#~ msgstr "Cerrar Sesión"
+
+#~ msgid "LOGIN"
+#~ msgstr "Iniciar Sesión"
+
+#~ msgid "REGISTER"
+#~ msgstr "Registrarse"
+
+#~ msgid "Terms & Conditions"
+#~ msgstr "Términos y Condiciones"
+
+#~ msgid "Account"
+#~ msgstr "Cuenta"
+
+#~ msgid "Logout"
+#~ msgstr "Cerrar Sesión"
+
+#~ msgid "Security"
+#~ msgstr "Seguridad"
+
+#~ msgid "IDONEITY"
+#~ msgstr "Idoneidad"
+
+#~ msgid "Logged in as:"
+#~ msgstr "Has iniciado sesión como:"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
+
+#~ msgid "Back"
+#~ msgstr "Atras"
+
+#~ msgid "Next"
+#~ msgstr "Siguiente"
+
+#~ msgid "Backup Tokens"
+#~ msgstr "Tokens de respaldo"
+
+#~ msgid ""
+#~ "Backup tokens can be used when your primary and backup phone numbers "
+#~ "aren't available. The backup tokens below can be used for login "
+#~ "verification. If you've used up all your backup tokens, you can generate "
+#~ "a new set of backup tokens. Only the backup tokens shown below will be "
+#~ "valid."
+#~ msgstr ""
+#~ "Los tokens de respaldo se pueden usar cuando sus números de teléfono "
+#~ "principal y de respaldo no están disponibles. Los tokens de respaldo a "
+#~ "continuación se pueden usar para la verificación de inicio de sesión. Si "
+#~ "ha agotado todos sus tokens de respaldo, puede generar un nuevo conjunto "
+#~ "de tokens de respaldo. Solo serán válidos los tokens de respaldo que se "
+#~ "muestran a continuación."
+
+#~ msgid "Copy these tokens and keep them somewhere safe."
+#~ msgstr "Copie estas fichas y guárdelas en un lugar seguro."
+
+#~ msgid "You don't have any backup codes yet."
+#~ msgstr "Aún no tienes ningún token de respaldo."
+
+#~ msgid "Back to Account Security"
+#~ msgstr "Volver a Seguridad de la cuenta"
+
+#~ msgid "Generate Tokens"
+#~ msgstr "Generar Tokens"
+
+#~ msgid "Login"
+#~ msgstr "Iniciar Sesión"
+
+#~ msgid "Enter your credentials."
+#~ msgstr "Ingrese sus credenciales."
+
+#~ msgid ""
+#~ "Use this form for entering backup tokens for logging in. These tokens "
+#~ "have been generated for you to print and keep safe. Please enter one of "
+#~ "these backup tokens to login to your account."
+#~ msgstr ""
+#~ "Utilice este formulario para guardar los tokens de respaldo para iniciar "
+#~ "sesión. Estos tokens se han generado para que usted los copie y los "
+#~ "mantenga seguros. Ingrese uno de estos tokens de respaldo para iniciar "
+#~ "sesión en su cuenta si pierde el dispositivo de autenticación."
+
+#~| msgid "name"
+#~ msgid "Username"
+#~ msgstr "Usuario"
+
+#~ msgid "Password"
+#~ msgstr "Contraseña"
+
+#~ msgid "Or, alternatively, use one of your other authentication methods:"
+#~ msgstr ""
+#~ "O, alternativamente, utilice uno de sus otros métodos de autenticación:"
+
+#~ msgid "As a last resort, you can use a backup token:"
+#~ msgstr "Como último recurso, puedes utilizar un token de respaldo:"
+
+#~ msgid "Use Backup Token"
+#~ msgstr "Usar token de respaldo"
+
+#~ msgid "New user?"
+#~ msgstr "¿Nuevo usuario?"
+
+#~ msgid "Create an account!"
+#~ msgstr "¡Crea una cuenta!"
+
+#~ msgid "Permission Denied"
+#~ msgstr "Permiso denegado"
+
+#~ msgid ""
+#~ "The page you requested, enforces users to verify using two-factor "
+#~ "authentication for security reasons. You need to enable these security "
+#~ "features in order to access this page."
+#~ msgstr ""
+#~ "La página que solicitó obliga a los usuarios a verificar mediante "
+#~ "autenticación de dos factores por razones de seguridad. Debe habilitar "
+#~ "estas funciones de seguridad para poder acceder a esta página."
+
+#~ msgid ""
+#~ "Two-factor authentication is not enabled for your account. Enable two-"
+#~ "factor authentication for enhanced account security."
+#~ msgstr ""
+#~ "La autenticación de dos factores no está habilitada para su cuenta. "
+#~ "Habilite la autenticación de dos factores para mejorar la seguridad de la "
+#~ "cuenta."
+
+#~ msgid "Go back"
+#~ msgstr "Volver"
+
+#~ msgid "Enable Two-Factor Authentication"
+#~ msgstr "Habilite la autenticación de dos factores"
+
+#~ msgid ""
+#~ "You are about to take your account security to the next level. Follow the "
+#~ "steps in this wizard to enable two-factor authentication."
+#~ msgstr ""
+#~ "Está a punto de llevar la seguridad de su cuenta al siguiente nivel. Siga "
+#~ "los pasos de este asistente para habilitar la autenticación de dos "
+#~ "factores."
+
+#~ msgid "Please select which authentication method you would like to use."
+#~ msgstr "Seleccione qué método de autenticación le gustaría utilizar."
+
+#~ msgid ""
+#~ "To set up a token generator, scan the QR code below using an app like "
+#~ "Google Authenticator, Authenticator from Windows or a similar app."
+#~ msgstr ""
+#~ "Para configurar un generador de tokens, escanee el código QR a "
+#~ "continuación usando una aplicación como Google Authenticator, "
+#~ "Authenticator de Windows o una aplicación similar."
+
+#~ msgid ""
+#~ "Alternatively, use the following secret to configure the token manually "
+#~ "in your authenticator or password manager."
+#~ msgstr ""
+#~ "Alternativamente, use la siguiente llave para configurar el token "
+#~ "manualmente en su autenticador o administrador de contraseñas."
+
+#~ msgid "TOTP Secret:"
+#~ msgstr "Secreto TOTP:"
+
+#~ msgid "Then, enter the token generated by the app below to verify setup."
+#~ msgstr ""
+#~ "Luego, ingrese el token generado por la aplicación a continuación para "
+#~ "verificar la configuración."
+
+#~ msgid ""
+#~ "Token validated successfully. Two-factor authentication is now enabled."
+#~ msgstr ""
+#~ "Token validado exitosamente. La autenticación de dos factores ahora está "
+#~ "habilitada."
+
+#~ msgid "Token validation failed. Please try again."
+#~ msgstr "La validación del token falló. Por favor inténtalo de nuevo."
+
+#~ msgid "Back to login"
+#~ msgstr "Volver a iniciar sesión"
+
+#~ msgid ""
+#~ "Congratulations, you've successfully enabled two-factor authentication."
+#~ msgstr ""
+#~ "Felicitaciones, ha habilitado con éxito la autenticación de dos factores."
+
+#~ msgid ""
+#~ "However, it might happen that you don't have access to your primary token "
+#~ "device. To enable account recovery, add a phone number."
+#~ msgstr ""
+#~ "Sin embargo, puede suceder que no tengas acceso a tu dispositivo de "
+#~ "autenticación principal. Para habilitar la recuperación de cuenta, "
+#~ "agregue un número de teléfono."
+
+#~ msgid "Add Phone Number"
+#~ msgstr "Agregar Número de teléfono"
+
+#~ msgid "Account Security"
+#~ msgstr "Seguridad de la Cuenta"
+
+#, python-format
+#~ msgid "Primary method: %(primary)s"
+#~ msgstr "Método primario: %(primary)s"
+
+#~ msgid ""
+#~ "If you don't have any device with you, you can access your account using "
+#~ "backup tokens."
+#~ msgstr ""
+#~ "Si no tiene ningún dispositivo consigo, puede acceder a su cuenta "
+#~ "utilizando tokens de respaldo."
+
+#, python-format
+#~ msgid "You have only one backup token remaining."
+#~ msgid_plural "You have %(counter)s backup tokens remaining."
+#~ msgstr[0] "Solo te queda un token de respaldo."
+#~ msgstr[1] "Usted tiene %(counter)s tokens de respaldo."
+
+#~ msgid "Show Codes"
+#~ msgstr "Mostrar Tokens"
 
 #~ msgid "Testimonials"
 #~ msgstr "Testimonios"

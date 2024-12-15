@@ -3,7 +3,6 @@ import string
 import uuid
 
 from auditlog.registry import auditlog
-from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.db import models
 from django.db.models.signals import post_save, pre_delete, pre_save
@@ -90,7 +89,6 @@ class LocationModel(TimeStampedModel):
     reference = models.CharField(
         _("location reference"),
         max_length=150,
-        unique=True,
         blank=True,
         null=True
     )
@@ -125,7 +123,7 @@ class LocationModel(TimeStampedModel):
 
     class Meta:
         db_table = "apps_assets_location_location"
-        unique_together = ['reference', 'country', 'created_by']
+        unique_together = ['reference', 'country', 'created_by', 'is_active']
         verbose_name = _("2. Location")
         verbose_name_plural = _("2. Locations")
         ordering = ["default_order", "-created"]
@@ -193,6 +191,7 @@ class AssetLocationModel(TimeStampedModel):
         verbose_name = _("1. Location Registration")
         verbose_name_plural = _("1. Locations Registration")
         ordering = ["default_order", "-created"]
+        unique_together = ['asset', 'location', 'quantity_type', 'amount', 'created_by', 'is_active']
 
 
 post_save.connect(

@@ -17,7 +17,10 @@ class CountryWidget(s2forms.ModelSelect2Widget):
         return attrs
 
 class LocationModelForm(forms.ModelForm):
-
+    def __init__(self, *args, **kwargs):
+        user = kwargs.pop('user', None)
+        super().__init__(*args, **kwargs)
+        
     class Meta:
         model = LocationModel
         fields = ['reference', 'description', 'country']

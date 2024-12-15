@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 19:07-0500\n"
+"POT-Creation-Date: 2024-12-11 11:03-0500\n"
 "PO-Revision-Date: 2024-11-16 23:04-0500\n"
 "Last-Translator: Sebastian  <sebasmoralesd@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,6 @@ msgid "Document number"
 msgstr "Número de documento"
 
 #: .\apps\project\specific\documents\certificates\models.py:74
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:31
 msgid "Approved"
 msgstr "Aprobado "
 
@@ -115,121 +114,6 @@ msgstr "Aprobado por"
 msgid "Approval date"
 msgstr "Fecha de aprobación"
 
-#: .\apps\project\specific\documents\certificates\templates\admin\change_list.html:8
-msgid "Show"
-msgstr "Mostrar"
-
-#: .\apps\project\specific\documents\certificates\templates\admin\change_list.html:17
-msgid "(Max: 2000)"
-msgstr "(Máximo: 2000)"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_base.html:6
-msgid "Certification of Suitability"
-msgstr "Certificado de Idoneidad"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:5
-msgid "Certificate Details"
-msgstr "Detalles del certificado"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:11
-msgid "Suitability Verification"
-msgstr "Verificación de Idoneidad"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:28
-msgid "ID Number:"
-msgstr "Documento de identidad"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:29
-msgid "Certificate ID:"
-msgstr "ID del Certificado"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:33
-msgid "Not Approved"
-msgstr "No Aprobado "
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:39
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:48
-msgid "with document number"
-msgstr "con número de documento"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:40
-msgid ""
-"\n"
-"                                qualifies as a beneficiary, who has "
-"undergone a security screening and accreditation of judicial records in "
-"accordance with current regulations, criminal reports on social media, and "
-"Interpol databases. Consequently, they do <strong>NOT</strong> have any "
-"judicial or disciplinary records from the certifying entities authorized by "
-"international public consultation databases, which would affect their "
-"suitability.\n"
-"                                <br/>\n"
-"                                For the record, this is signed on "
-msgstr ""
-"\n"
-"a quien se le ha realizado un estudio de seguridad y acreditación de "
-"antecedentes judiciales conforme a las normativas vigentes, noticias "
-"criminales en las redes sociales e Interpol; y en consecuencia <strong>NO</"
-"strong> presenta antecedentes judiciales ni disciplinarios por los entes "
-"autorizados por las bases de datos de consulta públicas internacionales, que "
-"afecten en su idoneidad.\n"
-"<br/>\n"
-"Para constancia se firma a los"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:43
-msgid "in Quindío, Republic of Colombia."
-msgstr "en Quindío, República de Colombia."
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:49
-msgid ""
-"\n"
-"                                we inform you that, after the evaluation "
-"conducted, your security study <span class=\"text-danger\">HAS NOT BEEN "
-"APPROVED</span> due to not meeting the suitability requirements according to "
-"the current security regulations.\n"
-"                            "
-msgstr ""
-"\n"
-"Le informamos que, tras la evaluación realizada, su estudio de seguridad "
-"<span class=\"text-danger\">NO HA SIDO APROBADO</span>, debido a que no "
-"cumple con los requisitos de idoneidad exigidos, según las normativas "
-"vigentes en materia de seguridad. "
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:56
-msgid ""
-"We remind you that, in accordance with the provisions of the Habeas Data "
-"Law, all your personal data has been treated with due confidentiality and is "
-"protected under the strictest security standards, guaranteeing its integrity "
-"and privacy. Your data will be used exclusively for authorized purposes and "
-"within the framework of current data protection regulations."
-msgstr ""
-"Le recordamos que, de conformidad con lo dispuesto por la Ley de Habeas "
-"Data, todos sus datos personales han sido tratados con la debida "
-"confidencialidad y están protegidos bajo los más estrictos estándares de "
-"seguridad, garantizando su integridad y privacidad. Sus datos serán "
-"utilizados exclusivamente para los fines autorizados y en el marco de la "
-"normativa vigente en protección de datos."
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_detail.html:60
-msgid "Status:"
-msgstr "Estado"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_input.html:5
-#: .\apps\project\specific\documents\certificates\templates\certificate_input.html:14
-msgid "Verify your Certificate"
-msgstr "Verificar certificado"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_input.html:56
-msgid "Please try again in"
-msgstr "Por favor intenta nuevamente en"
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_input.html:56
-msgid "minutes."
-msgstr "minutos."
-
-#: .\apps\project\specific\documents\certificates\templates\certificate_input.html:62
-msgid "Verify"
-msgstr "Verificar"
-
 #: .\apps\project\specific\documents\certificates\views.py:99
 #: .\apps\project\specific\documents\certificates\views.py:127
 msgid "Too many failed attempts."
@@ -238,6 +122,101 @@ msgstr "Demasiados intentos fallidos."
 #: .\apps\project\specific\documents\certificates\views.py:131
 msgid "ID Number not found."
 msgstr "No se encontró el documento."
+
+#~ msgid "Show"
+#~ msgstr "Mostrar"
+
+#~ msgid "(Max: 2000)"
+#~ msgstr "(Máximo: 2000)"
+
+#~ msgid "Certification of Suitability"
+#~ msgstr "Certificado de Idoneidad"
+
+#~ msgid "Certificate Details"
+#~ msgstr "Detalles del certificado"
+
+#~ msgid "Suitability Verification"
+#~ msgstr "Verificación de Idoneidad"
+
+#~ msgid "ID Number:"
+#~ msgstr "Documento de identidad"
+
+#~ msgid "Certificate ID:"
+#~ msgstr "ID del Certificado"
+
+#~ msgid "Not Approved"
+#~ msgstr "No Aprobado "
+
+#~ msgid "with document number"
+#~ msgstr "con número de documento"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                qualifies as a beneficiary, who has "
+#~ "undergone a security screening and accreditation of judicial records in "
+#~ "accordance with current regulations, criminal reports on social media, "
+#~ "and Interpol databases. Consequently, they do <strong>NOT</strong> have "
+#~ "any judicial or disciplinary records from the certifying entities "
+#~ "authorized by international public consultation databases, which would "
+#~ "affect their suitability.\n"
+#~ "                                <br/>\n"
+#~ "                                For the record, this is signed on "
+#~ msgstr ""
+#~ "\n"
+#~ "a quien se le ha realizado un estudio de seguridad y acreditación de "
+#~ "antecedentes judiciales conforme a las normativas vigentes, noticias "
+#~ "criminales en las redes sociales e Interpol; y en consecuencia "
+#~ "<strong>NO</strong> presenta antecedentes judiciales ni disciplinarios "
+#~ "por los entes autorizados por las bases de datos de consulta públicas "
+#~ "internacionales, que afecten en su idoneidad.\n"
+#~ "<br/>\n"
+#~ "Para constancia se firma a los"
+
+#~ msgid "in Quindío, Republic of Colombia."
+#~ msgstr "en Quindío, República de Colombia."
+
+#~ msgid ""
+#~ "\n"
+#~ "                                we inform you that, after the evaluation "
+#~ "conducted, your security study <span class=\"text-danger\">HAS NOT BEEN "
+#~ "APPROVED</span> due to not meeting the suitability requirements according "
+#~ "to the current security regulations.\n"
+#~ "                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Le informamos que, tras la evaluación realizada, su estudio de seguridad "
+#~ "<span class=\"text-danger\">NO HA SIDO APROBADO</span>, debido a que no "
+#~ "cumple con los requisitos de idoneidad exigidos, según las normativas "
+#~ "vigentes en materia de seguridad. "
+
+#~ msgid ""
+#~ "We remind you that, in accordance with the provisions of the Habeas Data "
+#~ "Law, all your personal data has been treated with due confidentiality and "
+#~ "is protected under the strictest security standards, guaranteeing its "
+#~ "integrity and privacy. Your data will be used exclusively for authorized "
+#~ "purposes and within the framework of current data protection regulations."
+#~ msgstr ""
+#~ "Le recordamos que, de conformidad con lo dispuesto por la Ley de Habeas "
+#~ "Data, todos sus datos personales han sido tratados con la debida "
+#~ "confidencialidad y están protegidos bajo los más estrictos estándares de "
+#~ "seguridad, garantizando su integridad y privacidad. Sus datos serán "
+#~ "utilizados exclusivamente para los fines autorizados y en el marco de la "
+#~ "normativa vigente en protección de datos."
+
+#~ msgid "Status:"
+#~ msgstr "Estado"
+
+#~ msgid "Verify your Certificate"
+#~ msgstr "Verificar certificado"
+
+#~ msgid "Please try again in"
+#~ msgstr "Por favor intenta nuevamente en"
+
+#~ msgid "minutes."
+#~ msgstr "minutos."
+
+#~ msgid "Verify"
+#~ msgstr "Verificar"
 
 #~ msgid "Step"
 #~ msgstr "Etapa"
