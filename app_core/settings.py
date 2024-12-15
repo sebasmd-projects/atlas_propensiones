@@ -109,6 +109,8 @@ LOCALE_PATHS = [
 
 LOCALE_PATHS.append(str(BASE_DIR / 'app_core' / 'locale'))
 
+LOCALE_PATHS.append(str(BASE_DIR / 'templates' / 'locale'))
+
 LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'America/Bogota'
@@ -162,7 +164,7 @@ ROOT_URLCONF = 'app_core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'apps' / 'templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
