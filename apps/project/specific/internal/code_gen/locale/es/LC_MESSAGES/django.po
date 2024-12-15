@@ -1,23 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Generación de códigos: formularios y modelos de generación de códigos QR y de barras.
+# Copyright (C) 2024 ATLAS
+# This file is distributed under the same license as the ATLAS package.
+# Sebastián Morales <sebastian.morales@propensionesabogados.com>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:03-0500\n"
-"PO-Revision-Date: 2024-12-03 19:45-0500\n"
-"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"PO-Revision-Date: 2024-12-15 02:02-0500\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\apps\project\specific\internal\code_gen\forms.py:8
 msgid "Include NIT"
@@ -29,20 +27,20 @@ msgstr "Incluir Fecha (DDMMYYYY)"
 
 #: .\apps\project\specific\internal\code_gen\forms.py:16
 msgid "Include Random Code (4 digits)"
-msgstr "Código Aleatorio (4 Dígitos)"
+msgstr "Incluir Código Aleatorio (4 dígitos)"
 
 #: .\apps\project\specific\internal\code_gen\forms.py:20
 msgid "Generate QR Code"
-msgstr "Cód QR"
+msgstr "Generar Código QR"
 
 #: .\apps\project\specific\internal\code_gen\forms.py:24
 #: .\apps\project\specific\internal\code_gen\forms.py:29
 msgid "QR Image URL"
-msgstr "URL de la imagen QR"
+msgstr "URL de la Imagen QR"
 
 #: .\apps\project\specific\internal\code_gen\forms.py:34
 msgid "Generate Barcode"
-msgstr "Cód de Barras"
+msgstr "Generar Código de Barras"
 
 #: .\apps\project\specific\internal\code_gen\forms.py:49
 #: .\apps\project\specific\internal\code_gen\models.py:9
@@ -60,49 +58,16 @@ msgstr "Texto Personalizado"
 
 #: .\apps\project\specific\internal\code_gen\models.py:20
 msgid "Custom Text Input"
-msgstr "Texto Personalizado"
+msgstr "Entrada de Texto Personalizado"
 
 #: .\apps\project\specific\internal\code_gen\models.py:27
 msgid "Code Information"
-msgstr "Información del barcode"
+msgstr "Información del Código"
 
 #: .\apps\project\specific\internal\code_gen\models.py:41
 msgid "Code Registration"
-msgstr "Registro de barcode"
+msgstr "Registro de Código"
 
 #: .\apps\project\specific\internal\code_gen\models.py:42
 msgid "Code Registrations"
-msgstr "Registros"
-
-#~ msgid "Code Generator"
-#~ msgstr "Generador de Códigos"
-
-#~ msgid "QR Code"
-#~ msgstr "Código QR"
-
-#~ msgid "Next"
-#~ msgstr "Siguiente"
-
-#~ msgid "Download"
-#~ msgstr "Descargar"
-
-#~ msgid "Bar Code"
-#~ msgstr "Código de Barras"
-
-#~ msgid "Download QR"
-#~ msgstr "Descargar QR"
-
-#~ msgid "Barcode Generator"
-#~ msgstr "Generador de barcodes"
-
-#~ msgid "Language"
-#~ msgstr "Idioma"
-
-#~ msgid "Logout"
-#~ msgstr "Cerrar Sesión"
-
-#~ msgid "Admin"
-#~ msgstr "Administrador"
-
-#~ msgid "Login"
-#~ msgstr "Iniciar Sesión"
+msgstr "Registros de Códigos"

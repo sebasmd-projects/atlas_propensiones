@@ -1,23 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Gestión de certificados: administración, modelos y vistas de documentos de certificados.
+# Copyright (C) 2024 ATLAS
+# This file is distributed under the same license as the ATLAS package.
+# Sebastián Morales <sebastian.morales@propensionesabogados.com>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:03-0500\n"
-"PO-Revision-Date: 2024-11-16 23:04-0500\n"
-"Last-Translator: Sebastian  <sebasmoralesd@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"PO-Revision-Date: 2024-12-15 02:02-0500\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\apps\project\specific\documents\certificates\admin.py:33
 #: .\apps\project\specific\documents\certificates\apps.py:8
@@ -40,27 +38,27 @@ msgstr "Certificados"
 
 #: .\apps\project\specific\documents\certificates\forms.py:12
 msgid "Document Type"
-msgstr "Tipo de documento"
+msgstr "Tipo de Documento"
 
 #: .\apps\project\specific\documents\certificates\forms.py:18
 msgid "Document Number"
-msgstr "Número de documento"
+msgstr "Número de Documento"
 
 #: .\apps\project\specific\documents\certificates\models.py:16
 msgid "Citizen ID (CC)"
-msgstr "Cédula de ciudadanía (CC)"
+msgstr "Cédula de Ciudadanía (CC)"
 
 #: .\apps\project\specific\documents\certificates\models.py:17
 msgid "Foreigner ID (CE)"
-msgstr "Cédula de extranjería (CE)"
+msgstr "Cédula de Extranjería (CE)"
 
 #: .\apps\project\specific\documents\certificates\models.py:18
 msgid "Special Residence Permit (PPT)"
-msgstr "Permiso especial de permanencia (PPT)"
+msgstr "Permiso Especial de Permanencia (PPT)"
 
 #: .\apps\project\specific\documents\certificates\models.py:19
 msgid "Identity Card (TI)"
-msgstr "Tarjeta de identidad (TI)"
+msgstr "Tarjeta de Identidad (TI)"
 
 #: .\apps\project\specific\documents\certificates\models.py:20
 msgid "Passport (PA)"
@@ -68,19 +66,19 @@ msgstr "Pasaporte (PA)"
 
 #: .\apps\project\specific\documents\certificates\models.py:21
 msgid "Civil Registry (RC)"
-msgstr "Registro civil (RC)"
+msgstr "Registro Civil (RC)"
 
 #: .\apps\project\specific\documents\certificates\models.py:22
 msgid "Tax Identification Number (NIT)"
-msgstr "Número de identificación tributaria (NIT)"
+msgstr "Número de Identificación Tributaria (NIT)"
 
 #: .\apps\project\specific\documents\certificates\models.py:23
 msgid "Single Tax Registry (RUT)"
-msgstr "Registro único tributario (RUT)"
+msgstr "Registro Único Tributario (RUT)"
 
 #: .\apps\project\specific\documents\certificates\models.py:24
 msgid "Diplomatic ID Card (CD)"
-msgstr "Carné diplomático (CD)"
+msgstr "Carné Diplomático (CD)"
 
 #: .\apps\project\specific\documents\certificates\models.py:38
 msgid "User"
@@ -92,7 +90,7 @@ msgstr "Nombres"
 
 #: .\apps\project\specific\documents\certificates\models.py:50
 msgid "Last name"
-msgstr "Apellidos"
+msgstr "Apellido"
 
 #: .\apps\project\specific\documents\certificates\models.py:56
 msgid "Document type"
@@ -104,7 +102,7 @@ msgstr "Número de documento"
 
 #: .\apps\project\specific\documents\certificates\models.py:74
 msgid "Approved"
-msgstr "Aprobado "
+msgstr "Aprobado"
 
 #: .\apps\project\specific\documents\certificates\models.py:81
 msgid "Approved by"
@@ -121,207 +119,4 @@ msgstr "Demasiados intentos fallidos."
 
 #: .\apps\project\specific\documents\certificates\views.py:131
 msgid "ID Number not found."
-msgstr "No se encontró el documento."
-
-#~ msgid "Show"
-#~ msgstr "Mostrar"
-
-#~ msgid "(Max: 2000)"
-#~ msgstr "(Máximo: 2000)"
-
-#~ msgid "Certification of Suitability"
-#~ msgstr "Certificado de Idoneidad"
-
-#~ msgid "Certificate Details"
-#~ msgstr "Detalles del certificado"
-
-#~ msgid "Suitability Verification"
-#~ msgstr "Verificación de Idoneidad"
-
-#~ msgid "ID Number:"
-#~ msgstr "Documento de identidad"
-
-#~ msgid "Certificate ID:"
-#~ msgstr "ID del Certificado"
-
-#~ msgid "Not Approved"
-#~ msgstr "No Aprobado "
-
-#~ msgid "with document number"
-#~ msgstr "con número de documento"
-
-#~ msgid ""
-#~ "\n"
-#~ "                                qualifies as a beneficiary, who has "
-#~ "undergone a security screening and accreditation of judicial records in "
-#~ "accordance with current regulations, criminal reports on social media, "
-#~ "and Interpol databases. Consequently, they do <strong>NOT</strong> have "
-#~ "any judicial or disciplinary records from the certifying entities "
-#~ "authorized by international public consultation databases, which would "
-#~ "affect their suitability.\n"
-#~ "                                <br/>\n"
-#~ "                                For the record, this is signed on "
-#~ msgstr ""
-#~ "\n"
-#~ "a quien se le ha realizado un estudio de seguridad y acreditación de "
-#~ "antecedentes judiciales conforme a las normativas vigentes, noticias "
-#~ "criminales en las redes sociales e Interpol; y en consecuencia "
-#~ "<strong>NO</strong> presenta antecedentes judiciales ni disciplinarios "
-#~ "por los entes autorizados por las bases de datos de consulta públicas "
-#~ "internacionales, que afecten en su idoneidad.\n"
-#~ "<br/>\n"
-#~ "Para constancia se firma a los"
-
-#~ msgid "in Quindío, Republic of Colombia."
-#~ msgstr "en Quindío, República de Colombia."
-
-#~ msgid ""
-#~ "\n"
-#~ "                                we inform you that, after the evaluation "
-#~ "conducted, your security study <span class=\"text-danger\">HAS NOT BEEN "
-#~ "APPROVED</span> due to not meeting the suitability requirements according "
-#~ "to the current security regulations.\n"
-#~ "                            "
-#~ msgstr ""
-#~ "\n"
-#~ "Le informamos que, tras la evaluación realizada, su estudio de seguridad "
-#~ "<span class=\"text-danger\">NO HA SIDO APROBADO</span>, debido a que no "
-#~ "cumple con los requisitos de idoneidad exigidos, según las normativas "
-#~ "vigentes en materia de seguridad. "
-
-#~ msgid ""
-#~ "We remind you that, in accordance with the provisions of the Habeas Data "
-#~ "Law, all your personal data has been treated with due confidentiality and "
-#~ "is protected under the strictest security standards, guaranteeing its "
-#~ "integrity and privacy. Your data will be used exclusively for authorized "
-#~ "purposes and within the framework of current data protection regulations."
-#~ msgstr ""
-#~ "Le recordamos que, de conformidad con lo dispuesto por la Ley de Habeas "
-#~ "Data, todos sus datos personales han sido tratados con la debida "
-#~ "confidencialidad y están protegidos bajo los más estrictos estándares de "
-#~ "seguridad, garantizando su integridad y privacidad. Sus datos serán "
-#~ "utilizados exclusivamente para los fines autorizados y en el marco de la "
-#~ "normativa vigente en protección de datos."
-
-#~ msgid "Status:"
-#~ msgstr "Estado"
-
-#~ msgid "Verify your Certificate"
-#~ msgstr "Verificar certificado"
-
-#~ msgid "Please try again in"
-#~ msgstr "Por favor intenta nuevamente en"
-
-#~ msgid "minutes."
-#~ msgstr "minutos."
-
-#~ msgid "Verify"
-#~ msgstr "Verificar"
-
-#~ msgid "Step"
-#~ msgstr "Etapa"
-
-#~ msgid "Step of the certificate"
-#~ msgstr "Etapa del certificado"
-
-#~ msgid "November 10, 2024"
-#~ msgstr "10 de noviembre de 2024"
-
-#~ msgid "December 10, 2024"
-#~ msgstr "10 de diciembre de 2024"
-
-#~ msgid "Stage:"
-#~ msgstr "Etapa"
-
-#~ msgid "FINAL MEMORIAL TOTAL CLOSURE OF OPERATION"
-#~ msgstr "MEMORIAL FINAL CIERRE TOTAL DE OPERACION"
-
-#~ msgid "Certificates | ATLAS | PROPENSIONESABOGADOS"
-#~ msgstr "Certificados| ATLAS | PROPENSIONESABOGADOS"
-
-#~ msgid "ATLAS certificates"
-#~ msgstr "ATLAS Certificados"
-
-#~ msgid "Created by"
-#~ msgstr "Creado por "
-
-#~ msgid "using ATLAS"
-#~ msgstr "utilizando ATLAS"
-
-#~ msgid "Certificate List"
-#~ msgstr "Lista de certificados"
-
-#~ msgid "Certificates | ATLAS"
-#~ msgstr "Certificados | ATLAS"
-
-#~ msgid "Search by Name or ID Number"
-#~ msgstr "Buscar por Nombre o Número de Documento"
-
-#~ msgid "All Steps"
-#~ msgstr "Todas las Etapas"
-
-#~ msgid "Step 1"
-#~ msgstr "Etapa 1"
-
-#~ msgid "Step 2"
-#~ msgstr "Etapa 2"
-
-#~ msgid "All Status"
-#~ msgstr "Todos los Estados"
-
-#~ msgid "Search"
-#~ msgstr "Buscar"
-
-#~ msgid "Clear Filters"
-#~ msgstr "Borrar filtros"
-
-#~ msgid "Certificate ID"
-#~ msgstr "ID del Certificado"
-
-#~ msgid "Approved Status"
-#~ msgstr "Estado aprobado"
-
-#~ msgid "View"
-#~ msgstr "Ver"
-
-#~ msgid "Edit"
-#~ msgstr "Editar"
-
-#~ msgid "No certificates found."
-#~ msgstr "No se encontraron certificados."
-
-#~ msgid "CHB"
-#~ msgstr "CAH"
-
-#~ msgid "Language"
-#~ msgstr "Idioma"
-
-#~ msgid "Logout"
-#~ msgstr "Cerrar Sesión"
-
-#~ msgid "Admin"
-#~ msgstr "Administrador"
-
-#~ msgid "Certificates | Fundación Leirion"
-#~ msgstr "Certificados | Fundación Leirion"
-
-#~ msgid "Fundación Leirion certificates"
-#~ msgstr "Fundación Leirion certificados"
-
-#~ msgid "October 20, 2024"
-#~ msgstr "20 de octubre de 2024"
-
-#~ msgid "for the"
-#~ msgstr "para la"
-
-#~ msgid "Leirion Foundation"
-#~ msgstr "Fundación Leirion"
-
-#~ msgid "Propensiones Abogados S.A.S. for the Leirion Foundation"
-#~ msgstr "Propensiones Abogados S.A.S. para la Fundación Leirion"
-
-#~ msgid "ID Number"
-#~ msgstr "Documento de identidad"
-
-#~ msgid "with C.C."
-#~ msgstr "con C.C."
+msgstr "Número de identificación no encontrado."

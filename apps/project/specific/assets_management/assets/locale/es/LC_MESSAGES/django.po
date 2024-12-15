@@ -1,69 +1,67 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Gestión de activos: administración, filtros y modelos.
+# Copyright (C) 2024 ATLAS
+# This file is distributed under the same license as the ATLAS package.
+# Sebastián Morales <sebastian.morales@propensionesabogados.com>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:03-0500\n"
-"PO-Revision-Date: 2024-12-03 19:21-0500\n"
-"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"PO-Revision-Date: 2024-12-15 02:02-0500\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:43
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:95
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:44
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:107
 msgid "Details"
-msgstr ""
+msgstr "Detalles"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:50
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:104
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:186
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:52
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:116
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:208
 msgid "Dates"
 msgstr "Fechas"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:164
-msgid "Required Fields"
-msgstr "Campos Requeridos"
-
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:176
-msgid "Optional Fields"
-msgstr "Campos Opcionales"
-
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:197
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:62
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:126
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:219
 msgid "Priority"
 msgstr "Prioridad"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:210
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:186
+msgid "Required Fields"
+msgstr "Campos Requeridos"
+
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:198
+msgid "Optional Fields"
+msgstr "Campos Opcionales"
+
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:232
 msgid "Asset Name (ES)"
 msgstr "Nombre del Activo (ES)"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:214
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:236
 msgid "Asset Name (EN)"
 msgstr "Nombre del Activo (EN)"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:220
-#, fuzzy
-#| msgid "Total Quantity Zero"
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:242
 msgid "Total Quantity by Type"
-msgstr "Cantidad Total 0"
+msgstr "Cantidad Total por Tipo"
 
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:7
 msgid "Total Quantity Zero"
-msgstr "Cantidad Total 0"
+msgstr "Cantidad Total Cero"
 
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:12
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:30
 msgid "Yes"
-msgstr "Si"
+msgstr "Sí"
 
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:13
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:31
@@ -72,7 +70,7 @@ msgstr "No"
 
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:25
 msgid "Has Image"
-msgstr "Tiene imagen "
+msgstr "Tiene Imagen"
 
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:43
 msgid "Quantity Type"
@@ -80,16 +78,16 @@ msgstr "Tipo de Cantidad"
 
 #: .\apps\project\specific\assets_management\assets\models.py:26
 msgid "category (ES)"
-msgstr "Categoría (ES)"
+msgstr "categoría (ES)"
 
 #: .\apps\project\specific\assets_management\assets\models.py:31
 msgid "category (EN)"
-msgstr "Categoría (EN)"
+msgstr "categoría (EN)"
 
 #: .\apps\project\specific\assets_management\assets\models.py:38
 #: .\apps\project\specific\assets_management\assets\models.py:144
 msgid "description"
-msgstr "Descripción"
+msgstr "descripción"
 
 #: .\apps\project\specific\assets_management\assets\models.py:54
 msgid "2. Category"
@@ -100,46 +98,36 @@ msgid "2. Categories"
 msgstr "2. Categorías"
 
 #: .\apps\project\specific\assets_management\assets\models.py:61
-#, fuzzy
-#| msgid "Asset (ES)"
 msgid "asset (es)"
-msgstr "Nombre Activo (ES)"
+msgstr "activo (es)"
 
 #: .\apps\project\specific\assets_management\assets\models.py:66
-#, fuzzy
-#| msgid "Asset (ES)"
 msgid "asset (en)"
-msgstr "Nombre Activo (ES)"
+msgstr "activo (en)"
 
 #: .\apps\project\specific\assets_management\assets\models.py:83
-#, fuzzy
-#| msgid "Asset Name (ES)"
 msgid "3. Asset Name"
-msgstr "Nombre del Activo (ES)"
+msgstr "3. Nombre del Activo"
 
 #: .\apps\project\specific\assets_management\assets\models.py:84
-#, fuzzy
-#| msgid "1. Assets"
 msgid "3. Asset Names"
-msgstr "1. Activos"
+msgstr "3. Nombres de Activos"
 
 #: .\apps\project\specific\assets_management\assets\models.py:122
 msgid "img"
-msgstr "img"
+msgstr "imagen"
 
 #: .\apps\project\specific\assets_management\assets\models.py:133
-#, fuzzy
-#| msgid "1. Asset"
 msgid "asset"
-msgstr "1. Activo"
+msgstr "activo"
 
 #: .\apps\project\specific\assets_management\assets\models.py:140
 msgid "category"
-msgstr "Categoría"
+msgstr "categoría"
 
 #: .\apps\project\specific\assets_management\assets\models.py:150
 msgid "observations"
-msgstr "Observaciones"
+msgstr "observaciones"
 
 #: .\apps\project\specific\assets_management\assets\models.py:182
 msgid "1. Asset"
@@ -148,126 +136,3 @@ msgstr "1. Activo"
 #: .\apps\project\specific\assets_management\assets\models.py:183
 msgid "1. Assets"
 msgstr "1. Activos"
-
-#~ msgid "Update total quantities"
-#~ msgstr "Actualizar cantidades totales"
-
-#~ msgid "Name (ES)"
-#~ msgstr "Nombre (ES)"
-
-#~ msgid "Name (EN)"
-#~ msgstr "Nombre (EN)"
-
-#~ msgid "Category"
-#~ msgstr "Categoría"
-
-#~ msgid "Observations"
-#~ msgstr "Observaciones"
-
-#~ msgid "Description"
-#~ msgstr "Descripción"
-
-#~ msgid "Category Name"
-#~ msgstr "Categoría"
-
-#~ msgid "Category Name (ES)"
-#~ msgstr "Categoría (ES)"
-
-#~ msgid "Other"
-#~ msgstr "Otro"
-
-#~ msgid "Units"
-#~ msgstr "Unidades"
-
-#~ msgid "Boxes"
-#~ msgstr "Cajas"
-
-#~ msgid "Containers"
-#~ msgstr "Contenedores"
-
-#~ msgid "Created By"
-#~ msgstr "Creado por"
-
-#~ msgid "spanish name"
-#~ msgstr "Activo (ES)"
-
-#~ msgid "english name"
-#~ msgstr "Activo (EN)"
-
-#~ msgid "quantity type"
-#~ msgstr "Tipo de Cantidad"
-
-#~ msgid "total lump sum"
-#~ msgstr "Suma global total"
-
-#~ msgid "Dashboard"
-#~ msgstr "Panel General"
-
-#~ msgid "Overview and content summary"
-#~ msgstr "Descripción general y resumen de contenido"
-
-#~ msgid "Assets and Offers"
-#~ msgstr "Activos y ofertas"
-
-#~ msgid "Here you can see your assets and new Offers"
-#~ msgstr "Aquí podrás ver tus activos y nuevas Ofertas"
-
-#~ msgid "Support"
-#~ msgstr "Soporte"
-
-#~ msgid "Do you need help? get support now"
-#~ msgstr "¿Necesitas ayuda? obtener soporte ahora"
-
-#~ msgid "My Historical Assets"
-#~ msgstr "Mis activos históricos"
-
-#~ msgid "Assets in Demand (Offers)"
-#~ msgstr "Activos en demanda (ofertas)"
-
-#~ msgid "Category (EN)"
-#~ msgstr "Categoría (EN)"
-
-#~ msgid "Category (ES)"
-#~ msgstr "Categoría (ES)"
-
-#~ msgid "Country"
-#~ msgstr "País"
-
-#~ msgid "Total Quantity"
-#~ msgstr "Cantidad Total"
-
-#~ msgid "Actions"
-#~ msgstr "Acciones"
-
-#~ msgid "Confirm Delete"
-#~ msgstr "Confirmar Eliminación"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgid "Edit Asset"
-#~ msgstr "Editar Activo"
-
-#~ msgid "Save Changes"
-#~ msgstr "Guardar Cambios"
-
-#~ msgid "Asset (EN)"
-#~ msgstr "Nombre Activo (EN)"
-
-#~ msgid "Offer Amount per Quantity Type (USD)"
-#~ msgstr "Monto de la oferta por tipo de cantidad (USD)"
-
-#~ msgid "Needed"
-#~ msgstr "Necesidad"
-
-#~ msgid "Apply"
-#~ msgstr "Aplicar"
-
-#~ msgid "No offers available"
-#~ msgstr "No hay ofertas disponibles"
-
-#~ msgid "Add new Asset"
-#~ msgstr "Agregar nuevo activo"
-
-#~ msgid "Enter a new historical asset"
-#~ msgstr "Ingrese un nuevo activo histórico"

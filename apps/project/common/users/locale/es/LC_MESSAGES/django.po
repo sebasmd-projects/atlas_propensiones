@@ -1,31 +1,29 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Información de usuarios, modelos y validadores de formularios.
+# Copyright (C) 2024 ATLAS
+# This file is distributed under the same license as the ATLAS package.
+# Sebastián Morales <sebastian.morales@propensionesabogados.com>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:03-0500\n"
-"PO-Revision-Date: 2024-12-03 19:12-0500\n"
-"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"PO-Revision-Date: 2024-12-15 02:02-0500\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\apps\project\common\users\admin.py:62
 msgid "User Information"
-msgstr "Información del usuario"
+msgstr "Información del Usuario"
 
 #: .\apps\project\common\users\admin.py:71
 msgid "Personal Information"
-msgstr "Información personal"
+msgstr "Información Personal"
 
 #: .\apps\project\common\users\admin.py:80
 msgid "Permissions"
@@ -65,11 +63,11 @@ msgstr "Intermediario"
 
 #: .\apps\project\common\users\models.py:36
 msgid "names"
-msgstr "Nombres"
+msgstr "nombres"
 
 #: .\apps\project\common\users\models.py:41
 msgid "surnames"
-msgstr "Apellidos"
+msgstr "apellidos"
 
 #: .\apps\project\common\users\models.py:46
 msgid "email address"
@@ -86,11 +84,11 @@ msgstr "Usuarios"
 
 #: .\apps\project\common\users\models.py:81
 msgid "Country Name"
-msgstr "Nombre del país"
+msgstr "Nombre del País"
 
 #: .\apps\project\common\users\models.py:87
 msgid "Country Code"
-msgstr "Código del país"
+msgstr "Código del País"
 
 #: .\apps\project\common\users\models.py:101
 msgid "Country"
@@ -102,7 +100,7 @@ msgstr "Países"
 
 #: .\apps\project\common\users\models.py:107
 msgid "State Name"
-msgstr "Nombre del estado"
+msgstr "Nombre del Estado"
 
 #: .\apps\project\common\users\models.py:127
 msgid "State"
@@ -114,7 +112,7 @@ msgstr "Estados"
 
 #: .\apps\project\common\users\models.py:133
 msgid "City Name"
-msgstr "Nombre de la ciudad"
+msgstr "Nombre de la Ciudad"
 
 #: .\apps\project\common\users\models.py:153
 msgid "City"
@@ -126,15 +124,15 @@ msgstr "Ciudades"
 
 #: .\apps\project\common\users\models.py:180
 msgid "Address Line 1"
-msgstr "Dirección 1"
+msgstr "Línea de Dirección 1"
 
 #: .\apps\project\common\users\models.py:185
 msgid "Address Line 2 (Optional)"
-msgstr "Dirección 2 (Opcional)"
+msgstr "Línea de Dirección 2 (Opcional)"
 
 #: .\apps\project\common\users\models.py:192
 msgid "Postal/Zip Code"
-msgstr "Cód Postal"
+msgstr "Código Postal"
 
 #: .\apps\project\common\users\models.py:203
 msgid "Address"
@@ -162,7 +160,7 @@ msgstr "El usuario debe tener al menos 18 años de edad."
 
 #: .\apps\project\common\users\models.py:254
 msgid "Birth Date"
-msgstr "Fecha de nacimiento"
+msgstr "Fecha de Nacimiento"
 
 #: .\apps\project\common\users\models.py:260
 msgid "Gender"
@@ -170,35 +168,35 @@ msgstr "Género"
 
 #: .\apps\project\common\users\models.py:267
 msgid "Citizenship"
-msgstr "Ciudadanía"
+msgstr "Nacionalidad"
 
 #: .\apps\project\common\users\models.py:272
 msgid "Passport Identification"
-msgstr "Identificación del pasaporte"
+msgstr "Identificación del Pasaporte"
 
 #: .\apps\project\common\users\models.py:277
 msgid "Date of Issue"
-msgstr "Fecha de emisión"
+msgstr "Fecha de Emisión"
 
 #: .\apps\project\common\users\models.py:282
 msgid "Issuing Authority"
-msgstr "La autoridad emisora"
+msgstr "Autoridad Emisora"
 
 #: .\apps\project\common\users\models.py:287
 msgid "Date of Expiry"
-msgstr "Fecha de vencimiento"
+msgstr "Fecha de Vencimiento"
 
 #: .\apps\project\common\users\models.py:298
 msgid "Phone Number Code"
-msgstr "Código de teléfono"
+msgstr "Código del Número de Teléfono"
 
 #: .\apps\project\common\users\models.py:303
 msgid "Phone Number"
-msgstr "Número de teléfono"
+msgstr "Número de Teléfono"
 
 #: .\apps\project\common\users\models.py:308
 msgid "Passport Image"
-msgstr "Imagen del pasaporte"
+msgstr "Imagen del Pasaporte"
 
 #: .\apps\project\common\users\models.py:313
 msgid "Beneficiary signature"
@@ -207,48 +205,16 @@ msgstr "Firma del Beneficiario"
 #: .\apps\project\common\users\models.py:326
 #: .\apps\project\common\users\models.py:327
 msgid "User Personal Information"
-msgstr "Información Personal"
+msgstr "Información Personal del Usuario"
 
 #: .\apps\project\common\users\validators.py:10
-msgid ""
-"Please enter a valid name. This value can contain only letters, min lenght: 3"
-msgstr ""
-"Por favor ingrese un nombre válido. Este valor puede contener sólo letras, "
-"longitud mínima: 3"
+msgid "Please enter a valid name. This value can contain only letters, min lenght: 3"
+msgstr "Por favor, ingrese un nombre válido. Este valor solo puede contener letras, longitud mínima: 3"
 
 #: .\apps\project\common\users\validators.py:19
-msgid ""
-"Please enter a valid last name. This value can contain only letters, min "
-"lenght: 3"
-msgstr ""
-"Por favor ingrese un apellido válido. Este valor puede contener sólo letras, "
-"longitud mínima: 3"
+msgid "Please enter a valid last name. This value can contain only letters, min lenght: 3"
+msgstr "Por favor, ingrese un apellido válido. Este valor solo puede contener letras, longitud mínima: 3"
 
 #: .\apps\project\common\users\validators.py:28
-msgid ""
-"Please enter a valid username. This value can contain only letters, numbers "
-"and this characters /./+/-/_min lenght: 4"
-msgstr ""
-"Por favor ingrese un nombre de usuario válido. Este valor solo puede "
-"contener letras, números y estos caracteres . + - _ min longitud: 4"
-
-#~ msgid "first name"
-#~ msgstr "Primer nombre"
-
-#~ msgid "second name"
-#~ msgstr "Segundo nombre"
-
-#~ msgid "second surname"
-#~ msgstr "Segundo apellido"
-
-#~ msgid "password"
-#~ msgstr "contraseña"
-
-#~ msgid ""
-#~ "Raw passwords are not stored, so there is no way to see this user’s "
-#~ "password, but you can change the password using <a href=\"{}\">this form</"
-#~ "a>."
-#~ msgstr ""
-#~ "Las contraseñas sin formato no se almacenan, por lo que no hay forma de "
-#~ "ver la contraseña de este usuario, pero puede cambiarla usando <a href="
-#~ "\"{}\">este formulario</a>."
+msgid "Please enter a valid username. This value can contain only letters, numbers and this characters /./+/-/_min lenght: 4"
+msgstr "Por favor, ingrese un nombre de usuario válido. Este valor solo puede contener letras, números y estos caracteres /./+/-/_, longitud mínima: 4"

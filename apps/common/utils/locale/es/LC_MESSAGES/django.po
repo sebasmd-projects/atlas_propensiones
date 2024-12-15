@@ -1,27 +1,25 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Mensajes de errores, mixins de autenticación y modelos de solicitudes.
+# Copyright (C) 2024 ATLAS
+# This file is distributed under the same license as the ATLAS package.
+# Sebastián Morales <sebastian.morales@propensionesabogados.com>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 19:07-0500\n"
-"PO-Revision-Date: 2024-11-10 11:23-0500\n"
-"Last-Translator: Juan Sebastian <sebasmoralesd@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"PO-Revision-Date: 2024-12-15 02:02-0500\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\apps\common\utils\contrib\auth\mixins.py:17
 msgid "group_required attribute not set"
-msgstr "atributo group_required no establecido"
+msgstr "El atributo group_required no está configurado"
 
 #: .\apps\common\utils\contrib\auth\mixins.py:25
 msgid "You do not have permission to view this page"
@@ -29,11 +27,11 @@ msgstr "No tienes permiso para ver esta página"
 
 #: .\apps\common\utils\forms.py:9
 msgid "Security Key"
-msgstr "LLave de seguridad"
+msgstr "Clave de seguridad"
 
 #: .\apps\common\utils\middleware\detect_suspicious_request_middleware.py:43
 msgid "This IP is temporarily blocked due to suspicious activity."
-msgstr "Esta IP está bloqueada temporalmente debido a actividad sospechosa."
+msgstr "Esta IP está temporalmente bloqueada debido a actividad sospechosa."
 
 #: .\apps\common\utils\middleware\detect_suspicious_request_middleware.py:44
 #: .\apps\common\utils\views.py:61
@@ -50,7 +48,7 @@ msgstr "Español"
 
 #: .\apps\common\utils\models.py:17
 msgid "English"
-msgstr "Ingles"
+msgstr "Inglés"
 
 #: .\apps\common\utils\models.py:21
 msgid "language"
@@ -66,7 +64,7 @@ msgstr "actualizado"
 
 #: .\apps\common\utils\models.py:42
 msgid "is active"
-msgstr "esta activo"
+msgstr "está activo"
 
 #: .\apps\common\utils\models.py:47
 msgid "priority"
@@ -78,15 +76,15 @@ msgstr "Intentos de obtener URL prohibidas"
 
 #: .\apps\common\utils\models.py:62
 msgid "Multiple failed security key entry attempts"
-msgstr "Múltiples intentos fallidos de ingreso de clave de seguridad"
+msgstr "Múltiples intentos fallidos de entrada de clave de seguridad"
 
 #: .\apps\common\utils\models.py:65
 msgid "is blocked"
-msgstr "esta bloqueado"
+msgstr "está bloqueado"
 
 #: .\apps\common\utils\models.py:66
 msgid "current user IP"
-msgstr "IP del usuario"
+msgstr "IP del usuario actual"
 
 #: .\apps\common\utils\models.py:68
 msgid "reason"
@@ -139,10 +137,3 @@ msgstr "Error 500"
 #: .\apps\common\utils\views.py:93
 msgid "Server error"
 msgstr "Error del servidor"
-
-#~ msgid "Your IP has been blocked due to too many incorrect attempts."
-#~ msgstr "Su IP ha sido bloqueada debido a demasiados intentos incorrectos."
-
-#, python-brace-format
-#~ msgid "Cannot convert value {value} to {self.data_type}: {e}"
-#~ msgstr "No se puede convertir el valor {value} a {self.data_type}: {e}"

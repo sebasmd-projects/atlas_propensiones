@@ -1,39 +1,37 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Gestión de compradores: administración y modelos de oferta de compra.
+# Copyright (C) 2024 ATLAS
+# This file is distributed under the same license as the ATLAS package.
+# Sebastián Morales <sebastian.morales@propensionesabogados.com>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 11:03-0500\n"
-"PO-Revision-Date: 2024-12-03 19:46-0500\n"
-"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"PO-Revision-Date: 2024-12-15 02:02-0500\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\apps\project\specific\assets_management\buyers\admin.py:39
 msgid "Required Fields"
-msgstr ""
+msgstr "Campos Requeridos"
 
 #: .\apps\project\specific\assets_management\buyers\admin.py:53
 msgid "Approval"
-msgstr ""
+msgstr "Aprobación"
 
 #: .\apps\project\specific\assets_management\buyers\admin.py:60
 msgid "Banner Image"
-msgstr ""
+msgstr "Imagen de Banner"
 
 #: .\apps\project\specific\assets_management\buyers\admin.py:69
 msgid "Dates"
-msgstr ""
+msgstr "Fechas"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:25
 msgid "Units"
@@ -57,21 +55,19 @@ msgstr "Compra Privada (Soberana)"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:55
 msgid "Business Purchase"
-msgstr "Compra de Negocios"
+msgstr "Compra Empresarial"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:56
 msgid "Government Purchase"
-msgstr "Compras Gubernamentales"
+msgstr "Compra Gubernamental"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:71
 msgid "Created By"
 msgstr "Creado Por"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:79
-#, fuzzy
-#| msgid "Asset (ES)"
 msgid "Asset"
-msgstr "Activo (ES)"
+msgstr "Activo"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:83
 msgid "Offer Type"
@@ -79,11 +75,11 @@ msgstr "Tipo de Oferta"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:90
 msgid "quantity type"
-msgstr "Tipo de Cantidad"
+msgstr "tipo de cantidad"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:97
 msgid "Offer Amount per quantity type in USD"
-msgstr "Monto de la oferta por tipo de cantidad en USD"
+msgstr "Monto de la Oferta por tipo de cantidad en USD"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:104
 msgid "Quantity needed"
@@ -95,27 +91,27 @@ msgstr "País"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:117
 msgid "Procedure (ES)"
-msgstr ""
+msgstr "Procedimiento (ES)"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:122
 msgid "Procedure (EN)"
-msgstr ""
+msgstr "Procedimiento (EN)"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:127
 msgid "Banner (ES)"
-msgstr ""
+msgstr "Banner (ES)"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:134
 msgid "Banner (EN)"
-msgstr ""
+msgstr "Banner (EN)"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:141
 msgid "Approved"
-msgstr ""
+msgstr "Aprobado"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:149
 msgid "Approved By"
-msgstr ""
+msgstr "Aprobado Por"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:172
 msgid "1. Offer"
@@ -123,13 +119,4 @@ msgstr "1. Oferta"
 
 #: .\apps\project\specific\assets_management\buyers\models.py:173
 msgid "1. Offers"
-msgstr "2. Ofertas"
-
-#~ msgid "Other"
-#~ msgstr "Otro"
-
-#~ msgid "Asset (EN)"
-#~ msgstr "Activo (EN)"
-
-#~ msgid "category"
-#~ msgstr "categoría"
+msgstr "1. Ofertas"
