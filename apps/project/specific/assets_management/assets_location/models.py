@@ -171,6 +171,12 @@ class AssetLocationModel(TimeStampedModel):
         _("amount")
     )
 
+    observations = models.TextField(
+        _("observations"),
+        blank=True,
+        null=True
+    )
+
     def __str__(self) -> str:
         return "{} - {} - {} - {} - {}".format(
             self.asset.asset_name.es_name,

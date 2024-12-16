@@ -38,7 +38,7 @@ class AssetLocationModelForm(forms.ModelForm):
     
     class Meta:
         model = AssetLocationModel
-        fields = ['asset', 'location', 'quantity_type', 'amount']
+        fields = ['asset', 'location', 'quantity_type', 'amount', 'observations']
         
 class AssetUpdateLocationModelForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
@@ -50,4 +50,4 @@ class AssetUpdateLocationModelForm(forms.ModelForm):
         
     class Meta:
         model = AssetLocationModel
-        fields = ['asset', 'location', 'quantity_type', 'amount']
+        fields = ['asset', 'location', 'quantity_type', 'amount', 'observations']
