@@ -59,11 +59,11 @@ msgstr "mensaje"
 
 #: .\apps\common\core\models.py:41
 msgid "Contact"
-msgstr "Contacto"
+msgstr "Contáctanos"
 
 #: .\apps\common\core\models.py:42
 msgid "Contacts"
-msgstr "Contactos"
+msgstr "Contáctanos"
 
 #: .\apps\common\core\views.py:26
 msgid "This form has already been sent."

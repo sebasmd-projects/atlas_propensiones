@@ -436,12 +436,12 @@ msgstr ""
 #: .\templates\core\index\sections\section-6-call-to-action.html:12
 #: .\templates\core\index\sections\section-7-contact.html:48
 msgid "Get In Touch"
-msgstr "Póngase en Contacto"
+msgstr "Contáctanos"
 
 #: .\templates\core\index\sections\section-7-contact.html:6
 #: .\templates\core\partials\header.html:28
 msgid "Contact"
-msgstr "Contacto"
+msgstr "Contáctanos"
 
 #: .\templates\core\index\sections\section-7-contact.html:13
 msgid "Contact Info"
