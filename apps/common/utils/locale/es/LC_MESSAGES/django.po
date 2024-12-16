@@ -7,25 +7,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 23:13-0500\n"
-"PO-Revision-Date: 2024-12-15 02:02-0500\n"
-"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados."
-"com>\n"
+"POT-Creation-Date: 2024-12-15 23:41-0500\n"
+"PO-Revision-Date: 2024-12-15 23:41-0500\n"
+"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\apps\common\utils\admin.py:24
 #, python-brace-format
-msgid "Máximo permitido: {self.max_list_per_page} registros."
-msgstr ""
+msgid "Maximum allowed: {self.max_list_per_page} records."
+msgstr "Máximo permitido: {self.max_list_per_page} registros."
 
 #: .\apps\common\utils\admin.py:28
-msgid "Mínimo permitido: 1 registro."
-msgstr ""
+msgid "Minimum allowed: 1 record."
+msgstr "Mínimo permitido: 1 registro."
+
+#: .\apps\common\utils\admin.py:32
+msgid "Please enter a valid number."
+msgstr "Por favor, ingrese un número válido."
 
 #: .\apps\common\utils\contrib\auth\mixins.py:17
 msgid "group_required attribute not set"

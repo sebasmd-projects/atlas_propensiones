@@ -21,13 +21,13 @@ class GeneralAdminModel(ImportExportActionModelAdmin, admin.ModelAdmin):
                 if list_per_page_value > self.max_list_per_page:
                     messages.warning(
                         request,
-                        _(f"Máximo permitido: {self.max_list_per_page} registros.")
+                        _(f"Maximum allowed: {self.max_list_per_page} records.")
                     )
                     list_per_page_value = self.max_list_per_page
                 elif list_per_page_value < 1:
-                    messages.warning(request, _("Mínimo permitido: 1 registro."))
+                    messages.warning(request, _("Minimum allowed: 1 record."))
                     list_per_page_value = 1
                 self.list_per_page = list_per_page_value
             except ValueError:
-                messages.error(request, "Por favor, ingrese un número válido.")
+                messages.error(request, _("Please enter a valid number."))
         return super().changelist_view(request, extra_context=extra_context)
