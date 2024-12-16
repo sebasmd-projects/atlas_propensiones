@@ -1,7 +1,6 @@
 {% extends "two_factor/_base.html" %}
 
-{% load i18n %}
-{% load two_factor_tags %}
+{% load i18n static two_factor_tags %}
 
 {% block extra_media %}
 {{ form.media }}
@@ -12,8 +11,16 @@
 {% block layout_content %}
   <div class="min-vh-100 d-flex align-items-center justify-content-center container px-5">
     <div class="card">
+      
       <div class="card-header text-center">
-        <h1 class="h3 fw-light mb-3">{% block title %}{% trans "Login" %}{% endblock %}</h1>
+        <a href="{% url 'core:index' %}">
+          <img
+            src="{% static 'assets/imgs/horizontal-logo.png' %}"
+            class="card-img-top img-fluid"
+            alt="..."
+            style="max-width: 200px"
+          />
+        </a>
         {% if wizard.steps.current == 'auth' %}
         <p>
           {% blocktrans %}Enter your credentials.{% endblocktrans %}
