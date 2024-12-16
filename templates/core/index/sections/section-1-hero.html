@@ -2,90 +2,49 @@
 
 <!-- Hero Section -->
 <section id="hero" class="hero section hv-100">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source
+      src="{% static 'assets/videos/hero-bg-video.mp4' %}"
+      type="video/mp4"
+    />
+    {% trans 'Your browser does not support the video tag.' %}
+  </video>
+
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row align-items-center">
       <div class="col-lg-6">
         <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-          <h1 class="mb-4">
-            {% trans 'ASSETS' %}<br>
-            {% trans 'HISTORICAL' %} <br>
-            <span class="accent-text">{% trans 'All-in-one Suite' %}</span>
+          <h1 class="mb-4 text-white">
+            {% trans 'HISTORICAL ASSETS' %} <br />
           </h1>
-          <p class="mb-4 mb-md-5">
+          <h2 class="mb-4 text-white">
+            <span class="accent-text">{% trans 'All-in-one Suite' %}</span>
+          </h2>
+          <h3 style="color:#FED100">
             {% trans 'Comprehensive and Secure Historical Asset Management Solution' %}
-            <br />
-            {% blocktrans %}
-            <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</strong>rusted <strong>L</strong>egacy
-              <strong>A</strong>sset <strong>S</strong>olution</small>
-            {% endblocktrans %}
-          </p>
+          </h3>
           <div class="hero-buttons">
-            <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">{% trans 'Get Started' %}</a>
+            
+            {% if request.user.user_type in 'HRI' %}
+              <a href="{% url 'assets:holder_index' %}" class="btn btn-primary me-0 me-sm-2 mx-1">
+                {% trans 'Client Area' %}
+              </a>
+            {% elif request.user.user_type in 'B' %}
+            <!-- Todo modify url to buyer_index -->
+              <a href="{% url 'assets:holder_index' %}" class="btn btn-primary me-0 me-sm-2 mx-1">
+                {% trans 'Buyer Client Area' %}
+              </a>
+            {% else %}
+              <a href="{% url 'account:register' %}" class="btn btn-outline-success me-0 me-sm-2 mx-1">
+                <i class="bi bi-person-fill-add me-1"></i>{% trans 'Register' %}
+              </a>
+            {% endif %}
+              
 
-            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
-                <i class="bi bi-play-circle me-1"></i>
-                Play Video
-              </a> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6">
-        <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-
-          <img src="{% static 'assets/imgs/hero/illustration-1.webp' %}" alt="Hero Image" class="img-fluid">
-
-          <div class="customers-badge">
-            <div class="customer-avatars">
-              <img src="{% static 'assets/imgs/hero/Dr. Jorge Vega.jpg' %}"       alt="Dr. Jorge Vega"      class="avatar">
-              <img src="{% static 'assets/imgs/hero/Carlos Morales.png' %}"       alt="Carlos Morales"      class="avatar">
-              <img src="{% static 'assets/imgs/hero/Diana Trujillo.jpg' %}"       alt="Diana Trujillo"      class="avatar">
-              <img src="{% static 'assets/imgs/hero/Carlos Espinal.png' %}"       alt="Carlos Espinal"      class="avatar">
-              <img src="{% static 'assets/imgs/hero/Aura Pineda.png' %}"          alt="Aura Pineda"         class="avatar">
-              <img src="{% static 'assets/imgs/hero/Humberto Turriago.jpg' %}"    alt="Dr. Jorge Vega"      class="avatar">
-              <img src="{% static 'assets/imgs/hero/Sebastián Morales.png' %}"    alt="Sebastián Morales"   class="avatar">
-              <img src="{% static 'assets/imgs/hero/Lida Beltrán.png' %}"         alt="Carlos Morales"      class="avatar">
-              <img src="{% static 'assets/imgs/hero/Maximiliano Jiménez.jpg' %}"  alt="Maximiliano Jiménez" class="avatar">
-              <img src="{% static 'assets/imgs/hero/James Sabogal.jpg' %}"        alt="James Sabogal"       class="avatar">
-              <img src="{% static 'assets/imgs/hero/Andrés Ciro.jpg' %}"          alt="Andrés Ciro"         class="avatar">
-            </div>
-            <p class="mb-0 mt-2">{% trans 'With a team always willing to help' %}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row stats-row gy-3 mt-4 justify-content-md-center" data-aos="fade-up" data-aos-delay="500">
-      <div class="col  col-md-4  col-sm-6">
-        <div class="stat-item">
-          <div class="stat-icon">
-            <i class="bi bi-globe"></i>
-          </div>
-          <div class="stat-content">
-            <h4>{% trans 'International' %}</h4>
-            <p class="mb-0">{% trans 'International Team' %}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col  col-md-4  col-sm-6">
-        <div class="stat-item">
-          <div class="stat-icon">
-            <i class="bi bi-briefcase"></i>
-          </div>
-          <div class="stat-content">
-            <h4>{% trans 'Multidisciplinary' %}</h4>
-            <p class="mb-0">{% trans 'Adapted to every need' %}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col col-md-4 col-sm-6">
-        <div class="stat-item">
-          <div class="stat-icon">
-            <i class="bi bi-graph-up"></i>
-          </div>
-          <div class="stat-content">
-            <h4>{% trans 'Results' %}</h4>
-            <p class="mb-0">{% trans 'Confirmed Sales' %}</p>
+            <a href="https://propensionesabogados.com/" class="btn btn-link mt-2 mt-sm-0 glightbox" target="_blank">
+                <i class="bi bi-bank me-1"></i>
+                {% trans 'PROPENSIONES ABOGADOS INTERNATIONAL' %}
+            </a>
           </div>
         </div>
       </div>

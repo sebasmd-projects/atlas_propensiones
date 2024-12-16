@@ -674,167 +674,47 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  position: relative;
-  padding-top: 140px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 50%, color-mix(in srgb, var(--accent-color), transparent 98%) 25%, transparent 50%);
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at 90% 10%, color-mix(in srgb, var(--accent-color), transparent 92%), transparent 40%);
-  pointer-events: none;
-}
-
-.hero .hero-content {
+  min-height: 100vh;
   position: relative;
-  z-index: 1;
-}
-
-.hero .hero-content h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-.hero .hero-content h1 .accent-text {
-  color: var(--accent-color);
-}
-
-@media (max-width: 992px) {
-  .hero .hero-content {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .hero .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero .hero-content .hero-buttons {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 575px) {
-  .hero .hero-content h1 {
-    font-size: 2rem;
-  }
-}
-
-.hero .company-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
-  border-radius: 50px;
-  color: var(--accent-color);
-  font-weight: 500;
-}
-
-.hero .company-badge i {
-  font-size: 1.25rem;
-}
-
-.hero .btn-primary {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 0.75rem 2.5rem;
-  border-radius: 50px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.hero .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), black 20%);
-  border-color: color-mix(in srgb, var(--accent-color), black 20%);
-}
-
-.hero .btn-link {
-  color: var(--heading-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.hero .btn-link:hover {
-  color: var(--accent-color);
-}
-
-.hero .btn-link i {
-  font-size: 1.5rem;
-  vertical-align: middle;
-}
-
-.hero .hero-image {
-  position: relative;
-  text-align: center;
-  z-index: 1;
-}
-
-.hero .hero-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.hero .customers-badge {
-  position: absolute;
-  bottom: 10px;
-  right: 30px;
-  background-color: var(--surface-color);
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  max-width: 330px;
-  animation: float-badge 3s ease-in-out infinite;
-  will-change: transform;
-}
-
-.hero .customers-badge .customer-avatars {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.hero .customers-badge .avatar {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 2px solid var(--surface-color);
-  margin-left: -8px;
-}
-
-.hero .customers-badge .avatar:first-child {
-  margin-left: 0;
-}
-
-.hero .customers-badge .avatar.more {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
+  padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 600;
 }
 
-.hero .customers-badge p {
-  font-size: 0.875rem;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+.hero video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
 }
 
-@media (max-width: 992px) {
-  .hero .customers-badge {
-    position: static;
-    margin: 1rem auto;
-    max-width: 330px;
-  }
+.hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.hero p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 5px 0 0 0;
+  font-size: 20px;
 }
 
 .hero .stats-row {
@@ -914,6 +794,17 @@ section,
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # About Section

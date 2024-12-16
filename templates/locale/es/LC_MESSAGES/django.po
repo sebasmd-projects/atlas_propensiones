@@ -77,7 +77,7 @@ msgstr "Si no esperaba este mensaje o se envió por error, por favor ignórelo."
 
 #: .\apps\templates\core\index\index.html:6
 msgid "HOME | ABOUT | FEATURES | SERVICES"
-msgstr "INICIO | ACERCA | CARACTERÍSTICAS | SERVICIOS"
+msgstr "INICIO | NOSOTROS | CARACTERÍSTICAS | SERVICIOS"
 
 #: .\apps\templates\core\index\index.html:19
 #: .\apps\templates\core\index\index.html:20
@@ -458,7 +458,7 @@ msgstr "Inicio"
 
 #: .\apps\templates\core\partials\footer.html:23
 msgid "About us"
-msgstr "Acerca de nosotros"
+msgstr "Conócenos"
 
 #: .\apps\templates\core\partials\footer.html:24
 msgid "Terms of service"
@@ -486,7 +486,7 @@ msgstr "Tenedor"
 #: .\apps\templates\core\partials\header.html:21
 #: .\apps\templates\core\partials\header.html:23
 msgid "About"
-msgstr "Acerca"
+msgstr "Conócenos"
 
 #: .\apps\templates\core\partials\header.html:32
 msgid "Custom APPS"
@@ -550,7 +550,7 @@ msgstr "Tipo de Usuario"
 
 #: .\apps\templates\dashboard\account\register.html:95
 msgid "Register"
-msgstr "Registrar"
+msgstr "Registrarse"
 
 #: .\apps\templates\dashboard\account\register.html:96
 msgid "Do you already have an account? Sign in"
