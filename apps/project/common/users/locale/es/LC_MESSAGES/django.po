@@ -7,9 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"POT-Creation-Date: 2024-12-15 23:13-0500\n"
 "PO-Revision-Date: 2024-12-15 02:02-0500\n"
-"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados."
+"com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -17,31 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\apps\project\common\users\admin.py:62
+#: .\apps\project\common\users\admin.py:63
 msgid "User Information"
 msgstr "Información del Usuario"
 
-#: .\apps\project\common\users\admin.py:71
+#: .\apps\project\common\users\admin.py:72
 msgid "Personal Information"
 msgstr "Información Personal"
 
-#: .\apps\project\common\users\admin.py:80
+#: .\apps\project\common\users\admin.py:81
 msgid "Permissions"
 msgstr "Permisos"
 
-#: .\apps\project\common\users\admin.py:91
+#: .\apps\project\common\users\admin.py:92
 msgid "Dates"
 msgstr "Fechas"
 
-#: .\apps\project\common\users\admin.py:103
+#: .\apps\project\common\users\admin.py:104
 msgid "Priority"
 msgstr "Prioridad"
 
-#: .\apps\project\common\users\admin.py:120
+#: .\apps\project\common\users\admin.py:121
 msgid "Groups"
 msgstr "Grupos"
 
-#: .\apps\project\common\users\admin.py:122
+#: .\apps\project\common\users\admin.py:123
 msgid "Names"
 msgstr "Nombres"
 
@@ -208,13 +209,24 @@ msgid "User Personal Information"
 msgstr "Información Personal del Usuario"
 
 #: .\apps\project\common\users\validators.py:10
-msgid "Please enter a valid name. This value can contain only letters, min lenght: 3"
-msgstr "Por favor, ingrese un nombre válido. Este valor solo puede contener letras, longitud mínima: 3"
+msgid ""
+"Please enter a valid name. This value can contain only letters, min lenght: 3"
+msgstr ""
+"Por favor, ingrese un nombre válido. Este valor solo puede contener letras, "
+"longitud mínima: 3"
 
 #: .\apps\project\common\users\validators.py:19
-msgid "Please enter a valid last name. This value can contain only letters, min lenght: 3"
-msgstr "Por favor, ingrese un apellido válido. Este valor solo puede contener letras, longitud mínima: 3"
+msgid ""
+"Please enter a valid last name. This value can contain only letters, min "
+"lenght: 3"
+msgstr ""
+"Por favor, ingrese un apellido válido. Este valor solo puede contener "
+"letras, longitud mínima: 3"
 
 #: .\apps\project\common\users\validators.py:28
-msgid "Please enter a valid username. This value can contain only letters, numbers and this characters /./+/-/_min lenght: 4"
-msgstr "Por favor, ingrese un nombre de usuario válido. Este valor solo puede contener letras, números y estos caracteres /./+/-/_, longitud mínima: 4"
+msgid ""
+"Please enter a valid username. This value can contain only letters, numbers "
+"and this characters /./+/-/_min lenght: 4"
+msgstr ""
+"Por favor, ingrese un nombre de usuario válido. Este valor solo puede "
+"contener letras, números y estos caracteres /./+/-/_, longitud mínima: 4"

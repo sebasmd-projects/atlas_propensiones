@@ -8,7 +8,6 @@ from apps.common.utils.admin import GeneralAdminModel
 from .models import CertificateModel
 
 
-
 class CertificateAdmin(GeneralAdminModel):
     list_display = (
         'user',
@@ -22,6 +21,7 @@ class CertificateAdmin(GeneralAdminModel):
         'created',
         'updated'
     )
+    list_display_links = list_display[:4]
     search_fields = (
         'id',
         'name',
@@ -70,7 +70,8 @@ class CertificateAdmin(GeneralAdminModel):
                 if list_per_page_value > self.max_list_per_page:
                     messages.warning(
                         request,
-                        f"Máximo permitido: {self.max_list_per_page} registros."
+                        f"Máximo permitido: {
+                            self.max_list_per_page} registros."
                     )
                     list_per_page_value = self.max_list_per_page
                 elif list_per_page_value < 1:

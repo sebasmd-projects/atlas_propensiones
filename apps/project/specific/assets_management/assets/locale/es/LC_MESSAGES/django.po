@@ -7,9 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"POT-Creation-Date: 2024-12-15 23:13-0500\n"
 "PO-Revision-Date: 2024-12-15 02:02-0500\n"
-"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados."
+"com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -17,40 +18,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:44
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:107
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:43
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:106
 msgid "Details"
 msgstr "Detalles"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:52
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:116
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:208
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:51
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:115
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:207
 msgid "Dates"
 msgstr "Fechas"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:62
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:126
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:219
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:61
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:125
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:218
 msgid "Priority"
 msgstr "Prioridad"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:186
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:185
 msgid "Required Fields"
 msgstr "Campos Requeridos"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:198
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:197
 msgid "Optional Fields"
 msgstr "Campos Opcionales"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:232
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:231
 msgid "Asset Name (ES)"
 msgstr "Nombre del Activo (ES)"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:236
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:235
 msgid "Asset Name (EN)"
 msgstr "Nombre del Activo (EN)"
 
-#: .\apps\project\specific\assets_management\assets\admin\__init__.py:242
+#: .\apps\project\specific\assets_management\assets\admin\__init__.py:241
 msgid "Total Quantity by Type"
 msgstr "Cantidad Total por Tipo"
 
