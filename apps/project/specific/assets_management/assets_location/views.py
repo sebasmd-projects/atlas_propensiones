@@ -7,11 +7,11 @@ from django.utils.translation import gettext_lazy as _
 from django.views.generic import CreateView, DeleteView, UpdateView
 
 from apps.project.common.users.models import UserModel
+from apps.project.specific.assets_management.assets.models import AssetModel
 
 from .forms import (AssetLocationModelForm, AssetUpdateLocationModelForm,
                     LocationModelForm)
 from .models import AssetLocationModel, LocationModel
-
 
 """
 # Mixins
@@ -22,6 +22,7 @@ Description
     - dispatch: Check if the user has the 'holder' category.
     - get_queryset: Get the queryset of the model, verify the queryset.
 """
+
 
 class HolderRequiredMixin(LoginRequiredMixin):
     """
@@ -67,12 +68,7 @@ Description
 """
 
 
-class AssetLocationCreateView(HolderRequiredMixin, CreateView):
-    model = AssetLocationModel
-    form_class = AssetLocationModelForm
-    template_name = 'dashboard/pages/assets_management/asset_location/add_asset_location.html'
-    success_url = reverse_lazy('assets:holder_index')
-
+class AssetLocationMixin(HolderRequiredMixin):
     def form_valid(self, form):
         form.instance.created_by = self.request.user
         return super().form_valid(form)
@@ -82,17 +78,33 @@ class AssetLocationCreateView(HolderRequiredMixin, CreateView):
         kwargs['user'] = self.request.user
         return kwargs
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
 
-class AssetUpdateView(HolderRequiredMixin, UpdateView):
+        language_code = self.request.LANGUAGE_CODE
+
+        context['assets'] = AssetModel.objects.select_related(
+            'asset_name', 'category').all()
+
+        for asset in context['assets']:
+            asset.display_name = asset.asset_name.es_name if language_code == 'es' else asset.asset_name.en_name or asset.asset_name.es_name
+            asset.display_category = asset.category.es_name if language_code == 'es' else asset.category.en_name or asset.category.es_name
+
+        return context
+
+
+class AssetLocationCreateView(AssetLocationMixin, CreateView):
+    model = AssetLocationModel
+    form_class = AssetLocationModelForm
+    template_name = 'dashboard/pages/assets_management/asset_location/add_asset_location.html'
+    success_url = reverse_lazy('assets:holder_index')
+
+
+class AssetUpdateView(AssetLocationMixin, UpdateView):
     model = AssetLocationModel
     form_class = AssetUpdateLocationModelForm
     template_name = 'dashboard/pages/assets_management/asset_location/edit_asset_location.html'
     success_url = reverse_lazy('assets:holder_index')
-
-    def get_form_kwargs(self):
-        kwargs = super().get_form_kwargs()
-        kwargs['user'] = self.request.user
-        return kwargs
 
 
 class AseetLocationDeleteView(HolderRequiredMixin, DeleteView):
@@ -144,7 +156,7 @@ class LocationUpdateView(HolderRequiredMixin, UpdateView):
 class LocationReferenceDeleteView(HolderRequiredMixin, DeleteView):
     model = LocationModel
     success_url = reverse_lazy('assets:holder_index')
-    
+
     def form_valid(self, request, *args, **kwargs):
         self.object = self.get_object()
         self.object.is_active = False

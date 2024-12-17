@@ -10,12 +10,10 @@ from django.db.models.signals import post_delete, pre_save
 from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 
-from apps.common.core.functions import generate_md5_hash
+from apps.common.core.functions import generate_md5_or_sha256_hash
 from apps.common.utils.models import TimeStampedModel
 from apps.project.specific.assets_management.assets.signals import (
-    auto_delete_asset_img_on_change,
-    auto_delete_asset_img_on_delete
-)
+    auto_delete_asset_img_on_change, auto_delete_asset_img_on_delete)
 
 logger = logging.getLogger(__name__)
 UserModel = get_user_model()
@@ -80,8 +78,8 @@ class AssetsNamesModel(TimeStampedModel):
 
     class Meta:
         db_table = "apps_assets_assetsnames"
-        verbose_name = _("3. Asset Name")
-        verbose_name_plural = _("3. Asset Names")
+        verbose_name = _("1. Asset Name")
+        verbose_name_plural = _("1. Asset Names")
         ordering = ["default_order", "-created"]
 
 
@@ -94,7 +92,7 @@ class AssetModel(TimeStampedModel):
         try:
             es_name = slugify(instance.asset_name.es_name)[:40]
             base_filename, file_extension = os.path.splitext(filename)
-            filename_hash = generate_md5_hash(base_filename)
+            filename_hash = generate_md5_or_sha256_hash(base_filename)
             path = os.path.join(
                 "asset", es_name, "img",
                 str(date.today().year),
@@ -125,7 +123,7 @@ class AssetModel(TimeStampedModel):
         blank=True,
         null=True
     )
-    
+
     asset_name = models.ForeignKey(
         AssetsNamesModel,
         on_delete=models.CASCADE,
@@ -140,14 +138,27 @@ class AssetModel(TimeStampedModel):
         verbose_name=_("category")
     )
 
-    description = models.TextField(
-        _("description"),
+    es_description = models.TextField(
+        _("description (ES)"),
         blank=True,
         null=True
     )
     
-    observations = models.TextField(
-        _("observations"),
+    en_description = models.TextField(
+        _("description (EN)"),
+        blank=True,
+        null=True
+    )
+
+    es_observations = models.TextField(
+        _("observations (ES)"),
+        default="",
+        blank=True,
+        null=True
+    )
+    
+    en_observations = models.TextField(
+        _("observations (EN)"),
         default="",
         blank=True,
         null=True
@@ -165,24 +176,26 @@ class AssetModel(TimeStampedModel):
         totals_by_type = self.assetlocation_assetlocation_asset.filter(is_active=True).values('quantity_type').annotate(
             total=models.Sum('amount')
         )
-        
+
         totals = defaultdict(int)
 
         for entry in totals_by_type:
-            readable_label = quantity_type_display.get(entry['quantity_type'], entry['quantity_type'])
+            readable_label = quantity_type_display.get(
+                entry['quantity_type'], entry['quantity_type'])
             totals[readable_label] = entry['total']
-        
+
         return totals
 
     def __str__(self) -> str:
-        return f"{self.asset_name.es_name}"
+        return f"{self.asset_name.es_name} ({self.category.es_name})"
 
     class Meta:
         db_table = "apps_assets_asset"
-        verbose_name = _("1. Asset")
-        verbose_name_plural = _("1. Assets")
+        verbose_name = _("3. Asset")
+        verbose_name_plural = _("3. Assets")
         ordering = ["default_order", "-created"]
         unique_together = ['asset_name', 'category']
+
 
 post_delete.connect(
     auto_delete_asset_img_on_delete,

@@ -183,7 +183,7 @@ class AssetLocationModel(TimeStampedModel):
             self.get_quantity_type_display(),
             self.amount,
             self.location.reference,
-            self.created_by.email,
+            self.created_by,
         )
 
     class Meta:

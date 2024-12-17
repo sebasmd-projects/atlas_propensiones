@@ -14,14 +14,20 @@
             <div class="col-6">
                 <div class="mb-3">
                     <label for="id_asset">{% trans 'Asset' %}</label>
-                    {{ form.asset|add_class:"form-select" }}
+                    <select id="id_asset" name="asset" class="form-select">
+                        {% for asset in assets %}
+                            <option value="{{ asset.id }}">
+                                {{ asset.display_name }} - ({{ asset.display_category }})
+                            </option>
+                        {% endfor %}
+                    </select>
                 </div>
             </div>
 
             <div class="col-6">
                 <div class="mb-3">
                     <label for="id_location">{% trans 'Location' %}</label>
-                    {{ form.location|add_class:"form-select" }}
+                    {{ form.location|add_attrs:"class=form-select" }}
                     <a href="{% url 'assets_location:add_location' %}" class="btn btn-outline-primary btn-sm mt-3">
                         {% trans '+ Add Location' %}
                     </a>
@@ -33,21 +39,21 @@
             <div class="col-6">
                 <div class="mb-3">
                     <label for="id_quantity_type">{% trans 'Quantity Type' %}</label>
-                    {{ form.quantity_type|add_class:"form-select" }}
+                    {{ form.quantity_type|add_attrs:"class=form-select" }}
                 </div>
             </div>
 
             <div class="col-6">
                 <div class="mb-3">
                     <label for="id_amount">{% trans 'Amount' %}</label>
-                    {{ form.amount|add_class:"form-control" }}
+                    {{ form.amount|add_attrs:"class=form-control" }}
                 </div>
             </div>
 
             <div class="col-12">
                 <div class="mb-3">
                     <label for="id_observations">{% trans 'Observations' %}</label>
-                    {{ form.observations|add_class:"form-control" }}
+                    {{ form.observations|add_attrs:"class=form-control" }}
                 </div>
             </div>
         </div>

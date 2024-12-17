@@ -7,12 +7,11 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
-from encrypted_model_fields.fields import (
-    EncryptedCharField,
-    EncryptedDateField,
-    EncryptedEmailField
-)
+from encrypted_model_fields.fields import (EncryptedCharField,
+                                           EncryptedDateField,
+                                           EncryptedEmailField)
 
+from apps.common.core.functions import generate_md5_or_sha256_hash
 from apps.common.utils.models import TimeStampedModel
 
 
@@ -22,6 +21,14 @@ class UserModel(TimeStampedModel, AbstractUser):
         REPRESENTATIVE = 'R', _('Representative')
         BUYER = 'B', _('Buyer')
         INTERMEDIARY = 'I', _('Intermediary')
+
+    USERNAME_FIELD = 'email'
+
+    REQUIRED_FIELDS = [
+        'username',
+        'first_name',
+        'last_name'
+    ]
 
     id = models.UUIDField(
         'ID',
@@ -44,13 +51,14 @@ class UserModel(TimeStampedModel, AbstractUser):
 
     email = EncryptedEmailField(
         _("email address"),
+        unique=True,
     )
 
-    REQUIRED_FIELDS = [
-        'email',
-        'first_name',
-        'last_name'
-    ]
+    email_hash = models.CharField(
+        max_length=64,
+        unique=True,
+        editable=False
+    )
 
     user_type = models.CharField(
         _('User'),
@@ -63,11 +71,19 @@ class UserModel(TimeStampedModel, AbstractUser):
         return f"{self.get_full_name()} ({self.username})"
 
     def save(self, *args, **kwargs):
+        email = self.email.lower().strip()
         self.first_name = self.first_name.title().strip()
         self.last_name = self.last_name.title().strip()
         self.username = self.username.lower().strip()
-        self.email = self.email.lower().strip()
+        self.email = email
+        self.email_hash = generate_md5_or_sha256_hash(email)
         super().save(*args, **kwargs)
+
+    def clean(self):
+        if '@' in self.username:
+            raise ValidationError(
+                _('The username cannot contain the "@" character.'))
+        super().clean()
 
     class Meta:
         db_table = 'apps_users_user'

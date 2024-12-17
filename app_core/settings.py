@@ -106,6 +106,7 @@ INSTALLED_APPS = ALL_CUSTOM_APPS + THIRD_PARTY_APPS + DJANGO_APPS
 IMPORT_EXPORT_FORMATS = [CSV, HTML, JSON, TSV, XLS, XLSX]
 
 LOGIN_URL = 'two_factor:login'
+
 LOGIN_REDIRECT_URL = 'core:index'
 
 # Django Parler and i18n
@@ -229,9 +230,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 AUTHENTICATION_BACKENDS = [
+    f'{UTILS_PATH}.backend.EmailOrUsernameModelBackend',
     'axes.backends.AxesStandaloneBackend',
     'django.contrib.auth.backends.ModelBackend',
-    f'{UTILS_PATH}.backend.EmailOrUsernameModelBackend',
 ]
 
 REST_FRAMEWORK = {

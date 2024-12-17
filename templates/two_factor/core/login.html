@@ -1,6 +1,6 @@
 {% extends "two_factor/_base.html" %}
 
-{% load i18n static two_factor_tags %}
+{% load i18n static two_factor_tags custom_filters %}
 
 {% block extra_media %}
 {{ form.media }}
@@ -53,17 +53,18 @@
             </ul>
           </div>
           {% endif %}
-
+          
           {% if wizard.steps.current == 'auth' %}
               <!-- Form Group (username)-->
               <div class="input-group mb-3">
-                <button class="btn btn-outline-secondary" disabled type="button" id="id_auth-username_icon">
-                  <i class="bi bi-person" id="id_auth-username_icon"></i>
-                </button>
                 {% trans 'Username' as username %}
                 <input id="id_auth-username" type="text" class="form-control" placeholder="{{ username }}" aria-label="Username"
                   required name="auth-username" />
+                <button class="btn btn-outline-secondary" disabled type="button" id="id_auth-username_icon">
+                  <i class="bi bi-person" id="id_auth-username_icon"></i>
+                </button>
               </div>
+                
               {% if form.username.errors %}
               <div class="text-danger small">
                 {% for error in form.username.errors %}

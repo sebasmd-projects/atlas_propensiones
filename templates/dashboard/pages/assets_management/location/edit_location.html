@@ -25,7 +25,7 @@
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="id_reference">{% trans 'Reference' %}</label>
-                                    {{ form.reference|add_class:"form-control" }}
+                                    {{ form.reference|add_attrs:"class=form-control" }}
                                     {% if form.reference.errors %}
                                     <div class="text-danger mt-2">
                                         {{ form.reference.errors }}
@@ -37,7 +37,7 @@
                             <div class="col-6">
                                 <div class="mb-3">
                                     <label for="id_country">{% trans 'Country' %}</label>
-                                    {{ form.country|add_class:"form-select" }}
+                                    {{ form.country|add_attrs:"class=form-select" }}
                                     {% if form.country.errors %}
                                     <div class="text-danger mt-2">
                                         {{ form.country.errors }}
@@ -48,7 +48,7 @@
                         </div>
 
                         <div class="form-floating mb-3">
-                            {{ form.description|add_class:"form-control" }}
+                            {{ form.description|add_attrs:"class=form-control" }}
                             <label for="id_description">{% trans 'Description' %}</label>
                         </div>
 
@@ -63,7 +63,8 @@
                 <div class="card-footer">
                     <p>
                         {% blocktrans %}
-                        The Location Reference serves as a unique identifier to manage inventory across various locations.
+                        The Location Reference serves as a unique identifier to manage inventory across various
+                        locations.
                         {% endblocktrans %}
                     </p>
 

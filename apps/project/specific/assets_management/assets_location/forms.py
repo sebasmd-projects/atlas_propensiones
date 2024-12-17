@@ -35,6 +35,7 @@ class AssetLocationModelForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         if user:
             self.fields['location'].queryset = LocationModel.objects.filter(created_by=user)
+        self.fields['observations'].widget.attrs.update({'placeholder': _('Enter any relevant notes or details here')})
     
     class Meta:
         model = AssetLocationModel
@@ -47,6 +48,7 @@ class AssetUpdateLocationModelForm(forms.ModelForm):
         if user:
             self.fields['location'].queryset = LocationModel.objects.filter(created_by=user)
         self.fields['asset'].disabled = True
+        self.fields['observations'].widget.attrs.update({'placeholder': _('Enter any relevant notes or details here')})
         
     class Meta:
         model = AssetLocationModel

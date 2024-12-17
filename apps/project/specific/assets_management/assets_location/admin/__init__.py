@@ -116,6 +116,7 @@ class AssetLocationAdmin(GeneralAdminModel):
                 'quantity_type',
                 'amount',
                 'is_active',
+                'observations'
             ),
         }),
         (_('Dates'), {

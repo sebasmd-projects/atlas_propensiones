@@ -1,7 +1,9 @@
 
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
+
 from apps.common.utils.admin import GeneralAdminModel
+
 from ..models import AssetCategoryModel, AssetModel, AssetsNamesModel
 from .filters import (HasImageFilter, QuantityTypeFilter,
                       ZeroTotalQuantityFilter)
@@ -141,7 +143,7 @@ class AssetModelAdmin(GeneralAdminModel):
         'asset_name',
         'category',
     )
-    
+
     search_fields = (
         'id',
         'asset_name__es_name',
@@ -164,6 +166,10 @@ class AssetModelAdmin(GeneralAdminModel):
         'get_asset_en_name',
         'category',
         'get_asset_total_quantity_by_type',
+        'es_observations',
+        'en_observations',
+        'es_description',
+        'en_description',
         'is_active',
     )
 
@@ -196,8 +202,10 @@ class AssetModelAdmin(GeneralAdminModel):
         ),
         (_('Optional Fields'), {
             'fields': (
-                'observations',
-                'description',
+                'es_observations',
+                'en_observations',
+                'es_description',
+                'en_description',
             ),
             'classes': (
                 'collapse',

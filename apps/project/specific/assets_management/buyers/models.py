@@ -10,7 +10,7 @@ from django.utils.text import slugify
 from django.utils.translation import gettext_lazy as _
 from django_ckeditor_5.fields import CKEditor5Field
 
-from apps.common.core.functions import generate_md5_hash
+from apps.common.core.functions import generate_md5_or_sha256_hash
 from apps.common.utils.models import TimeStampedModel
 from apps.project.specific.assets_management.assets.models import AssetModel
 from apps.project.specific.assets_management.assets_location.models import \
@@ -34,7 +34,7 @@ class OfferModel(TimeStampedModel):
         try:
             es_name = slugify(instance.asset.asset_name.es_name)[:40]
             base_filename, file_extension = os.path.splitext(filename)
-            filename_hash = generate_md5_hash(base_filename)
+            filename_hash = generate_md5_or_sha256_hash(base_filename)
             path = os.path.join(
                 "offer", es_name, "img",
                 str(date.today().year),
@@ -117,7 +117,7 @@ class OfferModel(TimeStampedModel):
         _('Procedure (ES)'),
         config_name='default'
     )
-    
+
     en_procedure = CKEditor5Field(
         _('Procedure (EN)'),
         config_name='default',
@@ -129,7 +129,7 @@ class OfferModel(TimeStampedModel):
         null=True,
         blank=True
     )
-    
+
     en_banner = models.ImageField(
         _("Banner (EN)"),
         upload_to=offers_directory_path,
