@@ -10,6 +10,9 @@ admin.site.register(RequestLogModel)
 
 
 class GeneralAdminModel(ImportExportActionModelAdmin, admin.ModelAdmin):
+    list_per_page = 100
+    max_list_per_page = 2000
+    
     def changelist_view(self, request, extra_context=None):
         extra_context = extra_context or {}
         extra_context['list_per_page_options'] = [10, 50, 100, 1000]

@@ -56,8 +56,6 @@ class CertificateAdmin(GeneralAdminModel):
         'updated',
         'document_number_hash',
     )
-    list_per_page = 100
-    max_list_per_page = 2000
 
     def detail_link(self, obj):
         url = reverse('certificates:detail', args=[obj.pk])
