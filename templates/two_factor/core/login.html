@@ -56,9 +56,9 @@
           
           {% if wizard.steps.current == 'auth' %}
               <!-- Form Group (username)-->
+              {% trans 'Username or Email' username_or_email %}
               <div class="input-group mb-3">
-                {% trans 'Username' as username %}
-                <input id="id_auth-username" type="text" class="form-control" placeholder="{{ username }}" aria-label="Username"
+                <input id="id_auth-username" type="text" class="form-control" placeholder="{{ username_or_email }}" aria-label="Username"
                   required name="auth-username" />
                 <button class="btn btn-outline-secondary" disabled type="button" id="id_auth-username_icon">
                   <i class="bi bi-person" id="id_auth-username_icon"></i>
