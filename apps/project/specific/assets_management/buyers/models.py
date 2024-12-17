@@ -104,6 +104,8 @@ class OfferModel(TimeStampedModel):
         _("Quantity needed"),
         default=0
     )
+    
+    #TODO es_observation, en_observation, es_description, en_description
 
     buyer_country = models.ForeignKey(
         AssetCountryModel,

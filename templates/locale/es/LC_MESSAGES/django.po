@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 03:10-0500\n"
-"PO-Revision-Date: 2024-12-17 03:13-0500\n"
+"POT-Creation-Date: 2024-12-17 12:15-0500\n"
+"PO-Revision-Date: 2024-12-17 12:16-0500\n"
 "Last-Translator: Juan Delgado <juan.sebasm2@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
@@ -107,33 +107,24 @@ msgid "Your browser does not support the video tag."
 msgstr "Su navegador no soporta la etiqueta de vídeo."
 
 #: .\templates\core\index\sections\section-1-hero.html:18
-#: .\templates\core\index\sections\section-6-call-to-action.html:10
-msgid "HISTORICAL ASSETS"
-msgstr "ACTIVOS HISTÓRICOS"
-
-#: .\templates\core\index\sections\section-1-hero.html:21
-msgid "All-in-one Suite"
-msgstr "Plataforma todo en uno"
-
-#: .\templates\core\index\sections\section-1-hero.html:24
 #: .\templates\core\index\sections\section-6-call-to-action.html:11
 msgid "Comprehensive and Secure Historical Asset Management Solution"
 msgstr "Solución integral y segura de gestión de activos históricos"
 
-#: .\templates\core\index\sections\section-1-hero.html:30
+#: .\templates\core\index\sections\section-1-hero.html:24
 msgid "Client Area"
 msgstr "Área de Clientes"
 
-#: .\templates\core\index\sections\section-1-hero.html:35
+#: .\templates\core\index\sections\section-1-hero.html:29
 msgid "Buyer Client Area"
 msgstr "Área de Clientes"
 
-#: .\templates\core\index\sections\section-1-hero.html:39
+#: .\templates\core\index\sections\section-1-hero.html:33
 #: .\templates\dashboard\account\register.html:95
 msgid "Register"
 msgstr "Registrarse"
 
-#: .\templates\core\index\sections\section-1-hero.html:46
+#: .\templates\core\index\sections\section-1-hero.html:40
 msgid "PROPENSIONES ABOGADOS INTERNATIONAL"
 msgstr "PROPENSIONES ABOGADOS INTERNACIONAL"
 
@@ -432,13 +423,17 @@ msgstr ""
 "ATLAS ofrece una opción de modo oscuro para reducir la fatiga visual y "
 "mejorar la visibilidad en entornos con poca luz."
 
+#: .\templates\core\index\sections\section-6-call-to-action.html:10
+msgid "HISTORICAL ASSETS"
+msgstr "ACTIVOS HISTÓRICOS"
+
 #: .\templates\core\index\sections\section-6-call-to-action.html:12
 #: .\templates\core\index\sections\section-7-contact.html:48
 msgid "Get In Touch"
 msgstr "Contáctanos"
 
 #: .\templates\core\index\sections\section-7-contact.html:6
-#: .\templates\core\partials\header.html:24
+#: .\templates\core\partials\header.html:25
 msgid "Contact"
 msgstr "Contáctanos"
 
@@ -519,33 +514,37 @@ msgstr "Creado por"
 msgid "About"
 msgstr "Conócenos"
 
-#: .\templates\core\partials\header.html:28
+#: .\templates\core\partials\header.html:21
+msgid "Team"
+msgstr "Equipo"
+
+#: .\templates\core\partials\header.html:29
 msgid "Custom APPS"
 msgstr "Aplicaciones Personalizadas"
 
-#: .\templates\core\partials\header.html:31
+#: .\templates\core\partials\header.html:32
 msgid "Code Generation"
 msgstr "Generación de Código"
 
-#: .\templates\core\partials\header.html:44
+#: .\templates\core\partials\header.html:45
 #: .\templates\dashboard\partials\side_nav.html:62
 msgid "Documents"
 msgstr "Documentos"
 
-#: .\templates\core\partials\header.html:47
+#: .\templates\core\partials\header.html:48
 #: .\templates\dashboard\pages\documents\certificates\certificate_detail.html:11
 msgid "Suitability Verification"
 msgstr "Verificación de Idoneidad"
 
-#: .\templates\core\partials\header.html:71
+#: .\templates\core\partials\header.html:72
 msgid "LOGOUT"
 msgstr "CERRAR SESIÓN"
 
-#: .\templates\core\partials\header.html:76
+#: .\templates\core\partials\header.html:77
 msgid "LOGIN"
 msgstr "INICIAR SESIÓN"
 
-#: .\templates\core\partials\header.html:77
+#: .\templates\core\partials\header.html:78
 msgid "REGISTER"
 msgstr "REGISTRARSE"
 
@@ -629,10 +628,6 @@ msgid "Add Asset"
 msgstr "Agregar Activo"
 
 #: .\templates\dashboard\pages\assets_management\asset_location\asset_location_base.html:25
-#| msgid ""
-#| "\n"
-#| "                            The Asset Location ties a specific asset to a location, defining where and in what quantity the asset is available.\n"
-#| "                            "
 msgid ""
 "\n"
 "                        The Asset Location ties a specific asset to a location, defining where and in what quantity the\n"
@@ -1100,9 +1095,8 @@ msgstr ""
 "cuenta."
 
 #: .\templates\two_factor\core\login.html:59
-#| msgid "Username"
 msgid "Username or Email"
-msgstr "Nombre de usuario o Correo"
+msgstr "Usuario o Correo"
 
 #: .\templates\two_factor\core\login.html:97
 msgid "Forgot your password?"
@@ -1263,6 +1257,9 @@ msgstr[1] "Le quedan %(counter)s códigos de respaldo."
 #: .\templates\two_factor\profile\profile.html:27
 msgid "Show Codes"
 msgstr "Mostrar Códigos"
+
+#~ msgid "All-in-one Suite"
+#~ msgstr "Plataforma todo en uno"
 
 #~ msgid "Holder"
 #~ msgstr "Tenedor"

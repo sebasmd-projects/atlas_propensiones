@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 03:10-0500\n"
+"POT-Creation-Date: 2024-12-17 12:15-0500\n"
 "PO-Revision-Date: 2024-12-17 03:12-0500\n"
 "Last-Translator: Juan Delgado <juan.sebasm2@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -164,7 +164,6 @@ msgid "amount"
 msgstr "cantidad"
 
 #: .\apps\project\specific\assets_management\assets_location\models.py:175
-#| msgid "location"
 msgid "observations"
 msgstr "observaciones"
 

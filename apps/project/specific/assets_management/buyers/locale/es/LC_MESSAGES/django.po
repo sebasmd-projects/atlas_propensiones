@@ -7,9 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"POT-Creation-Date: 2024-12-17 12:15-0500\n"
 "PO-Revision-Date: 2024-12-15 02:02-0500\n"
-"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados."
+"com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -85,38 +86,38 @@ msgstr "Monto de la Oferta por tipo de cantidad en USD"
 msgid "Quantity needed"
 msgstr "Cantidad necesaria"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:112
+#: .\apps\project\specific\assets_management\buyers\models.py:114
 msgid "Country"
 msgstr "País"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:117
+#: .\apps\project\specific\assets_management\buyers\models.py:119
 msgid "Procedure (ES)"
 msgstr "Procedimiento (ES)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:122
+#: .\apps\project\specific\assets_management\buyers\models.py:124
 msgid "Procedure (EN)"
 msgstr "Procedimiento (EN)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:127
+#: .\apps\project\specific\assets_management\buyers\models.py:129
 msgid "Banner (ES)"
 msgstr "Banner (ES)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:134
+#: .\apps\project\specific\assets_management\buyers\models.py:136
 msgid "Banner (EN)"
 msgstr "Banner (EN)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:141
+#: .\apps\project\specific\assets_management\buyers\models.py:143
 msgid "Approved"
 msgstr "Aprobado"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:149
+#: .\apps\project\specific\assets_management\buyers\models.py:151
 msgid "Approved By"
 msgstr "Aprobado Por"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:172
+#: .\apps\project\specific\assets_management\buyers\models.py:174
 msgid "1. Offer"
 msgstr "1. Oferta"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:173
+#: .\apps\project\specific\assets_management\buyers\models.py:175
 msgid "1. Offers"
 msgstr "1. Ofertas"

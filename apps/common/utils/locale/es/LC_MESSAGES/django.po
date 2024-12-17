@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 23:41-0500\n"
+"POT-Creation-Date: 2024-12-17 12:15-0500\n"
 "PO-Revision-Date: 2024-12-15 23:41-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -18,16 +18,16 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\common\utils\admin.py:24
+#: .\apps\common\utils\admin.py:27
 #, python-brace-format
 msgid "Maximum allowed: {self.max_list_per_page} records."
 msgstr "Máximo permitido: {self.max_list_per_page} registros."
 
-#: .\apps\common\utils\admin.py:28
+#: .\apps\common\utils\admin.py:31
 msgid "Minimum allowed: 1 record."
 msgstr "Mínimo permitido: 1 registro."
 
-#: .\apps\common\utils\admin.py:32
+#: .\apps\common\utils\admin.py:35
 msgid "Please enter a valid number."
 msgstr "Por favor, ingrese un número válido."
 
