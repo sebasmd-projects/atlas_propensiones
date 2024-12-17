@@ -30,11 +30,11 @@
             </a>
 
             {% if LANGUAGE_CODE == "es" and offer.es_banner %}
-              <a href="{{ offer.es_banner.url }}" class="btn btn-outline-primary" download>
+              <a href="{{ offer.es_banner.url }}" class="btn btn-outline-primary" download target="_blank">
                 <i class="fa-solid fa-download mx-1"></i> {% trans 'Download Offer' %}
               </a>
             {% elif offer.en_banner %}
-              <a href="{{ offer.en_banner.url }}" class="btn btn-outline-primary" download>
+              <a href="{{ offer.en_banner.url }}" class="btn btn-outline-primary" download target="_blank">
                 <i class="fa-solid fa-download mx-1"></i> {% trans 'Download Offer' %}
               </a>
             {% endif %}
@@ -63,11 +63,11 @@
             </a>
 
             {% if LANGUAGE_CODE == "es" and offer.es_banner %}
-              <a href="{{ offer.es_banner.url }}" class="btn btn-outline-primary" download>
+              <a href="{{ offer.es_banner.url }}" class="btn btn-outline-primary" download target="_blank">
                 <i class="fa-solid fa-download mx-1"></i> {% trans 'Download Offer' %}
               </a>
             {% elif offer.en_banner %}
-              <a href="{{ offer.en_banner.url }}" class="btn btn-outline-primary" download>
+              <a href="{{ offer.en_banner.url }}" class="btn btn-outline-primary" download target="_blank">
                 <i class="fa-solid fa-download mx-1"></i> {% trans 'Download Offer' %}
               </a>
             {% endif %}
