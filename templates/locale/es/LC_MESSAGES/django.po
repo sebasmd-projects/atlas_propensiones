@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 23:13-0500\n"
-"PO-Revision-Date: 2024-12-15 23:43-0500\n"
-"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
+"POT-Creation-Date: 2024-12-17 03:10-0500\n"
+"PO-Revision-Date: 2024-12-17 03:13-0500\n"
+"Last-Translator: Juan Delgado <juan.sebasm2@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -125,7 +125,6 @@ msgid "Client Area"
 msgstr "Área de Clientes"
 
 #: .\templates\core\index\sections\section-1-hero.html:35
-#| msgid "Buyer Country"
 msgid "Buyer Client Area"
 msgstr "Área de Clientes"
 
@@ -201,7 +200,7 @@ msgid "Of experience in managing international assets"
 msgstr "De experiencia en la gestión de activos internacionales"
 
 #: .\templates\core\index\sections\section-3-features.html:8
-#: .\templates\core\partials\header.html:24
+#: .\templates\core\partials\header.html:20
 msgid "Features"
 msgstr "Características"
 
@@ -439,7 +438,7 @@ msgid "Get In Touch"
 msgstr "Contáctanos"
 
 #: .\templates\core\index\sections\section-7-contact.html:6
-#: .\templates\core\partials\header.html:28
+#: .\templates\core\partials\header.html:24
 msgid "Contact"
 msgstr "Contáctanos"
 
@@ -515,29 +514,25 @@ msgstr "Su aliado incondicional. Todos los derechos reservados."
 msgid "Created by"
 msgstr "Creado por"
 
-#: .\templates\core\partials\header.html:16
-msgid "Holder"
-msgstr "Tenedor"
-
-#: .\templates\core\partials\header.html:21
-#: .\templates\core\partials\header.html:23
+#: .\templates\core\partials\header.html:17
+#: .\templates\core\partials\header.html:19
 msgid "About"
 msgstr "Conócenos"
 
-#: .\templates\core\partials\header.html:32
+#: .\templates\core\partials\header.html:28
 msgid "Custom APPS"
 msgstr "Aplicaciones Personalizadas"
 
-#: .\templates\core\partials\header.html:35
+#: .\templates\core\partials\header.html:31
 msgid "Code Generation"
 msgstr "Generación de Código"
 
-#: .\templates\core\partials\header.html:48
+#: .\templates\core\partials\header.html:44
 #: .\templates\dashboard\partials\side_nav.html:62
 msgid "Documents"
 msgstr "Documentos"
 
-#: .\templates\core\partials\header.html:51
+#: .\templates\core\partials\header.html:47
 #: .\templates\dashboard\pages\documents\certificates\certificate_detail.html:11
 msgid "Suitability Verification"
 msgstr "Verificación de Idoneidad"
@@ -546,16 +541,15 @@ msgstr "Verificación de Idoneidad"
 msgid "LOGOUT"
 msgstr "CERRAR SESIÓN"
 
-#: .\templates\core\partials\header.html:74
+#: .\templates\core\partials\header.html:76
 msgid "LOGIN"
 msgstr "INICIAR SESIÓN"
 
-#: .\templates\core\partials\header.html:75
+#: .\templates\core\partials\header.html:77
 msgid "REGISTER"
 msgstr "REGISTRARSE"
 
 #: .\templates\dashboard\account\register.html:28
-#: .\templates\two_factor\core\login.html:56
 msgid "Username"
 msgstr "Nombre de usuario"
 
@@ -564,7 +558,7 @@ msgid "Email"
 msgstr "Correo electrónico"
 
 #: .\templates\dashboard\account\register.html:46
-#: .\templates\two_factor\core\login.html:70
+#: .\templates\two_factor\core\login.html:78
 msgid "Password"
 msgstr "Contraseña"
 
@@ -600,17 +594,17 @@ msgstr "Agregar Nuevo Activo"
 msgid "Asset"
 msgstr "Activo"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:23
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:29
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:23
 msgid "Location"
 msgstr "Ubicación"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:26
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:32
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:26
 msgid "+ Add Location"
 msgstr "+ Agregar Ubicación"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:35
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:41
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:35
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:8
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:11
@@ -618,22 +612,32 @@ msgstr "+ Agregar Ubicación"
 msgid "Quantity Type"
 msgstr "Tipo de Cantidad"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:42
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:48
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:42
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:10
 msgid "Amount"
 msgstr "Cantidad"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:50
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:55
+#: .\templates\dashboard\pages\assets_management\asset_location\includes\asset_and_category.html:10
+msgid "Observations"
+msgstr "Observaciones"
+
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:63
 #: .\templates\dashboard\partials\side_nav.html:82
 msgid "Add Asset"
 msgstr "Agregar Activo"
 
 #: .\templates\dashboard\pages\assets_management\asset_location\asset_location_base.html:25
+#| msgid ""
+#| "\n"
+#| "                            The Asset Location ties a specific asset to a location, defining where and in what quantity the asset is available.\n"
+#| "                            "
 msgid ""
 "\n"
-"                            The Asset Location ties a specific asset to a location, defining where and in what quantity the asset is available.\n"
-"                            "
+"                        The Asset Location ties a specific asset to a location, defining where and in what quantity the\n"
+"                        asset is available.\n"
+"                        "
 msgstr ""
 "\n"
 "                            La Ubicación del Activo vincula un activo específico a una ubicación, definiendo dónde y en qué cantidad el activo está disponible.\n"
@@ -646,6 +650,26 @@ msgstr "Editar Activo"
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:50
 msgid "Add Location"
 msgstr "Agregar Ubicación"
+
+#: .\templates\dashboard\pages\assets_management\asset_location\includes\asset_and_category.html:7
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:5
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:5
+msgid "Asset Name"
+msgstr "Nombre del Activo"
+
+#: .\templates\dashboard\pages\assets_management\asset_location\includes\asset_and_category.html:8
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:6
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:6
+msgid "Category"
+msgstr "Categoría"
+
+#: .\templates\dashboard\pages\assets_management\asset_location\includes\asset_and_category.html:9
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:5
+#: .\templates\dashboard\pages\assets_management\location\add_location.html:52
+#: .\templates\dashboard\pages\assets_management\location\edit_location.html:52
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:44
+msgid "Description"
+msgstr "Descripción"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\partials\header.html:12
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\header.html:12
@@ -705,13 +729,6 @@ msgstr "¿Está seguro de que desea eliminar esta referencia de ubicación?"
 msgid "Location Reference"
 msgstr "Referencia de Ubicación"
 
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:5
-#: .\templates\dashboard\pages\assets_management\location\add_location.html:52
-#: .\templates\dashboard\pages\assets_management\location\edit_location.html:52
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:44
-msgid "Description"
-msgstr "Descripción"
-
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:6
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:8
 msgid "Continent"
@@ -734,16 +751,6 @@ msgstr "Acciones"
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:4
 msgid "Image"
 msgstr "Imagen"
-
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:5
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:5
-msgid "Asset Name"
-msgstr "Nombre del Activo"
-
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:6
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:6
-msgid "Category"
-msgstr "Categoría"
 
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:7
 #: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:52
@@ -786,6 +793,7 @@ msgid "Add Location Reference"
 msgstr "Agregar Referencia de Ubicación"
 
 #: .\templates\dashboard\pages\assets_management\location\add_location.html:65
+#: .\templates\dashboard\pages\assets_management\location\edit_location.html:65
 msgid ""
 "\n"
 "                        The Location Reference serves as a unique identifier to manage inventory across various\n"
@@ -797,7 +805,7 @@ msgstr ""
 "                        "
 
 #: .\templates\dashboard\pages\assets_management\location\add_location.html:72
-#: .\templates\dashboard\pages\assets_management\location\edit_location.html:71
+#: .\templates\dashboard\pages\assets_management\location\edit_location.html:72
 msgid ""
 "\n"
 "                        It allows differentiation between inventory located in the same country but in different areas,\n"
@@ -813,16 +821,6 @@ msgstr ""
 #: .\templates\dashboard\pages\assets_management\location\edit_location.html:16
 msgid "Edit Location Reference"
 msgstr "Editar Referencia de Ubicación"
-
-#: .\templates\dashboard\pages\assets_management\location\edit_location.html:65
-msgid ""
-"\n"
-"                        The Location Reference serves as a unique identifier to manage inventory across various locations.\n"
-"                        "
-msgstr ""
-"\n"
-"                        La Referencia de Ubicación sirve como un identificador único para gestionar el inventario en diversas ubicaciones.\n"
-"                        "
 
 #: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:20
 msgid "Procedure"
@@ -1086,15 +1084,11 @@ msgstr "Volver a la Seguridad de la Cuenta"
 msgid "Generate Tokens"
 msgstr "Generar Códigos"
 
-#: .\templates\two_factor\core\login.html:16
-msgid "Login"
-msgstr "Iniciar Sesión"
-
-#: .\templates\two_factor\core\login.html:19
+#: .\templates\two_factor\core\login.html:26
 msgid "Enter your credentials."
 msgstr "Ingrese sus credenciales."
 
-#: .\templates\two_factor\core\login.html:27
+#: .\templates\two_factor\core\login.html:34
 msgid ""
 "Use this form for entering backup tokens for logging in. These tokens have "
 "been generated for you to print and keep safe. Please enter one of these "
@@ -1105,27 +1099,32 @@ msgstr ""
 "lugar seguro. Ingrese uno de estos códigos de respaldo para acceder a su "
 "cuenta."
 
-#: .\templates\two_factor\core\login.html:89
+#: .\templates\two_factor\core\login.html:59
+#| msgid "Username"
+msgid "Username or Email"
+msgstr "Nombre de usuario o Correo"
+
+#: .\templates\two_factor\core\login.html:97
 msgid "Forgot your password?"
 msgstr "¿Olvidó su contraseña?"
 
-#: .\templates\two_factor\core\login.html:105
+#: .\templates\two_factor\core\login.html:113
 msgid "Or, alternatively, use one of your other authentication methods:"
 msgstr "O, alternativamente, use uno de sus otros métodos de autenticación:"
 
-#: .\templates\two_factor\core\login.html:125
+#: .\templates\two_factor\core\login.html:133
 msgid "As a last resort, you can use a backup token:"
 msgstr "Como último recurso, puede usar un código de respaldo:"
 
-#: .\templates\two_factor\core\login.html:128
+#: .\templates\two_factor\core\login.html:136
 msgid "Use Backup Token"
 msgstr "Usar Código de Respaldo"
 
-#: .\templates\two_factor\core\login.html:138
+#: .\templates\two_factor\core\login.html:146
 msgid "New user?"
 msgstr "¿Usuario nuevo?"
 
-#: .\templates\two_factor\core\login.html:140
+#: .\templates\two_factor\core\login.html:148
 msgid "Create an account!"
 msgstr "¡Cree una cuenta!"
 
@@ -1264,6 +1263,21 @@ msgstr[1] "Le quedan %(counter)s códigos de respaldo."
 #: .\templates\two_factor\profile\profile.html:27
 msgid "Show Codes"
 msgstr "Mostrar Códigos"
+
+#~ msgid "Holder"
+#~ msgstr "Tenedor"
+
+#~ msgid ""
+#~ "\n"
+#~ "                        The Location Reference serves as a unique identifier to manage inventory across various locations.\n"
+#~ "                        "
+#~ msgstr ""
+#~ "\n"
+#~ "                        La Referencia de Ubicación sirve como un identificador único para gestionar el inventario en diversas ubicaciones.\n"
+#~ "                        "
+
+#~ msgid "Login"
+#~ msgstr "Iniciar Sesión"
 
 #~ msgid "ASSETS"
 #~ msgstr "ACTIVOS"
