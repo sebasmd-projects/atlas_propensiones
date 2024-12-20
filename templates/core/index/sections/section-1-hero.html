@@ -11,10 +11,10 @@
   </video>
 
   <div class="container mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
-    <div class="hero-content mt-5" data-aos="fade-up" data-aos-delay="200">
-      <div class="hero-buttons mt-5">
+    <div class="hero-content mt-5 pt-2" data-aos="fade-up" data-aos-delay="200">
+      <div class="hero-buttons mt-5 pt-2">
         
-          <div class="d-grid gap-2 mt-5">
+          <div class="d-grid gap-2 col-6 mx-auto mt-5 pt-2">
             {% if request.user.user_type in 'HRI' %}
             <a href="{% url 'assets:holder_index' %}"   class="btn btn-primary me-0 me-sm-2 mx-1 btn-lg">
               {% trans 'Client Area' %} <i class="bi bi-person-video3 me-1"></i>
@@ -25,7 +25,7 @@
               {% trans 'Buyer Client Area' %} <i class="bi bi-person-video3 me-1"></i>
             </a>
           {% else %}
-            <a href="{% url 'account:register' %}"      class="btn btn-success mt-5 me-0 me-sm-2 mx-1 btn-lg">
+            <a href="{% url 'account:register' %}"      class="btn btn-primary mt-5 me-0 me-sm-2 mx-1 btn-lg">
               {% trans 'Register' %} <i class="bi bi-person-fill-add me-1"></i>
             </a>
             <a href="{% url 'two_factor:login' %}"      class="btn btn-success mt-2 me-0 me-sm-2 mx-1 btn-lg">
