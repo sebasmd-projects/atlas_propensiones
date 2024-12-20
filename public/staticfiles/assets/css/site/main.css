@@ -698,7 +698,6 @@ section,
   position: absolute;
   inset: 0;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hero .container {
@@ -859,8 +858,8 @@ section,
 }
 
 .about .profile .profile-image {
-  width: 60px;
-  height: 60px;
+  width: 150px;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
 }

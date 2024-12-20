@@ -1,5 +1,4 @@
-from django.contrib import messages
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
 from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
@@ -26,7 +25,7 @@ Description
 
 class HolderRequiredMixin(LoginRequiredMixin):
     """
-    Mixin to check if the user has the 'holder' category.
+    Mixin to check if the user has the 'HOLDER', 'REPRESENTATIVE' or 'INTERMEDIARY category.
     """
 
     def dispatch(self, request, *args, **kwargs):
