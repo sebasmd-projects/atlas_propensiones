@@ -20,8 +20,7 @@
               {% trans 'Client Area' %} <i class="bi bi-person-video3 me-1"></i>
             </a>
           {% elif request.user.user_type in 'B' %}
-          <!-- Todo modify url to buyer_index -->
-            <a href="{% url 'assets:holder_index' %}"   class="btn btn-primary me-0 me-sm-2 mx-1 btn-lg">
+            <a href="{% url 'buyers:buyer_index' %}"   class="btn btn-primary me-0 me-sm-2 mx-1 btn-lg">
               {% trans 'Buyer Client Area' %} <i class="bi bi-person-video3 me-1"></i>
             </a>
           {% else %}

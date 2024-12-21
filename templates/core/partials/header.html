@@ -2,7 +2,7 @@
 
 <header id="header" class="header d-flex align-items-center fixed-top">
   <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0"><img src="{% static 'assets/imgs/horizontal-logo.png' %}" alt="ATLAS horizontal logo" /></a>
+    <a href="{% url 'core:index' %}" class="logo d-flex align-items-center me-auto me-xl-0"><img src="{% static 'assets/imgs/horizontal-logo.png' %}" alt="ATLAS horizontal logo" /></a>
 
     <nav id="navmenu" class="navmenu">
       <ul>
@@ -66,14 +66,19 @@
     {% if request.user.is_authenticated %}
     <div>
       {% if request.user.user_type in 'HRI' or request.user.is_staff %}
-        <a href="{% url 'assets:holder_index' %}" class="btn btn-primary rounded-pill">{{ request.user.get_user_type_display }}</a>
+        <a href="{% url 'assets:holder_index' %}" class="btn btn-primary rounded-pill mb-1">{% trans 'Client Area' %}</a>
       {% endif %}
+
+      {% if request.user.user_type in 'B' or request.user.is_staff %}
+        <a href="{% url 'buyers:buyer_index' %}" class="btn btn-primary rounded-pill mb-1">{% trans 'Buyer' %}</a>
+      {% endif %}
+        
       <a href="{% url 'account:logout' %}" class="btn btn-outline-danger rounded-pill">{% trans 'LOGOUT' %}</a>
     </div>
       
     {% else %}
     <div>
-      <a href="{% url 'two_factor:login' %}" class="btn btn-success rounded-pill">{% trans 'LOGIN' %}</a>
+      <a href="{% url 'two_factor:login' %}" class="btn btn-success rounded-pill mb-1">{% trans 'LOGIN' %}</a>
       <a href="{% url 'account:register' %}" class="btn btn-outline-primary rounded-pill">{% trans 'REGISTER' %}</a>
     </div>
     {% endif %}

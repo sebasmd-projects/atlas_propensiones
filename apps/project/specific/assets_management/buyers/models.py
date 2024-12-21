@@ -104,8 +104,26 @@ class OfferModel(TimeStampedModel):
         _("Quantity needed"),
         default=0
     )
-    
-    #TODO es_observation, en_observation, es_description, en_description
+
+    en_observation = models.TextField(
+        _("Observation (EN)"),
+        blank=True, null=True
+    )
+
+    es_observation = models.TextField(
+        _("Observation (ES)"),
+        blank=True, null=True
+    )
+
+    en_description = models.TextField(
+        _("Description (EN)"),
+        blank=True, null=True
+    )
+
+    es_description = models.TextField(
+        _("Description (ES)"),
+        blank=True, null=True
+    )
 
     buyer_country = models.ForeignKey(
         AssetCountryModel,

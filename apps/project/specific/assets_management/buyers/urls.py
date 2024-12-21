@@ -1,7 +1,7 @@
 from django.urls import path
 
-from apps.project.specific.assets_management.buyers.views import \
-    OfferDetailView
+from apps.project.specific.assets_management.buyers.views import (
+    BuyerCreateView, OfferDetailView)
 
 app_name = "buyers"
 
@@ -10,5 +10,10 @@ urlpatterns = [
         'offers/<uuid:id>/detail/',
         OfferDetailView.as_view(),
         name='offer_details'
+    ),
+    path(
+        'asset/buyer/',
+        BuyerCreateView.as_view(),
+        name='buyer_index'
     ),
 ]
