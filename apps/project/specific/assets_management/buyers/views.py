@@ -1,12 +1,17 @@
+from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.mail import EmailMessage
+from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
+from django.utils.html import escape
 from django.utils.translation import get_language
-from django.views.generic import CreateView, DetailView
+from django.utils.translation import gettext_lazy as _
+from django.views.generic import CreateView, DetailView, View, UpdateView
 
 from apps.project.common.users.models import UserModel
 
-from .form import OfferForm
+from .form import OfferForm, OfferUpdateForm
 from .models import OfferModel
 
 
@@ -48,13 +53,99 @@ class BuyerCreateView(BuyerRequiredMixin, CreateView):
     context_object_name = 'offers'
     form_class = OfferForm
 
-    def get_queryset(self):
-        return OfferModel.objects.filter(created_by=self.request.user)
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+
+        self.send_email_notification(form.cleaned_data)
+
+        messages.success(
+            self.request, "Your offer has been sent for verification."
+        )
+        return super().form_valid(form)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        user_language = self.request.LANGUAGE_CODE
+
+        description_field = 'es_description' if user_language == 'es' else 'en_description'
+        context['description_field'] = description_field
+        context['description_field_instance'] = context['form'][description_field]
+
+        observation_field = 'es_observation' if user_language == 'es' else 'en_observation'
+        context['observation_field'] = observation_field
+        context['observation_field_instance'] = context['form'][observation_field]
+
+        context['offers'] = OfferModel.objects.filter(
+            created_by=self.request.user
+        )
+
+        return context
+
+    def get_success_url(self):
+        return self.request.path
+
+    def send_email_notification(self, cleaned_data):
+        """Enviar correo con los datos de la oferta."""
+        subject = _("New Offer Submitted for Verification")
+        recipient_email = "notificaciones@propensionesabogados.com"
+
+        # Escapar datos para evitar inyecciones de scripts
+        safe_data = {key: escape(value) for key, value in cleaned_data.items()}
+
+        # Generar el cuerpo del correo con HTML
+        html_content = f"""
+        <html>
+        <body>
+            <h2>New Offer Submitted</h2>
+            <p><strong>Asset:</strong> {safe_data.get('asset')}</p>
+            <p><strong>Offer Type:</strong> {safe_data.get('offer_type')}</p>
+            <p><strong>Quantity Type:</strong> {safe_data.get('quantity_type')}</p>
+            <p><strong>Offer Amount:</strong> ${safe_data.get('offer_amount')}</p>
+            <p><strong>Offer Quantity:</strong> {safe_data.get('offer_quantity')}</p>
+            <p><strong>Buyer Country:</strong> {safe_data.get('buyer_country')}</p>
+            <p><strong>Observations (EN):</strong> {safe_data.get('en_observation')}</p>
+            <p><strong>Observations (ES):</strong> {safe_data.get('es_observation')}</p>
+            <p><strong>Description (EN):</strong> {safe_data.get('en_description')}</p>
+            <p><strong>Description (ES):</strong> {safe_data.get('es_description')}</p>
+            <br>
+            <p>Sent by:</p>
+            <p><strong>Name:</strong> {self.request.user.get_full_name()}</p>
+            <p><strong>Email:</strong> {self.request.user.email}</p>
+            <p><strong>Username:</strong> {self.request.user.username}</p>
+        </body>
+        </html>
+        """
+
+        # Crear y enviar el correo
+        email = EmailMessage(
+            subject=subject,
+            body=html_content,
+            from_email="no-reply@propensionesabogados.com",
+            to=[recipient_email],
+        )
+        email.content_subtype = "html"  # Indicar que el contenido es HTML
+        email.send()
+
+
+class OfferUpdateView(BuyerRequiredMixin, UpdateView):
+    model = OfferModel
+    form_class = OfferUpdateForm
+    template_name = 'dashboard/pages/assets_management/assets/buyers/edit_offer.html'
+    success_url = reverse_lazy('buyers:buyer_index')
+
+
+class OfferSoftDeleteView(BuyerRequiredMixin, View):
+    def post(self, request, *args, **kwargs):
+        offer = get_object_or_404(OfferModel, pk=kwargs.get('pk'))
+        offer.is_active = False
+        offer.save()
+        return JsonResponse({'success': True})
 
 
 class OfferDetailView(DetailView):
     model = OfferModel
-    template_name = 'dashboard/pages/assets_management/offers/offer_detail.html'
+    template_name = 'dashboard/pages/assets_management/offers/detail_offer.html'
     context_object_name = 'offer'
 
     def get_object(self, queryset=None):

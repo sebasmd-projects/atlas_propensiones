@@ -13,7 +13,7 @@ class CountryWidget(s2forms.ModelSelect2Widget):
     
     def build_attrs(self, base_attrs, extra_attrs=None):
         attrs = super().build_attrs(base_attrs, extra_attrs)
-        attrs['data-minimum-input-length'] = 0
+        attrs['data-minimum-input-length'] = 2
         return attrs
 
 class LocationModelForm(forms.ModelForm):
