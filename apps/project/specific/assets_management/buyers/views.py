@@ -145,7 +145,7 @@ class OfferSoftDeleteView(BuyerRequiredMixin, View):
 
 class OfferDetailView(DetailView):
     model = OfferModel
-    template_name = 'dashboard/pages/assets_management/offers/detail_offer.html'
+    template_name = 'dashboard/pages/assets_management/assets/buyers/detail_offer.html'
     context_object_name = 'offer'
 
     def get_object(self, queryset=None):
