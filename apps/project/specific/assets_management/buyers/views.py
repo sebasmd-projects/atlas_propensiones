@@ -103,7 +103,7 @@ class BuyerCreateView(BuyerRequiredMixin, CreateView):
             <p><strong>Quantity Type:</strong> {safe_data.get('quantity_type')}</p>
             <p><strong>Offer Amount:</strong> ${safe_data.get('offer_amount')}</p>
             <p><strong>Offer Quantity:</strong> {safe_data.get('offer_quantity')}</p>
-            <p><strong>Buyer Country:</strong> {safe_data.get('buyer_country')}</p>
+            <p><strong>Country of Purchase:</strong> {safe_data.get('buyer_country')}</p>
             <p><strong>Observations (EN):</strong> {safe_data.get('en_observation')}</p>
             <p><strong>Observations (ES):</strong> {safe_data.get('es_observation')}</p>
             <p><strong>Description (EN):</strong> {safe_data.get('en_description')}</p>

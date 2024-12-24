@@ -842,8 +842,8 @@ msgid "Offer Amount"
 msgstr "Monto de la Oferta"
 
 #: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:56
-msgid "Buyer Country"
-msgstr "País del Comprador"
+msgid "Country of Purchase"
+msgstr "País de la Compra"
 
 #: .\templates\dashboard\pages\assets_management\partials\header_cards.html:10
 msgid "Assets and Offers"
