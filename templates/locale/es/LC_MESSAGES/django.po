@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 12:15-0500\n"
-"PO-Revision-Date: 2024-12-17 12:16-0500\n"
-"Last-Translator: Juan Delgado <juan.sebasm2@gmail.com>\n"
+"POT-Creation-Date: 2024-12-24 11:59-0500\n"
+"PO-Revision-Date: 2024-12-24 12:05-0500\n"
+"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -106,27 +106,23 @@ msgstr ""
 msgid "Your browser does not support the video tag."
 msgstr "Su navegador no soporta la etiqueta de vídeo."
 
-#: .\templates\core\index\sections\section-1-hero.html:18
-#: .\templates\core\index\sections\section-6-call-to-action.html:11
-msgid "Comprehensive and Secure Historical Asset Management Solution"
-msgstr "Solución integral y segura de gestión de activos históricos"
-
-#: .\templates\core\index\sections\section-1-hero.html:24
+#: .\templates\core\index\sections\section-1-hero.html:20
+#: .\templates\core\partials\header.html:70
 msgid "Client Area"
 msgstr "Área de Clientes"
 
-#: .\templates\core\index\sections\section-1-hero.html:29
+#: .\templates\core\index\sections\section-1-hero.html:24
 msgid "Buyer Client Area"
 msgstr "Área de Clientes"
 
-#: .\templates\core\index\sections\section-1-hero.html:33
+#: .\templates\core\index\sections\section-1-hero.html:28
 #: .\templates\dashboard\account\register.html:95
 msgid "Register"
 msgstr "Registrarse"
 
-#: .\templates\core\index\sections\section-1-hero.html:40
-msgid "PROPENSIONES ABOGADOS INTERNATIONAL"
-msgstr "PROPENSIONES ABOGADOS INTERNACIONAL"
+#: .\templates\core\index\sections\section-1-hero.html:31
+msgid "Login"
+msgstr "Iniciar Sesión"
 
 #: .\templates\core\index\sections\section-2-about.html:8
 msgid "MORE ABOUT US"
@@ -137,176 +133,57 @@ msgid "Institutionalization of International Asset Operations"
 msgstr "Institucionalización de las operaciones internacionales de activos"
 
 #: .\templates\core\index\sections\section-2-about.html:11
+#| msgid ""
+#| "Our initiative focuses on formalizing and streamlining the process of "
+#| "managing international assets. This ensures better governance, compliance, "
+#| "and operational efficiency across global markets."
 msgid ""
-"Our initiative focuses on formalizing and streamlining the process of "
-"managing international assets. This ensures better governance, compliance, "
-"and operational efficiency across global markets."
+"\n"
+"                    Our initiative focuses on formalizing and streamlining the process of managing international assets.\n"
+"                    This ensures better governance, compliance, and operational efficiency across global markets.\n"
+"                    "
 msgstr ""
-"Nuestra iniciativa se centra en formalizar y optimizar el proceso de gestión"
-" de activos internacionales. Esto garantiza una mejor gobernanza, "
-"cumplimiento y eficiencia operativa en los mercados globales."
+"\n"
+"Nuestra iniciativa se centra en formalizar y agilizar el proceso de gestión de activos internacionales. Esto garantiza una mejor gobernanza, cumplimiento y eficiencia operativa en los mercados globales."
 
-#: .\templates\core\index\sections\section-2-about.html:16
-msgid "Enhanced governance structure"
-msgstr "Estructura de gobernanza mejorada"
-
-#: .\templates\core\index\sections\section-2-about.html:17
-msgid "Compliance with international standards"
-msgstr "Cumplimiento con estándares internacionales"
-
-#: .\templates\core\index\sections\section-2-about.html:18
-msgid "Streamlined asset management process"
-msgstr "Proceso de gestión de activos optimizado"
-
-#: .\templates\core\index\sections\section-2-about.html:23
-msgid "Risk mitigation in asset handling"
-msgstr "Mitigación de riesgos en el manejo de activos"
-
-#: .\templates\core\index\sections\section-2-about.html:24
-msgid "Integration with global markets"
-msgstr "Integración con mercados globales"
-
-#: .\templates\core\index\sections\section-2-about.html:25
-msgid "Continuous improvement strategies"
-msgstr "Estrategias de mejora continua"
-
-#: .\templates\core\index\sections\section-2-about.html:33
+#: .\templates\core\index\sections\section-2-about.html:20
 msgid "CEO Profile"
 msgstr "Perfil del CEO"
 
-#: .\templates\core\index\sections\section-2-about.html:36
+#: .\templates\core\index\sections\section-2-about.html:22
 msgid "CEO & Founder"
 msgstr "CEO & Fundador"
 
-#: .\templates\core\index\sections\section-2-about.html:44
+#: .\templates\core\index\sections\section-2-about.html:27
+msgid "Risk mitigation in asset handling"
+msgstr "Mitigación de riesgos en el manejo de activos"
+
+#: .\templates\core\index\sections\section-2-about.html:29
+msgid "Integration with global markets"
+msgstr "Integración con mercados globales"
+
+#: .\templates\core\index\sections\section-2-about.html:31
+msgid "Continuous improvement strategies"
+msgstr "Estrategias de mejora continua"
+
+#: .\templates\core\index\sections\section-2-about.html:38
 msgid "Call us anytime"
 msgstr "Llámenos en cualquier momento"
 
-#: .\templates\core\index\sections\section-2-about.html:55
+#: .\templates\core\index\sections\section-2-about.html:48
 msgid "Years"
 msgstr "Años"
 
-#: .\templates\core\index\sections\section-2-about.html:56
+#: .\templates\core\index\sections\section-2-about.html:49
 msgid "Of experience in managing international assets"
 msgstr "De experiencia en la gestión de activos internacionales"
 
-#: .\templates\core\index\sections\section-3-features.html:8
-#: .\templates\core\partials\header.html:20
-msgid "Features"
-msgstr "Características"
-
-#: .\templates\core\index\sections\section-3-features.html:9
-msgid ""
-"Explore the core functionalities of ATLAS for efficient asset management and"
-" comprehensive business solutions."
-msgstr ""
-"Explore las funcionalidades principales de ATLAS para una gestión eficiente "
-"de activos y soluciones empresariales integrales."
-
-#: .\templates\core\index\sections\section-3-features.html:20
-#: .\templates\core\index\sections\section-4-features-cards.html:14
+#: .\templates\core\index\sections\section-3-features-cards.html:14
+#: .\templates\core\index\sections\section-4-features.html:20
 msgid "Asset Management"
 msgstr "Gestión de Activos"
 
-#: .\templates\core\index\sections\section-3-features.html:26
-#: .\templates\core\index\sections\section-4-features-cards.html:32
-msgid "Document Generation"
-msgstr "Generación de Documentos"
-
-#: .\templates\core\index\sections\section-3-features.html:32
-msgid "Security & Validation"
-msgstr "Seguridad y Validación"
-
-#: .\templates\core\index\sections\section-3-features.html:46
-msgid "Comprehensive Asset Management"
-msgstr "Gestión integral de activos"
-
-#: .\templates\core\index\sections\section-3-features.html:48
-msgid ""
-"ATLAS provides a robust platform for managing historical assets, ensuring "
-"compliance, traceability, and seamless integration with market demands."
-msgstr ""
-"ATLAS proporciona una plataforma robusta para gestionar activos históricos, "
-"garantizando el cumplimiento, la trazabilidad y la integración fluida con "
-"las demandas del mercado."
-
-#: .\templates\core\index\sections\section-3-features.html:51
-msgid "Centralized asset tracking and monitoring"
-msgstr "Seguimiento y monitoreo centralizado de activos"
-
-#: .\templates\core\index\sections\section-3-features.html:52
-msgid "Data analytics and reporting"
-msgstr "Análisis de datos e informes"
-
-#: .\templates\core\index\sections\section-3-features.html:53
-msgid "Asset markets for enhanced visibility"
-msgstr "Mercados de activos para mayor visibilidad"
-
-#: .\templates\core\index\sections\section-3-features.html:57
-msgid "Asset Management Illustration"
-msgstr "Ilustración de Gestión de Activos"
-
-#: .\templates\core\index\sections\section-3-features.html:66
-msgid "Automated Document Generation"
-msgstr "Generación automatizada de documentos"
-
-#: .\templates\core\index\sections\section-3-features.html:68
-msgid ""
-"Efficiently generate, manage, and store important documents related to asset"
-" transactions, client agreements, and compliance certifications."
-msgstr ""
-"Genere, administre y almacene de forma eficiente documentos importantes "
-"relacionados con transacciones de activos, acuerdos con clientes y "
-"certificaciones de cumplimiento."
-
-#: .\templates\core\index\sections\section-3-features.html:71
-msgid "Templates for various document needs"
-msgstr "Plantillas para diversas necesidades documentales"
-
-#: .\templates\core\index\sections\section-3-features.html:72
-msgid "Automated filling and real-time generation of certificates"
-msgstr "Relleno automático y generación en tiempo real de certificados"
-
-#: .\templates\core\index\sections\section-3-features.html:73
-msgid "Secure storage with easy access for verification and audit trails"
-msgstr ""
-"Almacenamiento seguro con acceso sencillo para verificación y auditorías"
-
-#: .\templates\core\index\sections\section-3-features.html:77
-msgid "Document Generation Illustration"
-msgstr "Ilustración de Generación de Documentos"
-
-#: .\templates\core\index\sections\section-3-features.html:86
-msgid "Enhanced Security & Validation"
-msgstr "Mayor Seguridad y Validación"
-
-#: .\templates\core\index\sections\section-3-features.html:88
-msgid "Advanced user authentication and role-based access control"
-msgstr ""
-"Autenticación avanzada de usuarios y control de acceso basado en roles"
-
-#: .\templates\core\index\sections\section-3-features.html:89
-msgid "Secure data encryption and validation mechanisms"
-msgstr "Cifrado seguro de datos y mecanismos de validación"
-
-#: .\templates\core\index\sections\section-3-features.html:90
-msgid "Comprehensive KYC and AML processes for client onboarding"
-msgstr "Procesos integrales de KYC y AML para la incorporación de clientes"
-
-#: .\templates\core\index\sections\section-3-features.html:93
-msgid ""
-"ATLAS prioritizes security with state-of-the-art encryption and validation "
-"protocols to safeguard sensitive information and ensure compliance."
-msgstr ""
-"ATLAS prioriza la seguridad con protocolos de cifrado y validación de "
-"vanguardia para salvaguardar información sensible y garantizar el "
-"cumplimiento."
-
-#: .\templates\core\index\sections\section-3-features.html:97
-msgid "Security Illustration"
-msgstr "Ilustración de Seguridad"
-
-#: .\templates\core\index\sections\section-4-features-cards.html:15
+#: .\templates\core\index\sections\section-3-features-cards.html:15
 msgid ""
 "Centralized platform for tracking and managing historical assets "
 "efficiently, ensuring data integrity and real-time updates."
@@ -315,11 +192,11 @@ msgstr ""
 "forma eficiente, garantizando la integridad de datos y actualizaciones en "
 "tiempo real."
 
-#: .\templates\core\index\sections\section-4-features-cards.html:23
+#: .\templates\core\index\sections\section-3-features-cards.html:23
 msgid "Compliance & Validation"
 msgstr "Cumplimiento y Validación"
 
-#: .\templates\core\index\sections\section-4-features-cards.html:24
+#: .\templates\core\index\sections\section-3-features-cards.html:24
 msgid ""
 "Automated compliance checks and robust validation processes to meet "
 "international standards and regulatory requirements."
@@ -327,7 +204,12 @@ msgstr ""
 "Controles de cumplimiento automatizados y procesos de validación sólidos "
 "para cumplir con estándares internacionales y requisitos normativos."
 
-#: .\templates\core\index\sections\section-4-features-cards.html:33
+#: .\templates\core\index\sections\section-3-features-cards.html:32
+#: .\templates\core\index\sections\section-4-features.html:26
+msgid "Document Generation"
+msgstr "Generación de Documentos"
+
+#: .\templates\core\index\sections\section-3-features-cards.html:33
 msgid ""
 "Create and manage documents such as certificates and agreements with "
 "templates for seamless business operations."
@@ -335,11 +217,11 @@ msgstr ""
 "Cree y administre documentos tales como certificados y acuerdos con "
 "plantillas para operaciones comerciales sin contratiempos."
 
-#: .\templates\core\index\sections\section-4-features-cards.html:41
+#: .\templates\core\index\sections\section-3-features-cards.html:41
 msgid "Security & Data Protection"
 msgstr "Seguridad y Protección de Datos"
 
-#: .\templates\core\index\sections\section-4-features-cards.html:42
+#: .\templates\core\index\sections\section-3-features-cards.html:42
 msgid ""
 "Advanced security features including data encryption, access control, and "
 "regular audits to safeguard sensitive information."
@@ -347,85 +229,119 @@ msgstr ""
 "Funcionalidades de seguridad avanzadas que incluyen cifrado de datos, "
 "control de acceso y auditorías regulares para proteger información sensible."
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:16
-msgid "Cross-Platform Accessibility"
-msgstr "Accesibilidad Multiplataforma"
+#: .\templates\core\index\sections\section-4-features.html:8
+#: .\templates\core\partials\header.html:20
+msgid "Features"
+msgstr "Características"
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:17
+#: .\templates\core\index\sections\section-4-features.html:9
 msgid ""
-"ATLAS adapts seamlessly across desktops, tablets, and smartphones, ensuring "
-"a consistent user experience."
+"Explore the core functionalities of ATLAS for efficient asset management and"
+" comprehensive business solutions."
 msgstr ""
-"ATLAS se adapta sin problemas a escritorios, tabletas y teléfonos "
-"inteligentes, garantizando una experiencia de usuario coherente."
+"Explore las funcionalidades principales de ATLAS para una gestión eficiente "
+"de activos y soluciones empresariales integrales."
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:29
-msgid "Optimized Performance"
-msgstr "Rendimiento Optimizado"
+#: .\templates\core\index\sections\section-4-features.html:32
+msgid "Security & Validation"
+msgstr "Seguridad y Validación"
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:30
+#: .\templates\core\index\sections\section-4-features.html:46
+msgid "Comprehensive Asset Management"
+msgstr "Gestión integral de activos"
+
+#: .\templates\core\index\sections\section-4-features.html:48
 msgid ""
-"Fast loading times and efficient resource usage provide a smooth experience "
-"even on low-spec devices."
+"ATLAS provides a robust platform for managing historical assets, ensuring "
+"compliance, traceability, and seamless integration with market demands."
 msgstr ""
-"Tiempos de carga rápidos y uso eficiente de recursos para brindar una "
-"experiencia fluida incluso en dispositivos con especificaciones bajas."
+"ATLAS proporciona una plataforma robusta para gestionar activos históricos, "
+"garantizando el cumplimiento, la trazabilidad y la integración fluida con "
+"las demandas del mercado."
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:42
-msgid "Touch-Friendly Design"
-msgstr "Diseño Adaptado al Tacto"
+#: .\templates\core\index\sections\section-4-features.html:51
+msgid "Centralized asset tracking and monitoring"
+msgstr "Seguimiento y monitoreo centralizado de activos"
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:43
+#: .\templates\core\index\sections\section-4-features.html:52
+msgid "Data analytics and reporting"
+msgstr "Análisis de datos e informes"
+
+#: .\templates\core\index\sections\section-4-features.html:53
+msgid "Asset markets for enhanced visibility"
+msgstr "Mercados de activos para mayor visibilidad"
+
+#: .\templates\core\index\sections\section-4-features.html:57
+msgid "Asset Management Illustration"
+msgstr "Ilustración de Gestión de Activos"
+
+#: .\templates\core\index\sections\section-4-features.html:66
+msgid "Automated Document Generation"
+msgstr "Generación automatizada de documentos"
+
+#: .\templates\core\index\sections\section-4-features.html:68
 msgid ""
-"Interactive elements and navigation are designed for easy use on touch "
-"screens, enhancing mobile usability."
+"Efficiently generate, manage, and store important documents related to asset"
+" transactions, client agreements, and compliance certifications."
 msgstr ""
-"Los elementos interactivos y la navegación están diseñados para un fácil uso"
-" en pantallas táctiles, mejorando la usabilidad móvil."
+"Genere, administre y almacene de forma eficiente documentos importantes "
+"relacionados con transacciones de activos, acuerdos con clientes y "
+"certificaciones de cumplimiento."
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:56
-msgid "Phone Mockup"
-msgstr "Maqueta de Teléfono"
+#: .\templates\core\index\sections\section-4-features.html:71
+msgid "Templates for various document needs"
+msgstr "Plantillas para diversas necesidades documentales"
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:69
-msgid "Fully Responsive Design"
-msgstr "Diseño Totalmente Responsivo"
+#: .\templates\core\index\sections\section-4-features.html:72
+msgid "Automated filling and real-time generation of certificates"
+msgstr "Relleno automático y generación en tiempo real de certificados"
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:70
+#: .\templates\core\index\sections\section-4-features.html:73
+msgid "Secure storage with easy access for verification and audit trails"
+msgstr ""
+"Almacenamiento seguro con acceso sencillo para verificación y auditorías"
+
+#: .\templates\core\index\sections\section-4-features.html:77
+msgid "Document Generation Illustration"
+msgstr "Ilustración de Generación de Documentos"
+
+#: .\templates\core\index\sections\section-4-features.html:86
+msgid "Enhanced Security & Validation"
+msgstr "Mayor Seguridad y Validación"
+
+#: .\templates\core\index\sections\section-4-features.html:88
+msgid "Advanced user authentication and role-based access control"
+msgstr ""
+"Autenticación avanzada de usuarios y control de acceso basado en roles"
+
+#: .\templates\core\index\sections\section-4-features.html:89
+msgid "Secure data encryption and validation mechanisms"
+msgstr "Cifrado seguro de datos y mecanismos de validación"
+
+#: .\templates\core\index\sections\section-4-features.html:90
+msgid "Comprehensive KYC and AML processes for client onboarding"
+msgstr "Procesos integrales de KYC y AML para la incorporación de clientes"
+
+#: .\templates\core\index\sections\section-4-features.html:93
 msgid ""
-"ATLAS ensures a responsive layout that adjusts dynamically to fit any screen"
-" size, providing a consistent experience."
+"ATLAS prioritizes security with state-of-the-art encryption and validation "
+"protocols to safeguard sensitive information and ensure compliance."
 msgstr ""
-"ATLAS asegura un diseño responsivo que se adapta dinámicamente a cualquier "
-"tamaño de pantalla, ofreciendo una experiencia coherente."
+"ATLAS prioriza la seguridad con protocolos de cifrado y validación de "
+"vanguardia para salvaguardar información sensible y garantizar el "
+"cumplimiento."
 
-#: .\templates\core\index\sections\section-5-features-mobile.html:82
-msgid "Browser Compatibility"
-msgstr "Compatibilidad con Navegadores"
-
-#: .\templates\core\index\sections\section-5-features-mobile.html:83
-msgid ""
-"Compatible with major web browsers including Chrome, Firefox, Edge, and "
-"Safari for a seamless experience."
-msgstr ""
-"Compatible con los principales navegadores web, incluyendo Chrome, Firefox, "
-"Edge y Safari, para una experiencia sin interrupciones."
-
-#: .\templates\core\index\sections\section-5-features-mobile.html:95
-msgid "Dark Mode Support"
-msgstr "Soporte de Modo Oscuro"
-
-#: .\templates\core\index\sections\section-5-features-mobile.html:96
-msgid ""
-"ATLAS offers a dark mode option to reduce eye strain and improve visibility "
-"in low-light environments."
-msgstr ""
-"ATLAS ofrece una opción de modo oscuro para reducir la fatiga visual y "
-"mejorar la visibilidad en entornos con poca luz."
+#: .\templates\core\index\sections\section-4-features.html:97
+msgid "Security Illustration"
+msgstr "Ilustración de Seguridad"
 
 #: .\templates\core\index\sections\section-6-call-to-action.html:10
 msgid "HISTORICAL ASSETS"
 msgstr "ACTIVOS HISTÓRICOS"
+
+#: .\templates\core\index\sections\section-6-call-to-action.html:11
+msgid "Comprehensive and Secure Historical Asset Management Solution"
+msgstr "Solución integral y segura de gestión de activos históricos"
 
 #: .\templates\core\index\sections\section-6-call-to-action.html:12
 #: .\templates\core\index\sections\section-7-contact.html:48
@@ -536,15 +452,19 @@ msgstr "Documentos"
 msgid "Suitability Verification"
 msgstr "Verificación de Idoneidad"
 
-#: .\templates\core\partials\header.html:72
+#: .\templates\core\partials\header.html:74
+msgid "Buyer"
+msgstr "Comprador"
+
+#: .\templates\core\partials\header.html:77
 msgid "LOGOUT"
 msgstr "CERRAR SESIÓN"
 
-#: .\templates\core\partials\header.html:77
+#: .\templates\core\partials\header.html:82
 msgid "LOGIN"
 msgstr "INICIAR SESIÓN"
 
-#: .\templates\core\partials\header.html:78
+#: .\templates\core\partials\header.html:83
 msgid "REGISTER"
 msgstr "REGISTRARSE"
 
@@ -589,7 +509,9 @@ msgstr "Agregar Nuevo Activo"
 
 #: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:16
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:16
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:51
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:45
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:52
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:7
 msgid "Asset"
 msgstr "Activo"
 
@@ -605,9 +527,11 @@ msgstr "+ Agregar Ubicación"
 
 #: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:41
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:35
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:67
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:54
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:9
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:8
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:11
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:53
 msgid "Quantity Type"
 msgstr "Tipo de Cantidad"
 
@@ -666,6 +590,88 @@ msgstr "Categoría"
 msgid "Description"
 msgstr "Descripción"
 
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:17
+msgid "My Offers"
+msgstr "Mis Ofertas"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:26
+msgid "Create a New Offer"
+msgstr "Crear una nueva oferta"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:56
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:53
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:8
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:7
+msgid "Offer Type"
+msgstr "Tipo de Oferta"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:78
+msgid "Value Offered Individually ($ USD)"
+msgstr "Valor Ofrecido c/u ($ USD)"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:90
+#| msgid "Quantity Type"
+msgid "Quantity required"
+msgstr "Cantidad Requerida"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:101
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:57
+msgid "Country of Purchase"
+msgstr "País de la Compra"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:113
+#| msgid "Description"
+msgid "Description (ES)"
+msgstr "Descripción (ES)"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:115
+#| msgid "Description"
+msgid "Description (EN)"
+msgstr "Descripción (EN)"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:128
+#| msgid "Observations"
+msgid "Observations (ES)"
+msgstr "Observaciones (ES)"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:130
+#| msgid "Observations"
+msgid "Observations (EN)"
+msgstr "Observaciones (EN)"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:140
+msgid "Submit Offer"
+msgstr "Enviar oferta"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:21
+msgid "Procedure"
+msgstr "Procedimiento"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:30
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:63
+msgid "Apply to this position/offer"
+msgstr "Aplicar a esta posición/oferta"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:35
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:39
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:68
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:72
+msgid "Download Offer"
+msgstr "Descargar Oferta"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:49
+msgid "Offer Summary"
+msgstr "Resumen de la Oferta"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:55
+msgid "Offer Amount"
+msgstr "Monto de la Oferta"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:56
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:10
+msgid "Offer Quantity"
+msgstr "Cantidad de la Oferta"
+
 #: .\templates\dashboard\pages\assets_management\assets\buyers\partials\header.html:12
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\header.html:12
 #: .\templates\dashboard\partials\side_nav.html:23
@@ -676,6 +682,31 @@ msgstr "Panel de Control"
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\header.html:14
 msgid "Overview and content summary"
 msgstr "Resumen y contenido general"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:6
+msgid "#"
+msgstr "#"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:10
+#| msgid "Quantity Type"
+msgid "Quantity Needed"
+msgstr "Cantidad Requerida"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:11
+msgid "Value Offered (USD)"
+msgstr "Valor Ofrecido (USD)"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:12
+#: .\templates\dashboard\pages\documents\certificates\certificate_detail.html:31
+msgid "Approved"
+msgstr "Aprobado"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:13
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:8
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:13
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:12
+msgid "Actions"
+msgstr "Acciones"
 
 #: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:26
 msgid "My Historical Assets"
@@ -736,30 +767,14 @@ msgstr "Continente"
 msgid "Country"
 msgstr "País"
 
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:8
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:13
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:12
-msgid "Actions"
-msgstr "Acciones"
-
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:4
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:4
 msgid "Image"
 msgstr "Imagen"
 
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:7
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:52
-msgid "Offer Type"
-msgstr "Tipo de Oferta"
-
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:9
 msgid "Offer Amount per quantity type in USD"
 msgstr "Monto de la Oferta por tipo de cantidad en USD"
-
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:10
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:55
-msgid "Offer Quantity"
-msgstr "Cantidad de la Oferta"
 
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:11
 msgid "Continent Preference"
@@ -817,41 +832,13 @@ msgstr ""
 msgid "Edit Location Reference"
 msgstr "Editar Referencia de Ubicación"
 
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:20
-msgid "Procedure"
-msgstr "Procedimiento"
-
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:29
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:62
-msgid "Apply to this position/offer"
-msgstr "Aplicar a esta posición/oferta"
-
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:34
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:38
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:67
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:71
-msgid "Download Offer"
-msgstr "Descargar Oferta"
-
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:48
-msgid "Offer Summary"
-msgstr "Resumen de la Oferta"
-
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:54
-msgid "Offer Amount"
-msgstr "Monto de la Oferta"
-
-#: .\templates\dashboard\pages\assets_management\offers\offer_detail.html:56
-msgid "Country of Purchase"
-msgstr "País de la Compra"
-
 #: .\templates\dashboard\pages\assets_management\partials\header_cards.html:10
 msgid "Assets and Offers"
 msgstr "Activos y Ofertas"
 
 #: .\templates\dashboard\pages\assets_management\partials\header_cards.html:41
-msgid "Support"
-msgstr "Soporte"
+msgid "Booking"
+msgstr "Agenda"
 
 #: .\templates\dashboard\pages\assets_management\partials\header_cards.html:43
 msgid "Do you need help?"
@@ -872,10 +859,6 @@ msgstr "Número de Identificación:"
 #: .\templates\dashboard\pages\documents\certificates\certificate_detail.html:29
 msgid "Certificate ID:"
 msgstr "ID del Certificado:"
-
-#: .\templates\dashboard\pages\documents\certificates\certificate_detail.html:31
-msgid "Approved"
-msgstr "Aprobado"
 
 #: .\templates\dashboard\pages\documents\certificates\certificate_detail.html:33
 msgid "Not Approved"
@@ -1258,6 +1241,84 @@ msgstr[1] "Le quedan %(counter)s códigos de respaldo."
 msgid "Show Codes"
 msgstr "Mostrar Códigos"
 
+#~ msgid "PROPENSIONES ABOGADOS INTERNATIONAL"
+#~ msgstr "PROPENSIONES ABOGADOS INTERNACIONAL"
+
+#~ msgid "Enhanced governance structure"
+#~ msgstr "Estructura de gobernanza mejorada"
+
+#~ msgid "Compliance with international standards"
+#~ msgstr "Cumplimiento con estándares internacionales"
+
+#~ msgid "Streamlined asset management process"
+#~ msgstr "Proceso de gestión de activos optimizado"
+
+#~ msgid "Cross-Platform Accessibility"
+#~ msgstr "Accesibilidad Multiplataforma"
+
+#~ msgid ""
+#~ "ATLAS adapts seamlessly across desktops, tablets, and smartphones, ensuring "
+#~ "a consistent user experience."
+#~ msgstr ""
+#~ "ATLAS se adapta sin problemas a escritorios, tabletas y teléfonos "
+#~ "inteligentes, garantizando una experiencia de usuario coherente."
+
+#~ msgid "Optimized Performance"
+#~ msgstr "Rendimiento Optimizado"
+
+#~ msgid ""
+#~ "Fast loading times and efficient resource usage provide a smooth experience "
+#~ "even on low-spec devices."
+#~ msgstr ""
+#~ "Tiempos de carga rápidos y uso eficiente de recursos para brindar una "
+#~ "experiencia fluida incluso en dispositivos con especificaciones bajas."
+
+#~ msgid "Touch-Friendly Design"
+#~ msgstr "Diseño Adaptado al Tacto"
+
+#~ msgid ""
+#~ "Interactive elements and navigation are designed for easy use on touch "
+#~ "screens, enhancing mobile usability."
+#~ msgstr ""
+#~ "Los elementos interactivos y la navegación están diseñados para un fácil uso"
+#~ " en pantallas táctiles, mejorando la usabilidad móvil."
+
+#~ msgid "Phone Mockup"
+#~ msgstr "Maqueta de Teléfono"
+
+#~ msgid "Fully Responsive Design"
+#~ msgstr "Diseño Totalmente Responsivo"
+
+#~ msgid ""
+#~ "ATLAS ensures a responsive layout that adjusts dynamically to fit any screen"
+#~ " size, providing a consistent experience."
+#~ msgstr ""
+#~ "ATLAS asegura un diseño responsivo que se adapta dinámicamente a cualquier "
+#~ "tamaño de pantalla, ofreciendo una experiencia coherente."
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "Compatibilidad con Navegadores"
+
+#~ msgid ""
+#~ "Compatible with major web browsers including Chrome, Firefox, Edge, and "
+#~ "Safari for a seamless experience."
+#~ msgstr ""
+#~ "Compatible con los principales navegadores web, incluyendo Chrome, Firefox, "
+#~ "Edge y Safari, para una experiencia sin interrupciones."
+
+#~ msgid "Dark Mode Support"
+#~ msgstr "Soporte de Modo Oscuro"
+
+#~ msgid ""
+#~ "ATLAS offers a dark mode option to reduce eye strain and improve visibility "
+#~ "in low-light environments."
+#~ msgstr ""
+#~ "ATLAS ofrece una opción de modo oscuro para reducir la fatiga visual y "
+#~ "mejorar la visibilidad en entornos con poca luz."
+
+#~ msgid "Support"
+#~ msgstr "Soporte"
+
 #~ msgid "All-in-one Suite"
 #~ msgstr "Plataforma todo en uno"
 
@@ -1272,9 +1333,6 @@ msgstr "Mostrar Códigos"
 #~ "\n"
 #~ "                        La Referencia de Ubicación sirve como un identificador único para gestionar el inventario en diversas ubicaciones.\n"
 #~ "                        "
-
-#~ msgid "Login"
-#~ msgstr "Iniciar Sesión"
 
 #~ msgid "ASSETS"
 #~ msgstr "ACTIVOS"

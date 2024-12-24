@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-17 12:15-0500\n"
-"PO-Revision-Date: 2024-12-15 02:02-0500\n"
-"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados."
-"com>\n"
+"POT-Creation-Date: 2024-12-24 11:59-0500\n"
+"PO-Revision-Date: 2024-12-24 12:00-0500\n"
+"Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\apps\project\specific\assets_management\buyers\admin.py:39
 msgid "Required Fields"
@@ -86,38 +86,58 @@ msgstr "Monto de la Oferta por tipo de cantidad en USD"
 msgid "Quantity needed"
 msgstr "Cantidad necesaria"
 
+#: .\apps\project\specific\assets_management\buyers\models.py:109
+msgid "Observation (EN)"
+msgstr "Observaciones (EN)"
+
 #: .\apps\project\specific\assets_management\buyers\models.py:114
+msgid "Observation (ES)"
+msgstr "Observaciones (ES)"
+
+#: .\apps\project\specific\assets_management\buyers\models.py:119
+msgid "Description (EN)"
+msgstr "Descripción (EN)"
+
+#: .\apps\project\specific\assets_management\buyers\models.py:124
+msgid "Description (ES)"
+msgstr "Descripción (ES)"
+
+#: .\apps\project\specific\assets_management\buyers\models.py:132
 msgid "Country"
 msgstr "País"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:119
+#: .\apps\project\specific\assets_management\buyers\models.py:137
 msgid "Procedure (ES)"
 msgstr "Procedimiento (ES)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:124
+#: .\apps\project\specific\assets_management\buyers\models.py:142
 msgid "Procedure (EN)"
 msgstr "Procedimiento (EN)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:129
+#: .\apps\project\specific\assets_management\buyers\models.py:147
 msgid "Banner (ES)"
 msgstr "Banner (ES)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:136
+#: .\apps\project\specific\assets_management\buyers\models.py:154
 msgid "Banner (EN)"
 msgstr "Banner (EN)"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:143
+#: .\apps\project\specific\assets_management\buyers\models.py:161
 msgid "Approved"
 msgstr "Aprobado"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:151
+#: .\apps\project\specific\assets_management\buyers\models.py:169
 msgid "Approved By"
 msgstr "Aprobado Por"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:174
+#: .\apps\project\specific\assets_management\buyers\models.py:192
 msgid "1. Offer"
 msgstr "1. Oferta"
 
-#: .\apps\project\specific\assets_management\buyers\models.py:175
+#: .\apps\project\specific\assets_management\buyers\models.py:193
 msgid "1. Offers"
 msgstr "1. Ofertas"
+
+#: .\apps\project\specific\assets_management\buyers\views.py:90
+msgid "New Offer Submitted for Verification"
+msgstr "Nueva Oferta Enviada para Verificación"
