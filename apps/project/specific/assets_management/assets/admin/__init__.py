@@ -9,9 +9,17 @@ from .filters import (HasImageFilter, QuantityTypeFilter,
                       ZeroTotalQuantityFilter)
 
 
+class AssetCategoryInline(admin.StackedInline):
+    model = AssetModel  # Asume que AssetModel gestiona la relación con categoría
+    fk_name = "asset_name"  # Indica el campo de ForeignKey que conecta con AssetsNamesModel
+    extra = 1  # Define cuántos campos adicionales se mostrarán por defecto
+    autocomplete_fields = ("category",)
+
 @admin.register(AssetsNamesModel)
 class AssetsNamesModelAdmin(GeneralAdminModel):
 
+    inlines = [AssetCategoryInline]
+    
     search_fields = (
         'es_name',
         'en_name'
