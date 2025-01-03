@@ -12,7 +12,7 @@ urlpatterns = [
         name='offer_details'
     ),
     path(
-        'offers/<uuid:id>/update/',
+        'offers/<uuid:pk>/update/',
         OfferUpdateView.as_view(),
         name='offer_update'
     ),

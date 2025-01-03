@@ -53,7 +53,11 @@
             <div class="col-12">
                 <div class="mb-3">
                     <label for="id_observations">{% trans 'Observations' %}</label>
-                    {{ form.observations|add_attrs:"class=form-control" }}
+                    {% if request.LANGUAGE_CODE == 'es' %}
+                        {{ form.observations_es|add_attrs:"class=form-control" }}
+                    {% else %}
+                        {{ form.observations_en|add_attrs:"class=form-control" }}
+                    {% endif %}
                 </div>
             </div>
         </div>

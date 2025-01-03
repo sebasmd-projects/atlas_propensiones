@@ -116,7 +116,8 @@ class AssetLocationAdmin(GeneralAdminModel):
                 'quantity_type',
                 'amount',
                 'is_active',
-                'observations'
+                'observations_es',
+                'observations_en',
             ),
         }),
         (_('Dates'), {
@@ -208,7 +209,8 @@ class LocationModelAdmin(GeneralAdminModel):
         }),
         (_('Optional Fields'), {
             'fields': (
-                'description',
+                'description_es',
+                'description_en',
             ),
             'classes': (
                 'collapse',

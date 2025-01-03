@@ -34,6 +34,7 @@ class UserModelAdmin(UserAdmin, GeneralAdminModel):
         "is_staff",
         "is_superuser",
         "is_active",
+        "is_verified_holder",
         "user_type"
     )
 
@@ -80,6 +81,7 @@ class UserModelAdmin(UserAdmin, GeneralAdminModel):
         (
             _('Permissions'), {
                 'fields': (
+                    'is_verified_holder',
                     'is_active',
                     'is_staff',
                     'is_superuser',

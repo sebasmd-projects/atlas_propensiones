@@ -87,8 +87,14 @@ class LocationModel(TimeStampedModel):
         null=True
     )
 
-    description = models.TextField(
-        _("description"),
+    description_es = models.TextField(
+        _("description (ES)"),
+        blank=True,
+        null=True
+    )
+
+    description_en = models.TextField(
+        _("description (EN)"),
         blank=True,
         null=True
     )
@@ -117,7 +123,8 @@ class LocationModel(TimeStampedModel):
 
     class Meta:
         db_table = "apps_assets_location_location"
-        unique_together = ['reference', 'country', 'created_by', 'is_active']
+        unique_together = ['reference', 'country', 'created_by',
+                           'is_active', 'description_es', 'description_en']
         verbose_name = _("2. Location")
         verbose_name_plural = _("2. Locations")
         ordering = ["default_order", "-created"]
@@ -171,8 +178,14 @@ class AssetLocationModel(TimeStampedModel):
         _("amount")
     )
 
-    observations = models.TextField(
-        _("observations"),
+    observations_es = models.TextField(
+        _("observations (ES)"),
+        blank=True,
+        null=True
+    )
+
+    observations_en = models.TextField(
+        _("observations (EN)"),
         blank=True,
         null=True
     )
@@ -191,8 +204,13 @@ class AssetLocationModel(TimeStampedModel):
         verbose_name = _("1. Location Registration")
         verbose_name_plural = _("1. Locations Registration")
         ordering = ["default_order", "-created"]
-        unique_together = ['asset', 'location',
-                           'quantity_type', 'amount', 'created_by', 'is_active']
+        unique_together = [
+            'asset',
+            'location',
+            'quantity_type',
+            'amount',
+            'created_by',
+        ]
 
 
 auditlog.register(

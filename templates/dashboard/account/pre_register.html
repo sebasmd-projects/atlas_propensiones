@@ -1,0 +1,82 @@
+{% extends 'dashboard/account/layout/account.html' %}
+
+{% load static i18n %}
+
+{% block layout_content %}
+<div class="container-xl px-4">
+    <div class="row min-vh-100 d-flex align-items-center justify-content-center">
+
+        <!-- Create Organization-->
+        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-11 mt-2">
+            <div class="card text-center h-100">
+                <div class="card-body px-5 pt-5 d-flex flex-column">
+                    <div>
+                        <div class="h3 text-primary">
+                            ATLAS
+                        </div>
+                        <p class="text-muted mb-4">
+                            {% trans 'Register of Users for Historical Assets' %}
+                        </p>
+                    </div>
+                    <a href="{% url 'account:register-atlas' %}">
+                        <div class="icons-org-create align-items-center mx-auto mt-auto">
+                            <img src="{% static 'assets/imgs/account/sello propensiones compra USA.png' %}"
+                                alt="Sello Propensiones" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-footer bg-transparent px-5 py-2">
+                    <div class="small text-center">
+                        <div class="d-grid gap-2 mt-3">
+                            <a class="btn btn-block btn-outline-primary" href="{% url 'account:register-atlas' %}">
+                                {% trans "Register" %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Join Organization-->
+        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-11 mt-2">
+            <div class="card text-center h-100">
+                <div class="card-body px-5 pt-5 d-flex flex-column align-items-between">
+                    <div>
+                        <div class="h3 text-primary">
+                            {% trans 'PROPENSIONES' %}
+                        </div>
+
+                        <p class="text-muted mb-4">
+                            {% trans "Register of Users for Propensiones" %}
+                        </p>
+                    </div>
+                    <a href="{% url 'account:register-propensiones' %}">
+                        <div class="icons-org-join align-items-center mx-auto">
+                            <img src="{% static 'assets/imgs/account/PROPENSIONES.png' %}"
+                                alt="Sello Propensiones Compra USA" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="card-footer bg-transparent px-5 py-2">
+                    <div class="small text-center">
+                        <div class="d-grid gap-2 mt-3">
+                            <a class="btn btn-block btn-outline-primary"
+                                href="{% url 'account:register-propensiones' %}">
+                                {% trans "Register" %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2 mt-3">
+            <a href="{% url 'core:index' %}" class="btn btn-secondary " type="button">{% trans "Go to Home" %}</a>
+            <a href="{% url 'two_factor:login' %}" class="btn btn-success" type="button">{% trans "Login" %}</a>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

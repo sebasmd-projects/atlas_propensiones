@@ -47,9 +47,16 @@
 {% block main %}
     <main class="main">
         {% include 'core/index/sections/section-1-hero.html' %}
+        {% include 'core/index/sections/section-full-team.html' %}
+        {% include 'core/index/sections/section-social-sense.html' %}
+        
+        {% comment %}
         {% include 'core/index/sections/section-2-about.html' %}
-        {% include 'core/index/sections/section-3-features-cards.html' %}
         {% include 'core/index/sections/section-4-features.html' %}
+        {% endcomment %}
+            
+        {% include 'core/index/sections/section-3-features-cards.html' %}
+        
         {% include 'core/index/sections/section-5-team.html' %}
         {% include 'core/index/sections/section-6-call-to-action.html' %}
         {% include 'core/index/sections/section-7-contact.html' %}

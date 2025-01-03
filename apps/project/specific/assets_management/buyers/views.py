@@ -134,7 +134,6 @@ class OfferUpdateView(BuyerRequiredMixin, UpdateView):
     template_name = 'dashboard/pages/assets_management/assets/buyers/edit_offer.html'
     success_url = reverse_lazy('buyers:buyer_index')
 
-
 class OfferSoftDeleteView(BuyerRequiredMixin, View):
     def post(self, request, *args, **kwargs):
         offer = get_object_or_404(OfferModel, pk=kwargs.get('pk'))

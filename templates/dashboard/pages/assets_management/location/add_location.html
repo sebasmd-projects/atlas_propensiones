@@ -21,6 +21,15 @@
                     <form method="post">
                         {{ form.media.css }}
                         {% csrf_token %}
+
+                        {% if form.non_field_errors %}
+                            <div class="alert alert-danger">
+                                {% for error in form.non_field_errors %}
+                                    <p>{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
                         <div class="row">
                             <div class="col-6">
                                 <div class="mb-3">

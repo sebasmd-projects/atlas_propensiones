@@ -1,5 +1,7 @@
 from django.views.generic import TemplateView
 
+from apps.project.specific.assets_management.assets.models import \
+    PreRegistrationAssetModel
 from apps.project.specific.assets_management.assets_location.models import (
     AssetLocationModel, LocationModel)
 from apps.project.specific.assets_management.assets_location.views import \
@@ -18,6 +20,8 @@ class HolderTemplateview(HolderRequiredMixin, TemplateView):
             created_by=self.request.user
         )
 
+        pre_assets = None
+
         locations = LocationModel.objects.filter(
             is_active=True,
             created_by=self.request.user
@@ -31,6 +35,7 @@ class HolderTemplateview(HolderRequiredMixin, TemplateView):
         context['assets'] = assets
         context['locations'] = locations
         context['offers'] = offers if assets else None
+        # pre_assets
         context['total_offers'] = offers.count()
 
         return context

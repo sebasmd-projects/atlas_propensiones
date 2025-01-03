@@ -29,14 +29,11 @@
                     <i data-feather="x-circle" stroke="red"></i>
                 {% endif %}
             </td>
-            <td> 
-            {% comment %}
-            {% url 'assets_buyers:offer_detail' offer.id %}
-            {% endcomment %}
-                
-                <a href="" class="btn btn-datatable btn-icon btn-outline-primary">
+            <td>
+                <a href="{% url 'buyers:offer_update' offer.id %}" class="btn btn-datatable btn-icon btn-outline-primary">
                     <i class="fa-regular fa-pen-to-square"></i>
                 </a>
+
                 <button class="btn btn-datatable btn-icon btn-outline-danger" id="btn-modal-delete-offer" data-offer-id="{{ offer.id }}">
                     <i class="fa-regular fa-trash-can"></i>
                 </button>

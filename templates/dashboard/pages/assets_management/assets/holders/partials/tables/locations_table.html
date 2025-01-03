@@ -22,6 +22,8 @@
         {{ location.description }}
       </td>
 
+      
+
       <td>
         {{ location.country.get_continent_display }}
       </td>
@@ -31,6 +33,14 @@
         {{ location.country.es_country_name }}
         {% else %}
         {{ location.country.en_country_name }}
+        {% endif %}
+      </td>
+
+      <td>
+        {% if location.is_active %}
+          <i class="fa-regular fa-circle-check mx-1 text-success"></i> {% trans 'Yes' %}
+        {% else %}
+          <i class="fa-regular fa-circle-xmark mx-1 text-danger"></i> {% trans 'No' %}
         {% endif %}
       </td>
 

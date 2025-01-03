@@ -67,6 +67,18 @@ class UserModel(TimeStampedModel, AbstractUser):
         default=UserTypeChoices.HOLDER
     )
 
+    citizenship_number = models.CharField(
+        _('Citizenship Number'),
+        max_length=20,
+        blank=True,
+        null=True
+    )
+
+    is_verified_holder = models.BooleanField(
+        _('Verified Holder'),
+        default=False
+    )
+
     def __str__(self) -> str:
         return f"{self.get_full_name()} ({self.username})"
 

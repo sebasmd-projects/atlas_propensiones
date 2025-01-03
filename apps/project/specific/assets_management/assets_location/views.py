@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db import IntegrityError
 from django.http import JsonResponse
 from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
@@ -97,6 +98,20 @@ class AssetLocationCreateView(AssetLocationMixin, CreateView):
     form_class = AssetLocationModelForm
     template_name = 'dashboard/pages/assets_management/asset_location/add_asset_location.html'
     success_url = reverse_lazy('assets:holder_index')
+
+    def form_valid(self, form):
+        try:
+            return super().form_valid(form)
+        except IntegrityError:
+            # Agregar un error no relacionado a un campo
+            form.add_error(None, _("A location with the same details already exists."))
+            return self.form_invalid(form)
+
+    def get_form_kwargs(self):
+        kwargs = super().get_form_kwargs()
+        # Pasar el usuario para la validación
+        kwargs['user'] = self.request.user
+        return kwargs
 
 
 class AssetUpdateView(AssetLocationMixin, UpdateView):

@@ -16,6 +16,7 @@
         </a>
     </div>
 
+    {% if request.user.is_verified_holder %}
     <div class="col-md-4 mb-4">
         <a class="card lift h-100" href="{% url 'assets_location:add_asset_location' %}">
             <div class="card-body d-flex justify-content-center flex-column">
@@ -30,6 +31,7 @@
             </div>
         </a>
     </div>
+    {% endif %}
 
     <div class="col-md-4 mb-4">
         <a class="card lift h-100" href="https://wa.me/573183280176?text=Necesito soporte con la plataforma Atlas, mi usuario es {{ request.user.username }}" target="_blank"

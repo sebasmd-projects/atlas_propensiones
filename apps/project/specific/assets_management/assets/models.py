@@ -143,7 +143,7 @@ class AssetModel(TimeStampedModel):
         blank=True,
         null=True
     )
-    
+
     en_description = models.TextField(
         _("description (EN)"),
         blank=True,
@@ -156,7 +156,7 @@ class AssetModel(TimeStampedModel):
         blank=True,
         null=True
     )
-    
+
     en_observations = models.TextField(
         _("observations (EN)"),
         default="",
@@ -195,6 +195,88 @@ class AssetModel(TimeStampedModel):
         verbose_name_plural = _("3. Assets")
         ordering = ["default_order", "-created"]
         unique_together = ['asset_name', 'category']
+
+
+class PreRegistrationAssetModel(TimeStampedModel):
+    class AssetNamesChoices(models.TextChoices):
+        ZIMBAWES = "ZIMBAWES", _("Zimbawes")
+        EXOTICS = "EXOTICS", _("Exotics")
+        GERMAN_PARCHMENTS = 'GERMAN PARCHMENTS', _("German Parchments")
+        GERMAN = 'GERMAN', _("German")
+        DRAGONS = 'DRAGONS', _("Dragons")
+        MICRO_INGOTS = 'MICRO INGOTS', _("Micro Ingots")
+        DINARS = 'DINARS', _("Dinars")
+        ONE_MILLION_DOLLAR_BILLS = 'ONE MILLION DOLLAR BILLS', _(
+            "One Million Dollar Bills")
+        AGROCHEQUES = 'AGROCHEQUES', _("Agrocheques")
+        SUPER_PECHILES = 'SUPER PECHILES', _("Super Pechiles")
+        COINS = 'COINS', _("Coins")
+        LION_HEADS = 'LION HEADS', _("Lion Heads")
+        SHANGHAI_BANKNOTES = 'SHANGHAI BANKNOTES', _("Shanghai Banknotes")
+        BLACK_DRAGONS = 'BLACK DRAGONS', _("Black Dragons")
+        BLACK_EAGLES = 'BLACK EAGLES', _("Black Eagles")
+        OTHERS = 'OTHERS', _("Others")
+
+    id = models.UUIDField(
+        'ID',
+        default=uuid.uuid4,
+        unique=True,
+        primary_key=True,
+        serialize=False,
+        editable=False
+    )
+
+    created_by = models.ForeignKey(
+        UserModel,
+        on_delete=models.SET_NULL,
+        related_name="preregistrationasset_preregistrationasset_user",
+        verbose_name=_("Created By"),
+        null=True
+    )
+
+    asset_name = models.CharField(
+        _("asset name"),
+        max_length=255,
+        choices=AssetNamesChoices.choices,
+        default=AssetNamesChoices.OTHERS
+    )
+
+    has_asset = models.BooleanField(
+        _('Has Item'),
+        default=False
+    )
+
+    es_description = models.TextField(
+        _("description (ES)"),
+        blank=True,
+        null=True
+    )
+
+    en_description = models.TextField(
+        _("description (EN)"),
+        blank=True,
+        null=True
+    )
+
+    es_observations = models.TextField(
+        _("observations (ES)"),
+        default="",
+        blank=True,
+        null=True
+    )
+
+    en_observations = models.TextField(
+        _("observations (EN)"),
+        default="",
+        blank=True,
+        null=True
+    )
+
+    class Meta:
+        db_table = "apps_assets_preregistrationasset"
+        verbose_name = _("4. Pre-Registration Asset")
+        verbose_name_plural = _("4. Pre-Registration Assets")
+        ordering = ["default_order", "-created"]
 
 
 post_delete.connect(
