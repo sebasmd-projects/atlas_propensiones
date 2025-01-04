@@ -47,10 +47,17 @@
                             </div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            {{ form.description|add_attrs:"class=form-control" }}
-                            <label for="id_description">{% trans 'Description' %}</label>
-                        </div>
+                        {% if LANGUAGE_CODE == "es" %}
+                            <div class="form-floating mb-3">
+                                {{ form.description_es|add_attrs:"class=form-control" }}
+                                <label for="id_description_es">{% trans 'Description (ES)' %}</label>
+                            </div>
+                        {% else %}
+                            <div class="form-floating mb-3">
+                                {{ form.description_en|add_attrs:"class=form-control" }}
+                                <label for="id_description_en">{% trans 'Description (EN)' %}</label>
+                            </div>
+                        {% endif %}
 
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-outline-success">
