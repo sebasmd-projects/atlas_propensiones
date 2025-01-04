@@ -55,7 +55,6 @@
                 </nav>
             </div>
 
-
             <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseApps" aria-expanded="false" aria-controls="collapseApps">
                 <div class="nav-link-icon"><i data-feather="globe"></i></div>
                 {% trans 'Documents' %}
@@ -70,6 +69,7 @@
             </div>
 
             {% if request.user.user_type in 'HRI' %}
+                {% if request.user.is_verified_holder %}
                 <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseAssets" aria-expanded="false" aria-controls="collapseAssets">
                     <div class="nav-link-icon"><i data-feather="box"></i></div>
                     {% trans 'Assets' %}
@@ -81,6 +81,7 @@
                         <a class="nav-link" href="{% url 'assets_location:add_asset_location' %}">{% trans 'Add Asset' %}</a>
                     </nav>
                 </div>
+                {% endif %}
             {% endif %}
         </div>
     </div>
