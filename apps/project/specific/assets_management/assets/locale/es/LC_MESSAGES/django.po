@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-03 18:03-0500\n"
+"POT-Creation-Date: 2025-01-04 16:15-0500\n"
 "PO-Revision-Date: 2025-01-03 19:13-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -222,12 +222,10 @@ msgid "Created By"
 msgstr "Creado por"
 
 #: .\apps\project\specific\assets_management\assets\models.py:238
-#| msgid "asset (es)"
 msgid "asset name"
 msgstr "Nombre del Activo"
 
 #: .\apps\project\specific\assets_management\assets\models.py:245
-#| msgid "Has Image"
 msgid "Has Item"
 msgstr "Tiene el Activo"
 

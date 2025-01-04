@@ -8,7 +8,7 @@ class UnicodeNameValidator(validators.RegexValidator):
     regex = r'^[A-Za-z\sÀ-ÿ]{3,}$'
     message = _(
         "Please enter a valid name. This value can contain only letters, "
-        "min lenght: 3"
+        "min lenght: 3."
     )
     flags = 0
 
@@ -17,7 +17,7 @@ class UnicodeLastNameValidator(validators.RegexValidator):
     regex = r'^[A-Za-z\sÀ-ÿ]{3,}$'
     message = _(
         "Please enter a valid last name. This value can contain only letters, "
-        "min lenght: 3"
+        "min lenght: 3."
     )
     flags = 0
     
@@ -27,7 +27,7 @@ class UnicodeUsernameValidator(validators.RegexValidator):
     message = _(
         "Please enter a valid username. This value can contain only letters, "
         "numbers and this characters /./+/-/_"
-        "min lenght: 4"
+        "min lenght: 4; no spaces."
     )
     flags = 0
     
