@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-04 16:15-0500\n"
+"POT-Creation-Date: 2025-01-06 15:28-0500\n"
 "PO-Revision-Date: 2025-01-04 16:18-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -18,22 +18,29 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\project\specific\documents\certificates\admin.py:41
-#: .\apps\project\specific\documents\certificates\apps.py:8
-#: .\apps\project\specific\documents\certificates\models.py:140
-msgid "Certificate"
-msgstr "Certificado"
+#: .\apps\project\specific\documents\certificates\admin.py:21
+#: .\apps\project\specific\documents\certificates\models.py:30
+msgid "Certificate Type"
+msgstr "Tipo de Certificado"
 
-#: .\apps\project\specific\documents\certificates\admin.py:53
+#: .\apps\project\specific\documents\certificates\admin.py:24
+#: .\apps\project\specific\documents\certificates\admin.py:80
 msgid "Dates"
 msgstr "Fechas"
 
-#: .\apps\project\specific\documents\certificates\admin.py:57
+#: .\apps\project\specific\documents\certificates\admin.py:28
+#: .\apps\project\specific\documents\certificates\admin.py:84
 msgid "Priority"
 msgstr "Prioridad"
 
+#: .\apps\project\specific\documents\certificates\admin.py:68
+#: .\apps\project\specific\documents\certificates\apps.py:8
+#: .\apps\project\specific\documents\certificates\models.py:143
+msgid "Certificate"
+msgstr "Certificado"
+
 #: .\apps\project\specific\documents\certificates\apps.py:9
-#: .\apps\project\specific\documents\certificates\models.py:141
+#: .\apps\project\specific\documents\certificates\models.py:144
 msgid "Certificates"
 msgstr "Certificados"
 
@@ -54,101 +61,93 @@ msgid "Sovereign Purchase"
 msgstr "Compra Soberana"
 
 #: .\apps\project\specific\documents\certificates\models.py:20
-#| msgid "Names"
 msgid "Name"
 msgstr "Nombres"
 
-#: .\apps\project\specific\documents\certificates\models.py:27
-#| msgid "Certificate"
-msgid "Certificate Type"
-msgstr "Tipo de Certificado"
-
-#: .\apps\project\specific\documents\certificates\models.py:28
-#| msgid "Certificates"
+#: .\apps\project\specific\documents\certificates\models.py:31
 msgid "Certificate Types"
 msgstr "Tipos de Certificados"
 
-#: .\apps\project\specific\documents\certificates\models.py:34
+#: .\apps\project\specific\documents\certificates\models.py:37
 msgid "Citizen ID (CC)"
 msgstr "Cédula de Ciudadanía (CC)"
 
-#: .\apps\project\specific\documents\certificates\models.py:35
+#: .\apps\project\specific\documents\certificates\models.py:38
 msgid "Foreigner ID (CE)"
 msgstr "Cédula de Extranjería (CE)"
 
-#: .\apps\project\specific\documents\certificates\models.py:36
+#: .\apps\project\specific\documents\certificates\models.py:39
 msgid "Special Residence Permit (PPT)"
 msgstr "Permiso Especial de Permanencia (PPT)"
 
-#: .\apps\project\specific\documents\certificates\models.py:37
+#: .\apps\project\specific\documents\certificates\models.py:40
 msgid "Identity Card (TI)"
 msgstr "Tarjeta de Identidad (TI)"
 
-#: .\apps\project\specific\documents\certificates\models.py:38
+#: .\apps\project\specific\documents\certificates\models.py:41
 msgid "Passport (PA)"
 msgstr "Pasaporte (PA)"
 
-#: .\apps\project\specific\documents\certificates\models.py:39
+#: .\apps\project\specific\documents\certificates\models.py:42
 msgid "Civil Registry (RC)"
 msgstr "Registro Civil (RC)"
 
-#: .\apps\project\specific\documents\certificates\models.py:40
+#: .\apps\project\specific\documents\certificates\models.py:43
 msgid "Tax Identification Number (NIT)"
 msgstr "Número de Identificación Tributaria (NIT)"
 
-#: .\apps\project\specific\documents\certificates\models.py:41
+#: .\apps\project\specific\documents\certificates\models.py:44
 msgid "Single Tax Registry (RUT)"
 msgstr "Registro Único Tributario (RUT)"
 
-#: .\apps\project\specific\documents\certificates\models.py:42
+#: .\apps\project\specific\documents\certificates\models.py:45
 msgid "Diplomatic ID Card (CD)"
 msgstr "Carné Diplomático (CD)"
 
-#: .\apps\project\specific\documents\certificates\models.py:56
+#: .\apps\project\specific\documents\certificates\models.py:59
 msgid "User"
 msgstr "Usuario"
 
-#: .\apps\project\specific\documents\certificates\models.py:63
+#: .\apps\project\specific\documents\certificates\models.py:66
 msgid "Names"
 msgstr "Nombres"
 
-#: .\apps\project\specific\documents\certificates\models.py:68
+#: .\apps\project\specific\documents\certificates\models.py:71
 msgid "Last name"
 msgstr "Apellido"
 
-#: .\apps\project\specific\documents\certificates\models.py:74
+#: .\apps\project\specific\documents\certificates\models.py:77
 msgid "Document type"
 msgstr "Tipo de documento"
 
-#: .\apps\project\specific\documents\certificates\models.py:81
+#: .\apps\project\specific\documents\certificates\models.py:84
 msgid "Document number"
 msgstr "Número de documento"
 
-#: .\apps\project\specific\documents\certificates\models.py:92
+#: .\apps\project\specific\documents\certificates\models.py:95
 msgid "Approved"
 msgstr "Aprobado"
 
-#: .\apps\project\specific\documents\certificates\models.py:99
+#: .\apps\project\specific\documents\certificates\models.py:102
 msgid "Approved by"
 msgstr "Aprobado por"
 
-#: .\apps\project\specific\documents\certificates\models.py:106
+#: .\apps\project\specific\documents\certificates\models.py:109
 msgid "Approval date"
 msgstr "Fecha de aprobación"
 
-#: .\apps\project\specific\documents\certificates\models.py:114
-#| msgid "Certificate"
+#: .\apps\project\specific\documents\certificates\models.py:117
 msgid "Certificate type"
 msgstr "Tipo de Certificado"
 
 #: .\apps\project\specific\documents\certificates\views.py:101
-#: .\apps\project\specific\documents\certificates\views.py:130
-#: .\apps\project\specific\documents\certificates\views.py:182
-#: .\apps\project\specific\documents\certificates\views.py:211
+#: .\apps\project\specific\documents\certificates\views.py:133
+#: .\apps\project\specific\documents\certificates\views.py:185
+#: .\apps\project\specific\documents\certificates\views.py:216
 msgid "Too many failed attempts."
 msgstr "Demasiados intentos fallidos."
 
-#: .\apps\project\specific\documents\certificates\views.py:134
-#: .\apps\project\specific\documents\certificates\views.py:215
+#: .\apps\project\specific\documents\certificates\views.py:137
+#: .\apps\project\specific\documents\certificates\views.py:220
 msgid "ID Number not found."
 msgstr "Número de identificación no encontrado."
