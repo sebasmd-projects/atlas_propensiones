@@ -149,6 +149,21 @@
                 </div>
               </div>
             </div>
+
+            <div class="col-md-12">
+              <div class="input-group mb-3">
+                <div class="form-floating">
+                  {{ form.unique_code}}
+                  <label for="register_unique_code">{% trans "Unique Code" %}</label>
+                  {% if form.unique_code.errors %}
+                    <div class="invalid-feedback d-block">
+                      {% for error in form.unique_code.errors %}
+                        <p>{{ error }}</p>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+            </div>
+
           </div>
         
           <div class="d-grid gap-2 mt-3">

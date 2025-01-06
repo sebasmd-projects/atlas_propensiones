@@ -77,11 +77,27 @@ class BaseUserForm(forms.ModelForm):
         })
     )
 
+    unique_code = forms.CharField(
+        label=_("Unique Code"),
+        required=False,
+        widget=forms.TextInput(
+            attrs={
+                "id": "register_unique_code",
+                "type": "text",
+                "placeholder": _("Unique Code"),
+                "class": "form-control"
+            }
+        )
+    )
+
     def clean(self):
         cleaned_data = super().clean()
         password = cleaned_data.get("password")
         confirm_password = cleaned_data.get("confirm_password")
 
+        if cleaned_data['unique_code'] != 'TempCode*300':
+            self.add_error("unique_code", _("Invalid Unique Code"))
+        
         if password and confirm_password:
             validate_password(password)
             if password != confirm_password:
