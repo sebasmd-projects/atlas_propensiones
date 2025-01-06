@@ -7,6 +7,8 @@ from apps.project.common.users.validators import (UnicodeLastNameValidator,
                                                   UnicodeNameValidator,
                                                   UnicodeUsernameValidator)
 
+from django.conf import settings
+
 USER_TXT = _('User')
 EMAIL_TXT = _('Email')
 PASSWORD_TXT = _('Password')
@@ -95,7 +97,7 @@ class BaseUserForm(forms.ModelForm):
         password = cleaned_data.get("password")
         confirm_password = cleaned_data.get("confirm_password")
 
-        if cleaned_data['unique_code'] != 'TempCode*300':
+        if cleaned_data['unique_code'] != settings.ATLAS_REGISTER_UNIQUE_CODE:
             self.add_error("unique_code", _("Invalid Unique Code"))
         
         if password and confirm_password:

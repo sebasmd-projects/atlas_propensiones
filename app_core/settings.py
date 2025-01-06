@@ -235,6 +235,8 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
+ATLAS_REGISTER_UNIQUE_CODE = os.getenv('ATLAS_REGISTER_UNIQUE_CODE')
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
