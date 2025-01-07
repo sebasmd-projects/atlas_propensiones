@@ -11,6 +11,31 @@ from .models import (AddressModel, CityModel, CountryModel, StateModel,
 @admin.register(UserModel)
 class UserModelAdmin(UserAdmin, GeneralAdminModel):
 
+    def get_queryset(self, request):
+        """
+        Muestra solo al usuario autenticado su propio registro si no es superusuario.
+        """
+        qs = super().get_queryset(request)
+        if request.user.is_superuser:
+            return qs
+        return qs.filter(id=request.user.id)
+
+    def has_change_permission(self, request, obj=None):
+        """
+        Permite al usuario cambiar solo su propio registro.
+        """
+        if obj is None:  # Para las vistas generales de la lista
+            return True
+        return obj == request.user or request.user.is_superuser
+
+    def has_view_permission(self, request, obj=None):
+        """
+        Permite al usuario ver solo su propio registro.
+        """
+        if obj is None:  # Para las vistas generales de la lista
+            return True
+        return obj == request.user or request.user.is_superuser
+
     search_fields = (
         'id',
         'username',
@@ -113,6 +138,24 @@ class UserModelAdmin(UserAdmin, GeneralAdminModel):
             }
         )
     )
+
+    def get_fieldsets(self, request, obj=None):
+        """
+        Restringe los campos visibles en el formulario de edición según el usuario.
+        """
+        fieldsets = super().get_fieldsets(request, obj)
+        if not request.user.is_superuser:
+            # Elimina campos sensibles o irrelevantes para usuarios normales
+            restricted_fieldsets = [
+                (
+                    name, {
+                        'fields': [field for field in fields['fields'] if field != 'is_staff']
+                    }
+                )
+                for name, fields in fieldsets
+            ]
+            return restricted_fieldsets
+        return fieldsets
 
     def get_groups(self, obj):
         return ", ".join([group.name for group in obj.groups.all()])
