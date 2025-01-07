@@ -108,19 +108,21 @@
                 
               <!-- Dashboard Tab Pane 2 -->
               <div class="tab-pane fade" id="offers" role="tabpanel" aria-labelledby="offers-pill">
-                {% if not offers %}
-                  <div class="alert alert-danger text-center" role="alert">
-                    {% blocktrans %}
-                      You have no assets registered. Register an asset to see available positions.
-                    {% endblocktrans %}
-                    <a href="{% url 'assets_location:add_asset_location' %}" class="btn btn-outline-danger my-3">
-                      {% trans 'Add New Asset' %} <i class="mx-1 fa-solid fa-folder-plus"></i>
-                    </a>
-                  </div>
+                {% if request.user.is_verified_holder %}
+                  {% if not offers %}
+                    <div class="alert alert-danger text-center" role="alert">
+                      {% blocktrans %}
+                        You have no assets registered. Register an asset to see available positions.
+                      {% endblocktrans %}
+                      <a href="{% url 'assets_location:add_asset_location' %}" class="btn btn-outline-danger my-3">
+                        {% trans 'Add New Asset' %} <i class="mx-1 fa-solid fa-folder-plus"></i>
+                      </a>
+                    </div>
 
-                  <div class="my-2">
-                    {% trans 'Total current offers:' %} {{ total_offers }}
-                  </div>
+                    <div class="my-2">
+                      {% trans 'Total current offers:' %} {{ total_offers }}
+                    </div>
+                  {% endif %}
                 {% endif %}
 
                 {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/offers_tab_table.html' %}
