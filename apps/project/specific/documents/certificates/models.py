@@ -121,7 +121,8 @@ class CertificateModel(TimeStampedModel):
         verbose_name=_('Certificate type'),
         related_name='certificates_certificate_certificate_type',
         blank=True,
-        null=True
+        null=True,
+        default=CertificateTypesModel.CertificateTypeChoices.IDONEITY
     )
 
     def masked_document_number(self):
