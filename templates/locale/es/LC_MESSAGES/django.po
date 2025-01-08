@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-06 15:28-0500\n"
-"PO-Revision-Date: 2025-01-06 15:29-0500\n"
+"POT-Creation-Date: 2025-01-07 21:49-0500\n"
+"PO-Revision-Date: 2025-01-07 21:52-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
@@ -601,7 +601,6 @@ msgstr "Documentos"
 
 #: .\templates\core\partials\header.html:48
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:11
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:11
 msgid "Suitability Verification"
 msgstr "Verificación de Idoneidad"
 
@@ -686,7 +685,7 @@ msgid "Citizenship Number"
 msgstr "Cédula"
 
 #: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:5
-#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:118
+#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:119
 #: .\templates\dashboard\pages\assets_management\partials\header_cards.html:26
 msgid "Add New Asset"
 msgstr "Agregar Nuevo Activo"
@@ -699,17 +698,17 @@ msgstr "Agregar Nuevo Activo"
 msgid "Asset"
 msgstr "Activo"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:29
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:28
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:23
 msgid "Location"
 msgstr "Ubicación"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:32
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:31
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:26
 msgid "+ Add Location"
 msgstr "+ Agregar Ubicación"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:41
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:40
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:35
 #: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:67
 #: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:54
@@ -719,19 +718,19 @@ msgstr "+ Agregar Ubicación"
 msgid "Quantity Type"
 msgstr "Tipo de Cantidad"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:48
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:47
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:42
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:10
 msgid "Amount"
 msgstr "Cantidad"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:55
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:54
 #: .\templates\dashboard\pages\assets_management\asset_location\includes\asset_and_category.html:10
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\assets_tab_pre_list_th_tf.html:6
 msgid "Observations"
 msgstr "Observaciones"
 
-#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:67
+#: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:66
 #: .\templates\dashboard\partials\side_nav.html:82
 msgid "Add Asset"
 msgstr "Agregar Activo"
@@ -900,17 +899,21 @@ msgstr "Mis Activos Históricos"
 msgid "Assets in Demand (Offers)"
 msgstr "Activos en Demanda (Ofertas)"
 
-#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:114
+#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:115
+#| msgid ""
+#| "\n"
+#| "                      You have no assets registered. Register an asset to see available positions.\n"
+#| "                    "
 msgid ""
 "\n"
-"                      You have no assets registered. Register an asset to see available positions.\n"
-"                    "
+"                        You have no assets registered. Register an asset to see available positions.\n"
+"                      "
 msgstr ""
 "\n"
-"                      No tiene activos registrados. Registre un activo para ver las posiciones disponibles.\n"
+"No tiene activos registrados o No hay posturas actualmente. Registre un activo para ver las posiciones disponibles.\n"
 "                    "
 
-#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:123
+#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:124
 msgid "Total current offers:"
 msgstr "Total de ofertas actuales:"
 
@@ -1070,13 +1073,11 @@ msgstr "No Aprobado"
 
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:39
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:48
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:39
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:48
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:49
 msgid "with document number"
 msgstr "con número de documento"
 
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:40
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:40
 msgid ""
 "\n"
 "                                qualifies as a beneficiary, who has undergone a security screening and accreditation of judicial records in accordance with current regulations, criminal reports on social media, and Interpol databases. Consequently, they do <strong>NOT</strong> have any judicial or disciplinary records from the certifying entities authorized by international public consultation databases, which would affect their suitability.\n"
@@ -1089,12 +1090,12 @@ msgstr ""
 "                                Para constancia se firma en "
 
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:43
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:43
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:44
 msgid "in Quindío, Republic of Colombia."
 msgstr "en Quindío, República de Colombia."
 
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:49
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:49
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:50
 msgid ""
 "\n"
 "                                we inform you that, after the evaluation conducted, your security study <span class=\"text-danger\">HAS NOT BEEN APPROVED</span> due to not meeting the suitability requirements according to the current security regulations.\n"
@@ -1105,7 +1106,7 @@ msgstr ""
 "                            "
 
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:56
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:56
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:57
 msgid ""
 "We remind you that, in accordance with the provisions of the Habeas Data "
 "Law, all your personal data has been treated with due confidentiality and is"
@@ -1121,7 +1122,7 @@ msgstr ""
 "normativa vigente de protección de datos."
 
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:60
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:60
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:61
 msgid "Status:"
 msgstr "Estado:"
 
@@ -1146,6 +1147,29 @@ msgstr "minutos."
 #: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_input.html:62
 msgid "Verify"
 msgstr "Verificar"
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:11
+#| msgid "Suitability Verification"
+msgid "Sovereign Verification"
+msgstr "Idoneidad Para La Compra Soberana "
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:38
+#, python-format
+msgid ""
+"\n"
+"                                <strong>%(name)s %(last_name)s</strong> with document <strong>%(document_type)s</strong> and number <strong>%(masked_document_number)s</strong>\n"
+"                                was duly registered to participate in the sovereign purchase of the United States after the corresponding verification,\n"
+"                                it is declared that it fully complied with the requirements demanded by the process and demonstrated that it was suitable to belong to this operation.\n"
+"                                <br/>\n"
+"                                For the record, this is signed on\n"
+"                            "
+msgstr ""
+"\n"
+"<strong>%(name)s %(last_name)s</strong> con el documento <strong>%(document_type)s</strong> número <strong>%(masked_document_number)s</strong>\n"
+"fue debidamente registrado para participar en la compra soberana de los Estados Unidos tras la verificación correspondiente.\n"
+"Se declara que cumplió plenamente con los requisitos exigidos por el proceso y demostró ser apto para formar parte de esta operación.\n"
+"<br/>\n"
+"Para constancia, se firma en"
 
 #: .\templates\dashboard\pages\documents\code_gen\code_form.html:6
 #: .\templates\dashboard\pages\documents\code_gen\code_form.html:33

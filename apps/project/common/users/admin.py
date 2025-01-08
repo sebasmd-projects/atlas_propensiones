@@ -51,6 +51,7 @@ class UserModelAdmin(UserAdmin, GeneralAdminModel):
         'is_staff',
         'is_active',
         'is_superuser',
+        'is_verified_holder',
         "user_type",
         'get_groups',
     )

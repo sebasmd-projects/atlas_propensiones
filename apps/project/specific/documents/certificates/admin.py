@@ -5,7 +5,34 @@ from django.utils.translation import gettext_lazy as _
 
 from apps.common.utils.admin import GeneralAdminModel
 
-from .models import CertificateModel
+from .models import CertificateModel, CertificateTypesModel
+
+
+class CertificateTypesModelAdmin(GeneralAdminModel):
+    list_display = (
+        'name',
+        'created',
+        'updated'
+    )
+    search_fields = (
+        'name',
+    )
+    fieldsets = (
+        (_('Certificate Type'), {'fields': (
+            'name',
+        )}),
+        (_('Dates'), {'fields': (
+            'created',
+            'updated'
+        )}),
+        (_('Priority'), {'fields': (
+            'default_order',
+        )}),
+    )
+    readonly_fields = (
+        'created',
+        'updated'
+    )
 
 
 class CertificateAdmin(GeneralAdminModel):
@@ -13,6 +40,7 @@ class CertificateAdmin(GeneralAdminModel):
         'user',
         'name',
         'last_name',
+        'certificate_type',
         'document_type',
         'document_number',
         'approved',
@@ -30,12 +58,18 @@ class CertificateAdmin(GeneralAdminModel):
         'document_number',
         'document_number_hash',
     )
-    list_filter = ("is_active", "approved", "document_type")
+    list_filter = (
+        "is_active",
+        "approved",
+        "document_type",
+        'certificate_type',
+    )
     fieldsets = (
         (_('Certificate'), {'fields': (
             'user',
             'name',
             'last_name',
+            'certificate_type',
             'document_type',
             'document_number',
             'document_number_hash',
@@ -63,3 +97,4 @@ class CertificateAdmin(GeneralAdminModel):
 
 
 admin.site.register(CertificateModel, CertificateAdmin)
+admin.site.register(CertificateTypesModel, CertificateTypesModelAdmin)

@@ -14,13 +14,12 @@
             <div class="col-6">
                 <div class="mb-3">
                     <label for="id_asset">{% trans 'Asset' %}</label>
-                    <select id="id_asset" name="asset" class="form-select">
-                        {% for asset in assets %}
-                            <option value="{{ asset.id }}">
-                                {{ asset.display_name }} - ({{ asset.display_category }})
-                            </option>
-                        {% endfor %}
-                    </select>
+                    {{ form.asset|add_attrs:"class=form-select" }}
+                    {% if form.asset.errors %}
+                        <div class="text-danger mt-2">
+                            {{ form.asset.errors }}
+                        </div>
+                    {% endif %}
                 </div>
             </div>
 
@@ -68,4 +67,9 @@
             </button>
         </div>
     </form>
+{% endblock %}
+
+{% block body_custom_js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{ form.media.js }}
 {% endblock %}

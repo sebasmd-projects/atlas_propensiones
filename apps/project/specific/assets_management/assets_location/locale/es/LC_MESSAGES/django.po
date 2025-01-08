@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-04 16:15-0500\n"
+"POT-Creation-Date: 2025-01-07 21:49-0500\n"
 "PO-Revision-Date: 2025-01-03 19:15-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -57,17 +57,17 @@ msgstr "Campo de Usuario"
 msgid "Optional Fields"
 msgstr "Campos Opcionales"
 
-#: .\apps\project\specific\assets_management\assets_location\forms.py:42
-#: .\apps\project\specific\assets_management\assets_location\forms.py:93
+#: .\apps\project\specific\assets_management\assets_location\forms.py:54
+#: .\apps\project\specific\assets_management\assets_location\forms.py:107
 msgid "Enter any relevant notes or details here (Spanish)"
 msgstr "Introduzca aquí cualquier nota o detalle relevante"
 
-#: .\apps\project\specific\assets_management\assets_location\forms.py:47
-#: .\apps\project\specific\assets_management\assets_location\forms.py:98
+#: .\apps\project\specific\assets_management\assets_location\forms.py:59
+#: .\apps\project\specific\assets_management\assets_location\forms.py:112
 msgid "Enter any relevant notes or details here (English)"
 msgstr "Introduzca aquí cualquier nota o detalle relevante (en inglés)"
 
-#: .\apps\project\specific\assets_management\assets_location\forms.py:67
+#: .\apps\project\specific\assets_management\assets_location\forms.py:79
 msgid "A similar asset location already exists."
 msgstr "Ya existe una ubicación de activos similar."
 

@@ -18,3 +18,17 @@ class IDNumberForm(forms.Form):
         label=_('Document Number'),
         max_length=64
     )
+    
+class IDNumberMinForm(forms.Form):
+
+    document_type = forms.ChoiceField(
+        label=_("Document Type"),
+        choices=CertificateModel.DocumentTypeChoicesMin.choices,
+        initial=CertificateModel.DocumentTypeChoicesMin.PA
+    )
+
+    document_number = forms.CharField(
+        label=_('Document Number'),
+        max_length=64
+    )
+

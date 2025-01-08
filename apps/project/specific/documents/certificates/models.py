@@ -11,6 +11,27 @@ from apps.common.utils.models import TimeStampedModel
 from apps.project.common.users.models import UserModel
 
 
+class CertificateTypesModel(TimeStampedModel):
+    class CertificateTypeChoices(models.TextChoices):
+        IDONEITY = 'IDONEITY', _('Idoneity')
+        SOVEREIGN_PURCHASE = 'SOVEREIGN_PURCHASE', _('Sovereign Purchase')
+
+    name = models.CharField(
+        _('Name'),
+        max_length=100,
+        choices=CertificateTypeChoices.choices,
+    )
+    
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = "apps_certificates_certificate_types"
+        verbose_name = _("Certificate Type")
+        verbose_name_plural = _("Certificate Types")
+        ordering = ["default_order", "-created"]
+
+
 class CertificateModel(TimeStampedModel):
     class DocumentTypeChoices(models.TextChoices):
         CC = 'CC', _('Citizen ID (CC)')
@@ -22,6 +43,10 @@ class CertificateModel(TimeStampedModel):
         NIT = 'NIT', _('Tax Identification Number (NIT)')
         RUT = 'RUT', _('Single Tax Registry (RUT)')
         CD = 'CD', _('Diplomatic ID Card (CD)')
+        
+    class DocumentTypeChoicesMin(models.TextChoices):
+        PA = 'PA', _('Passport (PA)')
+        CC = 'CC', _('Citizen ID (CC)')
 
     id = models.UUIDField(
         'ID',
@@ -86,6 +111,15 @@ class CertificateModel(TimeStampedModel):
 
     approval_date = models.DateField(
         _('Approval date'),
+        blank=True,
+        null=True
+    )
+
+    certificate_type = models.ForeignKey(
+        CertificateTypesModel,
+        on_delete=models.SET_NULL,
+        verbose_name=_('Certificate type'),
+        related_name='certificates_certificate_certificate_type',
         blank=True,
         null=True
     )

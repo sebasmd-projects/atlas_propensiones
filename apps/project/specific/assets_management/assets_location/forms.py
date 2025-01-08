@@ -16,6 +16,18 @@ class CountryWidget(s2forms.ModelSelect2Widget):
         attrs['data-minimum-input-length'] = 2
         return attrs
 
+class AssetWidget(s2forms.ModelSelect2Widget):
+    search_fields = [
+        "asset_name__es_name__icontains",
+        "asset_name__en_name__icontains",
+    ]
+
+    def build_attrs(self, base_attrs, extra_attrs=None):
+        attrs = super().build_attrs(base_attrs, extra_attrs)
+        attrs['data-minimum-input-length'] = 0  # Sin longitud mínima para mostrar resultados
+        return attrs
+    
+
 
 class LocationModelForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
@@ -78,7 +90,9 @@ class AssetLocationModelForm(forms.ModelForm):
             'observations_es',
             'observations_en'
         ]
-
+        widgets = {
+            'asset': AssetWidget,
+        }
 
 class AssetUpdateLocationModelForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):

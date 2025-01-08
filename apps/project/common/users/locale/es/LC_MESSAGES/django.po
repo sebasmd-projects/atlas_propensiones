@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-06 15:28-0500\n"
+"POT-Creation-Date: 2025-01-07 21:49-0500\n"
 "PO-Revision-Date: 2025-01-04 16:17-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -18,31 +18,31 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\project\common\users\admin.py:64
+#: .\apps\project\common\users\admin.py:90
 msgid "User Information"
 msgstr "Información del Usuario"
 
-#: .\apps\project\common\users\admin.py:73
+#: .\apps\project\common\users\admin.py:99
 msgid "Personal Information"
 msgstr "Información Personal"
 
-#: .\apps\project\common\users\admin.py:82
+#: .\apps\project\common\users\admin.py:108
 msgid "Permissions"
 msgstr "Permisos"
 
-#: .\apps\project\common\users\admin.py:94
+#: .\apps\project\common\users\admin.py:120
 msgid "Dates"
 msgstr "Fechas"
 
-#: .\apps\project\common\users\admin.py:106
+#: .\apps\project\common\users\admin.py:132
 msgid "Priority"
 msgstr "Prioridad"
 
-#: .\apps\project\common\users\admin.py:123
+#: .\apps\project\common\users\admin.py:167
 msgid "Groups"
 msgstr "Grupos"
 
-#: .\apps\project\common\users\admin.py:125
+#: .\apps\project\common\users\admin.py:169
 msgid "Names"
 msgstr "Nombres"
 

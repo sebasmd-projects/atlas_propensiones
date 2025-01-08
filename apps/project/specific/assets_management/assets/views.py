@@ -1,7 +1,5 @@
 from django.views.generic import TemplateView
 
-from apps.project.specific.assets_management.assets.models import \
-    PreRegistrationAssetModel
 from apps.project.specific.assets_management.assets_location.models import (
     AssetLocationModel, LocationModel)
 from apps.project.specific.assets_management.assets_location.views import \

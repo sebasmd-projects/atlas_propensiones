@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-06 15:28-0500\n"
+"POT-Creation-Date: 2025-01-07 21:49-0500\n"
 "PO-Revision-Date: 2025-01-04 16:18-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -35,20 +35,22 @@ msgstr "Prioridad"
 
 #: .\apps\project\specific\documents\certificates\admin.py:68
 #: .\apps\project\specific\documents\certificates\apps.py:8
-#: .\apps\project\specific\documents\certificates\models.py:143
+#: .\apps\project\specific\documents\certificates\models.py:147
 msgid "Certificate"
 msgstr "Certificado"
 
 #: .\apps\project\specific\documents\certificates\apps.py:9
-#: .\apps\project\specific\documents\certificates\models.py:144
+#: .\apps\project\specific\documents\certificates\models.py:148
 msgid "Certificates"
 msgstr "Certificados"
 
 #: .\apps\project\specific\documents\certificates\forms.py:12
+#: .\apps\project\specific\documents\certificates\forms.py:25
 msgid "Document Type"
 msgstr "Tipo de Documento"
 
 #: .\apps\project\specific\documents\certificates\forms.py:18
+#: .\apps\project\specific\documents\certificates\forms.py:31
 msgid "Document Number"
 msgstr "Número de Documento"
 
@@ -69,6 +71,7 @@ msgid "Certificate Types"
 msgstr "Tipos de Certificados"
 
 #: .\apps\project\specific\documents\certificates\models.py:37
+#: .\apps\project\specific\documents\certificates\models.py:49
 msgid "Citizen ID (CC)"
 msgstr "Cédula de Ciudadanía (CC)"
 
@@ -85,6 +88,7 @@ msgid "Identity Card (TI)"
 msgstr "Tarjeta de Identidad (TI)"
 
 #: .\apps\project\specific\documents\certificates\models.py:41
+#: .\apps\project\specific\documents\certificates\models.py:48
 msgid "Passport (PA)"
 msgstr "Pasaporte (PA)"
 
@@ -104,39 +108,39 @@ msgstr "Registro Único Tributario (RUT)"
 msgid "Diplomatic ID Card (CD)"
 msgstr "Carné Diplomático (CD)"
 
-#: .\apps\project\specific\documents\certificates\models.py:59
+#: .\apps\project\specific\documents\certificates\models.py:63
 msgid "User"
 msgstr "Usuario"
 
-#: .\apps\project\specific\documents\certificates\models.py:66
+#: .\apps\project\specific\documents\certificates\models.py:70
 msgid "Names"
 msgstr "Nombres"
 
-#: .\apps\project\specific\documents\certificates\models.py:71
+#: .\apps\project\specific\documents\certificates\models.py:75
 msgid "Last name"
 msgstr "Apellido"
 
-#: .\apps\project\specific\documents\certificates\models.py:77
+#: .\apps\project\specific\documents\certificates\models.py:81
 msgid "Document type"
 msgstr "Tipo de documento"
 
-#: .\apps\project\specific\documents\certificates\models.py:84
+#: .\apps\project\specific\documents\certificates\models.py:88
 msgid "Document number"
 msgstr "Número de documento"
 
-#: .\apps\project\specific\documents\certificates\models.py:95
+#: .\apps\project\specific\documents\certificates\models.py:99
 msgid "Approved"
 msgstr "Aprobado"
 
-#: .\apps\project\specific\documents\certificates\models.py:102
+#: .\apps\project\specific\documents\certificates\models.py:106
 msgid "Approved by"
 msgstr "Aprobado por"
 
-#: .\apps\project\specific\documents\certificates\models.py:109
+#: .\apps\project\specific\documents\certificates\models.py:113
 msgid "Approval date"
 msgstr "Fecha de aprobación"
 
-#: .\apps\project\specific\documents\certificates\models.py:117
+#: .\apps\project\specific\documents\certificates\models.py:121
 msgid "Certificate type"
 msgstr "Tipo de Certificado"
 
