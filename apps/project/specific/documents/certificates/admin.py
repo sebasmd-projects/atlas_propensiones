@@ -8,7 +8,29 @@ from apps.common.utils.admin import GeneralAdminModel
 from .models import CertificateModel, CertificateTypesModel
 
 
+def action_set_idoneity(modeladmin, request, queryset):
+    """
+    Acción para asignar el tipo de certificado 'IDONEITY' a todos
+    los registros seleccionados en el admin.
+    """
+    try:
+        tipo_idoneity = CertificateTypesModel.objects.get(name=CertificateTypesModel.CertificateTypeChoices.IDONEITY)
+        num_actualizados = queryset.update(certificate_type=tipo_idoneity)
+        messages.success(
+            request,
+            _(f"Se actualizaron {num_actualizados} certificados a IDONEITY.")
+        )
+    except CertificateTypesModel.DoesNotExist:
+        messages.error(
+            request,
+            _("No se encontró el tipo de certificado IDONEITY.")
+        )
+
+action_set_idoneity.short_description = _("Asignar tipo de certificado 'Idoneity'")
+
+
 class CertificateTypesModelAdmin(GeneralAdminModel):
+    
     list_display = (
         'name',
         'created',
@@ -36,6 +58,8 @@ class CertificateTypesModelAdmin(GeneralAdminModel):
 
 
 class CertificateAdmin(GeneralAdminModel):
+    actions = [action_set_idoneity]
+    
     list_display = (
         'user',
         'name',

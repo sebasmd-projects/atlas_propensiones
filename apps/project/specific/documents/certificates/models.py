@@ -148,7 +148,7 @@ class CertificateModel(TimeStampedModel):
         verbose_name = _("Certificate")
         verbose_name_plural = _("Certificates")
         ordering = ["default_order", "-created"]
-        unique_together = ['document_number', 'document_type']
+        unique_together = ['document_number', 'document_type', 'certificate_type']
         permissions = [
             ('view_certificate', 'Can view certificate list'),
         ]
