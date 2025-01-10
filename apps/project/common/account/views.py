@@ -1,7 +1,9 @@
 from django.contrib.auth import logout
+from django.db import IntegrityError
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect
 from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
 from django.views.generic import TemplateView, View
 from django.views.generic.edit import FormView
 
@@ -30,14 +32,24 @@ class AtlasUserRegisterView(FormView):
         return super().dispatch(request, *args, **kwargs)
 
     def form_valid(self, form):
-        UserModel.objects.create_user(
-            username=form.cleaned_data['username'],
-            email=form.cleaned_data['email'],
-            first_name=form.cleaned_data['first_name'],
-            last_name=form.cleaned_data['last_name'],
-            password=form.cleaned_data['password'],
-            user_type=form.cleaned_data['user_type']
-        )
+        try:
+            UserModel.objects.create_user(
+                username=form.cleaned_data['username'],
+                email=form.cleaned_data['email'],
+                first_name=form.cleaned_data['first_name'],
+                last_name=form.cleaned_data['last_name'],
+                password=form.cleaned_data['password'],
+                user_type=form.cleaned_data['user_type']
+            )
+        except IntegrityError as e:
+            if "email_hash" in str(e):
+                form.add_error(
+                    "email",
+                    _("A user with this email already exists.")
+                )
+                return self.form_invalid(form)
+            raise e
+
         return super(AtlasUserRegisterView, self).form_valid(form)
 
     def form_invalid(self, form):
