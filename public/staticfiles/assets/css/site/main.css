@@ -2266,3 +2266,125 @@ section,
   border-radius: 10px; /* Bordes redondeados para un diseño más atractivo */
   display: inline-block; /* Ajusta al contenido */
 }
+
+
+/**
+* WhatsApp Chat Button
+*/
+
+/* Estilo del botón flotante de WhatsApp */
+.action-buttons .whatsapp-button {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  width: 45px;
+  height: 45px;
+  background-color: #25d366; /* Color oficial de WhatsApp */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s;
+  z-index: 1050;
+}
+
+.action-buttons .whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.action-buttons .whatsapp-button i {
+  font-size: 28px;
+  color: white;
+}
+
+/* Modal de Bootstrap estilo WhatsApp */
+.modal-whatsapp .modal-content {
+  background-color: #e9edef; /* Fondo claro como WhatsApp */
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  max-width: 400px;
+  margin: auto;
+}
+
+.modal-whatsapp .chat-header {
+  background-color: #25d366; /* Cabecera verde */
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-whatsapp .chat-header button {
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-whatsapp .chat-body {
+  padding: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.modal-whatsapp .chat-body p {
+  margin: 0 0 10px;
+}
+
+.modal-whatsapp .chat-body .chat-action {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.modal-whatsapp .chat-body .chat-action:hover {
+  background-color: #20c354;
+}
+
+/* Input para enviar mensajes */
+.modal-whatsapp .chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.modal-whatsapp .chat-footer input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.modal-whatsapp .chat-footer button {
+  background-color: #25d366;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-whatsapp .chat-footer button:hover {
+  background-color: #20c354;
+}

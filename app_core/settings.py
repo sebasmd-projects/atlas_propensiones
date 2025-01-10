@@ -70,6 +70,8 @@ THIRD_PARTY_APPS = [
     'rosetta',
     'two_factor',
     'django_select2',
+
+    'formtools',
 ]
 
 COMMON_APPS = [

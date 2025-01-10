@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 
-from .models import ContactModel
+from .models import ContactModel, ModalBannerModel
 
 
 @admin.register(ContactModel)
@@ -49,5 +49,38 @@ class ContactModelAdmin(admin.ModelAdmin):
             'classes': (
                 'collapse',
             )
+        }),
+    )
+
+
+@admin.register(ModalBannerModel)
+class ModalBannerModelAdmin(admin.ModelAdmin):
+    list_display = (
+        'title', 'is_active',
+        'created', 'updated'
+    )
+    search_fields = ('title', 'description')
+    list_filter = ('is_active',)
+    ordering = ('-created',)
+    readonly_fields = ('created', 'updated')
+    fieldsets = (
+        ('ES', {
+            'fields': (
+                'title',
+                'description',
+                'link',
+                'image_file'
+            )
+        }),
+        ('EN', {
+            'fields': (
+                'title_en',
+                'link_en',
+                'image_file_en'
+            )
+        }),
+        ('Important', {
+            'fields': ('created', 'updated', 'is_active'),
+            'classes': ('collapse',)
         }),
     )

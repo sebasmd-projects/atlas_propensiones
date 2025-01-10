@@ -9,24 +9,20 @@ from .models import CertificateModel, CertificateTypesModel
 
 
 def action_set_idoneity(modeladmin, request, queryset):
-    """
-    Acción para asignar el tipo de certificado 'IDONEITY' a todos
-    los registros seleccionados en el admin.
-    """
     try:
         tipo_idoneity = CertificateTypesModel.objects.get(name=CertificateTypesModel.CertificateTypeChoices.IDONEITY)
         num_actualizados = queryset.update(certificate_type=tipo_idoneity)
         messages.success(
             request,
-            _(f"Se actualizaron {num_actualizados} certificados a IDONEITY.")
+            _(f"Updated {num_actualizados} certificates to IDONEITY.")
         )
     except CertificateTypesModel.DoesNotExist:
         messages.error(
             request,
-            _("No se encontró el tipo de certificado IDONEITY.")
+            _("Certificate type IDONEITY not found.")
         )
 
-action_set_idoneity.short_description = _("Asignar tipo de certificado 'Idoneity'")
+action_set_idoneity.short_description = _("Assign certificate type to 'IDONEITY'")
 
 
 class CertificateTypesModelAdmin(GeneralAdminModel):

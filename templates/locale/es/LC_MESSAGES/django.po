@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-07 21:49-0500\n"
-"PO-Revision-Date: 2025-01-07 21:52-0500\n"
+"POT-Creation-Date: 2025-01-10 12:07-0500\n"
+"PO-Revision-Date: 2025-01-10 12:18-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
@@ -537,6 +537,15 @@ msgstr "Anterior"
 msgid "Next"
 msgstr "Siguiente"
 
+#: .\templates\core\partials\banner.html:28
+msgid "Close"
+msgstr "Cerrar"
+
+#: .\templates\core\partials\banner.html:30
+#: .\templates\core\partials\banner.html:32
+msgid "View more"
+msgstr "Ver más"
+
 #: .\templates\core\partials\footer.html:14
 msgid "Phone:"
 msgstr "Teléfono:"
@@ -619,6 +628,18 @@ msgstr "INICIAR SESIÓN"
 #: .\templates\core\partials\header.html:83
 msgid "REGISTER"
 msgstr "REGISTRARSE"
+
+#: .\templates\core\partials\whatsapp.html:30
+msgid "Ask us your concerns and we can help you."
+msgstr "Consúltanos tus inquietudes y te ayudaremos."
+
+#: .\templates\core\partials\whatsapp.html:32
+msgid "Talk to an adviser now"
+msgstr "Habla con un asesor ahora"
+
+#: .\templates\core\partials\whatsapp.html:37
+msgid "Write your message..."
+msgstr "Escribe tu mensaje..."
 
 #: .\templates\dashboard\account\atlas_register.html:38
 #: .\templates\dashboard\account\propensiones_register.html:28
@@ -900,10 +921,6 @@ msgid "Assets in Demand (Offers)"
 msgstr "Activos en Demanda (Ofertas)"
 
 #: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:115
-#| msgid ""
-#| "\n"
-#| "                      You have no assets registered. Register an asset to see available positions.\n"
-#| "                    "
 msgid ""
 "\n"
 "                        You have no assets registered. Register an asset to see available positions.\n"
@@ -1149,7 +1166,6 @@ msgid "Verify"
 msgstr "Verificar"
 
 #: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:11
-#| msgid "Suitability Verification"
 msgid "Sovereign Verification"
 msgstr "Idoneidad Para La Compra Soberana "
 

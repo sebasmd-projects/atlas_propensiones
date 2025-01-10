@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-07 21:49-0500\n"
-"PO-Revision-Date: 2025-01-04 16:18-0500\n"
+"POT-Creation-Date: 2025-01-10 12:21-0500\n"
+"PO-Revision-Date: 2025-01-10 12:22-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
@@ -18,29 +18,43 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\apps\project\specific\documents\certificates\admin.py:21
+#: .\apps\project\specific\documents\certificates\admin.py:17
+#, python-brace-format
+msgid "Updated {num_actualizados} certificates to IDONEITY."
+msgstr "Se actualizaron {num_actualizados} certificados a IDONEIDAD."
+
+#: .\apps\project\specific\documents\certificates\admin.py:22
+msgid "Certificate type IDONEITY not found."
+msgstr "Tipo de Certificado IDONEIDAD no encontrado."
+
+#: .\apps\project\specific\documents\certificates\admin.py:25
+#| msgid "Certificate type IDONEITY not found."
+msgid "Assign certificate type to 'IDONEITY'"
+msgstr "Tipo de Certificado a IDONEIDAD."
+
+#: .\apps\project\specific\documents\certificates\admin.py:39
 #: .\apps\project\specific\documents\certificates\models.py:30
 msgid "Certificate Type"
 msgstr "Tipo de Certificado"
 
-#: .\apps\project\specific\documents\certificates\admin.py:24
-#: .\apps\project\specific\documents\certificates\admin.py:80
+#: .\apps\project\specific\documents\certificates\admin.py:42
+#: .\apps\project\specific\documents\certificates\admin.py:100
 msgid "Dates"
 msgstr "Fechas"
 
-#: .\apps\project\specific\documents\certificates\admin.py:28
-#: .\apps\project\specific\documents\certificates\admin.py:84
+#: .\apps\project\specific\documents\certificates\admin.py:46
+#: .\apps\project\specific\documents\certificates\admin.py:104
 msgid "Priority"
 msgstr "Prioridad"
 
-#: .\apps\project\specific\documents\certificates\admin.py:68
+#: .\apps\project\specific\documents\certificates\admin.py:88
 #: .\apps\project\specific\documents\certificates\apps.py:8
-#: .\apps\project\specific\documents\certificates\models.py:147
+#: .\apps\project\specific\documents\certificates\models.py:148
 msgid "Certificate"
 msgstr "Certificado"
 
 #: .\apps\project\specific\documents\certificates\apps.py:9
-#: .\apps\project\specific\documents\certificates\models.py:148
+#: .\apps\project\specific\documents\certificates\models.py:149
 msgid "Certificates"
 msgstr "Certificados"
 
