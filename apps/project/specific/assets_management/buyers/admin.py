@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 from import_export.admin import ImportExportActionModelAdmin
 
+from apps.project.common.users.models import UserModel
 from apps.project.specific.assets_management.buyers.models import OfferModel
 
 
@@ -76,3 +77,8 @@ class OfferModelAdmin(ImportExportActionModelAdmin, admin.ModelAdmin):
             ),
         }),
     )
+
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        if db_field.name == "approved_by":
+            kwargs["queryset"] = UserModel.objects.filter(is_staff=True)
+        return super().formfield_for_foreignkey(db_field, request, **kwargs)
