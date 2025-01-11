@@ -51,12 +51,13 @@ class OfferForm(forms.ModelForm):
         }
 
 
-
 class OfferUpdateForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['asset'].disabled = True
         self.fields['offer_type'].disabled = True
+        self.fields['quantity_type'].disabled = True
+        self.fields['offer_amount'].disabled = True
 
     class Meta:
         model = OfferModel
