@@ -8,6 +8,7 @@
             <th>{% trans 'Offer Type' %}</th>
             <th>{% trans 'Quantity Type' %}</th>
             <th>{% trans 'Quantity Needed' %}</th>
+            <th>{% trans 'Country' %}</th>
             <th>{% trans 'Value Offered (USD)' %}</th>
             <th>{% trans 'Approved' %}</th>
             <th>{% trans 'Actions' %}</th>
@@ -17,11 +18,19 @@
         {% for offer in offers %}
         <tr>
             <td>{{ forloop.counter }}</td>
+
             <td>{{ offer.asset.asset_name.es_name }}</td>
+
             <td>{{ offer.get_offer_type_display }}</td>
+
             <td>{{ offer.get_quantity_type_display }}</td>
+
             <td>{{ offer.offer_quantity }}</td>
+
+            <td>{{ offer.buyer_country.get_continent_display }} - {{ offer.buyer_country.es_country_name }}</td>
+
             <td>{{ offer.offer_amount|currency }}</td>
+
             <td>
                 {% if offer.is_approved %}
                     <i data-feather="check-circle" stroke="green"></i>
@@ -29,6 +38,7 @@
                     <i data-feather="x-circle" stroke="red"></i>
                 {% endif %}
             </td>
+
             <td>
                 <a href="{% url 'buyers:offer_update' offer.id %}" class="btn btn-datatable btn-icon btn-outline-primary">
                     <i class="fa-regular fa-pen-to-square"></i>
