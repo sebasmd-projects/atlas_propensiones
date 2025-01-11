@@ -59,7 +59,7 @@ class BuyerCreateView(BuyerRequiredMixin, CreateView):
         self.send_email_notification(form.cleaned_data)
 
         messages.success(
-            self.request, "Your offer has been sent for verification."
+            self.request, _("Your offer has been sent for verification.")
         )
         return super().form_valid(form)
 

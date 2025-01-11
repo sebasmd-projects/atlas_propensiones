@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-04 16:15-0500\n"
+"POT-Creation-Date: 2025-01-10 20:12-0500\n"
 "PO-Revision-Date: 2025-01-03 19:13-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -61,11 +61,13 @@ msgstr "Cantidad Total Cero"
 
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:12
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:30
+#: .\apps\project\specific\assets_management\assets\forms.py:55
 msgid "Yes"
 msgstr "Sí"
 
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:13
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:31
+#: .\apps\project\specific\assets_management\assets\forms.py:56
 msgid "No"
 msgstr "No"
 
@@ -76,6 +78,48 @@ msgstr "Tiene Imagen"
 #: .\apps\project\specific\assets_management\assets\admin\filters.py:43
 msgid "Quantity Type"
 msgstr "Tipo de Cantidad"
+
+#: .\apps\project\specific\assets_management\assets\forms.py:60
+msgid "Do you accept the terms and conditions?"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\assets\forms.py:69
+msgid "Phone number"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\assets\forms.py:74
+msgid "E.g: 57 3183280176"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\assets\forms.py:80
+msgid "Passport Identification"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\assets\forms.py:84
+msgid "Enter your passport ID"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\assets\forms.py:91
+msgid "Level"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\assets\forms.py:105
+#, fuzzy
+#| msgid "observations (EN)"
+msgid "Observations (EN)"
+msgstr "observaciones (EN)"
+
+#: .\apps\project\specific\assets_management\assets\forms.py:109
+msgid "Write observations or clarifications (optional)"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\assets\forms.py:117
+msgid "Of whom"
+msgstr ""
+
+#: .\apps\project\specific\assets_management\assets\forms.py:121
+msgid "E.g.: Jorge Vega"
+msgstr ""
 
 #: .\apps\project\specific\assets_management\assets\models.py:24
 msgid "category (ES)"
@@ -126,22 +170,20 @@ msgid "category"
 msgstr "categoría"
 
 #: .\apps\project\specific\assets_management\assets\models.py:142
-#: .\apps\project\specific\assets_management\assets\models.py:250
 msgid "description (ES)"
 msgstr "descripción (ES)"
 
 #: .\apps\project\specific\assets_management\assets\models.py:148
-#: .\apps\project\specific\assets_management\assets\models.py:256
 msgid "description (EN)"
 msgstr "descripción (EN)"
 
 #: .\apps\project\specific\assets_management\assets\models.py:154
-#: .\apps\project\specific\assets_management\assets\models.py:262
+#: .\apps\project\specific\assets_management\assets\models.py:243
 msgid "observations (ES)"
 msgstr "observaciones (ES)"
 
 #: .\apps\project\specific\assets_management\assets\models.py:161
-#: .\apps\project\specific\assets_management\assets\models.py:269
+#: .\apps\project\specific\assets_management\assets\models.py:250
 msgid "observations (EN)"
 msgstr "observaciones (EN)"
 
@@ -154,88 +196,108 @@ msgid "3. Assets"
 msgstr "3. Activos"
 
 #: .\apps\project\specific\assets_management\assets\models.py:202
-msgid "Zimbawes"
-msgstr "Zimbawes"
+msgid "Residual (10 to 20)"
+msgstr ""
 
 #: .\apps\project\specific\assets_management\assets\models.py:203
-msgid "Exotics"
-msgstr "Exóticos"
+msgid "Minority (21 to 50)"
+msgstr ""
 
 #: .\apps\project\specific\assets_management\assets\models.py:204
-msgid "German Parchments"
-msgstr "Bonos Alemanes"
+msgid "Intermediate (51 to 200)"
+msgstr ""
 
 #: .\apps\project\specific\assets_management\assets\models.py:205
-msgid "German"
-msgstr "Alemanes"
+msgid "Wholesaler (201 onwards)"
+msgstr ""
 
-#: .\apps\project\specific\assets_management\assets\models.py:206
-msgid "Dragons"
-msgstr "Dragones"
-
-#: .\apps\project\specific\assets_management\assets\models.py:207
-msgid "Micro Ingots"
-msgstr "Micro Lingotes"
-
-#: .\apps\project\specific\assets_management\assets\models.py:208
-msgid "Dinars"
-msgstr "Dinares"
+#: .\apps\project\specific\assets_management\assets\models.py:209
+msgid "Yes, I am a representative"
+msgstr ""
 
 #: .\apps\project\specific\assets_management\assets\models.py:210
-msgid "One Million Dollar Bills"
-msgstr "Billete de un millón de dolares"
+msgid "Yes, I am an intermediary"
+msgstr ""
 
 #: .\apps\project\specific\assets_management\assets\models.py:211
-msgid "Agrocheques"
-msgstr "Agrocheques"
+msgid "No, I am neither of the two"
+msgstr ""
 
-#: .\apps\project\specific\assets_management\assets\models.py:212
-msgid "Super Pechiles"
-msgstr "Superpechiles"
-
-#: .\apps\project\specific\assets_management\assets\models.py:213
-msgid "Coins"
-msgstr "Monedas"
-
-#: .\apps\project\specific\assets_management\assets\models.py:214
-msgid "Lion Heads"
-msgstr "Cabezas de León"
-
-#: .\apps\project\specific\assets_management\assets\models.py:215
-msgid "Shanghai Banknotes"
-msgstr "Billetes de Shangai"
-
-#: .\apps\project\specific\assets_management\assets\models.py:216
-msgid "Black Dragons"
-msgstr "Dragones Negros"
-
-#: .\apps\project\specific\assets_management\assets\models.py:217
-msgid "Black Eagles"
-msgstr "Águilas Negras"
-
-#: .\apps\project\specific\assets_management\assets\models.py:218
-msgid "Others"
-msgstr "Otros"
-
-#: .\apps\project\specific\assets_management\assets\models.py:233
+#: .\apps\project\specific\assets_management\assets\models.py:227
 msgid "Created By"
 msgstr "Creado por"
 
-#: .\apps\project\specific\assets_management\assets\models.py:238
-msgid "asset name"
-msgstr "Nombre del Activo"
+#: .\apps\project\specific\assets_management\assets\models.py:237
+#, fuzzy
+#| msgid "asset"
+msgid "assets"
+msgstr "activo"
 
-#: .\apps\project\specific\assets_management\assets\models.py:245
-msgid "Has Item"
-msgstr "Tiene el Activo"
+#: .\apps\project\specific\assets_management\assets\models.py:262
+msgid "of whom"
+msgstr ""
 
-#: .\apps\project\specific\assets_management\assets\models.py:277
+#: .\apps\project\specific\assets_management\assets\models.py:270
 msgid "4. Pre-Registration Asset"
 msgstr "4. Pre-Registro de Activos"
 
-#: .\apps\project\specific\assets_management\assets\models.py:278
+#: .\apps\project\specific\assets_management\assets\models.py:271
 msgid "4. Pre-Registration Assets"
 msgstr "4. Pre-Registro de Activos"
+
+#~ msgid "Zimbawes"
+#~ msgstr "Zimbawes"
+
+#~ msgid "Exotics"
+#~ msgstr "Exóticos"
+
+#~ msgid "German Parchments"
+#~ msgstr "Bonos Alemanes"
+
+#~ msgid "German"
+#~ msgstr "Alemanes"
+
+#~ msgid "Dragons"
+#~ msgstr "Dragones"
+
+#~ msgid "Micro Ingots"
+#~ msgstr "Micro Lingotes"
+
+#~ msgid "Dinars"
+#~ msgstr "Dinares"
+
+#~ msgid "One Million Dollar Bills"
+#~ msgstr "Billete de un millón de dolares"
+
+#~ msgid "Agrocheques"
+#~ msgstr "Agrocheques"
+
+#~ msgid "Super Pechiles"
+#~ msgstr "Superpechiles"
+
+#~ msgid "Coins"
+#~ msgstr "Monedas"
+
+#~ msgid "Lion Heads"
+#~ msgstr "Cabezas de León"
+
+#~ msgid "Shanghai Banknotes"
+#~ msgstr "Billetes de Shangai"
+
+#~ msgid "Black Dragons"
+#~ msgstr "Dragones Negros"
+
+#~ msgid "Black Eagles"
+#~ msgstr "Águilas Negras"
+
+#~ msgid "Others"
+#~ msgstr "Otros"
+
+#~ msgid "asset name"
+#~ msgstr "Nombre del Activo"
+
+#~ msgid "Has Item"
+#~ msgstr "Tiene el Activo"
 
 #, fuzzy
 #~ msgid "Observations"
