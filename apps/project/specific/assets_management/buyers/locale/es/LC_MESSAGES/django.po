@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 20:12-0500\n"
+"POT-Creation-Date: 2025-01-10 21:30-0500\n"
 "PO-Revision-Date: 2025-01-10 20:14-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -139,7 +139,6 @@ msgid "1. Offers"
 msgstr "1. Ofertas"
 
 #: .\apps\project\specific\assets_management\buyers\views.py:62
-#| msgid "New Offer Submitted for Verification"
 msgid "Your offer has been sent for verification."
 msgstr "La oferta ha sido enviada para verificación."
 

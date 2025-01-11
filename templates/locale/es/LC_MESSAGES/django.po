@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 20:12-0500\n"
-"PO-Revision-Date: 2025-01-10 12:18-0500\n"
+"POT-Creation-Date: 2025-01-10 21:33-0500\n"
+"PO-Revision-Date: 2025-01-10 21:34-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
@@ -55,8 +55,8 @@ msgid ""
 "If you have any questions or need additional information, you can write us "
 "directly:"
 msgstr ""
-"Si tiene alguna pregunta o necesita información adicional, puede escribirnos "
-"directamente:"
+"Si tiene alguna pregunta o necesita información adicional, puede escribirnos"
+" directamente:"
 
 #: .\templates\core\email\contact_email_template.html:98
 msgid "You can also email us"
@@ -139,16 +139,12 @@ msgstr "Institucionalización de las operaciones internacionales de activos"
 #: .\templates\core\index\sections\section-2-about.html:11
 msgid ""
 "\n"
-"                    Our initiative focuses on formalizing and streamlining "
-"the process of managing international assets.\n"
-"                    This ensures better governance, compliance, and "
-"operational efficiency across global markets.\n"
+"                    Our initiative focuses on formalizing and streamlining the process of managing international assets.\n"
+"                    This ensures better governance, compliance, and operational efficiency across global markets.\n"
 "                    "
 msgstr ""
 "\n"
-"Nuestra iniciativa se centra en formalizar y agilizar el proceso de gestión "
-"de activos internacionales. Esto garantiza una mejor gobernanza, "
-"cumplimiento y eficiencia operativa en los mercados globales."
+"Nuestra iniciativa se centra en formalizar y agilizar el proceso de gestión de activos internacionales. Esto garantiza una mejor gobernanza, cumplimiento y eficiencia operativa en los mercados globales."
 
 #: .\templates\core\index\sections\section-2-about.html:20
 msgid "CEO Profile"
@@ -240,8 +236,8 @@ msgstr "Características"
 
 #: .\templates\core\index\sections\section-4-features.html:9
 msgid ""
-"Explore the core functionalities of ATLAS for efficient asset management and "
-"comprehensive business solutions."
+"Explore the core functionalities of ATLAS for efficient asset management and"
+" comprehensive business solutions."
 msgstr ""
 "Explore las funcionalidades principales de ATLAS para una gestión eficiente "
 "de activos y soluciones empresariales integrales."
@@ -285,8 +281,8 @@ msgstr "Generación automatizada de documentos"
 
 #: .\templates\core\index\sections\section-4-features.html:68
 msgid ""
-"Efficiently generate, manage, and store important documents related to asset "
-"transactions, client agreements, and compliance certifications."
+"Efficiently generate, manage, and store important documents related to asset"
+" transactions, client agreements, and compliance certifications."
 msgstr ""
 "Genere, administre y almacene de forma eficiente documentos importantes "
 "relacionados con transacciones de activos, acuerdos con clientes y "
@@ -315,7 +311,8 @@ msgstr "Mayor Seguridad y Validación"
 
 #: .\templates\core\index\sections\section-4-features.html:88
 msgid "Advanced user authentication and role-based access control"
-msgstr "Autenticación avanzada de usuarios y control de acceso basado en roles"
+msgstr ""
+"Autenticación avanzada de usuarios y control de acceso basado en roles"
 
 #: .\templates\core\index\sections\section-4-features.html:89
 msgid "Secure data encryption and validation mechanisms"
@@ -427,8 +424,8 @@ msgid ""
 "nutritious meals, fostering dignity, compassion, and a sense of community."
 msgstr ""
 "Proporcionar espacios seguros y acogedores donde las personas sin hogar "
-"puedan recibir comidas nutritivas, fomentando la dignidad, la compasión y el "
-"sentido de comunidad."
+"puedan recibir comidas nutritivas, fomentando la dignidad, la compasión y el"
+" sentido de comunidad."
 
 #: .\templates\core\index\sections\section-social-sense.html:57
 msgid "Animalist Project"
@@ -440,7 +437,8 @@ msgid ""
 "environments and through the work of committed veterinarians."
 msgstr ""
 "Cuidado y protección de los animales, promoviendo el bienestar animal en "
-"entornos especializados y a través del trabajo de veterinarios comprometidos."
+"entornos especializados y a través del trabajo de veterinarios "
+"comprometidos."
 
 #: .\templates\core\index\sections\section-social-sense.html:66
 msgid "Preservation and reforestation"
@@ -474,8 +472,8 @@ msgid ""
 "physical well-being in comfortable and natural environments."
 msgstr ""
 "Proporcionar espacios seguros y acogedores donde las personas sin hogar "
-"puedan recibir comidas nutritivas, fomentando la dignidad, la compasión y el "
-"sentido de comunidad."
+"puedan recibir comidas nutritivas, fomentando la dignidad, la compasión y el"
+" sentido de comunidad."
 
 #: .\templates\core\index\sections\section-social-sense.html:90
 msgid "Social brigades"
@@ -525,8 +523,8 @@ msgid ""
 "for family development."
 msgstr ""
 "Mostrar familias en hogares seguros y confortables, resaltando la "
-"importancia de los proyectos de vivienda que garantizan un entorno estable y "
-"feliz para el desarrollo familiar."
+"importancia de los proyectos de vivienda que garantizan un entorno estable y"
+" feliz para el desarrollo familiar."
 
 #: .\templates\core\index\sections\section-social-sense.html:127
 msgid "Previous"
@@ -716,7 +714,7 @@ msgstr "Agregar Nuevo Activo"
 
 #: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:16
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:16
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:45
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:47
 #: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:52
 #: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:7
 msgid "Asset"
@@ -734,7 +732,7 @@ msgstr "+ Agregar Ubicación"
 
 #: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:40
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:35
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:67
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:69
 #: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:54
 #: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:9
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:8
@@ -762,15 +760,12 @@ msgstr "Agregar Activo"
 #: .\templates\dashboard\pages\assets_management\asset_location\asset_location_base.html:25
 msgid ""
 "\n"
-"                        The Asset Location ties a specific asset to a "
-"location, defining where and in what quantity the\n"
+"                        The Asset Location ties a specific asset to a location, defining where and in what quantity the\n"
 "                        asset is available.\n"
 "                        "
 msgstr ""
 "\n"
-"                            La Ubicación del Activo vincula un activo "
-"específico a una ubicación, definiendo dónde y en qué cantidad el activo "
-"está disponible.\n"
+"                            La Ubicación del Activo vincula un activo específico a una ubicación, definiendo dónde y en qué cantidad el activo está disponible.\n"
 "                            "
 
 #: .\templates\dashboard\pages\assets_management\asset_location\edit_asset_location.html:5
@@ -808,47 +803,47 @@ msgstr "Mis Ofertas"
 msgid "Create a New Offer"
 msgstr "Crear una nueva oferta"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:56
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:58
 #: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:53
 #: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:8
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:7
 msgid "Offer Type"
 msgstr "Tipo de Oferta"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:78
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:80
 msgid "Value Offered Individually ($ USD)"
 msgstr "Valor Ofrecido c/u ($ USD)"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:90
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:92
 msgid "Quantity required"
 msgstr "Cantidad Requerida"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:101
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:103
 #: .\templates\dashboard\pages\assets_management\assets\buyers\detail_offer.html:57
 msgid "Country of Purchase"
 msgstr "País de la Compra"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:113
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:115
 #: .\templates\dashboard\pages\assets_management\location\add_location.html:62
 #: .\templates\dashboard\pages\assets_management\location\edit_location.html:53
 msgid "Description (ES)"
 msgstr "Descripción (ES)"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:115
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:117
 #: .\templates\dashboard\pages\assets_management\location\add_location.html:67
 #: .\templates\dashboard\pages\assets_management\location\edit_location.html:58
 msgid "Description (EN)"
 msgstr "Descripción (EN)"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:128
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:130
 msgid "Observations (ES)"
 msgstr "Observaciones (ES)"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:130
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:132
 msgid "Observations (EN)"
 msgstr "Observaciones (EN)"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:140
+#: .\templates\dashboard\pages\assets_management\assets\buyers\buyer_dashboard.html:144
 msgid "Submit Offer"
 msgstr "Enviar oferta"
 
@@ -881,6 +876,71 @@ msgstr "Monto de la Oferta"
 msgid "Offer Quantity"
 msgstr "Cantidad de la Oferta"
 
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:17
+#| msgid "Submit Offer"
+msgid "Edit Offer"
+msgstr "Editar oferta"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:34
+#| msgid "Asset"
+msgid "Asset:"
+msgstr "Activo:"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:41
+#| msgid "Offer Type"
+msgid "Offer Type:"
+msgstr "Tipo de Oferta:"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:48
+#| msgid "Quantity Type"
+msgid "Quantity Type:"
+msgstr "Tipo de Cantidad:"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:55
+#| msgid "Value Offered Individually ($ USD)"
+msgid "Value Offered Individually ($ USD):"
+msgstr "Valor Ofrecido c/u ($ USD):"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:62
+#| msgid "Quantity required"
+msgid "Quantity required:"
+msgstr "Cantidad Requerida:"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:69
+#| msgid "Country of Purchase"
+msgid "Country of Purchase:"
+msgstr "País de la Compra:"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:77
+#| msgid "Observations (EN)"
+msgid "Observations (EN):"
+msgstr "Observaciones (EN):"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:84
+#| msgid "Observations (ES)"
+msgid "Observations (ES):"
+msgstr "Observaciones (ES):"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:91
+#| msgid "Description (EN)"
+msgid "Description (EN):"
+msgstr "Descripción (EN):"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:98
+#| msgid "Description (ES)"
+msgid "Description (ES):"
+msgstr "Descripción (ES):"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:105
+#| msgid "Submit Offer"
+msgid "Save Offer"
+msgstr "Guardar Oferta"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:107
+#| msgid "Go to Home"
+msgid "Go to my offers"
+msgstr "Ir al Inicio"
+
 #: .\templates\dashboard\pages\assets_management\assets\buyers\partials\header.html:12
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\header.html:12
 #: .\templates\dashboard\partials\side_nav.html:23
@@ -901,16 +961,24 @@ msgid "Quantity Needed"
 msgstr "Cantidad Requerida"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:11
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:7
+#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:9
+#: .\templates\dashboard\pages\assets_management\location\add_location.html:48
+#: .\templates\dashboard\pages\assets_management\location\edit_location.html:39
+msgid "Country"
+msgstr "País"
+
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:12
 msgid "Value Offered (USD)"
 msgstr "Valor Ofrecido (USD)"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:12
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:13
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:31
 #: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:31
 msgid "Approved"
 msgstr "Aprobado"
 
-#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:13
+#: .\templates\dashboard\pages\assets_management\assets\buyers\partials\tables\my_offers_table.html:14
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:9
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:13
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:12
@@ -929,13 +997,11 @@ msgstr "Activos en Demanda (Ofertas)"
 #: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:75
 msgid ""
 "\n"
-"                        You have no assets registered. Register an asset to "
-"see available positions.\n"
+"                        You have no assets registered. Register an asset to see available positions.\n"
 "                      "
 msgstr ""
 "\n"
-"No tiene activos registrados o No hay posturas actualmente. Registre un "
-"activo para ver las posiciones disponibles.\n"
+"No tiene activos registrados o No hay posturas actualmente. Registre un activo para ver las posiciones disponibles.\n"
 "                    "
 
 #: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:84
@@ -984,13 +1050,6 @@ msgstr "Referencia de Ubicación"
 msgid "Continent"
 msgstr "Continente"
 
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:7
-#: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\thead_tfoot.html:9
-#: .\templates\dashboard\pages\assets_management\location\add_location.html:48
-#: .\templates\dashboard\pages\assets_management\location\edit_location.html:39
-msgid "Country"
-msgstr "País"
-
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\locations_th_tf.html:8
 msgid "Is Active"
 msgstr "Esta Activo"
@@ -1013,10 +1072,9 @@ msgid "Country Preference"
 msgstr "Preferencia de País"
 
 #: .\templates\dashboard\pages\assets_management\assets\holders\wizard_pre_regist_assets.html:17
-#, fuzzy
 #| msgid "Preservation and Reforestation"
 msgid "Pre Asset Registration"
-msgstr "Conservación y reforestación"
+msgstr "Pre Registro de Activos"
 
 #: .\templates\dashboard\pages\assets_management\assets\holders\wizard_pre_regist_assets.html:34
 #: .\templates\two_factor\_wizard_actions.html:11
@@ -1025,7 +1083,7 @@ msgstr "Atrás"
 
 #: .\templates\dashboard\pages\assets_management\assets\holders\wizard_pre_regist_assets.html:42
 msgid "Finish"
-msgstr ""
+msgstr "Finalizar"
 
 #: .\templates\dashboard\pages\assets_management\location\add_location.html:16
 msgid "Add New Location Reference"
@@ -1049,32 +1107,26 @@ msgstr "Agregar Referencia de Ubicación"
 #: .\templates\dashboard\pages\assets_management\location\edit_location.html:72
 msgid ""
 "\n"
-"                        The Location Reference serves as a unique identifier "
-"to manage inventory across various\n"
+"                        The Location Reference serves as a unique identifier to manage inventory across various\n"
 "                        locations.\n"
 "                        "
 msgstr ""
 "\n"
-"                        La Referencia de Ubicación sirve como un "
-"identificador único para gestionar el inventario en diversas ubicaciones.\n"
+"                        La Referencia de Ubicación sirve como un identificador único para gestionar el inventario en diversas ubicaciones.\n"
 "                        "
 
 #: .\templates\dashboard\pages\assets_management\location\add_location.html:88
 #: .\templates\dashboard\pages\assets_management\location\edit_location.html:79
 msgid ""
 "\n"
-"                        It allows differentiation between inventory located "
-"in the same country but in different areas,\n"
-"                        inventory in different countries, or inventory in "
-"the same country as well as across multiple\n"
+"                        It allows differentiation between inventory located in the same country but in different areas,\n"
+"                        inventory in different countries, or inventory in the same country as well as across multiple\n"
 "                        countries.\n"
 "                        "
 msgstr ""
 "\n"
-"                        Permite diferenciar entre el inventario ubicado en "
-"el mismo país pero en diferentes áreas,\n"
-"                        inventario en diferentes países, o inventario en el "
-"mismo país así como en múltiples países.\n"
+"                        Permite diferenciar entre el inventario ubicado en el mismo país pero en diferentes áreas,\n"
+"                        inventario en diferentes países, o inventario en el mismo país así como en múltiples países.\n"
 "                        "
 
 #: .\templates\dashboard\pages\assets_management\location\edit_location.html:16
@@ -1126,24 +1178,12 @@ msgstr "con número de documento"
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:40
 msgid ""
 "\n"
-"                                qualifies as a beneficiary, who has "
-"undergone a security screening and accreditation of judicial records in "
-"accordance with current regulations, criminal reports on social media, and "
-"Interpol databases. Consequently, they do <strong>NOT</strong> have any "
-"judicial or disciplinary records from the certifying entities authorized by "
-"international public consultation databases, which would affect their "
-"suitability.\n"
+"                                qualifies as a beneficiary, who has undergone a security screening and accreditation of judicial records in accordance with current regulations, criminal reports on social media, and Interpol databases. Consequently, they do <strong>NOT</strong> have any judicial or disciplinary records from the certifying entities authorized by international public consultation databases, which would affect their suitability.\n"
 "                                <br/>\n"
 "                                For the record, this is signed on "
 msgstr ""
 "\n"
-"                                califica como beneficiario, quien ha pasado "
-"por un control de seguridad y acreditación de antecedentes judiciales de "
-"acuerdo con las normas vigentes, informes criminales en redes sociales y "
-"bases de datos de Interpol. Por consiguiente, <strong>NO</strong> presenta "
-"antecedentes judiciales ni disciplinarios en las entidades certificadoras "
-"autorizadas por las bases de datos de consulta pública internacional, que "
-"afecten su idoneidad.\n"
+"                                califica como beneficiario, quien ha pasado por un control de seguridad y acreditación de antecedentes judiciales de acuerdo con las normas vigentes, informes criminales en redes sociales y bases de datos de Interpol. Por consiguiente, <strong>NO</strong> presenta antecedentes judiciales ni disciplinarios en las entidades certificadoras autorizadas por las bases de datos de consulta pública internacional, que afecten su idoneidad.\n"
 "                                <br/>\n"
 "                                Para constancia se firma en "
 
@@ -1156,27 +1196,21 @@ msgstr "en Quindío, República de Colombia."
 #: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:50
 msgid ""
 "\n"
-"                                we inform you that, after the evaluation "
-"conducted, your security study <span class=\"text-danger\">HAS NOT BEEN "
-"APPROVED</span> due to not meeting the suitability requirements according to "
-"the current security regulations.\n"
+"                                we inform you that, after the evaluation conducted, your security study <span class=\"text-danger\">HAS NOT BEEN APPROVED</span> due to not meeting the suitability requirements according to the current security regulations.\n"
 "                            "
 msgstr ""
 "\n"
-"                                le informamos que, tras la evaluación "
-"realizada, su estudio de seguridad <span class=\"text-danger\">NO HA SIDO "
-"APROBADO</span> debido a que no cumple con los requisitos de idoneidad según "
-"la normativa de seguridad vigente.\n"
+"                                le informamos que, tras la evaluación realizada, su estudio de seguridad <span class=\"text-danger\">NO HA SIDO APROBADO</span> debido a que no cumple con los requisitos de idoneidad según la normativa de seguridad vigente.\n"
 "                            "
 
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:56
 #: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:57
 msgid ""
 "We remind you that, in accordance with the provisions of the Habeas Data "
-"Law, all your personal data has been treated with due confidentiality and is "
-"protected under the strictest security standards, guaranteeing its integrity "
-"and privacy. Your data will be used exclusively for authorized purposes and "
-"within the framework of current data protection regulations."
+"Law, all your personal data has been treated with due confidentiality and is"
+" protected under the strictest security standards, guaranteeing its "
+"integrity and privacy. Your data will be used exclusively for authorized "
+"purposes and within the framework of current data protection regulations."
 msgstr ""
 "Le recordamos que, de acuerdo con las disposiciones de la Ley de Habeas "
 "Data, todos sus datos personales han sido tratados con la debida "
@@ -1220,27 +1254,17 @@ msgstr "Idoneidad Para La Compra Soberana "
 #, python-format
 msgid ""
 "\n"
-"                                <strong>%(name)s %(last_name)s</strong> with "
-"document <strong>%(document_type)s</strong> and number <strong>"
-"%(masked_document_number)s</strong>\n"
-"                                was duly registered to participate in the "
-"sovereign purchase of the United States after the corresponding "
-"verification,\n"
-"                                it is declared that it fully complied with "
-"the requirements demanded by the process and demonstrated that it was "
-"suitable to belong to this operation.\n"
+"                                <strong>%(name)s %(last_name)s</strong> with document <strong>%(document_type)s</strong> and number <strong>%(masked_document_number)s</strong>\n"
+"                                was duly registered to participate in the sovereign purchase of the United States after the corresponding verification,\n"
+"                                it is declared that it fully complied with the requirements demanded by the process and demonstrated that it was suitable to belong to this operation.\n"
 "                                <br/>\n"
 "                                For the record, this is signed on\n"
 "                            "
 msgstr ""
 "\n"
-"<strong>%(name)s %(last_name)s</strong> con el documento <strong>"
-"%(document_type)s</strong> número <strong>%(masked_document_number)s</"
-"strong>\n"
-"fue debidamente registrado para participar en la compra soberana de los "
-"Estados Unidos tras la verificación correspondiente.\n"
-"Se declara que cumplió plenamente con los requisitos exigidos por el proceso "
-"y demostró ser apto para formar parte de esta operación.\n"
+"<strong>%(name)s %(last_name)s</strong> con el documento <strong>%(document_type)s</strong> número <strong>%(masked_document_number)s</strong>\n"
+"fue debidamente registrado para participar en la compra soberana de los Estados Unidos tras la verificación correspondiente.\n"
+"Se declara que cumplió plenamente con los requisitos exigidos por el proceso y demostró ser apto para formar parte de esta operación.\n"
 "<br/>\n"
 "Para constancia, se firma en"
 
@@ -1425,8 +1449,8 @@ msgstr ""
 #: .\templates\two_factor\core\otp_required.html:12
 #: .\templates\two_factor\profile\profile.html:29
 msgid ""
-"Two-factor authentication is not enabled for your account. Enable two-factor "
-"authentication for enhanced account security."
+"Two-factor authentication is not enabled for your account. Enable two-factor"
+" authentication for enhanced account security."
 msgstr ""
 "La autenticación de dos factores no está habilitada en su cuenta. Habilite "
 "la autenticación de dos factores para mejorar la seguridad de su cuenta."
@@ -1456,12 +1480,12 @@ msgstr "Seleccione el método de autenticación que desea utilizar."
 
 #: .\templates\two_factor\core\setup.html:27
 msgid ""
-"To set up a token generator, scan the QR code below using an app like Google "
-"Authenticator, Authenticator from Windows or a similar app."
+"To set up a token generator, scan the QR code below using an app like Google"
+" Authenticator, Authenticator from Windows or a similar app."
 msgstr ""
 "Para configurar un generador de tokens, escanee el código QR a continuación "
-"con una aplicación como Google Authenticator, Authenticator de Windows o una "
-"aplicación similar."
+"con una aplicación como Google Authenticator, Authenticator de Windows o una"
+" aplicación similar."
 
 #: .\templates\two_factor\core\setup.html:29
 msgid ""
@@ -1482,7 +1506,8 @@ msgstr ""
 "verificar la configuración."
 
 #: .\templates\two_factor\core\setup.html:34
-msgid "Token validated successfully. Two-factor authentication is now enabled."
+msgid ""
+"Token validated successfully. Two-factor authentication is now enabled."
 msgstr ""
 "Token validado con éxito. La autenticación de dos factores ahora está "
 "habilitada."
@@ -1497,16 +1522,18 @@ msgid "Back to login"
 msgstr "Volver al inicio de sesión"
 
 #: .\templates\two_factor\core\setup_complete.html:15
-msgid "Congratulations, you've successfully enabled two-factor authentication."
-msgstr "Felicidades, ha habilitado con éxito la autenticación de dos factores."
+msgid ""
+"Congratulations, you've successfully enabled two-factor authentication."
+msgstr ""
+"Felicidades, ha habilitado con éxito la autenticación de dos factores."
 
 #: .\templates\two_factor\core\setup_complete.html:20
 msgid ""
 "However, it might happen that you don't have access to your primary token "
 "device. To enable account recovery, add a phone number."
 msgstr ""
-"Sin embargo, puede suceder que no tenga acceso a su dispositivo principal de "
-"tokens. Para habilitar la recuperación de la cuenta, agregue un número de "
+"Sin embargo, puede suceder que no tenga acceso a su dispositivo principal de"
+" tokens. Para habilitar la recuperación de la cuenta, agregue un número de "
 "teléfono."
 
 #: .\templates\two_factor\core\setup_complete.html:23
@@ -1541,6 +1568,26 @@ msgstr[1] "Le quedan %(counter)s códigos de respaldo."
 msgid "Show Codes"
 msgstr "Mostrar Códigos"
 
+#, fuzzy
+#~ msgid "Activo:"
+#~ msgstr "Acciones"
+
+#, fuzzy
+#~ msgid "Observaciones (EN):"
+#~ msgstr "Observaciones (EN)"
+
+#, fuzzy
+#~ msgid "Observaciones (ES):"
+#~ msgstr "Observaciones (ES)"
+
+#, fuzzy
+#~ msgid "Descripción (EN):"
+#~ msgstr "Descripción (EN)"
+
+#, fuzzy
+#~ msgid "Descripción (ES):"
+#~ msgstr "Descripción (ES)"
+
 #~ msgid "PROPENSIONES ABOGADOS INTERNATIONAL"
 #~ msgstr "PROPENSIONES ABOGADOS INTERNACIONAL"
 
@@ -1557,8 +1604,8 @@ msgstr "Mostrar Códigos"
 #~ msgstr "Accesibilidad Multiplataforma"
 
 #~ msgid ""
-#~ "ATLAS adapts seamlessly across desktops, tablets, and smartphones, "
-#~ "ensuring a consistent user experience."
+#~ "ATLAS adapts seamlessly across desktops, tablets, and smartphones, ensuring "
+#~ "a consistent user experience."
 #~ msgstr ""
 #~ "ATLAS se adapta sin problemas a escritorios, tabletas y teléfonos "
 #~ "inteligentes, garantizando una experiencia de usuario coherente."
@@ -1567,8 +1614,8 @@ msgstr "Mostrar Códigos"
 #~ msgstr "Rendimiento Optimizado"
 
 #~ msgid ""
-#~ "Fast loading times and efficient resource usage provide a smooth "
-#~ "experience even on low-spec devices."
+#~ "Fast loading times and efficient resource usage provide a smooth experience "
+#~ "even on low-spec devices."
 #~ msgstr ""
 #~ "Tiempos de carga rápidos y uso eficiente de recursos para brindar una "
 #~ "experiencia fluida incluso en dispositivos con especificaciones bajas."
@@ -1580,8 +1627,8 @@ msgstr "Mostrar Códigos"
 #~ "Interactive elements and navigation are designed for easy use on touch "
 #~ "screens, enhancing mobile usability."
 #~ msgstr ""
-#~ "Los elementos interactivos y la navegación están diseñados para un fácil "
-#~ "uso en pantallas táctiles, mejorando la usabilidad móvil."
+#~ "Los elementos interactivos y la navegación están diseñados para un fácil uso"
+#~ " en pantallas táctiles, mejorando la usabilidad móvil."
 
 #~ msgid "Phone Mockup"
 #~ msgstr "Maqueta de Teléfono"
@@ -1590,11 +1637,11 @@ msgstr "Mostrar Códigos"
 #~ msgstr "Diseño Totalmente Responsivo"
 
 #~ msgid ""
-#~ "ATLAS ensures a responsive layout that adjusts dynamically to fit any "
-#~ "screen size, providing a consistent experience."
+#~ "ATLAS ensures a responsive layout that adjusts dynamically to fit any screen"
+#~ " size, providing a consistent experience."
 #~ msgstr ""
-#~ "ATLAS asegura un diseño responsivo que se adapta dinámicamente a "
-#~ "cualquier tamaño de pantalla, ofreciendo una experiencia coherente."
+#~ "ATLAS asegura un diseño responsivo que se adapta dinámicamente a cualquier "
+#~ "tamaño de pantalla, ofreciendo una experiencia coherente."
 
 #~ msgid "Browser Compatibility"
 #~ msgstr "Compatibilidad con Navegadores"
@@ -1603,15 +1650,15 @@ msgstr "Mostrar Códigos"
 #~ "Compatible with major web browsers including Chrome, Firefox, Edge, and "
 #~ "Safari for a seamless experience."
 #~ msgstr ""
-#~ "Compatible con los principales navegadores web, incluyendo Chrome, "
-#~ "Firefox, Edge y Safari, para una experiencia sin interrupciones."
+#~ "Compatible con los principales navegadores web, incluyendo Chrome, Firefox, "
+#~ "Edge y Safari, para una experiencia sin interrupciones."
 
 #~ msgid "Dark Mode Support"
 #~ msgstr "Soporte de Modo Oscuro"
 
 #~ msgid ""
-#~ "ATLAS offers a dark mode option to reduce eye strain and improve "
-#~ "visibility in low-light environments."
+#~ "ATLAS offers a dark mode option to reduce eye strain and improve visibility "
+#~ "in low-light environments."
 #~ msgstr ""
 #~ "ATLAS ofrece una opción de modo oscuro para reducir la fatiga visual y "
 #~ "mejorar la visibilidad en entornos con poca luz."
@@ -1627,14 +1674,11 @@ msgstr "Mostrar Códigos"
 
 #~ msgid ""
 #~ "\n"
-#~ "                        The Location Reference serves as a unique "
-#~ "identifier to manage inventory across various locations.\n"
+#~ "                        The Location Reference serves as a unique identifier to manage inventory across various locations.\n"
 #~ "                        "
 #~ msgstr ""
 #~ "\n"
-#~ "                        La Referencia de Ubicación sirve como un "
-#~ "identificador único para gestionar el inventario en diversas "
-#~ "ubicaciones.\n"
+#~ "                        La Referencia de Ubicación sirve como un identificador único para gestionar el inventario en diversas ubicaciones.\n"
 #~ "                        "
 
 #~ msgid "ASSETS"
@@ -1645,14 +1689,12 @@ msgstr "Mostrar Códigos"
 
 #~ msgid ""
 #~ "\n"
-#~ "            <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</"
-#~ "strong>rusted <strong>L</strong>egacy\n"
+#~ "            <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</strong>rusted <strong>L</strong>egacy\n"
 #~ "              <strong>A</strong>sset <strong>S</strong>olution</small>\n"
 #~ "            "
 #~ msgstr ""
 #~ "\n"
-#~ "            <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</"
-#~ "strong>rusted <strong>L</strong>egacy\n"
+#~ "            <small>ATLAS | <strong>A</strong>ll-in-one <strong>T</strong>rusted <strong>L</strong>egacy\n"
 #~ "              <strong>A</strong>sset <strong>S</strong>olution</small>\n"
 #~ "            "
 
