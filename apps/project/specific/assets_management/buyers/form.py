@@ -74,4 +74,5 @@ class OfferUpdateForm(forms.ModelForm):
         ]
         widgets = {
             "buyer_country": CountryWidget,
+            "asset": AssetNameWidget,
         }
