@@ -46,6 +46,10 @@
         </a>
     </div>
     {% include 'core/partials/whatsapp.html' %}
-    {% include 'core/partials/banner.html' %}
+    
+    {% if not request.user.is_authenticated %}
+        {% include 'core/partials/banner.html' %}
+    {% endif %}
+        
 {% endblock content %}
 
