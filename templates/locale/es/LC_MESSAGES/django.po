@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-10 21:33-0500\n"
-"PO-Revision-Date: 2025-01-10 21:34-0500\n"
+"POT-Creation-Date: 2025-01-11 22:08-0500\n"
+"PO-Revision-Date: 2025-01-11 22:11-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
@@ -877,67 +877,54 @@ msgid "Offer Quantity"
 msgstr "Cantidad de la Oferta"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:17
-#| msgid "Submit Offer"
 msgid "Edit Offer"
 msgstr "Editar oferta"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:34
-#| msgid "Asset"
 msgid "Asset:"
 msgstr "Activo:"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:41
-#| msgid "Offer Type"
 msgid "Offer Type:"
 msgstr "Tipo de Oferta:"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:48
-#| msgid "Quantity Type"
 msgid "Quantity Type:"
 msgstr "Tipo de Cantidad:"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:55
-#| msgid "Value Offered Individually ($ USD)"
 msgid "Value Offered Individually ($ USD):"
 msgstr "Valor Ofrecido c/u ($ USD):"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:62
-#| msgid "Quantity required"
 msgid "Quantity required:"
 msgstr "Cantidad Requerida:"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:69
-#| msgid "Country of Purchase"
 msgid "Country of Purchase:"
 msgstr "País de la Compra:"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:77
-#| msgid "Observations (EN)"
 msgid "Observations (EN):"
 msgstr "Observaciones (EN):"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:84
-#| msgid "Observations (ES)"
 msgid "Observations (ES):"
 msgstr "Observaciones (ES):"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:91
-#| msgid "Description (EN)"
 msgid "Description (EN):"
 msgstr "Descripción (EN):"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:98
-#| msgid "Description (ES)"
 msgid "Description (ES):"
 msgstr "Descripción (ES):"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:105
-#| msgid "Submit Offer"
 msgid "Save Offer"
 msgstr "Guardar Oferta"
 
 #: .\templates\dashboard\pages\assets_management\assets\buyers\edit_offer.html:107
-#| msgid "Go to Home"
 msgid "Go to my offers"
 msgstr "Ir al Inicio"
 
@@ -1072,7 +1059,6 @@ msgid "Country Preference"
 msgstr "Preferencia de País"
 
 #: .\templates\dashboard\pages\assets_management\assets\holders\wizard_pre_regist_assets.html:17
-#| msgid "Preservation and Reforestation"
 msgid "Pre Asset Registration"
 msgstr "Pre Registro de Activos"
 
@@ -1204,7 +1190,6 @@ msgstr ""
 "                            "
 
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:56
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:57
 msgid ""
 "We remind you that, in accordance with the provisions of the Habeas Data "
 "Law, all your personal data has been treated with due confidentiality and is"
@@ -1220,7 +1205,7 @@ msgstr ""
 "normativa vigente de protección de datos."
 
 #: .\templates\dashboard\pages\documents\certificates\idoneity\certificate_detail.html:60
-#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:61
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:107
 msgid "Status:"
 msgstr "Estado:"
 
@@ -1267,6 +1252,92 @@ msgstr ""
 "Se declara que cumplió plenamente con los requisitos exigidos por el proceso y demostró ser apto para formar parte de esta operación.\n"
 "<br/>\n"
 "Para constancia, se firma en"
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:57
+#| msgid ""
+#| "We remind you that, in accordance with the provisions of the Habeas Data "
+#| "Law, all your personal data has been treated with due confidentiality and is"
+#| " protected under the strictest security standards, guaranteeing its "
+#| "integrity and privacy. Your data will be used exclusively for authorized "
+#| "purposes and within the framework of current data protection regulations."
+msgid ""
+"\n"
+"                            We remind you that, in accordance with the provisions of the Habeas Data Law, all your personal data has been treated with due confidentiality and is protected under the strictest security standards, guaranteeing its integrity and privacy. Your data will be used exclusively for authorized purposes and within the framework of current data protection regulations.\n"
+"                            "
+msgstr ""
+"\n"
+"Le recordamos que, de acuerdo con las disposiciones de la Ley de Habeas Data, todos sus datos personales han sido tratados con la debida confidencialidad y están protegidos bajo los más estrictos estándares de seguridad, garantizando su integridad y privacidad. Sus datos serán utilizados exclusivamente para los fines autorizados y en el marco de la normativa vigente de protección de datos."
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:64
+msgid ""
+"\n"
+"                                The following clarification is made: the reproduction, publication, or any improper use of this certificate for requesting money or for fraudulent purposes will result in legal sanctions, in accordance with applicable national and international regulations. Furthermore, it is warned that such conduct will lead to immediate expulsion and total disqualification, both present and future, from any participation in programs, benefits, or related agreements.\n"
+"                            "
+msgstr ""
+"\n"
+"Se deja la salvedad de que la reproducción, publicación, o cualquier uso indebido de este certificado para la solicitud de dinero o fines fraudulentos incurrirá en sanciones legales, conforme a lo dispuesto en las normativas nacionales e internacionales aplicables. Asimismo, se advierte que tal conducta será causal de expulsión inmediata y de inhabilidad total, presente y futura, para cualquier participación en los programas, beneficios, o convenios relacionados."
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:71
+#| msgid "Location Reference"
+msgid "Regulatory References:"
+msgstr "Referencias normativas:"
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:77
+msgid "\"Legal Warning on the Use and Reproduction of Certificates\""
+msgstr "\"Advertencia Legal sobre el Uso y Reproducción de Certificados\""
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:78
+msgid ""
+"\n"
+"                                United Nations Convention against Corruption (UNCAC): Article 15 and subsequent provisions, applicable to acts of forgery and misuse of official documents.\n"
+"                                "
+msgstr ""
+"\n"
+"Naciones Unidas contra la Corrupción (CNUCC): Artículo 15 y siguientes, aplicable a actos de falsificación y uso indebido de documentos oficiales."
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:84
+msgid "International Criminal Code (Rome Statute): "
+msgstr "Código Penal Internacional (Estatuto de Roma):"
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:85
+#| msgid ""
+#| "\n"
+#| "                        You have no assets registered. Register an asset to see available positions.\n"
+#| "                      "
+msgid ""
+"\n"
+"                                Related to fraud, forgery, and violations of international ethical standards.\n"
+"                                "
+msgstr ""
+"\n"
+"Relacionado con el fraude, falsificación y violación de normas éticas internacionales.\n"
+"                    "
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:91
+msgid "Internal Regulations of the Fund/Organization: "
+msgstr "Reglamentos Internos del Fondo/Organización:"
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:92
+msgid ""
+"\n"
+"                                In accordance with contractual clauses and specific regulations governing user relationships.\n"
+"                                "
+msgstr ""
+"\n"
+"Conforme a las cláusulas contractuales y normativas específicas que rigen las relaciones de los usuarios."
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:100
+msgid "Legal Warning: "
+msgstr "Advertencia legal:"
+
+#: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:101
+msgid ""
+"\n"
+"                            Any contrary act will result in the corresponding judicial actions, including reports to the competent authorities of the country and international organizations.\n"
+"                            "
+msgstr ""
+"\n"
+"Cualquier acto contrario dará lugar a las acciones judiciales pertinentes, incluidas denuncias ante las autoridades competentes del país y organismos internacionales."
 
 #: .\templates\dashboard\pages\documents\code_gen\code_form.html:6
 #: .\templates\dashboard\pages\documents\code_gen\code_form.html:33
