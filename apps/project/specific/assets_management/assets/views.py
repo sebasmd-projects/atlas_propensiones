@@ -1,4 +1,6 @@
+from django.utils.translation import gettext_lazy as _
 from django.views.generic import TemplateView
+
 
 from apps.project.specific.assets_management.assets_location.models import (
     AssetLocationModel, LocationModel)
@@ -18,8 +20,6 @@ class HolderTemplateview(HolderRequiredMixin, TemplateView):
             created_by=self.request.user
         )
 
-        pre_assets = None
-
         locations = LocationModel.objects.filter(
             is_active=True,
             created_by=self.request.user
@@ -29,11 +29,14 @@ class HolderTemplateview(HolderRequiredMixin, TemplateView):
             is_active=True,
             is_approved=True,
         )
+        
+        for offer in offers:
+            print(offer.asset.asset_name.es_name)
+            print(offer.asset.asset_name.en_name)
 
         context['assets'] = assets
         context['locations'] = locations
-        context['offers'] = offers if assets else None
-        # pre_assets
+        context['offers'] = offers
         context['total_offers'] = offers.count()
 
         return context

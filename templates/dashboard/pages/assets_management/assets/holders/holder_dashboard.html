@@ -62,6 +62,10 @@
               
               <!-- Dashboard Tab Pane 2 -->
               <div class="tab-pane fade" id="offers" role="tabpanel" aria-labelledby="offers-pill">
+                <div class="my-3">
+                  {% trans 'Total current offers:' %} {{ total_offers }}
+                </div>
+
                 {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/offers_tab_table.html' %}
               </div>
             </div>
