@@ -29,10 +29,6 @@ class HolderTemplateview(HolderRequiredMixin, TemplateView):
             is_active=True,
             is_approved=True,
         )
-        
-        for offer in offers:
-            print(offer.asset.asset_name.es_name)
-            print(offer.asset.asset_name.en_name)
 
         context['assets'] = assets
         context['locations'] = locations
