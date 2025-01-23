@@ -37,7 +37,9 @@
                     <form method="post" enctype="multipart/form-data">
                         {% csrf_token %}
                         {{ form.media.css }}
+                        
                         <div class="row">
+
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="id_asset" class="form-label">
@@ -135,6 +137,8 @@
                                 </div>
                             </div>
 
+                        </div>
+
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-outline-success">
                                 {% trans 'Submit Offer' %}
@@ -142,7 +146,6 @@
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
@@ -189,7 +192,6 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 {{ form.media.js }}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 {% endblock %}
 
 {% block simple_datatables_js %}
