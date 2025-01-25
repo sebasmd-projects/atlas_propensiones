@@ -40,25 +40,44 @@
 
           <div class="card-body">
             <div class="tab-content" id="dashboardNavContent">
-              <!-- Dashboard Tab Pane 1 -->
-              <div class="tab-pane fade show active" id="assets" role="tabpanel" aria-labelledby="assets-pill">
-                <div class="mb-4 mb-lg-0">
-                  <table id="assets_table">
-                    <thead>
-                      {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/partials/thead_tfoot.html' %}
-                    </thead>
-                    <tfoot>
-                      {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/partials/thead_tfoot.html' %}
-                    </tfoot>
-                    <tbody id="table-content">
-                      {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/assets_tab_table.html' %}
-                    </tbody>
-                  </table>
+              {% if request.user.is_verified_holder %}
+                <!-- Dashboard Tab Pane 1 -->
+                <div class="tab-pane fade show active" id="assets" role="tabpanel" aria-labelledby="assets-pill">
+                  <div class="mb-4 mb-lg-0">
+                    <table id="assets_table">
+                      <thead>
+                        {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/partials/thead_tfoot.html' %}
+                      </thead>
+                      <tfoot>
+                        {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/partials/thead_tfoot.html' %}
+                      </tfoot>
+                      <tbody id="table-content">
+                        {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/assets_tab_table.html' %}
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="mb-4 mb-lg-0">
+                    {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/locations_table.html' %}
+                  </div>
                 </div>
-                <div class="mb-4 mb-lg-0">
-                  {% include 'dashboard/pages/assets_management/assets/holders/partials/tables/locations_table.html' %}
+              {% else %}
+                <!-- Dashboard Tab Pane 0 -->
+                <div class="tab-pane fade show active" id="assets" role="tabpanel" aria-labelledby="assets-pill">
+                  <div class="mb-4 mb-lg-0 ratio ratio-1x1">
+                    <iframe
+                      src="https://docs.google.com/forms/d/e/1FAIpQLSeUk5BF-iB0K7YsxHWb4xMPL1y8AN5a2yCobHxAU9N0sUP84g/viewform?embedded=true" 
+                      width="100%"
+                      frameborder="0"
+                      marginheight="0"
+                      marginwidth="0"
+                      class=""
+                    >
+                      Cargando…
+                    </iframe>
+                  </div>
                 </div>
-              </div>
+              {% endif %}
               
               <!-- Dashboard Tab Pane 2 -->
               <div class="tab-pane fade" id="offers" role="tabpanel" aria-labelledby="offers-pill">
