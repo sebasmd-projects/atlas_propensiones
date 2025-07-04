@@ -1,0 +1,15 @@
+{% extends "core/base.html" %}
+{% load i18n static %}
+
+{% block title %}
+{% trans "Registro exitoso" %}
+{% endblock title %}
+
+{% block main %}
+<main class="container min-vh-100" style="padding-top: 100px;">
+    <div class="alert alert-success text-center">
+        <h2>{% trans "¡Gracias por confirmar tu POL!" %}</h2>
+        <p>{% trans "Tu información ha sido registrada exitosamente." %}</p>
+    </div>
+</main>
+{% endblock main %}

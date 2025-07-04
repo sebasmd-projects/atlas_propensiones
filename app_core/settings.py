@@ -97,6 +97,7 @@ PROJECT_INTERNAL_APPS = [
 
 PROJECT_DOCUMENTS_APPS = [
     'apps.project.specific.documents.certificates',
+    'apps.project.specific.documents.pol',
 ]
 
 ALL_CUSTOM_APPS = PROJECT_ASSETS_MANAGEMENT_APPS + PROJECT_COMMON_APPS + \
