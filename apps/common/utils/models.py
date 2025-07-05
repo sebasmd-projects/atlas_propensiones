@@ -4,6 +4,7 @@ from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 
+
 class TimeStampedModel(models.Model):
     """Abstract model providing timestamp fields (created and updated) and additional metadata.
 
@@ -75,9 +76,31 @@ class IPBlockedModel(TimeStampedModel):
         return f"{self.current_ip} - Blocked until {self.blocked_until}"
 
     class Meta:
-        db_table = 'apps_utils_ipblocked'
+        db_table = 'apps_common_utils_ipblocked'
         verbose_name = 'Blocked IP'
         verbose_name_plural = 'Blocked IPs'
+
+
+class WhiteListedIPModel(TimeStampedModel):
+    current_ip = models.CharField(
+        _('current user IP'),
+        max_length=150
+    )
+
+    reason = models.CharField(
+        _("reason"),
+        max_length=150,
+        blank=True,
+        null=True
+    )
+
+    def __str__(self):
+        return f"{self.current_ip}"
+
+    class Meta:
+        db_table = 'apps_utils_whitelistedip'
+        verbose_name = 'WhiteListed IP'
+        verbose_name_plural = 'WhiteListed IPs'
 
 
 class RequestLogModel(TimeStampedModel):
@@ -114,7 +137,13 @@ class RequestLogModel(TimeStampedModel):
         verbose_name = _('Request')
         verbose_name_plural = _('Requests')
 
+
 auditlog.register(
     IPBlockedModel,
+    serialize_data=True
+)
+
+auditlog.register(
+    WhiteListedIPModel,
     serialize_data=True
 )

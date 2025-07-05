@@ -355,3 +355,7 @@ CKEDITOR_5_CONFIGS = {
 CKEDITOR_5_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 15000
+
+COMMON_ATTACK_TERMS = [
+    term.strip() for term in os.getenv('COMMON_ATTACK_TERMS').split(',')
+]

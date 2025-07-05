@@ -10,6 +10,16 @@
     <div class="alert alert-success text-center">
         <h2>{% trans "¡Gracias por confirmar tu POL!" %}</h2>
         <p>{% trans "Tu información ha sido registrada exitosamente." %}</p>
+        <small>{% trans "Ya puedes cerrar esta pestaña" %}</small>
     </div>
 </main>
 {% endblock main %}
+
+
+{% block body_custom_js %}
+<script>
+    setTimeout(() => {
+        window.close();
+    }, 30000);
+</script>
+{% endblock body_custom_js %}
