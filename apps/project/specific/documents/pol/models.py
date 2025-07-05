@@ -37,6 +37,17 @@ class ProofOfLifeModel(TimeStampedModel):
         default=False
     )
 
+    def save(self, *args, **kwargs):
+        self.first_name = self.first_name.upper()
+        self.last_name = self.last_name.upper()
+
+        if self.middle_name:
+            self.middle_name = self.middle_name.upper()
+        if self.second_last_name:
+            self.second_last_name = self.second_last_name.upper()
+
+        super().save(*args, **kwargs)
+
     class Meta:
         db_table = "apps_proof_of_life"
         verbose_name = _("Prueba de vida")
