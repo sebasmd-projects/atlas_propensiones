@@ -12,23 +12,17 @@ class ProofOfLifeForm(forms.ModelForm):
         model = ProofOfLifeModel
         fields = (
             "first_name",
-            "middle_name",
             "last_name",
-            "second_last_name",
             "pol_confirmed",
         )
         labels = {
-            "first_name": "Primer nombre*",
-            "middle_name": "Segundo nombre",
-            "last_name": "Primer apellido*",
-            "second_last_name": "Segundo apellido",
+            "first_name": "Nombres*",
+            "last_name": "Apellidos*",
             "pol_confirmed": "Confirmo la prueba de vida (Proof of life, POL)*",
         }
         widgets = {
             "first_name": forms.TextInput(attrs={"class": "form-control"}),
-            "middle_name": forms.TextInput(attrs={"class": "form-control"}),
             "last_name": forms.TextInput(attrs={"class": "form-control"}),
-            "second_last_name": forms.TextInput(attrs={"class": "form-control"}),
             "pol_confirmed": forms.CheckboxInput(
                 attrs={"class": "form-check-input", "required": "required"}
             ),

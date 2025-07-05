@@ -13,23 +13,9 @@ class ProofOfLifeModel(TimeStampedModel):
         max_length=50
     )
 
-    middle_name = models.CharField(
-        _("Segundo nombre (opcional)"),
-        max_length=50,
-        blank=True,
-        null=True
-    )
-
     last_name = models.CharField(
         _("Primer apellido"),
         max_length=50
-    )
-
-    second_last_name = models.CharField(
-        _("Segundo apellido (opcional)"),
-        max_length=50,
-        blank=True,
-        null=True
     )
 
     pol_confirmed = models.BooleanField(
@@ -40,12 +26,6 @@ class ProofOfLifeModel(TimeStampedModel):
     def save(self, *args, **kwargs):
         self.first_name = self.first_name.upper()
         self.last_name = self.last_name.upper()
-
-        if self.middle_name:
-            self.middle_name = self.middle_name.upper()
-        if self.second_last_name:
-            self.second_last_name = self.second_last_name.upper()
-
         super().save(*args, **kwargs)
 
     class Meta:
