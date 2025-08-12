@@ -53,33 +53,51 @@
                 <div class="col-md">
                     <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" id="id_include_nit">
-                        <label class="form-check-label" for="id_include_nit">{% trans 'Include NIT' %}</label>
+                        <label class="form-check-label" for="id_include_nit">{% trans 'Include' %} NIT</label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="id_include_f991" name="include_f991">
+                        <label class="form-check-label" for="id_include_f991">{% trans 'Include' %} F991</label>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="id_include_m9q0" name="include_m9q0">
+                        <label class="form-check-label" for="id_include_m9q0">{% trans 'Include' %} M9Q0</label>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" id="id_include_date">
-                        <label class="form-check-label" for="id_include_date">{% trans 'Include Date (DDMMYYYY)' %}</label>
+                        <label class="form-check-label" for="id_include_date">{% trans 'Include' %} (DDMMYYYY)</label>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" id="id_include_random_code">
-                        <label class="form-check-label" for="id_include_random_code">{% trans 'Include Random Code (4 digits)' %}</label>
+                        <label class="form-check-label" for="id_include_random_code">{% trans 'Include' %} Random Code (4)</label>
                     </div>
                 </div>
+                
+
+
                 <div class="col-md">
                     <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" id="id_generate_barcode">
                         <label class="form-check-label" for="id_generate_barcode">{% trans 'Generate Barcode' %}</label>
                     </div>
                 </div>
-                <div class="col-md">
+                <!-- <div class="col-md">
                     <div class="form-check mb-3">
                         <input class="form-check-input" type="checkbox" id="id_generate_qr_code">
                         <label class="form-check-label" for="id_generate_qr_code">{% trans 'QR Code' %}</label>
                     </div>
-                </div>
+                </div> -->
+                
             </div>
 
 
@@ -138,6 +156,8 @@
                 const includeRandomCode = $("#id_include_random_code").is(":checked");
                 const generateQRCode = $("#id_generate_qr_code").is(":checked");
                 const generateBarcode = $("#id_generate_barcode").is(":checked");
+                const includeF991 = $("#id_include_f991").is(":checked");
+                const includeM9Q0 = $("#id_include_m9q0").is(":checked");
                 
                 $.ajax({
                     url: "{% url 'code_gen:code_generate' %}",
@@ -153,7 +173,9 @@
                         include_date: includeDate,
                         include_random_code: includeRandomCode,
                         generate_qr_code: generateQRCode,
-                        generate_barcode: generateBarcode  // Nuevo dato
+                        include_f991: includeF991,
+                        include_m9q0: includeM9Q0,
+                        generate_barcode: generateBarcode
                     },
                     success: function (response) {
                         if (response.barcode_image) {

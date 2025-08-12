@@ -100,6 +100,8 @@ class CodeGeneratorView(FormView):
         include_random_code = form.cleaned_data['include_random_code']
         generate_qr_code = form.cleaned_data['generate_qr_code']
         generate_bar_code = form.cleaned_data['generate_barcode']
+        include_f991 = form.cleaned_data['include_f991']
+        include_m9q0 = form.cleaned_data['include_m9q0']
 
         # Construir el texto del código
         components = [custom_text]
@@ -110,9 +112,15 @@ class CodeGeneratorView(FormView):
         if include_date:
             components.append(datetime.now().strftime("%d%m%Y"))
 
+        if include_f991:
+            components.append('F991')
+            
+        if include_m9q0:
+            components.append('M9Q0')
+        
         if include_random_code:
             components.append(generate_random_code())
-
+            
         barcode_text = ' '.join(components).strip()
         
         response_data = {}

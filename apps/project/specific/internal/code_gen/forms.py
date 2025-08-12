@@ -16,6 +16,14 @@ class CodeForm(forms.ModelForm):
         label=_("Include Random Code (4 digits)"),
         required=False
     )
+    include_f991 = forms.BooleanField(
+        label="F991",
+        required=False
+    )
+    include_m9q0 = forms.BooleanField(
+        label="M9Q0",
+        required=False
+    )
     generate_qr_code = forms.BooleanField(
         label=_("Generate QR Code"),
         required=False

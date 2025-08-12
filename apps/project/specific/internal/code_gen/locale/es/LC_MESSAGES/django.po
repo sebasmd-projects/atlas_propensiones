@@ -7,9 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 02:02-0500\n"
+"POT-Creation-Date: 2025-08-12 17:53-0500\n"
 "PO-Revision-Date: 2024-12-15 02:02-0500\n"
-"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados.com>\n"
+"Last-Translator: Sebastián Morales <sebastian.morales@propensionesabogados."
+"com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -29,30 +30,30 @@ msgstr "Incluir Fecha (DDMMYYYY)"
 msgid "Include Random Code (4 digits)"
 msgstr "Incluir Código Aleatorio (4 dígitos)"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:20
+#: .\apps\project\specific\internal\code_gen\forms.py:28
 msgid "Generate QR Code"
 msgstr "Generar Código QR"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:24
-#: .\apps\project\specific\internal\code_gen\forms.py:29
+#: .\apps\project\specific\internal\code_gen\forms.py:32
+#: .\apps\project\specific\internal\code_gen\forms.py:37
 msgid "QR Image URL"
 msgstr "URL de la Imagen QR"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:34
+#: .\apps\project\specific\internal\code_gen\forms.py:42
 msgid "Generate Barcode"
 msgstr "Generar Código de Barras"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:49
+#: .\apps\project\specific\internal\code_gen\forms.py:57
 #: .\apps\project\specific\internal\code_gen\models.py:9
 msgid "Reference"
 msgstr "Referencia"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:56
+#: .\apps\project\specific\internal\code_gen\forms.py:64
 #: .\apps\project\specific\internal\code_gen\models.py:14
 msgid "Description"
 msgstr "Descripción"
 
-#: .\apps\project\specific\internal\code_gen\forms.py:62
+#: .\apps\project\specific\internal\code_gen\forms.py:70
 msgid "Custom Text"
 msgstr "Texto Personalizado"
 

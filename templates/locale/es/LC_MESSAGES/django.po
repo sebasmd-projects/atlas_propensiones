@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ATLAS 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-11 22:08-0500\n"
-"PO-Revision-Date: 2025-01-11 22:11-0500\n"
+"POT-Creation-Date: 2025-08-12 17:53-0500\n"
+"PO-Revision-Date: 2025-08-12 17:54-0500\n"
 "Last-Translator: Sebastian Morales <sebasmoralesd@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
@@ -531,8 +531,7 @@ msgid "Previous"
 msgstr "Anterior"
 
 #: .\templates\core\index\sections\section-social-sense.html:131
-#: .\templates\dashboard\pages\assets_management\assets\holders\wizard_pre_regist_assets.html:40
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:88
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:106
 #: .\templates\two_factor\_wizard_actions.html:13
 #: .\templates\two_factor\core\setup.html:59
 msgid "Next"
@@ -707,7 +706,6 @@ msgid "Citizenship Number"
 msgstr "Cédula"
 
 #: .\templates\dashboard\pages\assets_management\asset_location\add_asset_location.html:5
-#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:79
 #: .\templates\dashboard\pages\assets_management\partials\header_cards.html:26
 msgid "Add New Asset"
 msgstr "Agregar Nuevo Activo"
@@ -972,26 +970,15 @@ msgstr "Aprobado"
 msgid "Actions"
 msgstr "Acciones"
 
-#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:27
-#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:34
+#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:26
 msgid "My Historical Assets"
 msgstr "Mis Activos Históricos"
 
-#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:42
+#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:34
 msgid "Assets in Demand (Offers)"
 msgstr "Activos en Demanda (Ofertas)"
 
-#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:75
-msgid ""
-"\n"
-"                        You have no assets registered. Register an asset to see available positions.\n"
-"                      "
-msgstr ""
-"\n"
-"No tiene activos registrados o No hay posturas actualmente. Registre un activo para ver las posiciones disponibles.\n"
-"                    "
-
-#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:84
+#: .\templates\dashboard\pages\assets_management\assets\holders\holder_dashboard.html:85
 msgid "Total current offers:"
 msgstr "Total de ofertas actuales:"
 
@@ -1057,19 +1044,6 @@ msgstr "Preferencia de Continente"
 #: .\templates\dashboard\pages\assets_management\assets\holders\partials\tables\partials\offers_th_tf.html:12
 msgid "Country Preference"
 msgstr "Preferencia de País"
-
-#: .\templates\dashboard\pages\assets_management\assets\holders\wizard_pre_regist_assets.html:17
-msgid "Pre Asset Registration"
-msgstr "Pre Registro de Activos"
-
-#: .\templates\dashboard\pages\assets_management\assets\holders\wizard_pre_regist_assets.html:34
-#: .\templates\two_factor\_wizard_actions.html:11
-msgid "Back"
-msgstr "Atrás"
-
-#: .\templates\dashboard\pages\assets_management\assets\holders\wizard_pre_regist_assets.html:42
-msgid "Finish"
-msgstr "Finalizar"
 
 #: .\templates\dashboard\pages\assets_management\location\add_location.html:16
 msgid "Add New Location Reference"
@@ -1254,12 +1228,6 @@ msgstr ""
 "Para constancia, se firma en"
 
 #: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:57
-#| msgid ""
-#| "We remind you that, in accordance with the provisions of the Habeas Data "
-#| "Law, all your personal data has been treated with due confidentiality and is"
-#| " protected under the strictest security standards, guaranteeing its "
-#| "integrity and privacy. Your data will be used exclusively for authorized "
-#| "purposes and within the framework of current data protection regulations."
 msgid ""
 "\n"
 "                            We remind you that, in accordance with the provisions of the Habeas Data Law, all your personal data has been treated with due confidentiality and is protected under the strictest security standards, guaranteeing its integrity and privacy. Your data will be used exclusively for authorized purposes and within the framework of current data protection regulations.\n"
@@ -1278,7 +1246,6 @@ msgstr ""
 "Se deja la salvedad de que la reproducción, publicación, o cualquier uso indebido de este certificado para la solicitud de dinero o fines fraudulentos incurrirá en sanciones legales, conforme a lo dispuesto en las normativas nacionales e internacionales aplicables. Asimismo, se advierte que tal conducta será causal de expulsión inmediata y de inhabilidad total, presente y futura, para cualquier participación en los programas, beneficios, o convenios relacionados."
 
 #: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:71
-#| msgid "Location Reference"
 msgid "Regulatory References:"
 msgstr "Referencias normativas:"
 
@@ -1300,10 +1267,6 @@ msgid "International Criminal Code (Rome Statute): "
 msgstr "Código Penal Internacional (Estatuto de Roma):"
 
 #: .\templates\dashboard\pages\documents\certificates\sovereing\certificate_detail.html:85
-#| msgid ""
-#| "\n"
-#| "                        You have no assets registered. Register an asset to see available positions.\n"
-#| "                      "
 msgid ""
 "\n"
 "                                Related to fraud, forgery, and violations of international ethical standards.\n"
@@ -1350,37 +1313,59 @@ msgid "Custom Text"
 msgstr "Texto Personalizado"
 
 #: .\templates\dashboard\pages\documents\code_gen\code_form.html:56
-msgid "Include NIT"
-msgstr "Incluir NIT"
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:63
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:69
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:76
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:82
+#| msgid "Include NIT"
+msgid "Include"
+msgstr "Incluir"
 
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:62
-msgid "Include Date (DDMMYYYY)"
-msgstr "Incluir Fecha (DDMMYYYY)"
-
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:68
-msgid "Include Random Code (4 digits)"
-msgstr "Incluir Código Aleatorio (4 dígitos)"
-
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:74
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:91
 msgid "Generate Barcode"
 msgstr "Generar Código de Barras"
 
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:80
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:106
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:97
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:124
 msgid "QR Code"
 msgstr "Código QR"
 
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:95
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:113
 msgid "Download"
 msgstr "Descargar"
 
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:97
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:115
 msgid "Bar Code"
 msgstr "Código de Barras"
 
-#: .\templates\dashboard\pages\documents\code_gen\code_form.html:103
+#: .\templates\dashboard\pages\documents\code_gen\code_form.html:121
 msgid "Download QR"
 msgstr "Descargar QR"
+
+#: .\templates\dashboard\pages\documents\pol\pol_form.html:5
+#: .\templates\dashboard\pages\documents\pol\pol_form.html:40
+msgid "Prueba de vida"
+msgstr "Prueba de vida"
+
+#: .\templates\dashboard\pages\documents\pol\pol_form.html:83
+msgid "Enviar"
+msgstr "Enviar"
+
+#: .\templates\dashboard\pages\documents\pol\pol_success.html:5
+msgid "Registro exitoso"
+msgstr "Registro exitoso"
+
+#: .\templates\dashboard\pages\documents\pol\pol_success.html:41
+msgid "¡Gracias por confirmar tu POL!"
+msgstr "¡Gracias por confirmar tu POL!"
+
+#: .\templates\dashboard\pages\documents\pol\pol_success.html:42
+msgid "Tu información ha sido registrada exitosamente."
+msgstr "Tu información ha sido registrada exitosamente."
+
+#: .\templates\dashboard\pages\documents\pol\pol_success.html:43
+msgid "Ya puedes cerrar esta pestaña"
+msgstr "Ya puedes cerrar esta pestaña"
 
 #: .\templates\dashboard\partials\account_footer.html:18
 msgid "Terms & Conditions"
@@ -1422,6 +1407,10 @@ msgstr "Activos"
 #: .\templates\dashboard\partials\side_nav\footer.html:5
 msgid "Logged in as:"
 msgstr "Conectado como:"
+
+#: .\templates\two_factor\_wizard_actions.html:11
+msgid "Back"
+msgstr "Atrás"
 
 #: .\templates\two_factor\core\backup_tokens.html:16
 #: .\templates\two_factor\profile\profile.html:18
@@ -1638,6 +1627,27 @@ msgstr[1] "Le quedan %(counter)s códigos de respaldo."
 #: .\templates\two_factor\profile\profile.html:27
 msgid "Show Codes"
 msgstr "Mostrar Códigos"
+
+#~ msgid ""
+#~ "\n"
+#~ "                        You have no assets registered. Register an asset to see available positions.\n"
+#~ "                      "
+#~ msgstr ""
+#~ "\n"
+#~ "No tiene activos registrados o No hay posturas actualmente. Registre un activo para ver las posiciones disponibles.\n"
+#~ "                    "
+
+#~ msgid "Pre Asset Registration"
+#~ msgstr "Pre Registro de Activos"
+
+#~ msgid "Finish"
+#~ msgstr "Finalizar"
+
+#~ msgid "Include Date (DDMMYYYY)"
+#~ msgstr "Incluir Fecha (DDMMYYYY)"
+
+#~ msgid "Include Random Code (4 digits)"
+#~ msgstr "Incluir Código Aleatorio (4 dígitos)"
 
 #, fuzzy
 #~ msgid "Activo:"
